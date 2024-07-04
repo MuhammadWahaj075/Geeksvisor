@@ -30,4 +30,9 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+  .bg-gradient-lines {
+    background-image: url('../../public/assets/images/Circles.png');
+ background-size: contain;
+  }
 }
