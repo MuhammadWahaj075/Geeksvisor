@@ -40,7 +40,8 @@ module.exports = {
         info: "#3b82f6",
       },
       fontFamily: {
-        sans: ["Inter", "ui-sans-serif", "system-ui"],
+       inter: ["var(--inter)"],
+       unbound: ["var(--unbound)"],
       },
       animation: {
         scroll:

@@ -15,6 +15,8 @@ import TestimonialsLogo6 from "./images/TestimonialsLogo6.png";
 import FilterImg from "./images/filterImg.png";
 import FilterSmallImg from "./images/smallFilter.png";
 import Logo from './images/logo.png'
+import CardImg from './images/cardImg.png'
+
 
 export {
   Logo,
@@ -34,4 +36,5 @@ export {
   TestimonialsLogo6,
   FilterImg,
   FilterSmallImg,
+  CardImg,
 };

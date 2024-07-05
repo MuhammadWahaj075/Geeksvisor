@@ -32,7 +32,8 @@ body {
   }
 
   .bg-gradient-lines {
-    background-image: url('../../public/assets/images/Circles.png');
- background-size: contain;
+    background-image: url("../../public/assets/images/Circles.png");
+    background-size: cover;
+    background-attachment: fixed;
   }
 }
