@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { InfiniteImg } from "../../../public/assets";
 
-export const WhoWeAre = () => {
+export function WhoWeAre () {
   return (
     <div className="mt-[200px]">
       <div className="flex items-center justify-center flex-wrap gap-[100px] ">
