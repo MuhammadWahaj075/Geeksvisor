@@ -10,7 +10,7 @@ export const FeatureProjects = () => {
       {projects.map((project) => (
         <div
           key={project.id}
-          className="flex items-start mx-auto w-[70%] lg:w-full lg:justify-between flex-wrap gap-[88px] lg:gap-60"
+          className="flex items-start lg:items-center mx-auto w-[70%] lg:w-full lg:justify-between flex-wrap gap-[88px] lg:gap-60"
         >
           <div className="order-1  flex items-start flex-col gap-4 justify-center">
             <h1 className="text-[24px] font-inter font-semibold">

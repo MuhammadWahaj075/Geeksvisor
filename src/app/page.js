@@ -1,26 +1,27 @@
+import { Header } from "@/components/layout/Header";
 import {
   BannerSection,
+  FeatureWork,
   GetFromUs,
   InfiniteMovingImages,
   ServingIndustries,
   TestimonialsLogos,
+  WhatWeDo,
   WhoWeAre,
 } from "@/components/Home";
-import { FeatureWork } from "@/components/Home/FeatureWork";
-import { Header } from "@/components/layout/Header";
 
 export default function Home() {
   return (
-    <main>
+    <main className="!bg-black">
       <Header />
       <BannerSection />
-       <TestimonialsLogos />
+      <TestimonialsLogos />
       <InfiniteMovingImages />
-     <WhoWeAre />
+      <WhoWeAre />
       {/* <ServingIndustries /> */}
       <GetFromUs />
-     <FeatureWork />
-
+      <FeatureWork />
+      <WhatWeDo />
     </main>
   );
 }

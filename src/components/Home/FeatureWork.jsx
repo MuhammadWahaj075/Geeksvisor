@@ -1,6 +1,6 @@
 import { FeatureProjects } from "./FeatureProjects";
 
-export const FeatureWork = () => {
+export function FeatureWork () {
   return (
     <div className="mt-[150px]">
       <div className="flex items-center flex-col justify-center">
