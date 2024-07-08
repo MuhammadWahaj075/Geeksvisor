@@ -6,7 +6,7 @@ import healthcare from "./icons/healthcare.svg";
 import InfiniteImg from "./images/infiniteImg1.png";
 import InfiniteImg2 from "./images/infiniteImg2.png";
 import InfiniteImg3 from "./images/infiniteImg3.png";
-import TestimonialsLogo from "./images/TestimonialsLogo.png";
+import TestimonialsLogo1 from "./images/TestimonialsLogo.png";
 import TestimonialsLogo2 from "./images/TestimonialsLogo2.png";
 import TestimonialsLogo3 from "./images/TestimonialsLogo3.png";
 import TestimonialsLogo4 from "./images/TestimonialsLogo4.png";
@@ -16,6 +16,7 @@ import FilterImg from "./images/filterImg.png";
 import FilterSmallImg from "./images/smallFilter.png";
 import Logo from './images/logo.png'
 import CardImg from './images/cardImg.png'
+import Project from './images/project.png'
 
 
 export {
@@ -28,7 +29,7 @@ export {
   InfiniteImg,
   InfiniteImg2,
   InfiniteImg3,
-  TestimonialsLogo,
+  TestimonialsLogo1,
   TestimonialsLogo2,
   TestimonialsLogo3,
   TestimonialsLogo4,
@@ -37,4 +38,5 @@ export {
   FilterImg,
   FilterSmallImg,
   CardImg,
+  Project
 };

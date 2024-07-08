@@ -8,6 +8,13 @@ import {
   sport,
   tech,
   CardImg,
+  Project,
+  TestimonialsLogo1,
+  TestimonialsLogo2,
+  TestimonialsLogo3,
+  TestimonialsLogo4,
+  TestimonialsLogo5,
+  TestimonialsLogo6,
 } from "../../public/assets";
 
 export const servingIndustries = [
@@ -98,4 +105,34 @@ export const cards = [
       "Revolutionize and optimize your cloud infrastructure with our comprehensive suite.",
     id: 7,
   },
+];
+
+export const projects = [
+  {
+    id: 1,
+    title: "Project Title 1",
+    tags: ["React.js", "Node.js", "Serverless", "AWS"],
+    image: Project,
+  },
+  {
+    id: 2,
+    title: "Project Title 2",
+    tags: ["React Native", "Express.js", "Lambda", "Azure"],
+    image: Project,
+  },
+  {
+    id: 3,
+    title: "Project Title 3",
+    tags: ["nextjs", "Mongodb", "redux", "tenstack query"],
+    image: Project,
+  },
+];
+
+export const testimonialLogos = [
+  { src: TestimonialsLogo1, alt: "Testimonial from Client 1" },
+  { src: TestimonialsLogo2, alt: "Testimonial from Client 2" },
+  { src: TestimonialsLogo3, alt: "Testimonial from Client 3" },
+  { src: TestimonialsLogo4, alt: "Testimonial from Client 4" },
+  { src: TestimonialsLogo5, alt: "Testimonial from Client 5" },
+  { src: TestimonialsLogo6, alt: "Testimonial from Client 6" },
 ];

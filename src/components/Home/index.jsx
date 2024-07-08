@@ -4,6 +4,7 @@ import { InfiniteMovingImages } from "./InfiniteMovingImage";
 import { WhoWeAre } from "./WhoWeAre";
 import { ServingIndustries } from "./ServingIndustries";
 import { GetFromUs } from "./GetFromUs";
+import FeatureWork from './FeatureWork'
 
 export {
   BannerSection,
@@ -12,4 +13,5 @@ export {
   WhoWeAre,
   ServingIndustries,
   GetFromUs,
+  FeatureWork,
 };

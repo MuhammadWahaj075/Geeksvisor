@@ -17,7 +17,7 @@ export default function Home() {
        <TestimonialsLogos />
       <InfiniteMovingImages />
      <WhoWeAre />
-      <ServingIndustries />
+      {/* <ServingIndustries /> */}
       <GetFromUs />
      <FeatureWork />
 

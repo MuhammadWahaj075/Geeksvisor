@@ -36,4 +36,11 @@ body {
     background-size: cover;
     background-attachment: fixed;
   }
+
+  .title_text {
+    @apply text-[32px] font-unbound font-bold leading-[40px];
+  }
+  .description_text {
+    @apply text-[18px] font-inter leading-[26px] font-normal text-primary-light;
+  }
 }

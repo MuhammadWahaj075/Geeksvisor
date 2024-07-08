@@ -6,7 +6,7 @@ import Image from "next/image";
 export const Header = () => {
   return (
     <header>
-      <nav className="px-4 lg:px-6 py-2.5 ">
+      <nav className="px-4 pt-[22px] bg-black bg-opacity-[12%] backdrop-blur-lg z-30 w-full top-0 fixed left-0 lg:px-6 py-2.5 ">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <a href="#" className="flex items-center">
             <Image src={Logo} className="w-auto" alt="Logo" />
