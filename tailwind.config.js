@@ -15,12 +15,14 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          light: "#6d28d9",
-          DEFAULT: "#5b21b6",
+          light: "#FFFFFFB2",
+          DEFAULT: "#EE6E24",
           dark: "#4c1d95",
+          hover: "#ed9866",
+          pill: "#FFFFFF1A"
         },
         secondary: {
-          light: "#34d399",
+          light: "#9C9C9C",
           DEFAULT: "#10b981",
           dark: "#059669",
         },
@@ -31,7 +33,7 @@ module.exports = {
         },
         neutral: {
           light: "#f3f4f6",
-          DEFAULT: "#e5e7eb",
+          DEFAULT: "#ffffff",
           dark: "#d1d5db",
         },
         danger: "#ef4444",
@@ -40,7 +42,8 @@ module.exports = {
         info: "#3b82f6",
       },
       fontFamily: {
-        sans: ["Inter", "ui-sans-serif", "system-ui"],
+        inter: ["var(--inter)"],
+        unbound: ["var(--unbound)"],
       },
       animation: {
         scroll:
@@ -56,13 +59,19 @@ module.exports = {
     },
   },
   plugins: [
+    require("tailwindcss-animate"),
     addVariablesForColors,
     function ({ matchUtilities, theme }) {
       matchUtilities(
         {
           "bg-grid": (value) => ({
             backgroundImage: `url("${svgToDataUri(
-              `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="${value}"><path d="M0 .5H31.5V32"/></svg>`
+              `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="90" height="90" fill="none" stroke="${value}"><path d="M0 .5H31.5V32"/></svg>`
+            )}")`,
+          }),
+          "bg-grid-medium": (value) => ({
+            backgroundImage: `url("${svgToDataUri(
+              `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="50" height="50" fill="none" stroke="${value}"><path d="M0 .5H31.5V32"/></svg>`
             )}")`,
           }),
           "bg-grid-small": (value) => ({

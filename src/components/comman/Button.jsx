@@ -12,10 +12,10 @@ const Button = ({
   const baseStyles =
     "px-4 py-2 rounded focus:outline-none flex items-center justify-center gap-2";
   const variantStyles = {
-    primary: "bg-[#EE6E24] text-white hover:bg-[#ed9866]",
-    transparent: "text-[#EE6E24] bg-transparent hover:text-[#ed9866]",
-    secondary: "bg-gray-500 text-white hover:bg-gray-700",
-    danger: "bg-red-500 text-white hover:bg-red-700",
+    primary:
+      "bg-primary text-neutral text-[16px] leading-[19px] font-semibold font-inter hover:bg-primary-hover",
+    transparent:
+      "text-primary font-inter font-semibold bg-transparent hover:text-primary-hover",
   };
 
   const buttonClass = `${baseStyles} ${variantStyles[variant]} ${className}`;

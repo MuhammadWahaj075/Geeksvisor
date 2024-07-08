@@ -6,6 +6,7 @@ import {
   TestimonialsLogos,
   WhoWeAre,
 } from "@/components/Home";
+import { FeatureWork } from "@/components/Home/FeatureWork";
 import { Header } from "@/components/layout/Header";
 
 export default function Home() {
@@ -16,8 +17,10 @@ export default function Home() {
        <TestimonialsLogos />
       <InfiniteMovingImages />
      <WhoWeAre />
-      <ServingIndustries />
+      {/* <ServingIndustries /> */}
       <GetFromUs />
+     <FeatureWork />
+
     </main>
   );
 }

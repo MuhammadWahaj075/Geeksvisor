@@ -10,8 +10,8 @@ export const WhoWeAre = () => {
           className=" w-[500px] h-[500px] rounded-[8px]"
         />
         <div className="flex flex-col items-center  lg:items-start">
-          <h1 className="text-[32px] font-bold">Who we are</h1>
-          <p className="w-auto text-center lg:text-start lg:w-[540px] font-normal text-[18px] leading-[26px] opacity-[60%]">
+          <h1 className="title_text">Who we are</h1>
+          <p className="w-auto text-center lg:text-start lg:w-[540px] description_text">
             Our aim is to provide top-quality services that help businesses of
             all sizes achieve their goals. We strive to deliver innovative,
             cost-effective solutions that meet our clients' unique needs, and to
@@ -22,4 +22,4 @@ export const WhoWeAre = () => {
       </div>
     </div>
   );
-}
+};

@@ -6,10 +6,10 @@ export const ServingIndustries = () => (
   <div className="mt-[206px] mx-auto w-[1164px] center-div">
     <div className="flex-center-column text-center">
       <div className="flex justify-center items-center flex-col">
-        <h2 className="level-1 font-bold text-[32px] text-center">
+        <h2 className="title_text level-1 font-bold text-[32px] text-center">
           Serving all Industries
         </h2>
-        <p className="level-5 lg:w-[653px] opacity-[60%] mt-[16px] text-center">
+        <p className="description_text lg:w-[653px]  mt-[16px] text-center">
           See what our satisfied clients are saying about our exceptional
           services and personalized approach to their unique business need
         </p>
