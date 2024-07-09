@@ -13,7 +13,7 @@ export const FeatureProjects = () => {
           className="flex items-start lg:items-center mx-auto w-[70%] lg:w-full lg:justify-between flex-wrap gap-[88px] lg:gap-60"
         >
           <div className="order-1  flex items-start flex-col gap-4 justify-center">
-            <h1 className="text-[24px] font-inter font-semibold">
+            <h1 className="text-[24px] text-neutral  font-inter font-semibold">
               {project.title}
             </h1>
             <div className="flex flex-wrap space-x-2">

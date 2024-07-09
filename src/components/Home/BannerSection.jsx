@@ -6,17 +6,17 @@ import { FilterImg, FilterSmallImg } from "../../../public/assets";
 export const BannerSection = () => {
   return (
     <div className="relative">
-      <div className="h-[50rem] my-[70px] mx-auto w-full max-w-[1440px] !bg-black bg-grid-white/[0.1] bg-grid-black-100/[10] relative flex items-center justify-center">
+      <div className="h-[50rem] mx-auto w-full max-w-[1440px]  bg-grid-white/[0.1] bg-grid-black-100 relative flex items-center justify-center ">
         <Image
           src={FilterSmallImg}
           height={"100%"}
           width={"100%"}
-          className="absolute top-0 right-0 z-10"
+          className="absolute mt-[80px] top-0 right-0 z-10"
         />
-        <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
+        <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black  [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
         <div className="flex justify-center">
           <div className="flex relative z-20 flex-col justify-center items-center">
-            <p className="text-center mb-[24px] font-inter bg-secondary-light bg-opacity-30  py-[8px] px-[12px] rounded-[40px]">
+            <p className="text-center mb-[24px] text-[#ccc] font-inter bg-secondary-light bg-opacity-[12%]  py-[8px] px-[12px] rounded-[40px]">
               Raise $2.5M for startups
             </p>
 

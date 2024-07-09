@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const TestimonialsLogos = () => {
   return (
-    <div className="flex items-center justify-center flex-wrap gap-[64px]">
+    <div className="flex items-center justify-center flex-wrap mt-[90px] gap-[64px]">
       {testimonialLogos?.map((logo, index) => (
         <Image
           key={index}

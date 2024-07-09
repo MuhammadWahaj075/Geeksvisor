@@ -12,7 +12,7 @@ import {
 
 export default function Home() {
   return (
-    <main className="!bg-black">
+    <main>
       <Header />
       <BannerSection />
       <TestimonialsLogos />
