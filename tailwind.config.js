@@ -45,6 +45,7 @@ module.exports = {
       fontFamily: {
         inter: ["var(--inter)"],
         unbound: ["var(--unbound)"],
+        jakarta: ["var(--jakarta)"],
       },
       animation: {
         scroll:

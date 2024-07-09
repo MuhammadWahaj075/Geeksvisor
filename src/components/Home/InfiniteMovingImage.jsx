@@ -9,7 +9,7 @@ export function InfiniteMovingImages() {
     <div className="mt-[200px] items-center justify-center">
       <InfiniteMovingCards
         items={testimonials}
-        direction="right"
+        direction="left"
         speed="normal"
       />
     </div>

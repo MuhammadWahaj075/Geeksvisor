@@ -20,13 +20,13 @@ export const BannerSection = () => {
               Raise $2.5M for startups
             </p>
 
-            <p className="text-4xl leading-[80px] w-[100%] lg:max-w-[1160px] text-center md:text-[56px] font-unbound font-bold relative z-20 bg-clip-text text-transparent bg-neutral">
+            <p className="text-base leading-[30px] lg:leading-[80px] max-w-[350px] lg:max-w-[1160px] text-center lg:text-[56px] font-unbound font-bold relative z-20 bg-clip-text text-transparent bg-neutral">
               Power Your <span className="text-primary">Vision</span> with Next
               Generation Custom Software
             </p>
 
             <div className="flex justify-center flex-col items-center">
-              <p className="font-inter text-[20px] font-normal leading-[32px] py-[40px] opacity-[60%] text-center lg:w-[700px] ">
+              <p className="description_text  py-[40px]  text-center w-[350px] lg:w-[700px] ">
                 We'll elevate your vision through custom software development as
                 your digital transformation partner.
               </p>
@@ -34,7 +34,7 @@ export const BannerSection = () => {
               <div className="flex relative gap-[40px] z-20">
                 <Button
                   variant="primary"
-                  className={"py-[16px] px-[24px]"}
+                  className={"py-[16px] px-[16px] lg:px-[24px]"}
                   icon={<IoIosArrowRoundForward size={25} />}
                 >
                   Contact Us

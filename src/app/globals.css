@@ -19,6 +19,37 @@ body {
     background-attachment: fixed;
   }
 
+  .fade-in-element {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .fade-out-element {
+    animation: fadeOut 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fadeOut {
+    0% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0.5; transform: translateY(20px); }
+  }
+
+  .highlighted {
+    opacity: 1;
+    font-weight: bold;
+  }
+  
+  .faded-out {
+    opacity: 0.5;
+    font-weight: normal;
+  }
+  
+  
+  
+
   .title_text {
     @apply text-[32px] font-unbound font-bold leading-[40px] text-neutral;
   }
