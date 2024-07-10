@@ -6,6 +6,12 @@ import { ServingIndustries } from "./ServingIndustries";
 import { GetFromUs } from "./GetFromUs";
 import {FeatureWork} from "./FeatureWork";
 import { WhatWeDo } from "./WhatWeDo";
+import {ClientExpectation} from "./ClientExpect";
+import {HowItWorks} from "./HowItWorks";
+import {WhatWeVission} from "./WhatWeVission";
+import {MeetOurTeam} from "./MeetOurTeam";
+import {Faq} from './Faq'
+import {GreatIdea} from './GreatIdea'
 
 export {
   BannerSection,
@@ -16,4 +22,10 @@ export {
   GetFromUs,
   FeatureWork,
   WhatWeDo,
+  ClientExpectation,
+  HowItWorks,
+  WhatWeVission,
+  MeetOurTeam,
+  Faq,
+  GreatIdea,
 };

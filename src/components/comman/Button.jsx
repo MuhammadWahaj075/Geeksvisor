@@ -10,7 +10,7 @@ const Button = ({
   ...props
 }) => {
   const baseStyles =
-    "px-4 py-2 rounded focus:outline-none flex items-center justify-center gap-2";
+    "px-4 py-2 rounded capitalize focus:outline-none flex items-center justify-center gap-2";
   const variantStyles = {
     primary:
       "bg-primary text-neutral text-[16px] leading-[19px] font-semibold font-inter hover:bg-primary-hover",

@@ -1,12 +1,18 @@
 import { Header } from "@/components/layout/Header";
 import {
   BannerSection,
+  ClientExpectation,
+  Faq,
   FeatureWork,
   GetFromUs,
+  GreatIdea,
+  HowItWorks,
   InfiniteMovingImages,
+  MeetOurTeam,
   ServingIndustries,
   TestimonialsLogos,
   WhatWeDo,
+  WhatWeVission,
   WhoWeAre,
 } from "@/components/Home";
 
@@ -22,6 +28,12 @@ export default function Home() {
       <GetFromUs />
       <FeatureWork />
       <WhatWeDo />
+      <ClientExpectation />
+      {/* <HowItWorks /> */}
+      <WhatWeVission />
+      <MeetOurTeam />
+      <Faq />
+      <GreatIdea />
     </main>
   );
 }

@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
-const quotations = ["Hello", "World", "This", "Is", "Infinite", "Rolling"];
+const quotations = ["Web Development", "Cloud Services", "AI Gen", "Full Stack Development", "Web3", "DevOps"];
 
 export function RollingWords() {
   const [visibleIndex, setVisibleIndex] = useState(0);

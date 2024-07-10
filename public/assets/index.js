@@ -14,9 +14,14 @@ import TestimonialsLogo5 from "./images/TestimonialsLogo5.png";
 import TestimonialsLogo6 from "./images/TestimonialsLogo6.png";
 import FilterImg from "./images/filterImg.png";
 import FilterSmallImg from "./images/smallFilter.png";
-import Logo from './images/logo.png'
-import CardImg from './images/cardImg.png'
-import Project from './images/project.png'
+import Logo from "./images/logo.png";
+import CardImg from "./images/cardImg.png";
+import Project from "./images/project.png";
+import CheckIcon from "./images/check.png";
+import Spline from "./images/spline.png";
+import MugheesProf from "./images/mugheesprof.png";
+import RafaeProf from "./images/rafaeProf.jpg";
+import ShineImg from "./images/shine-gradient.png";
 
 
 export {
@@ -38,5 +43,10 @@ export {
   FilterImg,
   FilterSmallImg,
   CardImg,
-  Project
+  Project,
+  CheckIcon,
+  Spline,
+  MugheesProf,
+  RafaeProf,
+  ShineImg
 };

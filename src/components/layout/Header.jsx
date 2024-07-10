@@ -31,9 +31,7 @@ export const Header = () => {
   return (
     <header>
       <nav
-        className={`px-4 pb-5 pt-[22px] z-30 w-full top-0 fixed left-0 lg:px-6 py-2.5 transition-all duration-300 ${
-          isScrolled ? "bg-black bg-opacity-[12%] backdrop-blur-lg" : "bg-black"
-        }`}
+        className="px-4 pb-5 pt-[22px] z-30 w-full top-0 fixed left-0 lg:px-6 py-2.5 transition-all duration-300 bg-black lg:bg-transparent lg:bg-opacity-[12%] lg:backdrop-blur-lg"
       >
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <a href="#" className="flex items-center">
@@ -81,7 +79,7 @@ export const Header = () => {
           <div
             className={`${
               isMenuOpen ? "block" : "hidden"
-            } justify-between items-center w-full h-screen lg:h-auto lg:flex lg:w-auto lg:order-1`}
+            } justify-between items-center w-full  h-screen lg:h-auto lg:flex lg:w-auto lg:order-1`}
             id="mobile-menu-2"
           >
             <ul className="flex flex-col mt-4 lg:flex-row lg:space-x-8 lg:mt-0">

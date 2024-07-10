@@ -15,11 +15,105 @@ import {
   TestimonialsLogo4,
   TestimonialsLogo5,
   TestimonialsLogo6,
+  CheckIcon,
+  MugheesProf,
+  RafaeProf,
 } from "../../public/assets";
+
+export const OurQualityData = [
+  {
+    name: "Proven Track Record",
+    icon: CheckIcon,
+  },
+  {
+    name: "Expert Team",
+    icon: CheckIcon,
+  },
+  {
+    name: "Affordable Pricing",
+    icon: CheckIcon,
+  },
+  {
+    name: "Top Rated on Upwork",
+    icon: CheckIcon,
+  },
+];
+
+export const healthData = [
+  {
+    name: "lifestyle",
+    icon: CheckIcon,
+  },
+  {
+    name: "Healthcare",
+    icon: CheckIcon,
+  },
+  {
+    name: "Sports",
+    icon: CheckIcon,
+  },
+  {
+    name: "Education",
+    icon: CheckIcon,
+  },
+  {
+    name: "Tech",
+    icon: CheckIcon,
+  },
+];
+
+export const teamMembers = [
+  {
+    name: "Mughees Siddiqui",
+    role: "AWS Expert",
+    position: "CTO & Co-founder",
+    imageSrc: MugheesProf,
+  },
+  {
+    name: "Rafae Khatri",
+    role: "Full Stack Developer",
+    position: "CEO & Co-founder",
+    imageSrc: RafaeProf,
+  },
+  {
+    name: "Husnain Khan",
+    role: "Full Stack Developer",
+    position: "Co-founder",
+    imageSrc: Project,
+  },
+];
+
+export const faqData = [
+  {
+    question: "What are the five regions of Pakistan near the oceans?",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  },
+  {
+    question: "What are the five regions of Pakistan near the oceans?",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  },
+  {
+    question: "What are the five regions of Pakistan near the oceans?",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  },
+  {
+    question: "What are the five regions of Pakistan near the oceans?",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  },
+  {
+    question: "What are the five regions of Pakistan near the oceans?",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  },
+]
 
 export const servingIndustries = [
   {
-    name: "LifeStyle",
+    name: "lifestyle",
     icon: lifestyle,
   },
   {
@@ -37,6 +131,25 @@ export const servingIndustries = [
   {
     name: "Tech",
     icon: tech,
+  },
+];
+
+export const clientProjectsData = [
+  {
+    number: "100+",
+    title: "projects",
+  },
+  {
+    number: "150+",
+    title: "projects",
+  },
+  {
+    number: "7+",
+    title: "projects",
+  },
+  {
+    number: "10+",
+    title: "projects",
   },
 ];
 
