@@ -34,6 +34,5 @@ export default function Home() {
       <MeetOurTeam />
       <Faq />
       <GreatIdea />
-    </main>
-  );
+  )
 }

@@ -69,6 +69,7 @@ body {
   .title_text {
     @apply text-[32px] text-center font-unbound font-bold leading-[40px] text-neutral;
   }
+
   .description_text {
     @apply text-[18px] font-inter leading-[26px] font-normal text-primary-light;
   }
