@@ -18,12 +18,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: black;
 }
 
 @layer utilities {
@@ -40,6 +35,7 @@ body {
   .title_text {
     @apply text-[32px] font-unbound font-bold leading-[40px] text-neutral;
   }
+
   .description_text {
     @apply text-[18px] font-inter leading-[26px] font-normal text-primary-light;
   }
