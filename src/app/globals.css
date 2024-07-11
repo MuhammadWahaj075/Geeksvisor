@@ -13,8 +13,9 @@ body {
 
   .bg-gradient-lines {
     background-image: url("../../public/assets/images/Circles.png");
-    background-size: cover;
+    background-size: 100% 100%;
     background-attachment: fixed;
+    background-position: center;
   }
 
   .bg-lines {

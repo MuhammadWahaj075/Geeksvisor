@@ -30,20 +30,19 @@ export const Header = () => {
 
   return (
     <header>
-      <nav
-        className="px-4 pb-5 pt-[22px] z-30 w-full top-0 fixed left-0 lg:px-6 py-2.5 transition-all duration-300 bg-black lg:bg-transparent lg:bg-opacity-[12%] lg:backdrop-blur-lg"
-      >
+      <nav className="px-4 pb-5 pt-[22px] z-30 w-full top-0 fixed left-0 lg:px-6 py-2.5 transition-all duration-300 bg-black lg:bg-transparent lg:bg-opacity-[12%] lg:backdrop-blur-lg">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <a href="#" className="flex items-center">
             <Image src={Logo} alt="Logo" />
           </a>
           <div className="flex items-center lg:order-2">
-            <Button variant="primary" className={"mr-2 lg:mr-0"}>Contact</Button>
-
+            <Button variant="primary" className={"mr-2 lg:mr-0 py-[14px] px-[24px]"}>
+              Contact us
+            </Button>
             <button
               data-collapse-toggle="mobile-menu-2"
               type="button"
-              className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden"
               aria-expanded={isMenuOpen}
               onClick={handleMenuToggle}
             >
@@ -86,7 +85,7 @@ export const Header = () => {
               <li>
                 <a
                   href="#"
-                  className="block py-2 font-bold pr-4 pl-3 border-b border-gray-100 lg:border-0 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white"
+                  className="block py-2 pr-4 pl-3 font-bold text-neutral border-b border-gray-100 lg:p-0 lg:border-0"
                   aria-current="page"
                 >
                   Home
@@ -95,7 +94,7 @@ export const Header = () => {
               <li>
                 <a
                   href="#"
-                  className="block py-2 pr-4 pl-3 text-neutral border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-netext-neutral dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  className="block py-2 pr-4 pl-3 text-neutral border-b border-gray-100 lg:p-0 lg:border-0"
                 >
                   Services
                 </a>
@@ -103,7 +102,7 @@ export const Header = () => {
               <li>
                 <a
                   href="#"
-                  className="block py-2 pr-4 pl-3 text-neutral border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-netext-neutral dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  className="block py-2 pr-4 pl-3 text-neutral border-b border-gray-100 lg:border-0 lg:hover:text-primary-700 lg:p-0"
                 >
                   Who we are
                 </a>
@@ -112,7 +111,7 @@ export const Header = () => {
               <li>
                 <a
                   href="#"
-                  className="block py-2 pr-4 pl-3 text-neutral border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-netext-neutral dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  className="block py-2 pr-4 pl-3 text-neutral border-b border-gray-100 lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-netext-neutral dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   Work
                 </a>

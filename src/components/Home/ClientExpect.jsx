@@ -7,15 +7,15 @@ import {  FilterImg, Spline } from "../../../public/assets";
 
 export function ClientExpectation() {
   return (
-    <div className="mt-[100px]   lg:mt-[230px]">
-      <div className="flex   justify-center">
+    <div className="mt-[100px] lg:mt-[230px]">
+      <div className="flex justify-center">
     
-        <div className="flex flex-col relative items-center w-[1326px] mx-[20px] lg:mx-auto py-[72px] bg-lines rounded-[72px] bg-[#101010]">
+        <div className="flex flex-col relative items-center w-[1326px] mx-[20px] xl:mx-auto py-[72px] bg-lines rounded-[72px] bg-[#101010]">
         <Image
           src={FilterImg}
           height={"100%"}
           width={"100%"}
-          className="absolute hidden lg:block top-0 right-[-100px] z-10"
+          className="absolute hidden 2xl:block top-0 right-[-100px] z-10"
         />
           <div className="flex flex-col gap-6 items-center">
             <h1 className="title_text w-[350px] lg:w-[737px]">
@@ -56,7 +56,7 @@ export function ClientExpectation() {
           src={Spline}
           height={"100%"}
           width={"100%"}
-          className="absolute hidden lg:block left-[-100px] bottom-0"
+          className="absolute hidden xl:block left-[-100px] bottom-0"
         />
         </div>
       </div>
