@@ -6,7 +6,7 @@ import { teamMembers } from "@/utils/mockData";
 
 export const MeetOurTeam = () => {
   return (
-    <div className="mt-[170px]">
+    <div className="mt-[170px] mx-auto flex justify-center max-w-screen-xl">
       <div className="flex flex-col items-center gap-[70px]">
         <div className="flex flex-col gap-4 items-center">
           <h1 className="title_text">Meet our Team</h1>
@@ -14,7 +14,7 @@ export const MeetOurTeam = () => {
             We are incredible people with expert skills
           </p>
         </div>
-        <div className="flex gap-6 flex-wrap justify-center">
+        <div className="flex gap-10 flex-wrap justify-center">
           {teamMembers?.map((member, index) => (
             <div
               key={index}

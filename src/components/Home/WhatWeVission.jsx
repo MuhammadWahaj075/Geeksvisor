@@ -4,9 +4,9 @@ import Image from "next/image";
 export const WhatWeVission = ()  => {
   return (
     <div className="mt-[100px]">
-      <div className="flex flex-wrap  mx-5 lg:mx-auto items-center  justify-center gap-10">
+      <div className="flex flex-wrap  mx-auto items-center max-w-screen-xl  gap-10">
         <div className="border-2 h-[562px] border-l border-primary"/>
-        <div className="w-[320px] h-[320px] lg:h-[400px] lg:w-[400px] rounded-[8px] bg-[#2F2B43]">
+        <div className="w-[320px] h-[320px] lg:h-[455px] lg:w-[455px] rounded-[8px] bg-[#2F2B43]">
           {/* <Image src={""} alt="img" /> */}
         </div>
         <div className="flex flex-col gap-4 items-center lg:items-start">

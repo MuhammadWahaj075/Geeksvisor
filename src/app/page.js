@@ -15,6 +15,7 @@ import {
   WhatWeVission,
   WhoWeAre,
 } from "@/components/Home";
+import { Footer } from "@/components/layout/Footer";
 
 export default function Home() {
   return (
@@ -34,6 +35,7 @@ export default function Home() {
       <MeetOurTeam />
       <Faq />
       <GreatIdea />
+      <Footer />
     </main>
   );
 }

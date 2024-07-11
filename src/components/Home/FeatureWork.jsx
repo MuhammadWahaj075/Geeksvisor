@@ -15,10 +15,7 @@ export function FeatureWork() {
             </p>
           </div>
         </div>
-
-        <div>
-          <FeatureProjects />
-        </div>
+        <FeatureProjects />
       </div>
     </div>
   );
