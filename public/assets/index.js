@@ -22,6 +22,7 @@ import Spline from "./images/spline.png";
 import MugheesProf from "./images/mugheesprof.png";
 import RafaeProf from "./images/rafaeProf.jpg";
 import ShineImg from "./images/shine-gradient.png";
+import FooterLogo from "./images/footer-logo.png";
 
 
 export {
@@ -48,5 +49,6 @@ export {
   Spline,
   MugheesProf,
   RafaeProf,
-  ShineImg
+  ShineImg,
+  FooterLogo
 };

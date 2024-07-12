@@ -17,6 +17,9 @@ module.exports = {
   theme: {
   
     extend: {
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(to bottom, #0000008F 5%, #0000008F 30%)',
+      },
       colors: {
         primary: {
           light: "#FFFFFFB2",
@@ -47,8 +50,7 @@ module.exports = {
       },
       fontFamily: {
         inter: ["var(--inter)"],
-        unbound: ["var(--unbound)"],
-        jakarta: ["var(--jakarta)"],
+        unbound: ["var(--unbound)"]
       },
       animation: {
         scroll:

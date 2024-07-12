@@ -1,9 +1,11 @@
 import React from "react";
 import Button from "../comman/Button";
+import Image from "next/image";
+import { FooterLogo } from "../../../public/assets";
 
 export const Footer = () => {
   return (
-    <section class="py-10 mt-[200px]  sm:pt-16 lg:pt-24">
+    <section class="py-10 mt-[200px] sm:pt-16 lg:pt-24">
       <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-10 gap-y-12 gap-x-8 xl:gap-x-12">
           <div class="col-span-2 md:col-span-4 xl:pr-8">
@@ -197,6 +199,20 @@ export const Footer = () => {
             </ul>
           </div>
         </div>
+      </div>
+      <div className="relative">
+        <Image
+          src={FooterLogo}
+          className="w-full mt-[200px]"
+          alt="footer-logo"
+        />
+        <div className="bg-custom-gradient w-full h-full absolute top-[150px] 
+        bg-[#0000008F] backdrop-blur-lg">
+          <div className="flex items-center justify-center">
+              <h1 className="font-inter font-medium text-neutral text-[24px]">Follow us on Social Media</h1>
+          </div>
+        </div>
+        /
       </div>
     </section>
   );

@@ -1,11 +1,15 @@
-import { Inter, Plus_Jakarta_Sans, Unbounded } from "next/font/google";
+import { Inter, Unbounded } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"], variable: "--inter" });
-const unbound = Unbounded({ subsets: ["latin"], variable: "--unbound" });
-const jakarta = Plus_Jakarta_Sans({
+const inter = Inter({
   subsets: ["latin"],
-  variable: "--jakarta",
+  variable: "--inter",
+  display: "swap",
+});
+const unbound = Unbounded({
+  subsets: ["latin"],
+  variable: "--unbound",
+  display: "swap",
 });
 
 export const metadata = {
@@ -16,9 +20,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={(inter.variable, unbound.variable)}>
-        {children}
-      </body>
+      <body className={(inter.variable, unbound.variable)}>{children}</body>
     </html>
   );
 }
