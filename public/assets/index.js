@@ -23,6 +23,9 @@ import MugheesProf from "./images/mugheesprof.png";
 import RafaeProf from "./images/rafaeProf.jpg";
 import ShineImg from "./images/shine-gradient.png";
 import FooterLogo from "./images/footer-logo.png";
+import CloseIcon from './icons/close-icon.svg';
+import MenuIcon from './icons/menu-icon.svg';
+
 
 
 export {
@@ -50,5 +53,8 @@ export {
   MugheesProf,
   RafaeProf,
   ShineImg,
-  FooterLogo
+  FooterLogo,
+  CloseIcon,
+  MenuIcon
 };
+

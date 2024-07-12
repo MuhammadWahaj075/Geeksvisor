@@ -106,10 +106,16 @@ export const faqData = [
   },
   {
     question: "What are the five regions of Pakistan near the oceans?",
-    answer:
-      "Lorem ipsum dolor sit amet,",
+    answer: "Lorem ipsum dolor sit amet,",
   },
-]
+];
+
+export const menuItems = [
+  { navItem: "Home" },
+  { navItem: "Services" },
+  { navItem: "Who we are" },
+  { navItem: "Work" },
+];
 
 export const servingIndustries = [
   {
