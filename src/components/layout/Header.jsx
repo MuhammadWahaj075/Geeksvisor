@@ -41,7 +41,7 @@ export const Header = () => {
   return (
     <header>
       <nav
-        className={`px-4 pb-5 pt-[22px] z-30 w-full top-0 fixed left-0 lg:px-6 py-2.5 transition-all duration-300 bg-black lg:bg-transparent lg:bg-opacity-[12%] lg:backdrop-blur-lg ${
+        className={`px-4 pb-5 pt-[22px] z-30 w-full top-0 fixed left-0 lg:px-6 py-2.5 transition-all duration-300  lg:bg-transparent lg:bg-opacity-[12%] backdrop-blur-xl ${
           isScrolled ? " shadow-md" : ""
         }`}
       >
@@ -80,9 +80,9 @@ export const Header = () => {
                 <li key={i}>
                   <a
                     href="#"
-                    className={`block font-inter text-base py-2 pr-4 pl-3 font-bold ${
+                    className={`block  border-2 border-b-neutral lg:border-none font-inter text-base py-2 pr-4 pl-3 font-bold ${
                       activeNavItem === item.navItem
-                        ? "text-neutral"
+                        ? "text-neutral "
                         : "text-neutral font-normal"
                     } border-b border-transparent lg:p-0 lg:border-0`}
                     onClick={() => handleNavItemClick(item)}
