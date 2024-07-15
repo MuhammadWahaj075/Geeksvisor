@@ -71,6 +71,6 @@ body {
   }
 
   .description_text {
-    @apply text-[18px] font-inter leading-[26px] font-normal text-primary-light;
+    @apply  text-[16px] lg:text-[18px] font-inter leading-[26px] font-normal text-primary-light;
   }
 }

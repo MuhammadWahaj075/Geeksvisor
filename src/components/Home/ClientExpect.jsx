@@ -1,9 +1,7 @@
 import { OurQualityData, clientProjectsData } from "@/utils/mockData";
-import React from "react";
-import Button from "../comman/Button";
 import { IoIosArrowRoundForward } from "react-icons/io";
-import Image from "next/image";
 import {  FilterImg, Spline } from "../../../public/assets";
+import { Button, OptimizedImage } from "../comman";
 
 export function ClientExpectation() {
   return (
@@ -11,7 +9,7 @@ export function ClientExpectation() {
       <div className="flex justify-center">
     
         <div className="flex flex-col relative items-center w-[1326px] mx-[20px] xl:mx-auto py-[72px] bg-lines rounded-[72px] bg-[#101010]">
-        <Image
+        <OptimizedImage
           src={FilterImg}
           height={"100%"}
           width={"100%"}
@@ -41,7 +39,7 @@ export function ClientExpectation() {
           <div className="flex flex-col lg:flex-row gap-14 mt-[80px]">
             {OurQualityData?.map((items, i) => (
               <div className="flex gap-3 items-center">
-                <Image src={items.icon} alt="icon" />
+                <OptimizedImage src={items.icon} alt="icon" />
                 <h2 className="description_text">{items.name}</h2>
               </div>
             ))}
@@ -52,7 +50,7 @@ export function ClientExpectation() {
           >
             Let’s Connect
           </Button>
-        <Image
+        <OptimizedImage
           src={Spline}
           height={"100%"}
           width={"100%"}

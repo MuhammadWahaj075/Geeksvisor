@@ -1,5 +1,6 @@
-import Image from "next/image";
 import { servingIndustries } from "@/utils/mockData";
+import { OptimizedImage } from "../comman";
+
 import "./style.css";
 
 export const ServingIndustries = () => (
@@ -20,7 +21,7 @@ export const ServingIndustries = () => (
         <>
           <div className="w-[136px] border-[0.5px] border-[#B1B1B1]" />
           <div className="flex justify-center flex-col items-center w-[85px] h-[85px] border border-[#B1B1B1] rounded-[12px] ">
-            <Image
+            <OptimizedImage
               key={index}
               src={item?.icon}
               className="rounded-[8px] h-[31.85px] w-[35.81px] "

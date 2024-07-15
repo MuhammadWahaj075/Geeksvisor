@@ -1,11 +1,11 @@
-import { testimonialLogos, testimonials } from "@/utils/mockData";
-import Image from "next/image";
+import { testimonialLogos } from "@/utils/mockData";
+import { OptimizedImage } from "../comman";
 
 export const TestimonialsLogos = () => {
   return (
     <div className="flex items-center justify-center flex-wrap mt-[90px] gap-[85px]">
       {testimonialLogos?.map((logo, index) => (
-        <Image
+        <OptimizedImage
           key={index}
           src={logo.src}
           alt={logo.alt}

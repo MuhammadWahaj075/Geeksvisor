@@ -4,7 +4,7 @@ export function HowItWorks() {
         <div className="flex justify-center items-center">
             <div className="bg-union">
              <h1 className='title_text pt-[260px]'>How it works</h1>
-             <p className='description_text w-[474px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+             <p className='description_text text-center w-[470px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
             </div>
         </div>
     </div>

@@ -1,14 +1,12 @@
-import Image from "next/image";
-import React from "react";
 import { ShineImg } from "../../../public/assets";
-import Button from "../comman/Button";
 import { IoIosArrowRoundForward } from "react-icons/io";
+import { Button, OptimizedImage } from "../comman";
 
 export const GreatIdea = () => {
   return (
     <div className="mt-[200px]">
       <div className="flex relative items-center flex-col">
-        <Image src={ShineImg} alt="shine-img" className="absolute" />
+        <OptimizedImage src={ShineImg} alt="shine-img" className="absolute" />
         <div className="flex gap-[32px] items-center mt-24 flex-col">
           <h1 className="title_text !text-[48px]">Have a great idea?</h1>
           <p className="description_text">

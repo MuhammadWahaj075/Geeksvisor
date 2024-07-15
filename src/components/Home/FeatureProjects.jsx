@@ -1,8 +1,6 @@
 import { IoIosArrowRoundForward } from "react-icons/io";
-import Button from "../comman/Button";
-import { Pill } from "../comman/Pills";
-import Image from "next/image";
 import { projects } from "@/utils/mockData";
+import { Button, OptimizedImage, Pill } from "../comman";
 
 export const FeatureProjects = () => {
   return (
@@ -10,7 +8,7 @@ export const FeatureProjects = () => {
       {projects.map((project) => (
         <div
           key={project.id}
-          className="flex justify-center items-center xl:justify-between flex-wrap gap-[88px] lg:gap-60"
+          className="flex justify-center flex-col lg:flex-row items-center xl:justify-between flex-wrap gap-[88px] lg:gap-60"
         >
           <div className="order-1 flex items-start flex-col gap-4 justify-center">
             <h1 className="text-[24px] text-neutral  font-inter font-semibold">
@@ -30,7 +28,7 @@ export const FeatureProjects = () => {
             </Button>
           </div>
           <div className="flex lg:order-2">
-            <Image
+            <OptimizedImage
               src={project.image}
               className="w-[350px] lg:w-auto"
               alt={project.title}

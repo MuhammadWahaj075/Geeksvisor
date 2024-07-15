@@ -1,16 +1,16 @@
-import Image from "next/image";
-import Button from "../comman/Button";
 import { IoIosArrowRoundForward } from "react-icons/io";
+import { Button, OptimizedImage } from "../comman";
 import { FilterImg, FilterSmallImg } from "../../../public/assets";
 
 export const BannerSection = () => {
   return (
     <div className="relative">
       <div className="h-[50rem] mx-auto w-full max-w-[1440px] bg-grid-white/[0.1] bg-grid-black-100 relative flex items-center justify-center ">
-        <Image
+        <OptimizedImage
           src={FilterSmallImg}
           height={"100%"}
           width={"100%"}
+          alt={"banner-image"}
           className="absolute mt-[95px] top-0 right-[20px] z-10"
         />
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black  [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
@@ -49,11 +49,12 @@ export const BannerSection = () => {
             </div>
           </div>
         </div>
-        <Image
+        <OptimizedImage
           src={FilterImg}
           height={"100%"}
           width={"100%"}
-          className="absolute left-[90px] bottom-0"
+          alt={"FilterImg"}
+          className="absolute left-0 sm:left-[30px] xl:left-[90px] bottom-0"
         />
       </div>
     </div>

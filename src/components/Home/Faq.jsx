@@ -1,10 +1,13 @@
 "use client";
 
+import { useScroll } from "@/hooks/UseScroll";
 import { faqData } from "@/utils/mockData";
 import React, { useState } from "react";
+import { OptimizedImage } from "../comman";
+import { CrossIcon, PlusIcon } from "../../../public/assets";
 
 export const Faq = () => {
-  const [openIndex, setOpenIndex] = useState(null);
+  const { openIndex, setOpenIndex } = useScroll();
 
   const toggleAccordion = (index) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -36,26 +39,9 @@ export const Faq = () => {
                   {item.question}
                 </span>
 
-                <svg
-                  className={`w-6 h-6 text-primary ${
-                    openIndex === index ? "rotate-0" : "rotate-0"
-                  } transition-transform`}
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d={
-                      openIndex === index
-                        ? "M6 18L18 6M6 6l12 12"
-                        : "M12 4v16m8-8H4"
-                    }
-                  />
-                </svg>
+                <OptimizedImage
+                  src={openIndex === index ? CrossIcon : PlusIcon}
+                />
               </button>
 
               {openIndex === index && (

@@ -1,12 +1,12 @@
 import { healthData } from "@/utils/mockData";
-import Image from "next/image";
+import { OptimizedImage } from "../comman";
 
-export const WhatWeVission = ()  => {
+export const WhatWeVission = () => {
   return (
     <div className="mt-[100px]">
-      <div className="flex flex-wrap  mx-auto items-center max-w-screen-xl  gap-10">
-        <div className="border-2 h-[562px] border-l border-primary"/>
-        <div className="w-[320px] h-[320px] lg:h-[455px] lg:w-[455px] rounded-[8px] bg-[#2F2B43]">
+      <div className="flex flex-wrap mx-auto flex-col xl:flex-row items-center xl:max-w-screen-xl justify-center gap-10">
+        <div className="border-2 w-[320px] xl:w-0  xl:h-[562px] border-l border-primary" />
+        <div className="w-[320px] h-[320px] lg:h-[510px] lg:w-[510px] rounded-[8px] bg-[#2F2B43]">
           {/* <Image src={""} alt="img" /> */}
         </div>
         <div className="flex flex-col gap-4 items-center lg:items-start">
@@ -24,7 +24,7 @@ export const WhatWeVission = ()  => {
           <div className="flex flex-wrap gap-5 mt-[40px]">
             {healthData?.map((items, i) => (
               <div className="flex gap-3 items-center">
-                <Image src={items.icon} alt="icon" />
+                <OptimizedImage src={items.icon} alt="icon" />
                 <h2 className="description_text">{items.name}</h2>
               </div>
             ))}
@@ -39,4 +39,4 @@ export const WhatWeVission = ()  => {
       </div>
     </div>
   );
-}
+};

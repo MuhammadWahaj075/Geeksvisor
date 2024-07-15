@@ -1,8 +1,6 @@
-import Image from "next/image";
-import { Pill } from "../comman/Pills";
-import Button from "../comman/Button";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { teamMembers } from "@/utils/mockData";
+import { Button, OptimizedImage, Pill } from "../comman";
 
 export const MeetOurTeam = () => {
   return (
@@ -20,7 +18,7 @@ export const MeetOurTeam = () => {
               key={index}
               className="profile_sec flex items-start flex-col gap-6"
             >
-              <Image
+              <OptimizedImage
                 src={member?.imageSrc}
                 alt={`profile of ${member?.name}`}
                 className="rounded-[8px] object-cover h-[370px] w-[370px]"

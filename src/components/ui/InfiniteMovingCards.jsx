@@ -1,8 +1,8 @@
 "use client";
 
 import { cn } from "@/utils/cn";
-import Image from "next/image";
 import React, { useEffect, useState } from "react";
+import { OptimizedImage } from "../comman";
 
 export const InfiniteMovingCards = ({
   items,
@@ -90,7 +90,7 @@ export const InfiniteMovingCards = ({
               aria-hidden="true"
               className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 "
             ></div>
-            <Image
+            <OptimizedImage
               src={item.image}
               alt={item.name}
               width={"100%"}

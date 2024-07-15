@@ -23,10 +23,15 @@ import MugheesProf from "./images/mugheesprof.png";
 import RafaeProf from "./images/rafaeProf.jpg";
 import ShineImg from "./images/shine-gradient.png";
 import FooterLogo from "./images/footer-logo.png";
-import CloseIcon from './icons/close-icon.svg';
-import MenuIcon from './icons/menu-icon.svg';
-
-
+import CloseIcon from "./icons/close-icon.svg";
+import MenuIcon from "./icons/menu-icon.svg";
+import PlusIcon from "./icons/plus-icon.svg";
+import CrossIcon from "./icons/cross-Icon.svg";
+import FacebookIcon from "./icons/Facebook.svg";
+import InstagramIcon from "./icons/Instagram.svg";
+import LinkedInIcon from "./icons/LinkedIn.svg";
+import GithubIcon from "./icons/Github.svg";
+import DribbleIcon from "./icons/Dribbble.svg";
 
 export {
   Logo,
@@ -55,6 +60,12 @@ export {
   ShineImg,
   FooterLogo,
   CloseIcon,
-  MenuIcon
+  MenuIcon,
+  PlusIcon,
+  CrossIcon,
+  FacebookIcon,
+  InstagramIcon,
+  LinkedInIcon,
+  GithubIcon,
+  DribbleIcon,
 };
-
