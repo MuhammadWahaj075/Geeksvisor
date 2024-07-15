@@ -14,7 +14,7 @@ export const FeatureProjects = () => {
             <h1 className="text-[24px] text-neutral  font-inter font-semibold">
               {project.title}
             </h1>
-            <div className="flex w-[320px] lg:w-[400px] flex-wrap  gap-2 lg:gap-0">
+            <div className="flex w-[320px] lg:w-[400px] flex-wrap  gap-2 lg:gap-3">
               {project.tags.map((tag, index) => (
                 <Pill key={index} className={""} text={tag} />
               ))}
