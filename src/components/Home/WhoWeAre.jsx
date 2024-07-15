@@ -9,7 +9,7 @@ export function WhoWeAre () {
           src={InfiniteImg}
           className=" w-[500px] flex order-2 xl:order-1 h-[500px] rounded-[8px]"
         />
-        <div className="flex flex-col order-1 xl:order-2 items-center  lg:items-start">
+        <div className="flex flex-col gap-4 order-1 xl:order-2 items-center  lg:items-start">
           <h1 className="title_text !text-neutral">Who we are</h1>
           <p className="text-center lg:text-start w-[350px] lg:w-[540px] description_text">
             Our aim is to provide top-quality services that help businesses of

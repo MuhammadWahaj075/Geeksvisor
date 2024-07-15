@@ -12,7 +12,7 @@ import { inquiries, mainPages, services } from "@/utils/mockData";
 
 export const Footer = () => {
   return (
-    <section className="py-10 mt-[200px] sm:pt-16 lg:pt-24">
+    <section className="mt-[100px] lg:mt-[200px] ">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-10 gap-y-12 gap-x-8 xl:gap-x-12">
           <div className="col-span-2 md:col-span-4 xl:pr-8">
@@ -83,6 +83,14 @@ export const Footer = () => {
                   </a>
                 </li>
               ))}
+
+              <p className="text-base font-medium text-neutral">Address</p>
+              <li>
+                <a className="flex text-sm text-[#FFFFFFE5] opacity-[60%] transition-all duration-200 hover:text-orange-600 focus:text-orange-600">
+                  Flat# 6 Building 19-C South Park Avenue, Ext, D.H.A. Phase 2
+                  Defence Housing Authority, Karachi, Pakistan.
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -93,7 +101,7 @@ export const Footer = () => {
           className="w-full mt-[200px]"
           alt="footer-logo"
         />
-        <div className="bg-custom-gradient w-full h-full absolute top-[150px] bg-[#0000008F] backdrop-blur-xl">
+        <div className="bg-custom-gradient w-full h-full absolute top-[175px] bg-[#0000008F] backdrop-blur-xl">
           <div className="flex flex-col gap-6 mt-36 items-center justify-center">
             <h1 className="font-inter font-medium text-neutral text-[24px]">
               Follow us on Social Media

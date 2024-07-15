@@ -32,6 +32,12 @@ import InstagramIcon from "./icons/Instagram.svg";
 import LinkedInIcon from "./icons/LinkedIn.svg";
 import GithubIcon from "./icons/Github.svg";
 import DribbleIcon from "./icons/Dribbble.svg";
+import CompassIcon from "./icons/compass.svg";
+import BulbIcon from "./icons/lightbulb.svg";
+import CodeIcon from "./icons/ls-gt.svg";
+import rocketIcon from "./icons/rocket.svg";
+
+
 
 export {
   Logo,
@@ -68,4 +74,8 @@ export {
   LinkedInIcon,
   GithubIcon,
   DribbleIcon,
+  CompassIcon,
+  BulbIcon,
+  CodeIcon,
+  rocketIcon
 };

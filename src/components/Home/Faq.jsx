@@ -14,7 +14,7 @@ export const Faq = () => {
   };
 
   return (
-    <section className="py-10 mt-[200px] sm:py-16 lg:py-24">
+    <section className=" mt-[100px] lg:mt-[200px] ">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="max-w-2xl mx-auto flex flex-col items-center text-center">
           <h2 className="title_text">Frequently Asked Questions</h2>
@@ -35,7 +35,7 @@ export const Faq = () => {
                 className="flex items-center justify-between w-full px-4 py-5 sm:p-6"
                 onClick={() => toggleAccordion(index)}
               >
-                <span className="flex text-lg font-inter font-semibold text-neutral">
+                <span className="flex text-start text-lg font-inter font-semibold text-neutral">
                   {item.question}
                 </span>
 

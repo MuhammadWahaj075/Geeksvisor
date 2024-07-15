@@ -14,7 +14,7 @@ export const FeatureProjects = () => {
             <h1 className="text-[24px] text-neutral  font-inter font-semibold">
               {project.title}
             </h1>
-            <div className="flex lg:w-[400px] flex-wrap space-x-2 gap-2 lg:gap-0">
+            <div className="flex w-[320px] lg:w-[400px] flex-wrap  gap-2 lg:gap-0">
               {project.tags.map((tag, index) => (
                 <Pill key={index} className={""} text={tag} />
               ))}
@@ -22,7 +22,7 @@ export const FeatureProjects = () => {
             <Button
               variant="transparent"
               icon={<IoIosArrowRoundForward size={25} />}
-              className={"!p-0 capitalize mt-[32px] font-semibold"}
+              className={"!p-0 capitalize !h-0 mt-[32px] font-semibold"}
             >
               See Project
             </Button>
@@ -39,7 +39,7 @@ export const FeatureProjects = () => {
 
       <Button
         variant="primary"
-        className={"w-[275px]"}
+        className={"w-[275px] mt-[56px] lg:mt-[129px]"}
         icon={<IoIosArrowRoundForward size={25} />}
       >
         View All Projects
