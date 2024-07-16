@@ -2,7 +2,6 @@
 
 import { useScroll } from "@/hooks/UseScroll";
 import { faqData } from "@/utils/mockData";
-import React, { useState } from "react";
 import { OptimizedImage } from "../comman";
 import { CrossIcon, PlusIcon } from "../../../public/assets";
 

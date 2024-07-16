@@ -26,7 +26,7 @@ import FooterLogo from "./images/footer-logo.png";
 import CloseIcon from "./icons/close-icon.svg";
 import MenuIcon from "./icons/menu-icon.svg";
 import PlusIcon from "./icons/plus-icon.svg";
-import CrossIcon from "./icons/cross-Icon.svg";
+import CrossIcon from "./icons/cross-icon.svg";
 import FacebookIcon from "./icons/Facebook.svg";
 import InstagramIcon from "./icons/Instagram.svg";
 import LinkedInIcon from "./icons/LinkedIn.svg";

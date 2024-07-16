@@ -3,7 +3,7 @@ import { OptimizedImage } from "../comman";
 
 export const WhatWeVission = () => {
   return (
-    <div className="mt-[100px]">
+    <div className="mt-[170px]">
       <div className="flex  flex-wrap mx-auto flex-col xl:flex-row items-center xl:max-w-screen-xl justify-center gap-10">
         <div className="border-2 w-[320px] xl:w-0  xl:h-[562px] border-l border-primary" />
         <div className="w-[320px]  h-[320px] lg:h-[510px] lg:w-[510px] rounded-[8px] bg-[#2F2B43]">
