@@ -12,9 +12,9 @@ body {
     text-wrap: balance;
   }
 
-  .bg-custom-gradient{
-    box-shadow: 0 -10px 15px -3px rgba(0, 0, 0, 0.1), 0 -4px 6px -2px rgba(0, 0, 0, 0.05);
-
+  .bg-custom-gradient {
+    box-shadow: 0 -10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 -4px 6px -2px rgba(0, 0, 0, 0.05);
   }
 
   .bg-gradient-lines {
@@ -30,7 +30,8 @@ body {
   .bg-union {
     background-image: url("../../public/assets/images/Union.png");
     background-repeat: no-repeat;
-    height: 100%;
+    background-size: 100% auto;
+    background-position: top;
   }
 
   .fade-in-element {
@@ -77,6 +78,6 @@ body {
   }
 
   .description_text {
-    @apply  text-[16px] lg:text-[18px] font-inter leading-[26px] font-normal text-primary-light;
+    @apply text-[16px] lg:text-[18px] font-inter leading-[26px] font-normal text-primary-light;
   }
 }

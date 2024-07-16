@@ -30,7 +30,7 @@ export default function Home() {
       <FeatureWork />
       <WhatWeDo />
       <ClientExpectation />
-      {/* <HowItWorks /> */}
+      <HowItWorks />
       <WhatWeVission />
       <MeetOurTeam />
       <Faq />

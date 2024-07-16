@@ -106,12 +106,32 @@ export const Footer = () => {
             <h1 className="font-inter font-medium text-neutral text-[24px]">
               Follow us on Social Media
             </h1>
-            <div className="flex w-[320px] lg:w-[400px] justify-between">
-              <OptimizedImage src={FacebookIcon} alt={"fb-icon"} />
-              <OptimizedImage src={InstagramIcon} alt={"insta-icon"} />
-              <OptimizedImage src={LinkedInIcon} alt={"linkedin-icon"} />
-              <OptimizedImage src={GithubIcon} alt={"github-icon"} />
-              <OptimizedImage src={DribbleIcon} alt={"dribble-icon"} />
+            <div className="flex  w-[320px] lg:w-[400px] justify-between">
+              <OptimizedImage
+                className="cursor-pointer"
+                src={FacebookIcon}
+                alt={"fb-icon"}
+              />
+              <OptimizedImage
+                className="cursor-pointer"
+                src={InstagramIcon}
+                alt={"insta-icon"}
+              />
+              <OptimizedImage
+                className="cursor-pointer"
+                src={LinkedInIcon}
+                alt={"linkedin-icon"}
+              />
+              <OptimizedImage
+                className="cursor-pointer"
+                src={GithubIcon}
+                alt={"github-icon"}
+              />
+              <OptimizedImage
+                className="cursor-pointer"
+                src={DribbleIcon}
+                alt={"dribble-icon"}
+              />
             </div>
             <hr className="w-[350px] lg:w-[1160px] mt-14 mb-10 opacity-[20%] border-t border-neutral-200 " />
             <p className="description_text mb-10">
