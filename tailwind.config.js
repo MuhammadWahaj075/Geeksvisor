@@ -6,13 +6,20 @@ const {
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  images: {
+    domains: ['contentsnare.com'],
+  },
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+  
     extend: {
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(to bottom, #0000008F 5%, #0000008F 30%)',
+      },
       colors: {
         primary: {
           light: "#FFFFFFB2",
@@ -43,7 +50,7 @@ module.exports = {
       },
       fontFamily: {
         inter: ["var(--inter)"],
-        unbound: ["var(--unbound)"],
+        unbound: ["var(--unbound)"]
       },
       animation: {
         scroll:

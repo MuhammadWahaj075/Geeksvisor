@@ -14,10 +14,30 @@ import TestimonialsLogo5 from "./images/TestimonialsLogo5.png";
 import TestimonialsLogo6 from "./images/TestimonialsLogo6.png";
 import FilterImg from "./images/filterImg.png";
 import FilterSmallImg from "./images/smallFilter.png";
-import Logo from './images/logo.png'
-import CardImg from './images/cardImg.png'
-import Project from './images/project.png'
-
+import Logo from "./images/logo.png";
+import CardImg from "./images/cardImg.png";
+import Project from "./images/project.png";
+import CheckIcon from "./images/check.png";
+import Spline from "./images/spline.png";
+import MugheesProf from "./images/mugheesprof.png";
+import RafaeProf from "./images/rafaeProf.jpg";
+import ShineImg from "./images/shine-gradient.png";
+import FooterLogo from "./images/footer-logo.png";
+import CloseIcon from "./icons/close-icon.svg";
+import MenuIcon from "./icons/menu-icon.svg";
+import PlusIcon from "./icons/plus-icon.svg";
+import CrossIcon from "./icons/cross-icon.svg";
+import FacebookIcon from "./icons/Facebook.svg";
+import InstagramIcon from "./icons/Instagram.svg";
+import LinkedInIcon from "./icons/LinkedIn.svg";
+import GithubIcon from "./icons/Github.svg";
+import DribbleIcon from "./icons/Dribbble.svg";
+import CompassIcon from "./icons/compass.svg";
+import BulbIcon from "./icons/lightbulb.svg";
+import CodeIcon from "./icons/ls-gt.svg";
+import rocketIcon from "./icons/rocket.svg";
+import StarIcon from "./icons/star.svg";
+import TimProfile from "./images/tim.jpg";
 
 export {
   Logo,
@@ -38,5 +58,26 @@ export {
   FilterImg,
   FilterSmallImg,
   CardImg,
-  Project
+  Project,
+  CheckIcon,
+  Spline,
+  MugheesProf,
+  RafaeProf,
+  ShineImg,
+  FooterLogo,
+  CloseIcon,
+  MenuIcon,
+  PlusIcon,
+  CrossIcon,
+  FacebookIcon,
+  InstagramIcon,
+  LinkedInIcon,
+  GithubIcon,
+  DribbleIcon,
+  CompassIcon,
+  BulbIcon,
+  CodeIcon,
+  rocketIcon,
+  StarIcon,
+  TimProfile,
 };

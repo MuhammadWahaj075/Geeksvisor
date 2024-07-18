@@ -1,8 +1,16 @@
 import { Inter, Unbounded } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"], variable: "--inter" });
-const unbound = Unbounded({ subsets: ["latin"], variable: "--unbound" });
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--inter",
+  display: "swap",
+});
+const unbound = Unbounded({
+  subsets: ["latin"],
+  variable: "--unbound",
+  display: "swap",
+});
 
 export const metadata = {
   title: "Geeksvisor",

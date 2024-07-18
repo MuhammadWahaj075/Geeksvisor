@@ -2,23 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
   background-color: black;
+  scroll-behavior: smooth !important;
 }
 
 @layer utilities {
@@ -26,17 +12,99 @@ body {
     text-wrap: balance;
   }
 
-  .bg-gradient-lines {
-    background-image: url("../../public/assets/images/Circles.png");
-    background-size: cover;
-    background-attachment: fixed;
+  .bg-custom-gradient {
+    box-shadow: 0 -10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 -4px 6px -2px rgba(0, 0, 0, 0.05);
   }
 
+  .bg-gradient-lines {
+    background-image: url("../../public/assets/images/Circles.png");
+    background-size: 100% auto;
+    background-attachment: fixed;
+    background-position: center;
+  }
+
+  .bg-lines {
+    background-image: url("../../public/assets/images/Lines.png");
+  }
+  .bg-union {
+    background-image: url("../../public/assets/images/Union.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top;
+  }
+
+  .fade-in-element {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  .fade-out-element {
+    animation: fadeOut 0.5s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0.5;
+      transform: translateY(20px);
+    }
+  }
+
+  .highlighted {
+    opacity: 1;
+    font-weight: bold;
+  }
+
+  .faded-out {
+    opacity: 0.5;
+    font-weight: normal;
+  }
   .title_text {
-    @apply text-[32px] font-unbound font-bold leading-[40px] text-neutral;
+    @apply text-[32px] text-center font-unbound font-bold leading-[40px] text-neutral;
   }
 
   .description_text {
-    @apply text-[18px] font-inter leading-[26px] font-normal text-primary-light;
+    @apply text-[16px] lg:text-[18px] font-inter leading-[26px] font-normal text-primary-light;
+  }
+
+  .people_cards_wrapper {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .people_cards_wrapper::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */
+  }
+  .my-masonry-grid_column > div {
+    margin-bottom: 32px;
+  }
+  .my-masonry-grid {
+    display: flex;
+    margin-left: -16px;
+    width: auto;
+  }
+
+  .my-masonry-grid_column {
+    padding-left: 16px;
+    background-clip: padding-box;
+  }
+  @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+    .people_cards {
+      width: auto;
+    }
   }
 }
