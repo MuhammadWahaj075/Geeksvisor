@@ -22,6 +22,7 @@ import {
   BulbIcon,
   CodeIcon,
   rocketIcon,
+  TimProfile,
 } from "../../public/assets";
 
 export const OurQualityData = [
@@ -284,7 +285,6 @@ export const services = [
 export const inquiries = [
   { name: "mailus@gmail.com", link: "#" },
   { name: "+92 340 8636954", link: "#" },
-  
 ];
 
 export const HowItWorksData = [
@@ -316,4 +316,143 @@ export const HowItWorksData = [
     src: rocketIcon,
     number: "04",
   },
+];
+
+export const ProfileRatingData = [
+  {
+    id: 1,
+    name: "Tim Carrender",
+    designation: "Project Manager and Scrum Master",
+    profileImage: TimProfile,
+    testimonial: `Throughout my career, I've had the privilege of collaborating with
+                  developers from across the globe, and I'm incredibly grateful to
+                  have Geeksvisor from Pakistan as part of my team. Their commitment
+                  to cohesion and transparency stands out, making them an invaluable
+                  asset. As a Project Manager and Scrum Master, having such a
+                  reliable team is crucial for maintaining our project timelines and
+                  ensuring everything progresses.`,
+    rating: 5,
+  },
+  {
+    id: 2,
+    name: "Jane Doe",
+    designation: "Software Engineer",
+    profileImage: TimProfile,
+    testimonial: `Geeksvisor provided exceptional services and demonstrated great
+                  professionalism. Their team is knowledgeable and reliable.
+                  Throughout my career, I've had the privilege of collaborating with
+                  developers from across the globe, and I'm incredibly grateful to
+                  have Geeksvisor from Pakistan as part of my team. Their commitment
+                  to cohesion and transparency stands out, making them an invaluable
+                  asset. As a Project Manager and Scrum Master, having such a
+                  reliable team is crucial for maintaining our project timelines and
+                  ensuring everything progresses.`,
+    rating: 4,
+  },
+
+  {
+    id: 3,
+    name: "Jane Doe",
+    designation: "Software Engineer",
+    profileImage: TimProfile,
+    testimonial: `Throughout my career, I've had the privilege of collaborating with developers from across the globe, and I'm incredibly grateful to have Geeksvisor from Pakistan as part of my team.`,
+    rating: 3,
+  },
+
+  {
+    id: 4,
+    name: "Jane Doe",
+    designation: "Software Engineer",
+    profileImage: TimProfile,
+    testimonial: `Geeksvisor provided exceptional services and demonstrated great
+                  professionalism. Their team is knowledgeable and reliable.
+                  Throughout my career, I've had the privilege of collaborating with
+                  developers from across the globe, and I'm incredibly grateful to
+                  have Geeksvisor from Pakistan as part of my team. Their commitment
+                  to cohesion and transparency stands out, making them an invaluable
+                  asset. As a Project Manager and Scrum Master, having such a
+                  reliable team is crucial for maintaining our project timelines and
+                  ensuring everything progresses.`,
+    rating: 4,
+  },
+  {
+    id: 5,
+    name: "Jane Doe",
+    designation: "Software Engineer",
+    profileImage: TimProfile,
+    testimonial: `Throughout my career, I've had the privilege of collaborating with developers from across the globe, and I'm incredibly grateful to have Geeksvisor from Pakistan as part of my team.`,
+    rating: 3,
+  },
+
+  // {
+  //   id: 6,
+  //   name: "Jane Doe",
+  //   designation: "Software Engineer",
+  //   profileImage: TimProfile,
+  //   testimonial: `Throughout my career, I've had the privilege of collaborating with
+  //                 developers from across the globe, and I'm incredibly grateful to
+  //                 have Geeksvisor from Pakistan as part of my team. Their commitment
+  //                 to cohesion and transparency stands out, making them an invaluable
+  //                 asset. As a Project Manager and Scrum Master, having such a
+  //                 reliable team is crucial for maintaining our project timelines and
+  //                 ensuring everything progresses.`,
+  //   rating: 3,
+  // },
+  // {
+  //   id: 7,
+  //   name: "Jane Doe",
+  //   designation: "Software Engineer",
+  //   profileImage: TimProfile,
+  //   testimonial: `Throughout my career, I've had the privilege of collaborating with
+  //                 developers from across the globe, and I'm incredibly grateful to
+  //                 have Geeksvisor from Pakistan as part of my team. Their commitment
+  //                 to cohesion and transparency stands out, making them an invaluable
+  //                 asset. As a Project Manager and Scrum Master, having such a
+  //                 reliable team is crucial for maintaining our project timelines and
+  //                 ensuring everything progresses.`,
+  //   rating: 3,
+  // },
+  // {
+  //   id: 8,
+  //   name: "Jane Doe",
+  //   designation: "Software Engineer",
+  //   profileImage: TimProfile,
+  //   testimonial: `Throughout my career, I've had the privilege of collaborating with
+  //                 developers from across the globe, and I'm incredibly grateful to
+  //                 have Geeksvisor from Pakistan as part of my team. Their commitment
+  //                 to cohesion and transparency stands out, making them an invaluable
+  //                 asset. As a Project Manager and Scrum Master, having such a
+  //                 reliable team is crucial for maintaining our project timelines and
+  //                 ensuring everything progresses.`,
+  //   rating: 3,
+  // },
+
+  // {
+  //   id: 9,
+  //   name: "Jane Doe",
+  //   designation: "Software Engineer",
+  //   profileImage: TimProfile,
+  //   testimonial: `Throughout my career, I've had the privilege of collaborating with
+  //                 developers from across the globe, and I'm incredibly grateful to
+  //                 have Geeksvisor from Pakistan as part of my team. Their commitment
+  //                 to cohesion and transparency stands out, making them an invaluable
+  //                 asset. As a Project Manager and Scrum Master, having such a
+  //                 reliable team is crucial for maintaining our project timelines and
+  //                 ensuring everything progresses.`,
+  //   rating: 3,
+  // },
+  // {
+  //   id: 10,
+  //   name: "Jane Doe",
+  //   designation: "Software Engineer",
+  //   profileImage: TimProfile,
+  //   testimonial: `Throughout my career, I've had the privilege of collaborating with
+  //                 developers from across the globe, and I'm incredibly grateful to
+  //                 have Geeksvisor from Pakistan as part of my team. Their commitment
+  //                 to cohesion and transparency stands out, making them an invaluable
+  //                 asset. As a Project Manager and Scrum Master, having such a
+  //                 reliable team is crucial for maintaining our project timelines and
+  //                 ensuring everything progresses.`,
+  //   rating: 3,
+  // },
 ];

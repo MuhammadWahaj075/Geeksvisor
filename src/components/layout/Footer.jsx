@@ -101,7 +101,7 @@ export const Footer = () => {
           className="w-full mt-[200px]"
           alt="footer-logo"
         />
-        <div className="bg-custom-gradient w-full h-full absolute top-[175px] bg-[#0000008F] backdrop-blur-xl">
+        <div className="bg-custom-gradient w-full h-full absolute top-10  md:top-32 xl:top-[150px] bg-[#0000008F] backdrop-blur-xl">
           <div className="flex flex-col gap-6 mt-36 items-center justify-center">
             <h1 className="font-inter font-medium text-neutral text-[24px]">
               Follow us on Social Media

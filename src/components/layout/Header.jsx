@@ -20,7 +20,7 @@ export const Header = () => {
     <nav
       className={`px-4 pb-5 pt-[22px] z-30 w-full top-0 fixed left-0 
         lg:px-6 py-2.5 transition-all duration-300 lg:bg-transparent
-         lg:bg-opacity-[12%] backdrop-blur-xl`}
+         lg:bg-opacity-[12%] bg-black lg:backdrop-blur-xl`}
     >
       <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
         <a href="#" className="flex items-center">

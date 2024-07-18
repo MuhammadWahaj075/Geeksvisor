@@ -11,6 +11,7 @@ import {
   MeetOurTeam,
   ServingIndustries,
   TestimonialsLogos,
+  WhatPeopleSay,
   WhatWeDo,
   WhatWeVission,
   WhoWeAre,
@@ -25,12 +26,13 @@ export default function Home() {
       <TestimonialsLogos />
       <InfiniteMovingImages />
       <WhoWeAre />
-      {/* <ServingIndustries /> */}
+      <ServingIndustries />
       <GetFromUs />
       <FeatureWork />
-      <WhatWeDo />
+      {/* <WhatWeDo /> */}
       <ClientExpectation />
       <HowItWorks />
+      {/* <WhatPeopleSay /> */}
       <WhatWeVission />
       <MeetOurTeam />
       <Faq />

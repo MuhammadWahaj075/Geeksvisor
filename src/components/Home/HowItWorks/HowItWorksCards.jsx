@@ -22,7 +22,7 @@ const Card = ({ title, description, src, i, number }) => {
 
   return (
     <div
-      className={`h-[700px] lg:h-[1000px] flex items-center justify-center sticky top-0 `}
+      className={`px-6 h-[700px] lg:h-[1000px] flex items-center justify-center sticky top-0 `}
     >
       <div
         style={cardStyle}

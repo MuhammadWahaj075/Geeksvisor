@@ -36,8 +36,8 @@ import CompassIcon from "./icons/compass.svg";
 import BulbIcon from "./icons/lightbulb.svg";
 import CodeIcon from "./icons/ls-gt.svg";
 import rocketIcon from "./icons/rocket.svg";
-
-
+import StarIcon from "./icons/star.svg";
+import TimProfile from "./images/tim.jpg";
 
 export {
   Logo,
@@ -77,5 +77,7 @@ export {
   CompassIcon,
   BulbIcon,
   CodeIcon,
-  rocketIcon
+  rocketIcon,
+  StarIcon,
+  TimProfile,
 };

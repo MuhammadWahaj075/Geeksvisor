@@ -12,6 +12,7 @@ import {WhatWeVission} from "./WhatWeVission";
 import {MeetOurTeam} from "./MeetOurTeam";
 import {Faq} from './Faq'
 import {GreatIdea} from './GreatIdea'
+import {WhatPeopleSay} from './WhatPeopleSay'
 
 export {
   BannerSection,
@@ -24,6 +25,7 @@ export {
   WhatWeDo,
   ClientExpectation,
   HowItWorks,
+  WhatPeopleSay,
   WhatWeVission,
   MeetOurTeam,
   Faq,

@@ -80,4 +80,31 @@ body {
   .description_text {
     @apply text-[16px] lg:text-[18px] font-inter leading-[26px] font-normal text-primary-light;
   }
+
+  .people_cards_wrapper {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .people_cards_wrapper::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */
+  }
+  .my-masonry-grid_column > div {
+    margin-bottom: 32px;
+  }
+  .my-masonry-grid {
+    display: flex;
+    margin-left: -16px;
+    width: auto;
+  }
+
+  .my-masonry-grid_column {
+    padding-left: 16px;
+    background-clip: padding-box;
+  }
+  @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+    .people_cards {
+      width: auto;
+    }
+  }
 }

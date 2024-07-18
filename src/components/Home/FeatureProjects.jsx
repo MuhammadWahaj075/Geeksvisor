@@ -4,7 +4,7 @@ import { Button, OptimizedImage, Pill } from "../comman";
 
 export const FeatureProjects = () => {
   return (
-    <div className="flex flex-col items-center justify-center flex-wrap gap-8">
+    <div className="flex relative flex-col items-center justify-center flex-wrap gap-8">
       {projects.map((project) => (
         <div
           key={project.id}
@@ -36,6 +36,9 @@ export const FeatureProjects = () => {
           </div>
         </div>
       ))}
+
+      <div className="absolute top-0 left-0 right-0 h-28 bg-gradient-to-b from-black to-transparent pointer-events-none" />
+      <div className="absolute bottom-[120px] lg:bottom-[200px] left-0 right-0 bg-opacity-[0.16] h-[700px] bg-gradient-to-t from-black to-transparent pointer-events-none" />
 
       <Button
         variant="primary"
