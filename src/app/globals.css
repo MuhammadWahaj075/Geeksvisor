@@ -2,9 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin !important;
+  scrollbar-color: #ee6e24 transparent !important;
+  scroll-snap-type: mandatory !important;
+}
+
 body {
   background-color: black;
-  scroll-behavior: smooth !important;
 }
 
 @layer utilities {
@@ -27,6 +33,7 @@ body {
   .bg-lines {
     background-image: url("../../public/assets/images/Lines.png");
   }
+
   .bg-union {
     background-image: url("../../public/assets/images/Union.png");
     background-repeat: no-repeat;
@@ -64,6 +71,10 @@ body {
     }
   }
 
+  .no-scroll {
+    overflow-y: hidden !important;
+  }
+
   .highlighted {
     opacity: 1;
     font-weight: bold;
@@ -73,6 +84,7 @@ body {
     opacity: 0.5;
     font-weight: normal;
   }
+
   .title_text {
     @apply text-[32px] text-center font-unbound font-bold leading-[40px] text-neutral;
   }
@@ -81,17 +93,19 @@ body {
     @apply text-[16px] lg:text-[18px] font-inter leading-[26px] font-normal text-primary-light;
   }
 
-  .people_cards_wrapper {
+  .scroll_hidden {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
   }
 
-  .people_cards_wrapper::-webkit-scrollbar {
+  .scroll_hidden::-webkit-scrollbar {
     display: none; /* Chrome, Safari, and Opera */
   }
+
   .my-masonry-grid_column > div {
     margin-bottom: 32px;
   }
+
   .my-masonry-grid {
     display: flex;
     margin-left: -16px;
@@ -102,6 +116,7 @@ body {
     padding-left: 16px;
     background-clip: padding-box;
   }
+
   @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
     .people_cards {
       width: auto;

@@ -22,9 +22,9 @@ export default function Home() {
   return (
     <main>
       <Header />
-      {/* <BannerSection />
-      <TestimonialsLogos />
-      <InfiniteMovingImages />
+      <BannerSection />
+       <TestimonialsLogos />
+     {/* <InfiniteMovingImages />
       <WhoWeAre />
       <ServingIndustries />
       <GetFromUs />

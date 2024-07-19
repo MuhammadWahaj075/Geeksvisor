@@ -20,13 +20,13 @@ export const BannerSection = () => {
               Raise $2.5M for startups
             </p>
 
-            <p className="text-xl leading-[30px] md:leading-[80px] max-w-[350px] md:max-w-[1160px] text-center md:text-[56px] font-unbound font-bold relative z-20 bg-clip-text text-transparent bg-neutral">
+            <p className="text-[30px] w-full px-5 leading-[40px] sm:leading-[40px] lg:leading-[80px]  sm:max-w-[1160px] text-center sm:text-[40px] lg:text-[56px] font-unbound font-bold relative z-20 bg-clip-text text-transparent bg-neutral">
               Power Your <span className="text-primary">Vision</span> with Next
               Generation Custom Software
             </p>
 
             <div className="flex justify-center flex-col items-center">
-              <p className="description_text  py-[40px]  text-center w-[350px] lg:w-[700px] ">
+              <p className="description_text  py-[40px]  text-center w-[350px] sm:w-[600px] lg:w-[700px] ">
                 We'll elevate your vision through custom software development as
                 your digital transformation partner.
               </p>

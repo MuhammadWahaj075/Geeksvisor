@@ -146,6 +146,11 @@ export const servingIndustries = [
     name: "Tech",
     icon: tech,
   },
+  {
+    name: "Tech",
+    icon: tech,
+  },
+  
 ];
 
 export const clientProjectsData = [
@@ -250,6 +255,24 @@ export const projects = [
   {
     id: 3,
     title: "Project Title 3",
+    tags: ["nextjs", "Mongodb", "redux", "tenstack query"],
+    image: Project,
+  },
+  {
+    id: 4,
+    title: "Project Title 4",
+    tags: ["nextjs", "Mongodb", "redux", "tenstack query"],
+    image: Project,
+  },
+  {
+    id: 5,
+    title: "Project Title 5",
+    tags: ["nextjs", "Mongodb", "redux", "tenstack query"],
+    image: Project,
+  },
+  {
+    id: 6,
+    title: "Project Title 6",
     tags: ["nextjs", "Mongodb", "redux", "tenstack query"],
     image: Project,
   },
