@@ -1,4 +1,7 @@
-import React from "react";
+'use client';
+
+import React, { useRef, useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
 import {
   GithubIcon,
   FooterLogo,
@@ -9,18 +12,55 @@ import {
 } from "../../../public/assets";
 import { Button, OptimizedImage } from "../comman";
 import { inquiries, mainPages, services } from "@/utils/mockData";
+import useInView from "@/hooks/useInView"; 
 
 export const Footer = () => {
+  const controls = useAnimation();
+  const footerRef = useRef(null);
+  const { inView } = useInView(footerRef, 0.2);
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("show");
+    } else {
+      controls.start("hidden");
+    }
+  }, [inView, controls]);
+
+  const staggerContainer = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.3,
+      },
+    },
+  };
+
+  const fadeInUp = {
+    hidden: { opacity: 0, y: 20 },
+    show: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+  };
+
   return (
-    <section className="mt-[100px] lg:mt-[200px] ">
+    <motion.section
+      ref={footerRef}
+      className="mt-[100px] lg:mt-[200px]"
+      variants={staggerContainer}
+      initial="hidden"
+      animate={controls}
+    >
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-10 gap-y-12 gap-x-8 xl:gap-x-12">
           <div className="col-span-2 md:col-span-4 xl:pr-8">
-            <h1 className="title_text lg:w-[393px] !font-normal !text-start">
+            <motion.h1
+              className="title_text lg:w-[393px] !font-normal !text-start"
+              variants={fadeInUp}
+            >
               Signup to get latest news & offers
-            </h1>
+            </motion.h1>
 
-            <div className="flex gap-2 pt-4">
+            <motion.div className="flex gap-2 pt-4" variants={fadeInUp}>
               <input
                 type="text"
                 placeholder="Email here"
@@ -29,10 +69,10 @@ export const Footer = () => {
               <Button className="!bg-neutral w-[113px] h-[58px] !text-black rounded-xl">
                 Signup
               </Button>
-            </div>
+            </motion.div>
           </div>
 
-          <div className="lg:col-span-2">
+          <motion.div className="lg:col-span-2" variants={fadeInUp}>
             <p className="text-base font-medium text-neutral">Main Pages</p>
 
             <ul className="mt-6 space-y-4">
@@ -48,9 +88,9 @@ export const Footer = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </motion.div>
 
-          <div className="lg:col-span-2">
+          <motion.div className="lg:col-span-2" variants={fadeInUp}>
             <p className="text-base font-medium text-neutral">Services</p>
 
             <ul className="mt-6 space-y-5">
@@ -66,9 +106,9 @@ export const Footer = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </motion.div>
 
-          <div className="lg:col-span-2">
+          <motion.div className="lg:col-span-2" variants={fadeInUp}>
             <p className="text-base font-medium text-neutral">Inquiries</p>
 
             <ul className="mt-6 space-y-5">
@@ -92,16 +132,18 @@ export const Footer = () => {
                 </a>
               </li>
             </ul>
-          </div>
+          </motion.div>
         </div>
       </div>
       <div className="relative">
-        <OptimizedImage
-          src={FooterLogo}
-          className="w-full mt-[200px]"
-          alt="footer-logo"
-        />
-        <div className="bg-custom-gradient w-full h-full absolute top-10  md:top-32 xl:top-[150px] bg-[#0000008F] backdrop-blur-xl">
+        <motion.div variants={fadeInUp}>
+          <OptimizedImage
+            src={FooterLogo}
+            className="w-full mt-[200px]"
+            alt="footer-logo"
+          />
+        </motion.div>
+        <div className="bg-custom-gradient w-full h-full absolute top-10  md:top-32 xl:top-[170px] bg-[#0000008F] backdrop-blur-xl">
           <div className="flex flex-col gap-6 mt-36 items-center justify-center">
             <h1 className="font-inter font-medium text-neutral text-[24px]">
               Follow us on Social Media
@@ -140,6 +182,7 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
+

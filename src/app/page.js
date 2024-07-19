@@ -22,22 +22,22 @@ export default function Home() {
   return (
     <main>
       <Header />
-      <BannerSection />
+      {/* <BannerSection />
       <TestimonialsLogos />
       <InfiniteMovingImages />
       <WhoWeAre />
       <ServingIndustries />
       <GetFromUs />
       <FeatureWork />
-      {/* <WhatWeDo /> */}
+      <WhatWeDo />
       <ClientExpectation />
       <HowItWorks />
-      {/* <WhatPeopleSay /> */}
+      <WhatPeopleSay />
       <WhatWeVission />
       <MeetOurTeam />
       <Faq />
       <GreatIdea />
-      <Footer />
+      <Footer /> */}
     </main>
   );
 }
