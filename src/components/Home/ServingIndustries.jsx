@@ -18,20 +18,20 @@ export const ServingIndustries = () => {
   };
 
   return (
-    <div className="mt-[206px] mx-auto px-4 lg:w-[1164px] center-div">
+    <div className="mt-[206px] px-5 mx-auto lg:max-w-[1164px] center-div">
       <div className="flex-center-column text-center">
         <div className="flex justify-center items-center flex-col">
-          <h2 className="title_text level-1 font-bold text-[32px] text-center">
+          <h2 className="title_text  font-bold  text-center">
             Serving all Industries
           </h2>
-          <p className="description_text w-[320px] lg:w-[653px] mt-[16px] text-center">
+          <p className="description_text max-w-[653px] mt-[16px] text-center">
             See what our satisfied clients are saying about our exceptional
             services and personalized approach to their unique business needs.
           </p>
         </div>
       </div>
-      <div className="animated-border">
-        <div className="serving_card_wrapper overflow-hidden mt-[72px] h-[500px] w-[320px] sm:w-[500px] mx-auto lg:w-full lg:h-[304px] flex items-center bg-[#0A0A0A] rounded-[40px] border mb-[30px]">
+      <div className="gradient-border">
+        <div className=" serving_card_wrapper overflow-hidden mt-[72px]    mx-auto lg:w-full h-[304px] flex items-center bg-[#0A0A0A] rounded-[40px]  mb-[30px]">
           <motion.div
             className="flex"
             animate={{ x: [`0%`, `-${totalWidth}px`] }}
@@ -48,7 +48,7 @@ export const ServingIndustries = () => {
                 className="serving_card flex flex-row items-center"
                 style={{ width: `${itemWidth}px` }}
               >
-                <div className="w-[50px] border-[0.5px] border-[#B1B1B1]" />
+                <div className="w-[60px] border-[0.5px] border-[#B1B1B1]" />
                 <div className="flex justify-center flex-col items-center w-[85px] h-[85px] border border-[#B1B1B1] rounded-[12px]">
                   <OptimizedImage
                     src={item?.icon}
@@ -58,7 +58,7 @@ export const ServingIndustries = () => {
                     {item?.name}
                   </p>
                 </div>
-                <div className="w-[83.5px] border-[0.5px] border-[#B1B1B1]" />
+                <div className="w-[60px] border-[0.5px] border-[#B1B1B1]" />
                 {index < itemCount * 2 - 1 && (
                   <div className="dot w-2 h-2 bg-primary rounded-full" />
                 )}

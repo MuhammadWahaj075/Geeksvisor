@@ -24,10 +24,10 @@ export default function Home() {
       <Header />
       <BannerSection />
        <TestimonialsLogos />
-     {/* <InfiniteMovingImages />
+      <InfiniteMovingImages />
       <WhoWeAre />
       <ServingIndustries />
-      <GetFromUs />
+      {/*<GetFromUs />
       <FeatureWork />
       <WhatWeDo />
       <ClientExpectation />

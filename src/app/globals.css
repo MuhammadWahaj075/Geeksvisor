@@ -86,7 +86,7 @@ body {
   }
 
   .title_text {
-    @apply text-[32px] text-center font-unbound font-bold leading-[40px] text-neutral;
+    @apply text-[22px] md:text-[32px] text-center font-unbound font-bold leading-[40px] text-neutral;
   }
 
   .description_text {
@@ -120,6 +120,48 @@ body {
   @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
     .people_cards {
       width: auto;
+    }
+  }
+
+  .gradient-border {
+    --borderWidth: 3px;
+    background: transparent;
+    position: relative;
+    border-radius: var(--borderWidth);
+  }
+  .gradient-border:after {
+    content: "";
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(
+      60deg,
+      #ee6e24,
+      #000000,
+      #ee6e24,
+      #000000,
+      #ee6e24,
+      #000000,
+      #ee6e24,
+      #000000
+    );
+    border-radius: calc(15 * var(--borderWidth));
+    z-index: -1;
+    animation: animatedgradient 20s ease infinite;
+    background-size: 300% 300%;
+  }
+
+  @keyframes animatedgradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
     }
   }
 }
