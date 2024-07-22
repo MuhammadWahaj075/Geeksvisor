@@ -1,6 +1,6 @@
 "use client";
 
-import { servingIndustries } from "@/utils/mockData";
+import { servingIndustries, ServingMockData } from "@/utils/mockData";
 import { OptimizedImage } from "../comman";
 import { motion } from "framer-motion";
 
@@ -21,16 +21,15 @@ export const ServingIndustries = () => {
       <div className="flex-center-column text-center">
         <div className="flex justify-center items-center flex-col">
           <h2 className="title_text  font-bold  text-center">
-            Serving all Industries
+            {ServingMockData?.title}
           </h2>
           <p className="description_text max-w-[653px] mt-[16px] text-center">
-            See what our satisfied clients are saying about our exceptional
-            services and personalized approach to their unique business needs.
+            {ServingMockData?.description}
           </p>
         </div>
       </div>
       <div className="gradient-border">
-        <div className=" serving_card_wrapper overflow-hidden mt-[72px]    mx-auto lg:w-full h-[304px] flex items-center bg-[#0A0A0A] rounded-[40px]  mb-[30px]">
+        <div className=" serving_card_wrapper overflow-hidden mt-[72px] mx-auto lg:w-full h-[304px] flex items-center bg-[#0A0A0A] rounded-[40px] mb-[30px]">
           <motion.div
             className="flex"
             animate={{ x: [`0%`, `-${totalWidth}px`] }}

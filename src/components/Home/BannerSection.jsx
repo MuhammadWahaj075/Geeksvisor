@@ -1,13 +1,13 @@
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { Button, OptimizedImage } from "../comman";
-import { FilterImg, FilterSmallImg } from "../../../public/assets";
+import { bannerMockData } from "@/utils/mockData";
 
 export const BannerSection = () => {
   return (
     <div className="relative">
       <div className="h-[50rem] mx-auto w-full max-w-[1440px] bg-grid-white/[0.1] bg-grid-black-100 relative flex items-center justify-center ">
         <OptimizedImage
-          src={FilterSmallImg}
+          src={bannerMockData?.images?.filterRightImg}
           height={"100%"}
           width={"100%"}
           alt={"banner-image"}
@@ -17,18 +17,24 @@ export const BannerSection = () => {
         <div className="flex justify-center">
           <div className="flex relative z-20 flex-col justify-center items-center">
             <p className="text-center mb-[24px] text-[#ccc] font-inter bg-[#1b1b1d] py-[8px] px-[12px] rounded-[40px]">
-              Raise $2.5M for startups
+              {bannerMockData?.subtitle}
             </p>
 
             <p className="text-[30px] w-full px-5 leading-[40px] sm:leading-[40px] lg:leading-[80px]  sm:max-w-[1160px] text-center sm:text-[40px] lg:text-[56px] font-unbound font-bold relative z-20 bg-clip-text text-transparent bg-neutral">
-              Power Your <span className="text-primary">Vision</span> with Next
-              Generation Custom Software
+              {bannerMockData?.title?.split(" ")?.map((word, index) =>
+                word === "Vision" ? (
+                  <span key={index} className="text-primary">
+                    {word}
+                  </span>
+                ) : (
+                  word + " "
+                )
+              )}
             </p>
 
             <div className="flex justify-center flex-col items-center">
-              <p className="description_text  py-[40px]  text-center w-[350px] sm:w-[600px] lg:w-[700px] ">
-                We'll elevate your vision through custom software development as
-                your digital transformation partner.
+              <p className="description_text  py-[40px] text-center w-[350px] sm:w-[600px] lg:w-[700px]">
+                {bannerMockData.description}
               </p>
 
               <div className="flex relative items-center gap-[40px] z-20">
@@ -37,21 +43,21 @@ export const BannerSection = () => {
                   className={"py-[16px] px-[16px] lg:px-[24px] !h-[52px]"}
                   icon={<IoIosArrowRoundForward size={25} />}
                 >
-                  Contact Us
+                  {bannerMockData?.button1?.text}
                 </Button>
                 <Button
-                  variant="transparent"
+                  variant={bannerMockData.button2.variant}
                   icon={<IoIosArrowRoundForward size={25} />}
                   className={'!h-0'}
                 >
-                  View Projects
+                  {bannerMockData.button2.text}
                 </Button>
               </div>
             </div>
           </div>
         </div>
         <OptimizedImage
-          src={FilterImg}
+          src={bannerMockData.images.filterBottomImg}
           height={"100%"}
           width={"100%"}
           alt={"FilterImg"}

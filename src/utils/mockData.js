@@ -23,6 +23,8 @@ import {
   CodeIcon,
   rocketIcon,
   TimProfile,
+  FilterSmallImg,
+  FilterImg,
 } from "../../public/assets";
 
 export const OurQualityData = [
@@ -43,6 +45,39 @@ export const OurQualityData = [
     icon: CheckIcon,
   },
 ];
+
+export const ServingMockData = {
+  title: "Serving all Industries",
+  description: `See what our satisfied clients are saying about our exceptional
+            services and personalized approach to their unique business needs.`,
+};
+
+export const whoWeAreMockData = {
+  title: "Who we are",
+  description: `Our aim is to provide top-quality services that help businesses of all sizes achieve their goals. 
+                We strive to deliver innovative, cost-effective solutions that meet our clients' unique needs, 
+                and to build long-term relationships based on collaboration, communication, and trust.`,
+  image: InfiniteImg,
+};
+
+export const bannerMockData = {
+  title: "Power Your Vision with Next Generation Custom Software",
+  subtitle: "Raise $2.5M for startups",
+  description:
+    "We'll elevate your vision through custom software development as your digital transformation partner.",
+  button1: {
+    text: "Contact Us",
+    variant: "primary",
+  },
+  button2: {
+    text: "View Projects",
+    variant: "transparent",
+  },
+  images: {
+    filterRightImg: FilterSmallImg,
+    filterBottomImg: FilterImg,
+  },
+};
 
 export const healthData = [
   {
@@ -150,7 +185,6 @@ export const servingIndustries = [
     name: "Tech",
     icon: tech,
   },
-  
 ];
 
 export const clientProjectsData = [
