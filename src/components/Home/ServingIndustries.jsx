@@ -28,8 +28,13 @@ export const ServingIndustries = () => {
           </p>
         </div>
       </div>
-      <div className="gradient-border">
-        <div className=" serving_card_wrapper overflow-hidden mt-[72px] mx-auto lg:w-full h-[304px] flex items-center bg-[#0A0A0A] rounded-[40px] mb-[30px]">
+      
+      <div className="gradient-border-wrapper mt-[72px]">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <div className="overflow-hidden mx-auto lg:w-full h-[304px] flex items-center">
           <motion.div
             className="flex"
             animate={{ x: [`0%`, `-${totalWidth}px`] }}
@@ -64,7 +69,9 @@ export const ServingIndustries = () => {
             ))}
           </motion.div>
         </div>
+       
       </div>
+      
     </div>
   );
 };

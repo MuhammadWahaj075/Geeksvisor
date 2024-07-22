@@ -182,8 +182,8 @@ export const servingIndustries = [
     icon: tech,
   },
   {
-    name: "Tech",
-    icon: tech,
+    name: "Sports",
+    icon: sport,
   },
 ];
 
