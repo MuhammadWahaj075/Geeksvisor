@@ -40,7 +40,7 @@ export const Header = () => {
         <div className="flex items-center lg:order-2">
           <Button
             variant="primary"
-            className={"mr-2 lg:mr-0 py-[14px] px-[24px]"}
+            className={"mr-2 lg:mr-0 py-[14px] !h-[45px] px-[24px]"}
           >
             Contact us
           </Button>

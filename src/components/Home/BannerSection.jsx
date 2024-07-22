@@ -31,10 +31,10 @@ export const BannerSection = () => {
                 your digital transformation partner.
               </p>
 
-              <div className="flex relative gap-[40px] z-20">
+              <div className="flex relative items-center gap-[40px] z-20">
                 <Button
                   variant="primary"
-                  className={"py-[16px] px-[16px] lg:px-[24px]"}
+                  className={"py-[16px] px-[16px] lg:px-[24px] !h-[52px]"}
                   icon={<IoIosArrowRoundForward size={25} />}
                 >
                   Contact Us
@@ -42,6 +42,7 @@ export const BannerSection = () => {
                 <Button
                   variant="transparent"
                   icon={<IoIosArrowRoundForward size={25} />}
+                  className={'!h-0'}
                 >
                   View Projects
                 </Button>
