@@ -3,7 +3,6 @@
 import { servingIndustries } from "@/utils/mockData";
 import { OptimizedImage } from "../comman";
 import { motion } from "framer-motion";
-import "./style.css";
 
 export const ServingIndustries = () => {
   const itemWidth = 200;
