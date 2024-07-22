@@ -23,6 +23,8 @@ import {
   CodeIcon,
   rocketIcon,
   TimProfile,
+  FilterSmallImg,
+  FilterImg,
 } from "../../public/assets";
 
 export const OurQualityData = [
@@ -43,6 +45,39 @@ export const OurQualityData = [
     icon: CheckIcon,
   },
 ];
+
+export const ServingMockData = {
+  title: "Serving all Industries",
+  description: `See what our satisfied clients are saying about our exceptional
+            services and personalized approach to their unique business needs.`,
+};
+
+export const whoWeAreMockData = {
+  title: "Who we are",
+  description: `Our aim is to provide top-quality services that help businesses of all sizes achieve their goals. 
+                We strive to deliver innovative, cost-effective solutions that meet our clients' unique needs, 
+                and to build long-term relationships based on collaboration, communication, and trust.`,
+  image: InfiniteImg,
+};
+
+export const bannerMockData = {
+  title: "Power Your Vision with Next Generation Custom Software",
+  subtitle: "Raise $2.5M for startups",
+  description:
+    "We'll elevate your vision through custom software development as your digital transformation partner.",
+  button1: {
+    text: "Contact Us",
+    variant: "primary",
+  },
+  button2: {
+    text: "View Projects",
+    variant: "transparent",
+  },
+  images: {
+    filterRightImg: FilterSmallImg,
+    filterBottomImg: FilterImg,
+  },
+};
 
 export const healthData = [
   {
@@ -145,6 +180,10 @@ export const servingIndustries = [
   {
     name: "Tech",
     icon: tech,
+  },
+  {
+    name: "Sports",
+    icon: sport,
   },
 ];
 
@@ -250,6 +289,24 @@ export const projects = [
   {
     id: 3,
     title: "Project Title 3",
+    tags: ["nextjs", "Mongodb", "redux", "tenstack query"],
+    image: Project,
+  },
+  {
+    id: 4,
+    title: "Project Title 4",
+    tags: ["nextjs", "Mongodb", "redux", "tenstack query"],
+    image: Project,
+  },
+  {
+    id: 5,
+    title: "Project Title 5",
+    tags: ["nextjs", "Mongodb", "redux", "tenstack query"],
+    image: Project,
+  },
+  {
+    id: 6,
+    title: "Project Title 6",
     tags: ["nextjs", "Mongodb", "redux", "tenstack query"],
     image: Project,
   },
@@ -383,76 +440,13 @@ export const ProfileRatingData = [
     testimonial: `Throughout my career, I've had the privilege of collaborating with developers from across the globe, and I'm incredibly grateful to have Geeksvisor from Pakistan as part of my team.`,
     rating: 3,
   },
+];
 
-  // {
-  //   id: 6,
-  //   name: "Jane Doe",
-  //   designation: "Software Engineer",
-  //   profileImage: TimProfile,
-  //   testimonial: `Throughout my career, I've had the privilege of collaborating with
-  //                 developers from across the globe, and I'm incredibly grateful to
-  //                 have Geeksvisor from Pakistan as part of my team. Their commitment
-  //                 to cohesion and transparency stands out, making them an invaluable
-  //                 asset. As a Project Manager and Scrum Master, having such a
-  //                 reliable team is crucial for maintaining our project timelines and
-  //                 ensuring everything progresses.`,
-  //   rating: 3,
-  // },
-  // {
-  //   id: 7,
-  //   name: "Jane Doe",
-  //   designation: "Software Engineer",
-  //   profileImage: TimProfile,
-  //   testimonial: `Throughout my career, I've had the privilege of collaborating with
-  //                 developers from across the globe, and I'm incredibly grateful to
-  //                 have Geeksvisor from Pakistan as part of my team. Their commitment
-  //                 to cohesion and transparency stands out, making them an invaluable
-  //                 asset. As a Project Manager and Scrum Master, having such a
-  //                 reliable team is crucial for maintaining our project timelines and
-  //                 ensuring everything progresses.`,
-  //   rating: 3,
-  // },
-  // {
-  //   id: 8,
-  //   name: "Jane Doe",
-  //   designation: "Software Engineer",
-  //   profileImage: TimProfile,
-  //   testimonial: `Throughout my career, I've had the privilege of collaborating with
-  //                 developers from across the globe, and I'm incredibly grateful to
-  //                 have Geeksvisor from Pakistan as part of my team. Their commitment
-  //                 to cohesion and transparency stands out, making them an invaluable
-  //                 asset. As a Project Manager and Scrum Master, having such a
-  //                 reliable team is crucial for maintaining our project timelines and
-  //                 ensuring everything progresses.`,
-  //   rating: 3,
-  // },
-
-  // {
-  //   id: 9,
-  //   name: "Jane Doe",
-  //   designation: "Software Engineer",
-  //   profileImage: TimProfile,
-  //   testimonial: `Throughout my career, I've had the privilege of collaborating with
-  //                 developers from across the globe, and I'm incredibly grateful to
-  //                 have Geeksvisor from Pakistan as part of my team. Their commitment
-  //                 to cohesion and transparency stands out, making them an invaluable
-  //                 asset. As a Project Manager and Scrum Master, having such a
-  //                 reliable team is crucial for maintaining our project timelines and
-  //                 ensuring everything progresses.`,
-  //   rating: 3,
-  // },
-  // {
-  //   id: 10,
-  //   name: "Jane Doe",
-  //   designation: "Software Engineer",
-  //   profileImage: TimProfile,
-  //   testimonial: `Throughout my career, I've had the privilege of collaborating with
-  //                 developers from across the globe, and I'm incredibly grateful to
-  //                 have Geeksvisor from Pakistan as part of my team. Their commitment
-  //                 to cohesion and transparency stands out, making them an invaluable
-  //                 asset. As a Project Manager and Scrum Master, having such a
-  //                 reliable team is crucial for maintaining our project timelines and
-  //                 ensuring everything progresses.`,
-  //   rating: 3,
-  // },
+export const mockQuotations = [
+  "Web Development",
+  "Cloud Services",
+  "AI Gen",
+  "Full Stack Development",
+  "Web3",
+  "DevOps",
 ];

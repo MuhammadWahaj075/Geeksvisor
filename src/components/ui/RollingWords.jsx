@@ -2,8 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-
-const quotations = ["Web Development", "Cloud Services", "AI Gen", "Full Stack Development", "Web3", "DevOps"];
+import { mockQuotations } from "@/utils/mockData";
 
 export function RollingWords() {
   const [visibleIndex, setVisibleIndex] = useState(0);
@@ -38,7 +37,7 @@ export function RollingWords() {
 
   return (
     <motion.div variants={container} initial="hidden" animate="visible">
-      {quotations.map((quotation, index) => (
+      {mockQuotations?.map((quotation, index) => (
         <motion.div
           key={index}
           className={`text-[24px] lg:leading-[64px] lg:text-[48px] mb-10 text-primary font-jakarta font-bold  ${
