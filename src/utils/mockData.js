@@ -440,5 +440,13 @@ export const ProfileRatingData = [
     testimonial: `Throughout my career, I've had the privilege of collaborating with developers from across the globe, and I'm incredibly grateful to have Geeksvisor from Pakistan as part of my team.`,
     rating: 3,
   },
+];
 
+export const mockQuotations = [
+  "Web Development",
+  "Cloud Services",
+  "AI Gen",
+  "Full Stack Development",
+  "Web3",
+  "DevOps",
 ];

@@ -1,5 +1,5 @@
 import { IoIosArrowRoundForward } from "react-icons/io";
-import { Button, OptimizedImage } from "../comman";
+import { Button, OptimizedImage, Pill } from "../comman";
 import { bannerMockData } from "@/utils/mockData";
 
 export const BannerSection = () => {
@@ -16,9 +16,9 @@ export const BannerSection = () => {
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black  [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
         <div className="flex justify-center">
           <div className="flex relative z-20 flex-col justify-center items-center">
-            <p className="text-center mb-[24px] text-[#ccc] font-inter bg-[#1b1b1d] py-[8px] px-[12px] rounded-[40px]">
-              {bannerMockData?.subtitle}
-            </p>
+            <Pill text={bannerMockData?.subtitle} className=" mb-[24px] text-[#ccc] font-inter bg-[#1b1b1d] !py-[8px] !px-[12px] rounded-[40px]">
+              
+            </Pill>
 
             <p className="text-[30px] w-full px-5 leading-[40px] sm:leading-[40px] lg:leading-[80px]  sm:max-w-[1160px] text-center sm:text-[40px] lg:text-[56px] font-unbound font-bold relative z-20 bg-clip-text text-transparent bg-neutral">
               {bannerMockData?.title?.split(" ")?.map((word, index) =>
