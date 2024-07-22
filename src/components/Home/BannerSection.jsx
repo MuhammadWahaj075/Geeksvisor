@@ -48,7 +48,7 @@ export const BannerSection = () => {
                 <Button
                   variant={bannerMockData.button2.variant}
                   icon={<IoIosArrowRoundForward size={25} />}
-                  className={'!h-0'}
+                  className={"!h-0"}
                 >
                   {bannerMockData.button2.text}
                 </Button>

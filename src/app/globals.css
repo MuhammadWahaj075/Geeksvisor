@@ -149,16 +149,19 @@ body {
     );
     border-radius: calc(15 * var(--borderWidth));
     z-index: -1;
-    animation: animatedgradient 10s ease-out infinite alternate;
+    animation: animatedgradient 20s ease-out infinite alternate;
     background-size: 300% 300%;
   }
 
   @keyframes animatedgradient {
     0% {
-        background-position: 0% 50%;
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
     }
     100% {
-        background-position: 100% 50%;
+      background-position: 0% 50%;
     }
-}
+  }
 }

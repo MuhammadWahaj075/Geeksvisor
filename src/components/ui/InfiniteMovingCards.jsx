@@ -1,6 +1,5 @@
 "use client";
 
-import { cn } from "@/utils/cn";
 import React, { useEffect, useState } from "react";
 import { OptimizedImage } from "../comman";
 
@@ -9,7 +8,6 @@ export const InfiniteMovingCards = ({
   direction = "left",
   speed = "fast",
   pauseOnHover = true,
-  className,
 }) => {
   const containerRef = React.useRef(null);
   const scrollerRef = React.useRef(null);
@@ -68,18 +66,13 @@ export const InfiniteMovingCards = ({
   return (
     <div
       ref={containerRef}
-      className={cn(
-        "scroller relative z-20 max-w-full overflow-hidden",
-        className
-      )}
+      className={"scroller relative z-20 max-w-full overflow-hidden"}
     >
       <ul
         ref={scrollerRef}
-        className={cn(
-          "flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap",
-          start && "animate-scroll",
-          pauseOnHover && "hover:[animation-play-state:paused]"
-        )}
+        className={` flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap ${
+          start && "animate-scroll"
+        }   ${pauseOnHover && "hover:[animation-play-state:paused]"}   `}
       >
         {items?.map((item, idx) => (
           <li
