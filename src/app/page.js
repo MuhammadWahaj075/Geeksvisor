@@ -1,5 +1,6 @@
 import {
   BannerSection,
+  GetFromUs,
   InfiniteMovingImages,
   ServingIndustries,
   TestimonialsLogos,
@@ -14,6 +15,7 @@ export default function Home() {
       <InfiniteMovingImages />
       <WhoWeAre />
       <ServingIndustries />
+      <GetFromUs />
     </main>
   );
 }

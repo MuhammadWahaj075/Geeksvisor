@@ -1,7 +1,7 @@
 "use client";
 
-import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
+import { motion, useTransform, useScroll } from "framer-motion";
 import { cards } from "@/utils/mockData";
 import { Card } from "../Home/HorizontalCards";
 

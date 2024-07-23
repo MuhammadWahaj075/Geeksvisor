@@ -31,7 +31,7 @@
     transparent 75%,
     transparent
   );
-  animation: rotateBackground 8s linear infinite;
+  animation: rotateBackground 7s linear infinite;
 }
 .main .inner-div {
   background: var(--background);

@@ -3,7 +3,7 @@ import { TestimonialsLogos } from "./TestimonialsLogos";
 import { InfiniteMovingImages } from "./InfiniteMovingImage";
 import { WhoWeAre } from "./WhoWeAre";
 import { ServingIndustries } from "./servingIndustries/ServingIndustries";
-
+import { GetFromUs } from "./getFromUs/GetFromUs";
 
 export {
   BannerSection,
@@ -11,6 +11,5 @@ export {
   InfiniteMovingImages,
   WhoWeAre,
   ServingIndustries,
-
- 
+  GetFromUs,
 };
