@@ -1,8 +1,9 @@
 "use client";
 
 import { servingIndustries, ServingMockData } from "@/utils/mockData";
-import { OptimizedImage } from "../comman";
+import { OptimizedImage } from "../../comman";
 import { motion } from "framer-motion";
+import './style.css'
 
 export const ServingIndustries = () => {
   const itemWidth = 200;
@@ -28,7 +29,7 @@ export const ServingIndustries = () => {
           </p>
         </div>
       </div>
-      
+
       <div className="gradient-border-wrapper mt-[72px]">
         <span></span>
         <span></span>
@@ -69,9 +70,7 @@ export const ServingIndustries = () => {
             ))}
           </motion.div>
         </div>
-       
       </div>
-      
     </div>
   );
 };

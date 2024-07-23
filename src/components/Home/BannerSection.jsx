@@ -19,14 +19,14 @@ export const BannerSection = () => {
             <Pill text={bannerMockData?.subtitle} className="!text-[14px] !mb-[24px] !text-[#ccc] font-inter !bg-[#1b1b1d] !py-[8px] !px-[12px]"/>
               
 
-            <p className="text-[30px] w-full px-5 leading-[40px] sm:leading-[40px] lg:leading-[80px]  sm:max-w-[1160px] text-center sm:text-[40px] lg:text-[56px] font-unbound font-bold relative z-20 bg-clip-text text-transparent bg-neutral">
+            <p className="text-[30px] w-full  px-5 leading-[40px] sm:leading-[40px] lg:leading-[80px]  sm:max-w-[1160px] text-center sm:text-[40px] lg:text-[56px] font-unbound font-bold relative z-20 bg-clip-text text-transparent bg-neutral">
               {bannerMockData?.title?.split(" ")?.map((word, index) =>
                 word === "Vision" ? (
-                  <span key={index} className="text-primary">
+                  <span key={index} className="text-primary pr-1">
                     {word}
                   </span>
                 ) : (
-                  word + " "
+                  word  + " "
                 )
               )}
             </p>
