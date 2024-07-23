@@ -11,11 +11,11 @@ export const HorizontalScrollCarousel = () => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 0.5], ["2%", "-70%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["2%", "-70%"]);
 
   return (
-    <section ref={targetRef} className="relative h-[120vh]">
-      <div className="sticky mx-auto max-w-[2000px] top-0 flex items-center overflow-hidden">
+    <section ref={targetRef} className=" relative h-[300vh]">
+      <div className="sticky top-[250px] flex  bottom-0 items-center overflow-hidden">
         <motion.div style={{ x }} className="flex gap-4">
           {cards?.map((card) => {
             return <Card card={card} key={card.id} />;

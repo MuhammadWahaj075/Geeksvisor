@@ -3,7 +3,7 @@
 import { servingIndustries, ServingMockData } from "@/utils/mockData";
 import { OptimizedImage } from "../../comman";
 import { motion } from "framer-motion";
-import './style.css'
+import "./style.css";
 
 export const ServingIndustries = () => {
   const itemWidth = 200;
@@ -30,47 +30,47 @@ export const ServingIndustries = () => {
         </div>
       </div>
 
-      <div className="gradient-border-wrapper mt-[72px]">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <div className="overflow-hidden mx-auto lg:w-full h-[304px] flex items-center">
-          <motion.div
-            className="flex"
-            animate={{ x: [`0%`, `-${totalWidth}px`] }}
-            transition={animationSettings}
-            style={{
-              display: "flex",
-              width: `${totalWidth * 2}px`,
-              position: "relative",
-            }}
-          >
-            {[...servingIndustries, ...servingIndustries].map((item, index) => (
-              <div
-                key={index}
-                className="serving_card flex flex-row items-center"
-                style={{ width: `${itemWidth}px` }}
+      <div class="main mt-[72px]">
+        <div className="inner-div ">
+            <div className="overflow-hidden mx-auto lg:w-full h-[270px] flex items-center">
+              <motion.div
+                className="flex"
+                animate={{ x: [`0%`, `-${totalWidth}px`] }}
+                transition={animationSettings}
+                style={{
+                  display: "flex",
+                  width: `${totalWidth * 2}px`,
+                  position: "relative",
+                }}
               >
-                <div className="w-[60px] border-[0.5px] border-[#B1B1B1]" />
-                <div className="flex justify-center flex-col items-center w-[85px] h-[85px] border border-[#B1B1B1] rounded-[12px]">
-                  <OptimizedImage
-                    src={item?.icon}
-                    className="rounded-[8px] h-[31.85px] w-[35.81px]"
-                  />
-                  <p className="description_text !text-[12px] mt-[8px]">
-                    {item?.name}
-                  </p>
-                </div>
-                <div className="w-[60px] border-[0.5px] border-[#B1B1B1]" />
-                {index < itemCount * 2 - 1 && (
-                  <div className="dot w-2 h-2 bg-primary rounded-full" />
+                {[...servingIndustries, ...servingIndustries].map(
+                  (item, index) => (
+                    <div
+                      key={index}
+                      className="serving_card flex flex-row items-center"
+                      style={{ width: `${itemWidth}px` }}
+                    >
+                      <div className="w-[60px] border-[0.5px] border-[#B1B1B1]" />
+                      <div className="flex justify-center flex-col items-center w-[85px] h-[85px] border border-[#B1B1B1] rounded-[12px]">
+                        <OptimizedImage
+                          src={item?.icon}
+                          className="rounded-[8px] h-[31.85px] w-[35.81px]"
+                        />
+                        <p className="description_text !text-[12px] mt-[8px]">
+                          {item?.name}
+                        </p>
+                      </div>
+                      <div className="w-[60px] border-[0.5px] border-[#B1B1B1]" />
+                      {index < itemCount * 2 - 1 && (
+                        <div className="dot w-2 h-2 bg-primary rounded-full" />
+                      )}
+                    </div>
+                  )
                 )}
-              </div>
-            ))}
-          </motion.div>
+              </motion.div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
   );
 };

@@ -122,5 +122,26 @@ body {
       width: auto;
     }
   }
+
+  .project_wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .project_scroll_container {
+    height: 100vh; /* Adjust as needed */
+    overflow-y: auto;
+    scroll-snap-type: y mandatory; /* Optional, for snap scrolling */
+  }
+  
+  .project_scroll_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .project_cards {
+    margin-bottom: 50px; /* Adjust as needed */
+  }
   
 }
