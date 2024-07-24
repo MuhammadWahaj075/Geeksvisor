@@ -1,4 +1,7 @@
+import { OptimizedImage } from "@/components/comman";
 import { HorizontalScrollCarousel } from "@/components/ui/HorizontalScrollCarousel";
+import Image from "next/image";
+import bgimage from "../../../../public/assets/images/Circles.png";
 
 export const GetFromUs = () => {
   return (
@@ -11,7 +14,7 @@ export const GetFromUs = () => {
             eiusmod.
           </p>
         </div>
-        <div className="bg-gradient-lines w-full bg-no-repeat mt-[72px]">
+        <div className="relative bg-gradient-lines max-w-[1900px]  w-full bg-no-repeat mt-[72px]">
           <HorizontalScrollCarousel />
         </div>
       </div>

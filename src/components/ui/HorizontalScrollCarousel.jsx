@@ -11,14 +11,14 @@ export const HorizontalScrollCarousel = () => {
     target: targetRef,
   });
 
-  const [xValue, setXValue] = useState(["2%", "-65%"]);
+  const [xValue, setXValue] = useState(["2%", "-70%"]);
 
   useEffect(() => {
     const updateXValue = () => {
       if (window.innerWidth <= 768) {
         setXValue(["2%", "-80%"]);
       } else {
-        setXValue(["2%", "-65%"]);
+        setXValue(["2%", "-70%"]);
       }
     };
 
@@ -32,7 +32,7 @@ export const HorizontalScrollCarousel = () => {
   const x = useTransform(scrollYProgress, [0, 1], xValue);
 
   return (
-    <section ref={targetRef} className="relative h-[200vh]">
+    <section ref={targetRef} className=" h-[300vh]">
       <div className="sticky top-[240px] flex bottom-0 items-center overflow-hidden">
         <motion.div style={{ x }} className="flex gap-4">
           {cards?.map((card) => {
