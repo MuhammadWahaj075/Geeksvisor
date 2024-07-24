@@ -11,14 +11,18 @@ export const HorizontalScrollCarousel = () => {
     target: targetRef,
   });
 
-  const [xValue, setXValue] = useState(["2%", "-70%"]);
+  const [xValue, setXValue] = useState(["2%", "-75%"]);
 
   useEffect(() => {
     const updateXValue = () => {
       if (window.innerWidth <= 768) {
-        setXValue(["2%", "-80%"]);
-      } else {
-        setXValue(["2%", "-70%"]);
+        setXValue(["1%", "-85%"]);
+      }
+        else if (window.innerWidth <= 1280) {
+          setXValue(["1%", "-75%"]);
+        }
+       else {
+        setXValue(["1%", "-85%"]);
       }
     };
 
@@ -33,7 +37,7 @@ export const HorizontalScrollCarousel = () => {
 
   return (
     <section ref={targetRef} className=" h-[300vh]">
-      <div className="sticky top-[240px] flex bottom-0 items-center overflow-hidden">
+      <div className="sticky top-[240px]  flex bottom-0 items-center overflow-hidden">
         <motion.div style={{ x }} className="flex gap-4">
           {cards?.map((card) => {
             return <Card card={card} key={card.id} />;
