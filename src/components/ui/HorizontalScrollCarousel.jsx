@@ -22,7 +22,7 @@ export const HorizontalScrollCarousel = () => {
           setXValue(["1%", "-75%"]);
         }
        else {
-        setXValue(["1%", "-85%"]);
+        setXValue(["2%", "-70%"]);
       }
     };
 
