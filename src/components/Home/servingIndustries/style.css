@@ -6,7 +6,7 @@
 :root {
   --orange: #ee6e24;
   --background: #000000;
-  --border-size: 1px;
+  --border-size: 2px;
   --border-radius: 40px;
 }
 
@@ -36,6 +36,6 @@
 .main .inner-div {
   background: var(--background);
   background-color: #0a0a0a;
-  padding: 1em;
+  margin: 1px;
   border-radius: calc(var(--border-radius) - var(--border-size));
 }

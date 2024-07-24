@@ -5,7 +5,7 @@ import { bannerMockData } from "@/utils/mockData";
 export const BannerSection = () => {
   return (
     <div className="relative">
-      <div className="h-[50rem] mx-auto w-full max-w-[1440px] bg-grid-white/[0.1] bg-grid-black-100 relative flex items-center justify-center ">
+      <div className="h-[50rem] mx-auto w-full max-w-[1440px] bg-grid-white/[0.1] bg-grid-black-100 relative flex items-center justify-center">
         <OptimizedImage
           src={bannerMockData?.images?.filterRightImg}
           height={"100%"}
@@ -32,7 +32,7 @@ export const BannerSection = () => {
             </p>
 
             <div className="flex justify-center flex-col items-center">
-              <p className="description_text  py-[40px] text-center w-[350px] sm:w-[600px] lg:w-[700px]">
+              <p className="description_text py-[40px] text-center w-[350px] sm:w-[600px] lg:w-[700px]">
                 {bannerMockData.description}
               </p>
 

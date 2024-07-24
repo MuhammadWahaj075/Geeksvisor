@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import { motion, useTransform, useScroll } from "framer-motion";
 import { cards } from "@/utils/mockData";
 import { Card } from "../Home/HorizontalCards";
@@ -11,11 +11,29 @@ export const HorizontalScrollCarousel = () => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["2%", "-70%"]);
+  const [xValue, setXValue] = useState(["2%", "-65%"]);
+
+  useEffect(() => {
+    const updateXValue = () => {
+      if (window.innerWidth <= 768) {
+        setXValue(["2%", "-80%"]);
+      } else {
+        setXValue(["2%", "-65%"]);
+      }
+    };
+
+    updateXValue();
+
+    window.addEventListener("resize", updateXValue);
+
+    return () => window.removeEventListener("resize", updateXValue);
+  }, []);
+
+  const x = useTransform(scrollYProgress, [0, 1], xValue);
 
   return (
-    <section ref={targetRef} className=" relative h-[300vh]">
-      <div className="sticky top-[250px] flex  bottom-0 items-center overflow-hidden">
+    <section ref={targetRef} className="relative h-[200vh]">
+      <div className="sticky top-[240px] flex bottom-0 items-center overflow-hidden">
         <motion.div style={{ x }} className="flex gap-4">
           {cards?.map((card) => {
             return <Card card={card} key={card.id} />;
