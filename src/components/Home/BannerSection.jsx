@@ -22,7 +22,7 @@ export const BannerSection = () => {
             <p className="text-[30px] w-full  px-5 leading-[40px] sm:leading-[40px] lg:leading-[80px]  sm:max-w-[1160px] text-center sm:text-[40px] lg:text-[56px] font-unbound font-bold relative z-20 bg-clip-text text-transparent bg-neutral">
               {bannerMockData?.title?.split(" ")?.map((word, index) =>
                 word === "Vision" ? (
-                  <span key={index} className="text-primary pr-1">
+                  <span key={index} className="text-primary pr-2">
                     {word}
                   </span>
                 ) : (

@@ -17,12 +17,13 @@ export const HorizontalScrollCarousel = () => {
     const updateXValue = () => {
       if (window.innerWidth <= 768) {
         setXValue(["1%", "-85%"]);
+      } else if (window.innerWidth <= 1280) {
+        setXValue(["1%", "-75%"]);
       }
-        else if (window.innerWidth <= 1280) {
+        else if (window.innerWidth >= 1280) {
           setXValue(["1%", "-75%"]);
-        }
-       else {
-        setXValue(["2%", "-75%"]);
+      } else {
+        setXValue(["2%", "-70%"]);
       }
     };
 

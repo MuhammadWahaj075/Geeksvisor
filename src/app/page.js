@@ -1,9 +1,11 @@
 import {
   BannerSection,
+  ClientExpectation,
   GetFromUs,
   InfiniteMovingImages,
   ServingIndustries,
   TestimonialsLogos,
+  WhatWeDo,
   WhoWeAre,
 } from "@/components/Home";
 
@@ -16,6 +18,8 @@ export default function Home() {
       <WhoWeAre />
       <ServingIndustries />
       <GetFromUs />
+      <WhatWeDo />
+      <ClientExpectation />
     </main>
   );
 }

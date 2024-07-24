@@ -4,6 +4,8 @@ import { InfiniteMovingImages } from "./InfiniteMovingImage";
 import { WhoWeAre } from "./WhoWeAre";
 import { ServingIndustries } from "./servingIndustries/ServingIndustries";
 import { GetFromUs } from "./getFromUs/GetFromUs";
+import { WhatWeDo } from "./whatWeDo/WhatWeDo";
+import { ClientExpectation } from "./clientExpect/ClientExpect";
 
 export {
   BannerSection,
@@ -12,4 +14,6 @@ export {
   WhoWeAre,
   ServingIndustries,
   GetFromUs,
+  WhatWeDo,
+  ClientExpectation,
 };
