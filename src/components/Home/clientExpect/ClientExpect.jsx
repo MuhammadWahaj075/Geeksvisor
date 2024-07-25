@@ -19,7 +19,7 @@ export function ClientExpectation() {
           />
           <div className="flex flex-col gap-6 px-2 items-center">
             <h1 className="title_text !text-[#FFFFFFE5] max-w-[737px]">
-              We Always Try To Understand Our Client's Expectation
+              We Always Try To Understand Our Clients Expectation
             </h1>
             <p className="description_text text-center max-w-[737px]">
               From web apps to mobile apps and everything in between, our recent
@@ -77,7 +77,7 @@ export function ClientExpectation() {
             icon={<IoIosArrowRoundForward size={25} />}
             className={"py-[14px] px-[56px] mt-[76px]"}
           >
-            Let’s Connect
+            Lets Connect
           </Button>
           <OptimizedImage
             src={Spline}
