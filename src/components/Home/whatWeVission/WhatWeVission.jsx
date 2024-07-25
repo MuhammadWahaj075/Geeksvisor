@@ -7,7 +7,6 @@ export const WhatWeVission = () => {
       <div className="flex  flex-wrap mx-auto flex-col xl:flex-row items-center xl:max-w-screen-xl justify-center gap-10">
         <div className="border-2 w-[320px] xl:w-0  xl:h-[562px] border-l border-primary" />
         <div className="w-[320px]  h-[320px] lg:h-[510px] lg:w-[480px] rounded-[8px] bg-[#2F2B43]">
-          {/* <Image src={""} alt="img" /> */}
         </div>
         <div className="flex flex-col mx-auto !justify-center gap-4 items-center lg:items-start">
           <h1 className="title_text">What we vission</h1>
@@ -22,8 +21,8 @@ export const WhatWeVission = () => {
             various industries.
           </p>
           <div className="flex flex-wrap gap-5 w-[260px] md:w-[40%]  mt-[40px]">
-            {healthData?.map((items, i) => (
-              <div className="flex gap-3 items-center">
+            {healthData?.map((items, index) => (
+              <div key={index} className="flex gap-3 items-center">
                 <OptimizedImage src={items.icon} alt="icon" />
                 <h2 className="description_text">{items.name}</h2>
               </div>
