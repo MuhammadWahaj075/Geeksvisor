@@ -116,8 +116,9 @@ body {
 
   .my-masonry-grid {
     display: flex;
+    flex-wrap: wrap;
     margin-left: -16px;
-    width: auto;
+    padding: 0 20px;
   }
 
   .my-masonry-grid_column {
@@ -125,11 +126,7 @@ body {
     background-clip: padding-box;
   }
 
-  @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
-    .people_cards {
-      width: auto;
-    }
-  }
+  
 
   .project_wrapper {
     position: relative;

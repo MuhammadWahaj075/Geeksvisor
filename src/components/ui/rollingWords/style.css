@@ -1,9 +1,7 @@
-
 .box {
   height: 150px;
   overflow: hidden;
   position: relative;
-  
 }
 .box::before {
   top: 0;
@@ -11,7 +9,7 @@
   z-index: 1;
   width: 100%;
   content: '';
-  height: 10px;
+  height: 30px;
   position: absolute;
   background: linear-gradient(180deg, #000000, rgba(255, 142, 113, 0));
 }
@@ -21,38 +19,33 @@
   z-index: 1;
   width: 100%;
   content: '';
-  height: 100px;
+  height: 70px;
   position: absolute;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0), #000000);
 }
 .items {
-  @apply text-primary  font-bold;
+  @apply text-primary font-bold;
   margin: 0;
   padding: 0;
-  animation: scrollUp 4s ease-in-out infinite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: scrollUp 12s linear infinite;
 }
 .item {
   opacity: 0;
-  height: 20px;
-  padding: 10px;
+  height: 60px;
   list-style: none;
   animation: fadeUp 1s ease-in-out infinite;
 }
-.item-1 { animation-delay: 0s; }
-.item-2 { animation-delay: 1s; }
-.item-3 { animation-delay: 2s; }
-.item-4 { animation-delay: 3s; }
-.item-5 { animation-delay: 4s; }
-
 @keyframes scrollUp {
   0% {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-40%);
+    transform: translateY(-50%);
   }
 }
-
 @keyframes fadeUp {
   0% {
     opacity: 0;

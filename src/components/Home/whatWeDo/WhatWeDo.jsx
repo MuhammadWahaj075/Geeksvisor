@@ -1,4 +1,4 @@
-import { RollingWords } from "@/components/ui/RollingWords";
+import { RollingWords } from "@/components/ui/rollingWords/RollingWords";
 
 export function WhatWeDo() {
   return (

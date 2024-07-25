@@ -392,7 +392,7 @@ export const ProfileRatingData = [
   },
   {
     id: 2,
-    name: "Jane Doe",
+    name: "Moheed Siddiqui",
     designation: "Software Engineer",
     profileImage: TimProfile,
     testimonial: `Geeksvisor provided exceptional services and demonstrated great
@@ -409,7 +409,7 @@ export const ProfileRatingData = [
 
   {
     id: 3,
-    name: "Jane Doe",
+    name: "Dawood Siddiqui",
     designation: "Software Engineer",
     profileImage: TimProfile,
     testimonial: `Throughout my career, I've had the privilege of collaborating with developers from across the globe, and I'm incredibly grateful to have Geeksvisor from Pakistan as part of my team.`,
@@ -418,7 +418,7 @@ export const ProfileRatingData = [
 
   {
     id: 4,
-    name: "Jane Doe",
+    name: "Muhammad Arsalan",
     designation: "Software Engineer",
     profileImage: TimProfile,
     testimonial: `Geeksvisor provided exceptional services and demonstrated great
@@ -432,6 +432,7 @@ export const ProfileRatingData = [
                   ensuring everything progresses.`,
     rating: 4,
   },
+  
   {
     id: 5,
     name: "Jane Doe",
@@ -439,6 +440,22 @@ export const ProfileRatingData = [
     profileImage: TimProfile,
     testimonial: `Throughout my career, I've had the privilege of collaborating with developers from across the globe, and I'm incredibly grateful to have Geeksvisor from Pakistan as part of my team.`,
     rating: 3,
+  },
+  {
+    id: 6,
+    name: "Muhammad Wahaj",
+    designation: "Software Engineer",
+    profileImage: TimProfile,
+    testimonial: `Throughout my career, I've had the privilege of collaborating with developers from across the globe, and I'm incredibly grateful to have Geeksvisor from Pakistan as part of my team.`,
+    rating: 5,
+  },
+  {
+    id: 7,
+    name: "Muhammad Mughees",
+    designation: "Software Engineer",
+    profileImage: TimProfile,
+    testimonial: `Throughout my career, I've had the privilege of collaborating with developers from across the globe, and I'm incredibly grateful to have Geeksvisor from Pakistan as part of my team.`,
+    rating: 4,
   },
 ];
 
