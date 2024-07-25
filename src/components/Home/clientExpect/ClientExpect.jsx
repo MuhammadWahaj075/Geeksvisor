@@ -24,7 +24,7 @@ export function ClientExpectation() {
             <p className="description_text text-center max-w-[737px]">
               From web apps to mobile apps and everything in between, our recent
               works showcase our expertise in developing innovative solutions
-              that meet our clients' unique needs. Contact us now to discuss
+              that meet our clients unique needs. Contact us now to discuss
               your project!.
             </p>
           </div>
