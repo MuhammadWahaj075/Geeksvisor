@@ -5,7 +5,7 @@ import { bannerMockData } from "@/utils/mockData";
 export const BannerSection = () => {
   return (
     <div className="relative">
-      <div className="h-[50rem] mx-auto w-full max-w-[1440px] bg-grid-white/[0.1] bg-grid-black-100 relative flex items-center justify-center ">
+      <div className="h-[50rem] mx-auto w-full max-w-[1440px] bg-grid-white/[0.1] bg-grid-black-100 relative flex items-center justify-center">
         <OptimizedImage
           src={bannerMockData?.images?.filterRightImg}
           height={"100%"}
@@ -19,20 +19,20 @@ export const BannerSection = () => {
             <Pill text={bannerMockData?.subtitle} className="!text-[14px] !mb-[24px] !text-[#ccc] font-inter !bg-[#1b1b1d] !py-[8px] !px-[12px]"/>
               
 
-            <p className="text-[30px] w-full px-5 leading-[40px] sm:leading-[40px] lg:leading-[80px]  sm:max-w-[1160px] text-center sm:text-[40px] lg:text-[56px] font-unbound font-bold relative z-20 bg-clip-text text-transparent bg-neutral">
+            <p className="text-[30px] w-full  px-5 leading-[40px] sm:leading-[40px] lg:leading-[80px]  sm:max-w-[1160px] text-center sm:text-[40px] lg:text-[56px] font-unbound font-bold relative z-20 bg-clip-text text-transparent bg-neutral">
               {bannerMockData?.title?.split(" ")?.map((word, index) =>
                 word === "Vision" ? (
-                  <span key={index} className="text-primary">
+                  <span key={index} className="text-primary pr-2">
                     {word}
                   </span>
                 ) : (
-                  word + " "
+                  word  + " "
                 )
               )}
             </p>
 
             <div className="flex justify-center flex-col items-center">
-              <p className="description_text  py-[40px] text-center w-[350px] sm:w-[600px] lg:w-[700px]">
+              <p className="description_text py-[40px] text-center w-[350px] sm:w-[600px] lg:w-[700px]">
                 {bannerMockData.description}
               </p>
 

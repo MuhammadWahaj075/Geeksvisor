@@ -57,12 +57,12 @@ export const Header = () => {
             isMenuOpen ? "block" : "hidden"
           } justify-between items-center w-full h-screen lg:h-auto lg:flex lg:w-auto lg:order-1`}
         >
-          <ul className="flex flex-col mt-4 lg:flex-row lg:space-x-8 lg:mt-0">
+          <ul className=" flex flex-col mt-4 lg:flex-row lg:space-x-8 lg:mt-0">
             {menuItems?.map((item, i) => (
               <li key={i}>
                 <a
                   href="#"
-                  className={`block border-2 border-b-neutral lg:border-none font-inter text-base py-2 pr-4 pl-3 font-bold ${
+                  className={` block border-2 border-b-neutral lg:border-none font-inter text-[14px] py-2 pr-4 pl-3 font-bold ${
                     activeNavItem === item.navItem
                       ? "text-neutral "
                       : "text-neutral font-normal"
