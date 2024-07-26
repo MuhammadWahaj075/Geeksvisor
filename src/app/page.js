@@ -3,9 +3,7 @@ import {
   ClientExpectation,
   Faq,
   FeatureWork,
-  GetFromUs,
   GreatIdea,
-  HowItWorks,
   InfiniteMovingImages,
   MeetOurTeam,
   ServingIndustries,
@@ -24,11 +22,9 @@ export default function Home() {
       <InfiniteMovingImages />
       <WhoWeAre />
       <ServingIndustries />
-      <GetFromUs />
       <FeatureWork />
       <WhatWeDo />
       <ClientExpectation />
-      <HowItWorks />
       <WhatPeopleSay />
       <WhatWeVission />
       <MeetOurTeam />
