@@ -7,7 +7,7 @@ import { Button, OptimizedImage, Pill } from "@/components/comman";
 import { IoIosArrowRoundForward } from "react-icons/io";
 
 export const VerticalScrollCarousel = () => {
-  const Card = ({ title, content, opacity, children }) => {
+  const Card = ({ opacity, children }) => {
     return (
       <div className="card" style={{ opacity }}>
         {children}
@@ -15,26 +15,18 @@ export const VerticalScrollCarousel = () => {
     );
   };
 
-  const cards = [
-    { title: "Project Title Here 1", content: "Details, Tags, etc." },
-    { title: "Project Title Here 2", content: "Details, Tags, etc." },
-    { title: "Project Title Here 3", content: "Details, Tags, etc." },
-    { title: "Project Title Here 4", content: "Details, Tags, etc." },
-    // Add more cards as needed
-  ];
-
   const scrollRef = useRef(null);
   const [opacities, setOpacities] = useState([
     1,
     0.8,
     0.5,
-    ...Array(cards.length - 3).fill(0.5),
+    ...Array(projects.length - 3).fill(0.5),
   ]);
 
   const handleScroll = () => {
     if (scrollRef.current) {
       const { scrollTop, clientHeight } = scrollRef.current;
-      const newOpacities = cards.map((_, index) => {
+      const newOpacities = projects.map((_, index) => {
         const cardTop = index * (clientHeight + 10);
         if (scrollTop >= cardTop && scrollTop < cardTop + clientHeight)
           return 1;
@@ -59,11 +51,8 @@ export const VerticalScrollCarousel = () => {
   return (
     <div className="vertical-scroll" ref={scrollRef}>
       {projects?.map((project) => (
-        <Card>
-          <div
-            key={project?.id}
-            className="project_cards flex justify-center flex-col lg:flex-row items-center xl:justify-between flex-wrap gap-[88px] mb-10 lg:gap-60"
-          >
+        <Card key={project?.id} opacity={opacities}>
+          <div className="project_cards flex justify-center flex-col lg:flex-row items-center xl:justify-between flex-wrap gap-[88px] mb-10 lg:gap-60">
             <div className="order-1 flex items-start flex-col gap-4 justify-center">
               <h1 className="text-[24px] text-neutral font-inter font-semibold">
                 {project.title}

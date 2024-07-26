@@ -3,7 +3,6 @@ import { TestimonialsLogos } from "./TestimonialsLogos";
 import { InfiniteMovingImages } from "./InfiniteMovingImage";
 import { WhoWeAre } from "./WhoWeAre";
 import { ServingIndustries } from "./servingIndustries/ServingIndustries";
-import { WhatWeDo } from "./whatWeDo/WhatWeDo";
 import { ClientExpectation } from "./clientExpect/ClientExpect";
 import { WhatPeopleSay } from "./whatPeopleSay/WhatPeopleSay";
 import { WhatWeVission } from "./whatWeVission/WhatWeVission";
@@ -19,7 +18,6 @@ export {
   WhoWeAre,
   ServingIndustries,
   FeatureWork,
-  WhatWeDo,
   ClientExpectation,
   WhatPeopleSay,
   WhatWeVission,

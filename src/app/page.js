@@ -22,7 +22,6 @@ export default function Home() {
       <WhoWeAre />
       <ServingIndustries />
       <FeatureWork />
-      <WhatWeDo />
       <ClientExpectation />
       <WhatPeopleSay />
       <WhatWeVission />

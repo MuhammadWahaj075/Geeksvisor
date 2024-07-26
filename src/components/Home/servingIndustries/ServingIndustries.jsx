@@ -30,7 +30,7 @@ export const ServingIndustries = () => {
         </div>
       </div>
 
-      <div class="main mt-[72px]">
+      <div className="main mt-[72px]">
         <div className="inner-div ">
           <div className="overflow-hidden mx-auto lg:w-full h-[304px] flex items-center">
             <motion.div
