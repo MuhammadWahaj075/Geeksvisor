@@ -2,6 +2,7 @@ import {
   BannerSection,
   ClientExpectation,
   Faq,
+  FeatureWork,
   GetFromUs,
   GreatIdea,
   HowItWorks,
@@ -24,6 +25,7 @@ export default function Home() {
       <WhoWeAre />
       <ServingIndustries />
       <GetFromUs />
+      <FeatureWork />
       <WhatWeDo />
       <ClientExpectation />
       <HowItWorks />

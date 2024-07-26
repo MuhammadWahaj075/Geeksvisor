@@ -12,6 +12,7 @@ import { WhatWeVission } from "./whatWeVission/WhatWeVission";
 import { MeetOurTeam } from "./meetOurTeam/MeetOurTeam";
 import { Faq } from "./frequentlyAskedQues/Faq";
 import { GreatIdea } from "./greatIdea/GreatIdea";
+import { FeatureWork } from "./featureWork/FeatureWork";
 
 export {
   BannerSection,
@@ -20,6 +21,7 @@ export {
   WhoWeAre,
   ServingIndustries,
   GetFromUs,
+  FeatureWork,
   WhatWeDo,
   ClientExpectation,
   HowItWorks,

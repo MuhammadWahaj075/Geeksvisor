@@ -9,11 +9,11 @@ import { StarIcon } from "../../../../public/assets";
 
 const scrollVariants = {
   animate: {
-    y: [0, -4000], // Adjusted to cover more distance
+    y: [0, -7000], // Adjusted to cover more distance
     transition: {
       y: {
         repeat: Infinity,
-        duration: 90, // Adjust duration for smoother and slower scroll
+        duration: 200, // Adjust duration for smoother and slower scroll
         ease: "linear",
       },
     },

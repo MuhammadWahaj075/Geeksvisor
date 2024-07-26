@@ -1,6 +1,6 @@
 "use client";
 
-import { OurQualityData } from "@/utils/mockData";
+import { clientExpectationMockData, OurQualityData } from "@/utils/mockData";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { Count } from "@/components/ui/CountingAnimation";
 import { Button, OptimizedImage } from "@/components/comman";
@@ -19,16 +19,13 @@ export function ClientExpectation() {
           />
           <div className="flex flex-col gap-6 px-2 items-center">
             <h1 className="title_text !text-[#FFFFFFE5] max-w-[737px]">
-              We Always Try To Understand Our Client's Expectation
+             {clientExpectationMockData.title}
             </h1>
             <p className="description_text text-center max-w-[737px]">
-              From web apps to mobile apps and everything in between, our recent
-              works showcase our expertise in developing innovative solutions
-              that meet our clients' unique needs. Contact us now to discuss
-              your project!.
+             {clientExpectationMockData.description}
             </p>
           </div>
-          <div className="client-project_counts flex-col flex-wrap lg:flex-row gap-[80px] lg:gap-[180px] flex items-center justify-center mt-[140px]">
+          <div className="client-project_counts flex-col flex-wrap md:flex-row gap-[80px] lg:gap-[180px] flex items-center justify-center mt-[140px]">
             <div className="flex flex-col items-center">
               <Count
                 value={"100+"}
