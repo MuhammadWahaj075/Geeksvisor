@@ -74,7 +74,7 @@ export function ClientExpectation() {
             icon={<IoIosArrowRoundForward size={25} />}
             className={"py-[14px] px-[56px] mt-[76px]"}
           >
-            Let’s Connect
+            Lets Connect
           </Button>
           <OptimizedImage
             src={Spline}

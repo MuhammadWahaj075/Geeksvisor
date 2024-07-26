@@ -9,7 +9,6 @@ import {
   ServingIndustries,
   TestimonialsLogos,
   WhatPeopleSay,
-  WhatWeDo,
   WhatWeVission,
   WhoWeAre,
 } from "@/components/Home";

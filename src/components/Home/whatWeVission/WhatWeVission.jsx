@@ -7,7 +7,6 @@ export const WhatWeVission = () => {
       <div className="flex  flex-wrap mx-auto flex-col xl:flex-row items-center xl:max-w-screen-xl justify-center gap-10">
         <div className="border-2 w-[320px] xl:w-0  xl:h-[562px] border-l border-primary" />
         <div className="w-[320px]  h-[320px] lg:h-[510px] lg:w-[480px] rounded-[8px] bg-[#2F2B43]">
-          {/* <Image src={""} alt="img" /> */}
         </div>
         <div className="flex flex-col mx-auto  lg:w-[45%] xl:w-auto !justify-center gap-4 items-center lg:items-start">
           <h1 className="title_text">What we vission</h1>
