@@ -1,4 +1,4 @@
-import { BannerSection } from "./BannerSection";
+import { BannerSection } from "./bannerSection/BannerSection";
 import { TestimonialsLogos } from "./TestimonialsLogos";
 import { InfiniteMovingImages } from "./InfiniteMovingImage";
 import { WhoWeAre } from "./WhoWeAre";

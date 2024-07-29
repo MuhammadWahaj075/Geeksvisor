@@ -1,8 +1,8 @@
 .card {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    margin: 10px 0;
+    /* padding: 20px;
+    margin: 10px 0; */
  
     box-sizing: border-box;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
@@ -15,7 +15,7 @@
 
   .vertical-scroll {
     height: 570px;
-    padding: 20px;
+    padding: 5px;
     overflow-y: scroll;
     overflow-x: hidden;
     box-sizing: border-box;

@@ -6,7 +6,7 @@
 :root {
   --orange: #ee6e24;
   --background: #000000;
-  --border-size: 2px;
+  --border-size: 1px;
   --border-radius: 40px;
 }
 
@@ -31,11 +31,40 @@
     transparent 75%,
     transparent
   );
-  animation: rotateBackground 7s linear infinite;
+  animation: rotateBackground 12s linear infinite;
 }
 .main .inner-div {
   background: var(--background);
   background-color: #0a0a0a;
-  margin: 1px;
+  margin: 1.9px;
+  border: 1px solid #000000;
   border-radius: calc(var(--border-radius) - var(--border-size));
 }
+
+
+.inner-div {
+  position: relative;
+  overflow: hidden;
+}
+
+.inner-div::before,
+.inner-div::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 320px;
+  height: 100%;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.inner-div::before {
+  left: 0;
+  background: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+}
+
+.inner-div::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(0, 0, 0), rgba(0, 0, 0, 0));
+}
+

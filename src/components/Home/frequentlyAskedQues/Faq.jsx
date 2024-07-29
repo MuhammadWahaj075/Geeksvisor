@@ -2,8 +2,9 @@
 
 import { useState } from "react";
 import { faqData } from "@/utils/mockData";
-import { CrossIcon, PlusIcon } from "../../../../public/assets";
+import { MinusIcon, PlusIcon } from "../../../../public/assets";
 import { OptimizedImage } from "@/components/comman";
+import { FaRegWindowMinimize } from "react-icons/fa6";
 
 export const Faq = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -36,12 +37,12 @@ export const Faq = () => {
                 <div
                   style={{
                     transform:
-                      openIndex === index ? "rotate(45deg)" : "rotate(0deg)",
+                      openIndex === index ? "scale(1.1)" : "scale(1.0)",
                     transition: "transform 0.3s ease",
                   }}
                 >
                   <OptimizedImage
-                    src={openIndex === index ? CrossIcon : PlusIcon}
+                    src={openIndex === index ? MinusIcon : PlusIcon}
                     alt="toggle icon"
                   />
                 </div>

@@ -49,43 +49,46 @@ export const VerticalScrollCarousel = () => {
   }, []);
 
   return (
-    <div className="vertical-scroll" ref={scrollRef}>
-      {projects?.map((project) => (
-        <Card key={project?.id} opacity={opacities}>
-          <div className="project_cards flex justify-center flex-col lg:flex-row items-center xl:justify-between flex-wrap gap-[88px] mb-10 lg:gap-60">
-            <div className="order-1 flex items-start flex-col gap-4 justify-center">
-              <h1 className="text-[24px] text-neutral font-inter font-semibold">
-                {project.title}
-              </h1>
-              <div className="flex w-[320px] lg:w-[400px] flex-wrap gap-2 lg:gap-3">
-                {project.tags.map((tag, tagIndex) => (
-                  <Pill key={tagIndex} text={tag} />
-                ))}
+    <>
+      <div className="vertical-scroll" ref={scrollRef}>
+        {projects?.map((project) => (
+          <Card key={project?.id} opacity={opacities}>
+            <div className="project_cards flex justify-center flex-col lg:flex-row items-center xl:justify-between flex-wrap gap-[30px] mb-10 lg:gap-x-60 lg:gap-y-20">
+              <div className="order-1 flex items-start flex-col gap-4 justify-center">
+                <h1 className="text-[24px] text-neutral font-inter font-semibold">
+                  {project.title}
+                </h1>
+                <div className="flex w-[320px] lg:w-[400px] flex-wrap gap-2 lg:gap-3">
+                  {project.tags.map((tag, tagIndex) => (
+                    <Pill key={tagIndex} text={tag} />
+                  ))}
+                </div>
+                <Button
+                  variant="transparent"
+                  icon={<IoIosArrowRoundForward size={25} />}
+                  className={"!p-0 capitalize !h-0 mt-4 lg:mt-8 font-semibold"}
+                >
+                  See Project
+                </Button>
               </div>
-              <Button
-                variant="transparent"
-                icon={<IoIosArrowRoundForward size={25} />}
-                className={"!p-0 capitalize !h-0 mt-[32px] font-semibold"}
-              >
-                See Project
-              </Button>
+              <div className="flex lg:order-2">
+                <OptimizedImage
+                  src={project.image}
+                  className="w-[350px] lg:w-auto"
+                  alt={project.title}
+                />
+              </div>
             </div>
-            <div className="flex lg:order-2">
-              <OptimizedImage
-                src={project.image}
-                className="w-[350px] lg:w-auto"
-                alt={project.title}
-              />
-            </div>
-          </div>
-        </Card>
-      ))}
-      {/* // <div className="card-wrapper" key={index}>
-        //   <Card
-          
-        //     opacity={opacities[index]}
-        //   />
-        // </div> */}
-    </div>
+          </Card>
+        ))}
+      </div>
+      <Button
+        variant="primary"
+        className={"w-[275px] mt-[56px] lg:mt-[129px]"}
+        icon={<IoIosArrowRoundForward size={25} />}
+      >
+        View All Projects
+      </Button>
+    </>
   );
 };
