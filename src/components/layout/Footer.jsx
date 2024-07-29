@@ -64,12 +64,13 @@ export const Footer = () => {
               className="flex flex-col md:flex-row gap-2 pt-4"
               variants={fadeInUp}
             >
-              <input
-                type="text"
-                placeholder="Email here"
-                className="rounded-xl p-[16px] w-full md:w-[272px] bg-[#0E0F13]"
-              />
-              <Button className="!bg-neutral w-full md:w-[113px] h-[58px] !text-black rounded-xl">
+             <input
+  type="text"
+  placeholder="Email here"
+  className="email_input rounded-xl p-[16px] w-full md:w-[272px] h-[58px] bg-[#0E0F13]"
+/>
+
+              <Button className="!bg-neutral w-full md:w-[113px] !h-[58px] !text-black rounded-xl">
                 Signup
               </Button>
             </motion.div>
