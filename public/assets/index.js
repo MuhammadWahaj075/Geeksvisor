@@ -38,6 +38,7 @@ import CodeIcon from "./icons/ls-gt.svg";
 import rocketIcon from "./icons/rocket.svg";
 import StarIcon from "./icons/star.svg";
 import TimProfile from "./images/tim.jpg";
+import MinusIcon from "./icons/minus-icon.svg";
 
 export {
   Logo,
@@ -80,4 +81,5 @@ export {
   rocketIcon,
   StarIcon,
   TimProfile,
+  MinusIcon,
 };

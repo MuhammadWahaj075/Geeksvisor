@@ -9,11 +9,11 @@ import { StarIcon } from "../../../../public/assets";
 
 const scrollVariants = {
   animate: {
-    y: [0, -4000], // Adjusted to cover more distance
+    y: [0, -7000], // Adjusted to cover more distance
     transition: {
       y: {
         repeat: Infinity,
-        duration: 90, // Adjust duration for smoother and slower scroll
+        duration: 200, // Adjust duration for smoother and slower scroll
         ease: "linear",
       },
     },
@@ -44,7 +44,7 @@ export const WhatPeopleSay = () => {
     .flat();
 
   return (
-    <div className="mt-52">
+    <div className="mt-[96px] lg:mt-52">
       <div className="flex flex-col gap-y-[70px]">
         <div className="flex flex-col gap-y-4 items-center justify-center">
           <h1 className="title_text">What people say?</h1>

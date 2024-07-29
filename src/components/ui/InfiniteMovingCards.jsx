@@ -28,7 +28,7 @@ export const InfiniteMovingCards = ({
           start && "animate-scroll"
         } ${hookPauseOnHover && "hover:[animation-play-state:paused]"}`}
       >
-        {items?.map((item) => (
+        {items?.map((item, i) => (
           <li
             className="w-[350px] max-w-full relative flex-shrink-0"
             key={item.name}

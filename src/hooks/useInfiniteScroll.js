@@ -18,7 +18,7 @@ export function useInfiniteScroll(
         if (scrollerRef.current) {
           scrollerRef.current.appendChild(duplicatedItem);
         }
-      });
+      }, []);
 
       setDirection();
       setSpeed();

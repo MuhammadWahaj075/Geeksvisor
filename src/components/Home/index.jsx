@@ -1,4 +1,4 @@
-import { BannerSection } from "./BannerSection";
+import { BannerSection } from "./bannerSection/BannerSection";
 import { TestimonialsLogos } from "./TestimonialsLogos";
 import { InfiniteMovingImages } from "./InfiniteMovingImage";
 import { WhoWeAre } from "./WhoWeAre";
@@ -9,6 +9,8 @@ import { WhatWeVission } from "./whatWeVission/WhatWeVission";
 import { MeetOurTeam } from "./meetOurTeam/MeetOurTeam";
 import { Faq } from "./frequentlyAskedQues/Faq";
 import { GreatIdea } from "./greatIdea/GreatIdea";
+import { FeatureWork } from "./featureWork/FeatureWork";
+import { WhatWeDo } from "./whatWeDo/WhatWeDo";
 
 export {
   BannerSection,
@@ -16,6 +18,8 @@ export {
   InfiniteMovingImages,
   WhoWeAre,
   ServingIndustries,
+  FeatureWork,
+  WhatWeDo,
   ClientExpectation,
   WhatPeopleSay,
   WhatWeVission,

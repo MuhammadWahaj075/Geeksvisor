@@ -375,6 +375,14 @@ export const HowItWorksData = [
   },
 ];
 
+export const clientExpectationMockData = {
+  title: "We Always Try To Understand Our Client's Expectation",
+  description: ` From web apps to mobile apps and everything in between, our recent
+              works showcase our expertise in developing innovative solutions
+              that meet our clients unique needs. Contact us now to discuss your
+              project!.`,
+};
+
 export const ProfileRatingData = [
   {
     id: 1,
@@ -432,7 +440,7 @@ export const ProfileRatingData = [
                   ensuring everything progresses.`,
     rating: 4,
   },
-  
+
   {
     id: 5,
     name: "Jane Doe",
@@ -440,22 +448,6 @@ export const ProfileRatingData = [
     profileImage: TimProfile,
     testimonial: `Throughout my career, I've had the privilege of collaborating with developers from across the globe, and I'm incredibly grateful to have Geeksvisor from Pakistan as part of my team.`,
     rating: 3,
-  },
-  {
-    id: 6,
-    name: "Muhammad Wahaj",
-    designation: "Software Engineer",
-    profileImage: TimProfile,
-    testimonial: `Throughout my career, I've had the privilege of collaborating with developers from across the globe, and I'm incredibly grateful to have Geeksvisor from Pakistan as part of my team.`,
-    rating: 5,
-  },
-  {
-    id: 7,
-    name: "Muhammad Mughees",
-    designation: "Software Engineer",
-    profileImage: TimProfile,
-    testimonial: `Throughout my career, I've had the privilege of collaborating with developers from across the globe, and I'm incredibly grateful to have Geeksvisor from Pakistan as part of my team.`,
-    rating: 4,
   },
 ];
 

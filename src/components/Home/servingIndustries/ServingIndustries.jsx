@@ -18,10 +18,10 @@ export const ServingIndustries = () => {
   };
 
   return (
-    <div className="mt-[206px] px-5 mx-auto lg:max-w-[1164px] center-div">
+    <div className="mt-[100px] lg:mt-[206px] px-5 mx-auto lg:max-w-[1164px] center-div">
       <div className="flex-center-column text-center">
         <div className="flex justify-center items-center flex-col">
-          <h2 className="title_text  font-bold  text-center">
+          <h2 className="title_text font-bold text-center">
             {ServingMockData?.title}
           </h2>
           <p className="description_text max-w-[653px] mt-[16px] text-center">
@@ -30,8 +30,8 @@ export const ServingIndustries = () => {
         </div>
       </div>
 
-      <div class="main mt-[72px]">
-        <div className="inner-div ">
+      <div className="main mt-[72px]">
+        <div className="inner-div">
           <div className="overflow-hidden mx-auto lg:w-full h-[304px] flex items-center">
             <motion.div
               className="flex"
