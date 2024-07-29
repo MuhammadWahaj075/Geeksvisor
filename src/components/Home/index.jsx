@@ -10,6 +10,7 @@ import { MeetOurTeam } from "./meetOurTeam/MeetOurTeam";
 import { Faq } from "./frequentlyAskedQues/Faq";
 import { GreatIdea } from "./greatIdea/GreatIdea";
 import { FeatureWork } from "./featureWork/FeatureWork";
+import { WhatWeDo } from "./whatWeDo/WhatWeDo";
 
 export {
   BannerSection,
@@ -18,6 +19,7 @@ export {
   WhoWeAre,
   ServingIndustries,
   FeatureWork,
+  WhatWeDo,
   ClientExpectation,
   WhatPeopleSay,
   WhatWeVission,

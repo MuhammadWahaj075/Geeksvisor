@@ -13,6 +13,7 @@ import {
 import { Button, OptimizedImage } from "../comman";
 import { inquiries, mainPages, services } from "@/utils/mockData";
 import useInView from "@/hooks/useInView";
+import "./style.css";
 
 export const Footer = () => {
   const controls = useAnimation();
@@ -59,14 +60,16 @@ export const Footer = () => {
             >
               Signup to get latest news & offers
             </motion.h1>
-
-            <motion.div className="flex gap-2 pt-4" variants={fadeInUp}>
+            <motion.div
+              className="flex flex-col md:flex-row gap-2 pt-4"
+              variants={fadeInUp}
+            >
               <input
                 type="text"
                 placeholder="Email here"
-                className="rounded-xl p-[16px] w-[272px] bg-[#0E0F13]"
+                className="rounded-xl p-[16px] w-full md:w-[272px] bg-[#0E0F13]"
               />
-              <Button className="!bg-neutral w-[113px] h-[58px] !text-black rounded-xl">
+              <Button className="!bg-neutral w-full md:w-[113px] h-[58px] !text-black rounded-xl">
                 Signup
               </Button>
             </motion.div>
@@ -135,20 +138,20 @@ export const Footer = () => {
           </motion.div>
         </div>
       </div>
-      <div className="relative">
+      {/* <div className="relative">
         <motion.div variants={fadeInUp}>
           <OptimizedImage
             src={FooterLogo}
-            className="w-full mt-[200px]"
+            className="w-full mx-auto max-w-[1440px] mt-[60px] lg:mt-[200px]"
             alt="footer-logo"
           />
         </motion.div>
-        <div className="bg-custom-gradient w-full h-full absolute top-10  md:top-32 xl:top-[170px] bg-[#0000008F] backdrop-blur-xl">
-          <div className="flex flex-col gap-6 mt-36 items-center justify-center">
+        <div className="bg-custom-gradient w-full h-full absolute top-[130px] bg-[#0000008F] backdrop-blur-xl">
+          <div className="flex flex-col gap-6 mt-[10px] lg:mt-36 items-center justify-center">
             <h1 className="font-inter font-medium text-neutral text-[24px]">
               Follow us on Social Media
             </h1>
-            <div className="flex  w-[320px] lg:w-[400px] justify-between">
+            <div className="flex w-[320px] lg:w-[400px] justify-between">
               <OptimizedImage
                 className="cursor-pointer"
                 src={FacebookIcon}
@@ -175,12 +178,19 @@ export const Footer = () => {
                 alt={"dribble-icon"}
               />
             </div>
-            <hr className="w-[350px] lg:w-[1160px] mt-14 mb-10 opacity-[20%] border-t border-neutral-200 " />
+            <hr className="w-[350px] lg:w-[1160px] mt-14 mb-10 opacity-[20%] border-t border-neutral-200" />
             <p className="description_text mb-10">
               Copyright © 2024 All rights reserved by Geekvisor
             </p>
           </div>
         </div>
+      </div> */}
+
+      <div className="flex flex-col gap-6 items-center justify-center">
+        <hr className="w-[350px] lg:w-[1160px] mt-14 mb-10 opacity-[20%] border-t border-neutral-200" />
+        <p className="description_text text-center mb-10">
+          Copyright © 2024 All rights reserved by Geekvisor
+        </p>
       </div>
     </motion.section>
   );

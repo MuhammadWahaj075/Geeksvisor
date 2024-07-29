@@ -4,7 +4,7 @@ import { Button, OptimizedImage, Pill } from "@/components/comman";
 
 export const MeetOurTeam = () => {
   return (
-    <div className="mt-[170px] mx-auto flex justify-center max-w-screen-xl">
+    <div className="mt-[100px] mx-auto flex justify-center max-w-screen-xl">
       <div className="flex flex-col items-center gap-[70px]">
         <div className="flex flex-col  gap-4 items-center">
           <h1 className="title_text">Meet our Team</h1>

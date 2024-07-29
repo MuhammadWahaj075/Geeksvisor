@@ -2,7 +2,7 @@ import { VerticalScrollCarousel } from "./featureCards";
 
 export function FeatureWork() {
   return (
-    <div className="mt-[150px]">
+    <div className="mt-[110px] lg:mt-[150px]">
       <div className="flex items-center flex-col justify-center">
         <div className="h-[20rem] w-auto !bg-black bg-grid-medium-white/[0.1] dark:bg-grid-medium-black/[0.5] relative flex items-center justify-center">
           <div className="absolute pointer-events-none inset-0 flex  items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
