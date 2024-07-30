@@ -18,7 +18,7 @@ export const BannerSection = () => {
           <div className="flex relative z-20 flex-col justify-center items-center">
             <Pill
               text={bannerMockData?.subtitle}
-              className="!text-[14px] py-2 px-3 normal-case !mb-[24px] !text-[#ccc] font-inter !bg-[#1b1b1d]"
+              className="!text-[14px] py-2 px-3 normal-case !mb-[24px] !text-[#ccc] font-inter !bg-secondary-bannerPill"
             />
 
             <p className="text-[30px] w-full  px-5 leading-[40px] sm:leading-[40px] lg:leading-[80px]  sm:max-w-[1160px] text-center sm:text-[40px] lg:text-[56px] font-unbound font-bold relative z-20 bg-clip-text text-transparent bg-neutral">

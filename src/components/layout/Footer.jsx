@@ -11,9 +11,10 @@ import {
   DribbleIcon,
 } from "../../../public/assets";
 import { Button, OptimizedImage } from "../comman";
-import { inquiries, mainPages, services } from "@/utils/mockData";
+import { footerAddress, inquiries, mainPages, services } from "@/utils/mockData";
 import useInView from "@/hooks/useInView";
 import "./style.css";
+import { Input } from "../comman/Input";
 
 export const Footer = () => {
   const controls = useAnimation();
@@ -64,11 +65,11 @@ export const Footer = () => {
               className="flex flex-col md:flex-row gap-2 pt-4"
               variants={fadeInUp}
             >
-             <input
-  type="text"
-  placeholder="Email here"
-  className="email_input rounded-xl p-[16px] w-full md:w-[272px] h-[58px] bg-[#0E0F13]"
-/>
+              <Input
+                type="text"
+                placeholder="Email here"
+                className="email_input rounded-xl p-[16px] w-full md:w-[272px] h-[58px] bg-secondary-inputColor"
+              />
 
               <Button className="!bg-neutral w-full md:w-[113px] !h-[58px] !text-black rounded-xl">
                 Signup
@@ -85,7 +86,7 @@ export const Footer = () => {
                   <a
                     href={page.link}
                     title={page.name}
-                    className="flex text-sm text-[#FFFFFFE5] opacity-[60%] transition-all duration-200 hover:text-orange-600 focus:text-orange-600"
+                    className="flex text-sm text-primary-normal opacity-[60%] transition-all duration-200 hover:text-secondary-hover focus:text-secondary-hover"
                   >
                     {page.name}
                   </a>
@@ -103,7 +104,7 @@ export const Footer = () => {
                   <a
                     href={service.link}
                     title={service.name}
-                    className="flex text-sm text-[#FFFFFFE5] opacity-[60%] transition-all duration-200 hover:text-orange-600 focus:text-orange-600"
+                    className="flex text-sm text-primary-normal opacity-[60%] transition-all duration-200 hover:text-secondary-hover focus:text-secondary-hover"
                   >
                     {service.name}
                   </a>
@@ -121,7 +122,7 @@ export const Footer = () => {
                   <a
                     href={inquiry.link}
                     title={inquiry.name}
-                    className="flex text-sm text-[#FFFFFFE5] opacity-[60%] transition-all duration-200 hover:text-orange-600 focus:text-orange-600"
+                    className="flex text-sm text-primary-normal opacity-[60%] transition-all duration-200 hover:text-secondary-hover focus:text-secondary-hover"
                   >
                     {inquiry.name}
                   </a>
@@ -130,9 +131,8 @@ export const Footer = () => {
 
               <p className="text-base font-medium text-neutral">Address</p>
               <li>
-                <a className="flex text-sm text-[#FFFFFFE5] opacity-[60%] transition-all duration-200 hover:text-orange-600 focus:text-orange-600">
-                  Flat# 6 Building 19-C South Park Avenue, Ext, D.H.A. Phase 2
-                  Defence Housing Authority, Karachi, Pakistan.
+                <a className="flex text-sm text-primary-normal opacity-[60%] transition-all duration-200 hover:text-secondary-hover focus:text-secondary-hover">
+                 {footerAddress.addressLine}
                 </a>
               </li>
             </ul>
@@ -188,7 +188,7 @@ export const Footer = () => {
       </div> */}
 
       <div className="flex flex-col gap-6 items-center justify-center">
-        <hr className="w-[350px] lg:w-[1160px] mt-14 mb-10 opacity-[20%] border-t border-neutral-200" />
+        <hr className="w-[350px] lg:w-[1000px] 2xl:w-[1160px] mt-14 mb-10 opacity-[20%] border-t border-neutral-200" />
         <p className="description_text text-center mb-10">
           Copyright © 2024 All rights reserved by Geekvisor
         </p>

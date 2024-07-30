@@ -7,7 +7,7 @@ const {
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   images: {
-    domains: ['contentsnare.com'],
+    domains: ["contentsnare.com"],
   },
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -15,23 +15,30 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-  
     extend: {
       backgroundImage: {
-        'custom-gradient': 'linear-gradient(to bottom, #0000008F 5%, #0000008F 30%)',
+        "custom-gradient":
+          "linear-gradient(to bottom, #0000008F 5%, #0000008F 30%)",
       },
       colors: {
         primary: {
           light: "#FFFFFF99",
           DEFAULT: "#EE6E24",
+          normal: "#FFFFFFE5",
           dark: "#4c1d95",
           hover: "#ed9866",
-          pill: "#FFFFFF1A"
+          pill: "#FFFFFF1A",
+          borderColor: "#B1B1B1",
+          imageTestColor: "#2F2B43",
         },
         secondary: {
           light: "#9C9C9C",
           DEFAULT: "#10b981",
           dark: "#059669",
+          hover: "#ea580c",
+          inputColor: "#0E0F13",
+          bannerPill: "#1b1b1d",
+          borderDark: "#1F1F1F",
         },
         accent: {
           light: "#fbbf24",
@@ -50,7 +57,7 @@ module.exports = {
       },
       fontFamily: {
         inter: ["var(--inter)"],
-        unbound: ["var(--unbound)"]
+        unbound: ["var(--unbound)"],
       },
       animation: {
         scroll:

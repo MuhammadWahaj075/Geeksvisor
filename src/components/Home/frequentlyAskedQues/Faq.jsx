@@ -24,7 +24,7 @@ export const Faq = () => {
           {faqData.map((item, index) => (
             <div
               key={index}
-              className="bg-[#0E0F13] rounded-[12px] overflow-hidden"
+              className="bg-secondary-inputColor rounded-[12px] overflow-hidden"
             >
               <button
                 type="button"

@@ -1,5 +1,5 @@
 import { IoIosArrowRoundForward } from "react-icons/io";
-import { teamMembers } from "@/utils/mockData";
+import { MeetTeamMockData, teamMembers } from "@/utils/mockData";
 import { Button, OptimizedImage, Pill } from "@/components/comman";
 
 export const MeetOurTeam = () => {
@@ -7,9 +7,9 @@ export const MeetOurTeam = () => {
     <div className="mt-[100px] mx-auto flex justify-center max-w-screen-xl">
       <div className="flex flex-col items-center gap-[70px]">
         <div className="flex flex-col  gap-4 items-center">
-          <h1 className="title_text">Meet our Team</h1>
+          <h1 className="title_text">{MeetTeamMockData.title}</h1>
           <p className="description_text">
-            We are incredible people with expert skills
+            {MeetTeamMockData.subtitle}
           </p>
         </div>
         <div className="flex gap-10 flex-wrap justify-center">

@@ -18,7 +18,7 @@ export function ClientExpectation() {
             className="absolute hidden 2xl:block top-0 right-[-100px] z-10"
           />
           <div className="flex flex-col gap-6 px-2 items-center">
-            <h1 className="title_text !text-[#FFFFFFE5] max-w-[737px]">
+            <h1 className="title_text !text-primary-normal max-w-[737px]">
               {clientExpectationMockData.title}
             </h1>
             <p className="description_text text-center max-w-[737px]">
