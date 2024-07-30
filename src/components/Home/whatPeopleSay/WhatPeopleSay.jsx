@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { ProfileRatingData } from "@/utils/mockData";
+import { ProfileRatingData, WhatPeopleSayMockData } from "@/utils/mockData";
 import Masonry from "react-masonry-css";
 import { OptimizedImage } from "@/components/comman";
 import { StarIcon } from "../../../../public/assets";
@@ -47,10 +47,9 @@ export const WhatPeopleSay = () => {
     <div className="mt-[96px] lg:mt-52">
       <div className="flex flex-col gap-y-[70px]">
         <div className="flex flex-col gap-y-4 items-center justify-center">
-          <h1 className="title_text">What people say?</h1>
+          <h1 className="title_text">{WhatPeopleSayMockData.title}</h1>
           <p className="description_text text-center w-[320px] lg:w-[605px]">
-            See what our satisfied clients are saying about our exceptional
-            services and personalized approach to their unique business needs.
+            {WhatPeopleSayMockData.description}
           </p>
         </div>
         <div className="people_cards_wrapper scroll_hidden relative h-[700px] mx-auto overflow-hidden flex items-center justify-center flex-wrap gap-y-8">
@@ -71,7 +70,7 @@ export const WhatPeopleSay = () => {
                 ) => (
                   <div
                     key={id + "-" + index}
-                    className="people_cards flex-wrap flex gap-y-8 p-8 flex-col border border-[#1F1F1F] rounded-3xl lg:w-[411px] !h-auto"
+                    className="people_cards flex-wrap flex gap-y-8 p-8 flex-col border border-secondary-borderDark rounded-3xl lg:w-[411px] !h-auto"
                   >
                     <div className="flex">
                       {[...Array(rating)].map((_, i) => (

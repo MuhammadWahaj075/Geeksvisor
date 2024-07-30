@@ -50,8 +50,8 @@ export const ServingIndustries = () => {
                     className="serving_card flex flex-row items-center"
                     style={{ width: `${itemWidth}px` }}
                   >
-                    <div className="w-[60px] border-[0.5px] border-[#B1B1B1]" />
-                    <div className="flex justify-center flex-col items-center w-[85px] h-[85px] border border-[#B1B1B1] rounded-[12px]">
+                    <div className="w-[60px] border-[0.5px] border-primary-borderColor" />
+                    <div className="flex justify-center flex-col items-center w-[85px] h-[85px] border border-primary-borderColor rounded-[12px]">
                       <OptimizedImage
                         src={item?.icon}
                         className="rounded-[8px] h-[31.85px] w-[35.81px]"
@@ -60,7 +60,7 @@ export const ServingIndustries = () => {
                         {item?.name}
                       </p>
                     </div>
-                    <div className="w-[60px] border-[0.5px] border-[#B1B1B1]" />
+                    <div className="w-[60px] border-[0.5px] border-primary-borderColor" />
                     {index < itemCount * 2 - 1 && (
                       <div className="dot w-2 h-2 bg-primary rounded-full" />
                     )}

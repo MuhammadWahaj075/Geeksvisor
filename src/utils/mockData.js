@@ -383,6 +383,39 @@ export const clientExpectationMockData = {
               project!.`,
 };
 
+export const featureWorkMockData = {
+  title: "Featured Work",
+  description: ` Take a look at some of our recent projects that showcase our
+              expertise and commitment to delivering exceptional results for our
+              clients.`,
+};
+
+export const GreatIdeaMockData = {
+  title: "Have a great idea?",
+  subtitle: "Let’s work together to a better future with your idea!",
+};
+
+export const WhatPeopleSayMockData = {
+  title: "What people say?",
+  description: ` See what our satisfied clients are saying about our exceptional
+            services and personalized approach to their unique business needs.`,
+};
+
+export const WhatVissionMockData = {
+  title: "What we vission",
+  description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.`,
+  subtitle: `  We develop custom software solutions to meet the unique needs of
+            various industries.`,
+};
+
+export const MeetTeamMockData = {
+  title: "Meet our Team",
+  subtitle: "We are incredible people with expert skills",
+};
+
 export const ProfileRatingData = [
   {
     id: 1,
@@ -459,3 +492,8 @@ export const mockQuotations = [
   "Web3",
   "DevOps",
 ];
+
+export const footerAddress = {
+  addressLine:
+    "Flat# 6 Building 19-C South Park Avenue, Ext, D.H.A. Phase 2 Defence Housing Authority, Karachi, Pakistan.",
+};
