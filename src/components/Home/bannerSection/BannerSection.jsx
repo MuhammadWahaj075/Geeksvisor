@@ -1,19 +1,22 @@
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { Button, OptimizedImage, Pill } from "../../comman";
 import { bannerMockData } from "@/utils/mockData";
+import GridBoxAnimation from "@/components/ui/GridBoxAnimation";
 
 export const BannerSection = () => {
   return (
-    <div className="relative">
-      <div className="h-[50rem] mx-auto w-full max-w-[1440px] bg-grid-white/[0.1] bg-grid-black-100 relative flex items-center justify-center">
+    <div className="relative inner-div w-full">
+      <div className="h-[50rem]  mx-auto  max-w-[1440px] relative flex items-center justify-center">
         <OptimizedImage
           src={bannerMockData?.images?.filterRightImg}
           height={"100%"}
           width={"100%"}
           alt={"banner-image"}
-          className="absolute mt-[95px] top-0 right-[20px] z-10"
+          className="absolute  mt-[95px] top-0 right-[20px] z-10"
         />
-        <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black  [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
+        <div className="absolute pointer-events-none inset-0 flex items-center justify-center ">
+          <GridBoxAnimation />
+        </div>
         <div className="flex justify-center">
           <div className="flex relative z-20 flex-col justify-center items-center">
             <Pill
@@ -62,7 +65,7 @@ export const BannerSection = () => {
           height={"100%"}
           width={"100%"}
           alt={"FilterImg"}
-          className="absolute left-0 sm:left-[30px] xl:left-[90px] bottom-0"
+          className="absolute z-10 left-0 sm:left-[30px] xl:left-[90px] bottom-0"
         />
       </div>
     </div>
