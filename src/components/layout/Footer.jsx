@@ -175,20 +175,13 @@ export const Footer = () => {
                   alt={"dribble-icon"}
                 />
               </div>
-              <hr className="w-[350px] lg:w-[1160px] mt-14 mb-10 opacity-[20%] border-t border-neutral-200" />
+              <hr className="w-[350px] lg:w-[1000px] 2xl:w-[1160px] mt-14 mb-10 opacity-[20%] border-t border-neutral-200" />
               <p className="description_text mb-10">
                 Copyright © 2024 All rights reserved by Geekvisor
               </p>
             </div>
           </div>
         </div>
-
-      {/* <div className="flex flex-col gap-6 items-center justify-center">
-        <hr className="w-[350px] lg:w-[1000px] 2xl:w-[1160px] mt-14 mb-10 opacity-[20%] border-t border-neutral-200" />
-        <p className="description_text text-center mb-10">
-          Copyright © 2024 All rights reserved by Geekvisor
-        </p>
-      </div> */}
     </motion.section>
   );
 };
