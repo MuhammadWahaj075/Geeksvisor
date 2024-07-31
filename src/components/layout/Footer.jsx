@@ -139,49 +139,49 @@ export const Footer = () => {
           </motion.div>
         </div>
       </div>
-        <div className="relative mx-auto w-full">
-          <motion.div variants={fadeInUp}>
-            <h1 className="mt-[108px] text-center text-gradient font-unbound font-normal w-full text-[60px] sm:text-[100px] md:text-[125px] lg:text-[160px] xl:text-[200px] ">GeeksVisor</h1>
-          </motion.div>
-          <div className="bg-custom-gradient w-full  top-[55px] absolute sm:top-[90px] md:top-[115px] lg:top-[150px] xl:top-[190px] bg-[#0000008F]   backdrop-blur-xl">
-            <div className="flex flex-col gap-6 mt-[150px] lg:mt-36 items-center justify-center">
-              <h1 className="font-inter font-medium text-neutral text-[24px]">
-                Follow us on Social Media
-              </h1>
-              <div className="flex w-[320px] lg:w-[400px] justify-between">
-                <OptimizedImage
-                  className="cursor-pointer"
-                  src={FacebookIcon}
-                  alt={"fb-icon"}
-                />
-                <OptimizedImage
-                  className="cursor-pointer"
-                  src={InstagramIcon}
-                  alt={"insta-icon"}
-                />
-                <OptimizedImage
-                  className="cursor-pointer"
-                  src={LinkedInIcon}
-                  alt={"linkedin-icon"}
-                />
-                <OptimizedImage
-                  className="cursor-pointer"
-                  src={GithubIcon}
-                  alt={"github-icon"}
-                />
-                <OptimizedImage
-                  className="cursor-pointer"
-                  src={DribbleIcon}
-                  alt={"dribble-icon"}
-                />
-              </div>
-              <hr className="w-[350px] lg:w-[1000px] 2xl:w-[1160px] mt-14 mb-10 opacity-[20%] border-t border-neutral-200" />
-              <p className="description_text mb-10">
-                Copyright © 2024 All rights reserved by Geekvisor
-              </p>
+      <div className="relative mx-auto w-full">
+        <motion.div variants={fadeInUp}>
+          <h1 className="mt-[108px] text-center text-gradient font-unbound font-normal w-full text-[50px] sm:text-[100px] md:text-[125px] lg:text-[160px] xl:text-[200px] ">GeeksVisor</h1>
+        </motion.div>
+        <div className="bg-custom-gradient w-full top-[50px] absolute sm:top-[90px] md:top-[115px] lg:top-[150px] xl:top-[190px] bg-[#0000008F]   backdrop-blur-xl">
+          <div className="flex flex-col gap-6 mt-[150px] lg:mt-36 items-center justify-center">
+            <h1 className="font-inter font-medium text-neutral text-[24px]">
+              Follow us on Social Media
+            </h1>
+            <div className="flex w-[320px] lg:w-[400px] justify-between">
+              <OptimizedImage
+                className="cursor-pointer"
+                src={FacebookIcon}
+                alt={"fb-icon"}
+              />
+              <OptimizedImage
+                className="cursor-pointer"
+                src={InstagramIcon}
+                alt={"insta-icon"}
+              />
+              <OptimizedImage
+                className="cursor-pointer"
+                src={LinkedInIcon}
+                alt={"linkedin-icon"}
+              />
+              <OptimizedImage
+                className="cursor-pointer"
+                src={GithubIcon}
+                alt={"github-icon"}
+              />
+              <OptimizedImage
+                className="cursor-pointer"
+                src={DribbleIcon}
+                alt={"dribble-icon"}
+              />
             </div>
+            <hr className="w-[350px] lg:w-[1000px] 2xl:w-[1160px] mt-14 mb-10 opacity-[20%] border-t border-neutral-200" />
+            <p className="description_text text-center mb-10">
+              Copyright © 2024 All rights reserved by Geekvisor
+            </p>
           </div>
         </div>
+      </div>
     </motion.section>
   );
 };
