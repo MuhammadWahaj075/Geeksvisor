@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { useResponsiveBoxes } from "@/hooks/useResponsiveBoxes";
 import { useEffect, useState } from "react";
@@ -20,21 +20,23 @@ export default function GridBoxAnimation() {
       }
 
       setHighlightedIndices(newIndices);
-    }, 6000);
+    }, 4000);
 
     return () => clearInterval(interval);
   }, [totalBoxes]);
 
   return (
-      <div className="gridBoxes-container">
-        {Array.from({ length: totalBoxes }, (_, index) => (
-          <div
-            key={index}
-            className={`gridBoxes ${highlightedIndices.includes(index) ? 'highlighted' : ''}`}
-          >
-            <div className="right-shadow"></div>
-          </div>
-        ))}
-      </div>
+    <div className="gridBoxes-container">
+      {Array.from({ length: totalBoxes }, (_, index) => (
+        <div
+          key={index}
+          className={`gridBoxes ${
+            highlightedIndices.includes(index) ? "highlighted" : ""
+          }`}
+        >
+          <div className="right-shadow"></div>
+        </div>
+      ))}
+    </div>
   );
 }

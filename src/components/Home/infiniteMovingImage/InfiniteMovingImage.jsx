@@ -1,7 +1,7 @@
 "use client";
 
 import { testimonials } from "@/utils/mockData";
-import { InfiniteMovingCards } from "../ui/InfiniteMovingCards";
+import { InfiniteMovingCards } from "../../ui/InfiniteMovingCards";
 
 export function InfiniteMovingImages() {
   return (

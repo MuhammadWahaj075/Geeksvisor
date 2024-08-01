@@ -154,10 +154,11 @@ export const faqData = [
 ];
 
 export const menuItems = [
-  { navItem: "Home" },
-  { navItem: "Services" },
-  { navItem: "Who we are" },
-  { navItem: "Work" },
+  { navItem: "Home", href: "/" },
+  { navItem: "About", href: "/about"   },
+  { navItem: "Services", href: "/services"  },
+  { navItem: "Who we are", href: "/whoweare"  },
+  { navItem: "Work", href: "/work"  },
 ];
 
 export const servingIndustries = [
