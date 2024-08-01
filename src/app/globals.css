@@ -24,6 +24,7 @@ body {
     background-attachment: fixed;
     background-position: center;
   }
+
   @media only screen and (min-device-width: 320px) and (max-device-width: 1280px) {
     .bg-gradient-lines {
       background-image: url("../../public/assets/images/Circles.png");
@@ -57,6 +58,7 @@ body {
       opacity: 0;
       transform: translateY(20px);
     }
+
     100% {
       opacity: 1;
       transform: translateY(0);
@@ -68,6 +70,7 @@ body {
       opacity: 1;
       transform: translateY(0);
     }
+
     100% {
       opacity: 0.5;
       transform: translateY(20px);
@@ -102,10 +105,10 @@ body {
   }
 
   .scroll_hidden::-webkit-scrollbar {
-    display: none; 
+    display: none;
   }
 
-  .my-masonry-grid_column > div {
+  .my-masonry-grid_column>div {
     margin-bottom: 32px;
   }
 
@@ -121,7 +124,7 @@ body {
     background-clip: padding-box;
   }
 
-  
+
 
   .project_wrapper {
     position: relative;
@@ -148,12 +151,23 @@ body {
 
 .gridBoxGradient::before {
   left: 0;
-  width: 450px;
+  width: 550px;
   background: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0));
 }
 
 .gridBoxGradient::after {
   right: 0;
-  width: 450px;
+  width: 550px;
   background: linear-gradient(to left, rgba(0, 0, 0), rgba(0, 0, 0, 0));
+}
+
+.gridBoxGradien::before,
+.gridBoxGradien::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 320px;
+  height: 100%;
+  z-index: 10;
+  pointer-events: none;
 }
