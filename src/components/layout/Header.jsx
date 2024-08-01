@@ -61,7 +61,7 @@ export const Header = () => {
             {menuItems?.map((item, i) => (
               <li key={i}>
                 <a
-                  href="#"
+                  href={item.href}
                   className={` block border-2 border-b-secondary-light lg:border-none font-inter text-[14px] py-2 pr-4 pl-3 font-bold ${
                     activeNavItem === item.navItem
                       ? "text-neutral "

@@ -11,7 +11,12 @@ import {
   DribbleIcon,
 } from "../../../public/assets";
 import { Button, OptimizedImage } from "../comman";
-import { footerAddress, inquiries, mainPages, services } from "@/utils/mockData";
+import {
+  footerAddress,
+  inquiries,
+  mainPages,
+  services,
+} from "@/utils/mockData";
 import useInView from "@/hooks/useInView";
 import "./style.css";
 import { Input } from "../comman/Input";
@@ -65,11 +70,12 @@ export const Footer = () => {
               className="flex flex-col md:flex-row gap-2 pt-4"
               variants={fadeInUp}
             >
-              <Input
-                type="text"
-                placeholder="Email here" 
-              />
-              <Button className="!bg-neutral w-full md:w-[113px] !h-[58px] !text-black rounded-xl">
+              <Input type="text" placeholder="Email here" />
+              <Button
+                variant="primary"
+                style={{ background: "white" }}
+                className=" w-full md:w-[113px] !h-[58px] !text-black rounded-xl"
+              >
                 Signup
               </Button>
             </motion.div>
@@ -139,7 +145,9 @@ export const Footer = () => {
       </div>
       <div className="relative mx-auto w-full">
         <motion.div variants={fadeInUp}>
-          <h1 className="mt-[108px] text-center text-gradient font-unbound font-normal w-full text-[50px] sm:text-[100px] md:text-[125px] lg:text-[160px] xl:text-[200px] ">GeeksVisor</h1>
+          <h1 className="mt-[108px] text-center text-gradient font-unbound font-normal w-full text-[50px] sm:text-[100px] md:text-[125px] lg:text-[160px] xl:text-[200px] ">
+            GeeksVisor
+          </h1>
         </motion.div>
         <div className="bg-custom-gradient w-full top-[50px] absolute sm:top-[90px] md:top-[115px] lg:top-[150px] xl:top-[190px] bg-[#0000008F]   backdrop-blur-xl">
           <div className="flex flex-col gap-6 mt-[150px] lg:mt-36 items-center justify-center">
