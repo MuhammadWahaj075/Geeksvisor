@@ -5,6 +5,7 @@ import { CloseIcon, Logo, MenuIcon } from "../../../public/assets";
 import { menuItems } from "@/utils/mockData";
 import { Button, OptimizedImage } from "../comman";
 import { useScroll } from "@/hooks/UseScroll";
+import Link from "next/link";
 
 export const Header = () => {
   const { isMenuOpen, setIsMenuOpen } = useScroll();
@@ -60,7 +61,7 @@ export const Header = () => {
           <ul className=" flex flex-col mt-4 lg:flex-row lg:space-x-8 lg:mt-0">
             {menuItems?.map((item, i) => (
               <li key={i}>
-                <a
+                <Link
                   href={item.href}
                   className={` block border-2 border-b-secondary-light lg:border-none font-inter text-[14px] py-2 pr-4 pl-3 font-bold ${
                     activeNavItem === item.navItem
@@ -73,7 +74,7 @@ export const Header = () => {
                   }
                 >
                   {item.navItem}
-                </a>
+               </Link>
               </li>
             ))}
           </ul>

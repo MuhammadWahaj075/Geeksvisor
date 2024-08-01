@@ -15,8 +15,8 @@ export function HowItWorks() {
     return (
         <div className="mt-[200px]">
             <div className="flex justify-center flex-col items-center">
-                <div className="bg-union">
-                    <h1 className="title_text pt-[260px]">How it works</h1>
+                <div className="bg-union flex flex-col gap-4">
+                    <h1 className="title_text pt-[180px]">How it works</h1>
                     <p className="description_text text-center w-[320px] lg:w-[470px]">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                         eiusmod.
