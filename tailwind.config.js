@@ -19,6 +19,7 @@ module.exports = {
       backgroundImage: {
         "custom-gradient":
           "linear-gradient(to bottom, #0000008F 5%, #0000008F 30%)",
+        'footerGradient': 'linear-gradient(45deg, #EB7424, #9D4810)',
       },
       colors: {
         primary: {
@@ -30,6 +31,10 @@ module.exports = {
           pill: "#FFFFFF1A",
           borderColor: "#B1B1B1",
           imageTestColor: "#2F2B43",
+        },
+        gradient: {
+          gradient_orange: "#EB7424",
+          gradient_brown: "#9D4810",
         },
         secondary: {
           light: "#9C9C9C",
@@ -55,6 +60,7 @@ module.exports = {
         success: "#10b981",
         info: "#3b82f6",
       },
+
       fontFamily: {
         inter: ["var(--inter)"],
         unbound: ["var(--unbound)"],
@@ -71,6 +77,7 @@ module.exports = {
         },
       },
     },
+
   },
   plugins: [
     require("tailwindcss-animate"),

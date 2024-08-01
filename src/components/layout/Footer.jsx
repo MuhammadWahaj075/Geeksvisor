@@ -47,7 +47,7 @@ export const Footer = () => {
   return (
     <motion.section
       ref={footerRef}
-      className="mt-[100px] lg:mt-[200px]"
+      className="mt-[100px] lg:mt-[200px] !w-full"
       variants={staggerContainer}
       initial="hidden"
       animate={controls}
@@ -68,9 +68,7 @@ export const Footer = () => {
               <Input
                 type="text"
                 placeholder="Email here"
-                className="email_input rounded-xl p-[16px] w-full md:w-[272px] h-[58px] bg-secondary-inputColor"
               />
-
               <Button className="!bg-neutral w-full md:w-[113px] !h-[58px] !text-black rounded-xl">
                 Signup
               </Button>
@@ -132,23 +130,19 @@ export const Footer = () => {
               <p className="text-base font-medium text-neutral">Address</p>
               <li>
                 <a className="flex text-sm text-primary-normal opacity-[60%] transition-all duration-200 hover:text-secondary-hover focus:text-secondary-hover">
-                 {footerAddress.addressLine}
+                  {footerAddress.addressLine}
                 </a>
               </li>
             </ul>
           </motion.div>
         </div>
       </div>
-      {/* <div className="relative">
+      <div className="relative mx-auto w-full">
         <motion.div variants={fadeInUp}>
-          <OptimizedImage
-            src={FooterLogo}
-            className="w-full mx-auto max-w-[1440px] mt-[60px] lg:mt-[200px]"
-            alt="footer-logo"
-          />
+          <h1 className="mt-[108px] text-center text-gradient font-unbound font-normal w-full text-[50px] sm:text-[100px] md:text-[125px] lg:text-[160px] xl:text-[200px] ">GeeksVisor</h1>
         </motion.div>
-        <div className="bg-custom-gradient w-full h-full absolute top-[130px] bg-[#0000008F] backdrop-blur-xl">
-          <div className="flex flex-col gap-6 mt-[10px] lg:mt-36 items-center justify-center">
+        <div className="bg-custom-gradient w-full top-[50px] absolute sm:top-[90px] md:top-[115px] lg:top-[150px] xl:top-[190px] bg-[#0000008F]   backdrop-blur-xl">
+          <div className="flex flex-col gap-6 mt-[150px] lg:mt-36 items-center justify-center">
             <h1 className="font-inter font-medium text-neutral text-[24px]">
               Follow us on Social Media
             </h1>
@@ -179,19 +173,12 @@ export const Footer = () => {
                 alt={"dribble-icon"}
               />
             </div>
-            <hr className="w-[350px] lg:w-[1160px] mt-14 mb-10 opacity-[20%] border-t border-neutral-200" />
-            <p className="description_text mb-10">
+            <hr className="w-[350px] lg:w-[1000px] 2xl:w-[1160px] mt-14 mb-10 opacity-[20%] border-t border-neutral-200" />
+            <p className="description_text text-center mb-10">
               Copyright © 2024 All rights reserved by Geekvisor
             </p>
           </div>
         </div>
-      </div> */}
-
-      <div className="flex flex-col gap-6 items-center justify-center">
-        <hr className="w-[350px] lg:w-[1000px] 2xl:w-[1160px] mt-14 mb-10 opacity-[20%] border-t border-neutral-200" />
-        <p className="description_text text-center mb-10">
-          Copyright © 2024 All rights reserved by Geekvisor
-        </p>
       </div>
     </motion.section>
   );
