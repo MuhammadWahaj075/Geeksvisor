@@ -17,9 +17,11 @@ import {
 export default function Home() {
   return (
     <main>
+      <div className="inner-div">
       <BannerSection />
       <TestimonialsLogos />
       <InfiniteMovingImages />
+      </div>
       <WhoWeAre />
       <ServingIndustries />
       <FeatureWork />

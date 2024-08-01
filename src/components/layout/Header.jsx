@@ -29,7 +29,7 @@ export const Header = () => {
 
   return (
     <nav
-      className={`px-4 pb-5 pt-[22px] z-30 w-full top-0 fixed left-0 
+      className={`px-4 pb-5 pt-[22px] z-30 w-full top-0 sticky left-0 
         lg:px-6 py-2.5 transition-all duration-300 lg:bg-transparent
          lg:bg-opacity-[12%] backdrop-blur-xl`}
     >

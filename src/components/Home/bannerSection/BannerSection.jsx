@@ -2,11 +2,12 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import { Button, OptimizedImage, Pill } from "../../comman";
 import { bannerMockData } from "@/utils/mockData";
 import GridBoxAnimation from "@/components/ui/GridBoxAnimation";
+import { Input } from "@/components/comman/Input";
 
 export const BannerSection = () => {
   return (
-    <div className="relative inner-div w-full">
-      <div className="h-[50rem]  mx-auto  max-w-[1440px] relative flex items-center justify-center">
+    <div className="relative  w-full">
+      <div className="h-[50rem]   mx-auto  max-w-[1440px] relative flex items-center justify-center">
         <OptimizedImage
           src={bannerMockData?.images?.filterRightImg}
           height={"100%"}
@@ -14,7 +15,7 @@ export const BannerSection = () => {
           alt={"banner-image"}
           className="absolute  mt-[95px] top-0 right-[20px] z-10"
         />
-        <div className="absolute pointer-events-none inset-0 flex items-center justify-center ">
+        <div className="absolute  pointer-events-none inset-0 flex items-center justify-center ">
           <GridBoxAnimation />
         </div>
         <div className="flex justify-center">
