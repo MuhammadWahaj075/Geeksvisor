@@ -34,7 +34,7 @@ export const Header = () => {
          lg:bg-opacity-[12%] backdrop-blur-xl`}
     >
       <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-        <a href="#" className="flex items-center">
+        <a href="/" className="flex items-center">
           <OptimizedImage src={Logo} />
         </a>
         <div className="flex items-center lg:order-2">
