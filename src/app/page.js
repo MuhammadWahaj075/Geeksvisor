@@ -3,6 +3,7 @@ import {
   ClientExpectation,
   Faq,
   FeatureWork,
+  GetFromUs,
   GreatIdea,
   InfiniteMovingImages,
   MeetOurTeam,
@@ -13,20 +14,23 @@ import {
   WhatWeVission,
   WhoWeAre,
 } from "@/components/Home";
+import { HowItWorks } from "@/components/Home/howItWorks/HowItWorks";
 
 export default function Home() {
   return (
     <main>
-      <div className="inner-div">
-      <BannerSection />
-      <TestimonialsLogos />
-      <InfiniteMovingImages />
+      <div className="gridBoxGradient">
+        <BannerSection />
+        <TestimonialsLogos />
+        <InfiniteMovingImages />
       </div>
       <WhoWeAre />
       <ServingIndustries />
+      <GetFromUs />
       <FeatureWork />
       <WhatWeDo />
       <ClientExpectation />
+      <HowItWorks />
       <WhatPeopleSay />
       <WhatWeVission />
       <MeetOurTeam />

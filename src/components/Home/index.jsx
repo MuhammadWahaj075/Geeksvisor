@@ -1,16 +1,17 @@
 import { BannerSection } from "./bannerSection/BannerSection";
-import { TestimonialsLogos } from "./TestimonialsLogos";
-import { InfiniteMovingImages } from "./InfiniteMovingImage";
-import { WhoWeAre } from "./WhoWeAre";
+import { TestimonialsLogos } from "./testimonialsLogos/TestimonialsLogos";
+import { InfiniteMovingImages } from "./infiniteMovingImage/InfiniteMovingImage";
 import { ServingIndustries } from "./servingIndustries/ServingIndustries";
 import { ClientExpectation } from "./clientExpect/ClientExpect";
 import { WhatPeopleSay } from "./whatPeopleSay/WhatPeopleSay";
 import { WhatWeVission } from "./whatWeVission/WhatWeVission";
 import { MeetOurTeam } from "./meetOurTeam/MeetOurTeam";
-import { Faq } from "./frequentlyAskedQues/Faq";
+import { Faq } from "./faq/Faq";
 import { GreatIdea } from "./greatIdea/GreatIdea";
 import { FeatureWork } from "./featureWork/FeatureWork";
 import { WhatWeDo } from "./whatWeDo/WhatWeDo";
+import { WhoWeAre } from "./whoWeAre/WhoWeAre";
+import { GetFromUs } from "./getFromUs/GetFromUs";
 
 export {
   BannerSection,
@@ -18,6 +19,7 @@ export {
   InfiniteMovingImages,
   WhoWeAre,
   ServingIndustries,
+  GetFromUs,
   FeatureWork,
   WhatWeDo,
   ClientExpectation,

@@ -67,7 +67,7 @@ export const Footer = () => {
             >
               <Input
                 type="text"
-                placeholder="Email here"
+                placeholder="Email here" 
               />
               <Button className="!bg-neutral w-full md:w-[113px] !h-[58px] !text-black rounded-xl">
                 Signup
