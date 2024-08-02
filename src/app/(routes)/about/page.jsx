@@ -1,10 +1,11 @@
-import {  GreatIdea } from "@/components/Home";
-import { BannerSection } from "@/pages/aboutUsSections/BannerSection";
-import { ClientExpectation } from "@/pages/aboutUsSections/clientExpect/ClientExpect";
-import { MeetOurTeam } from "@/pages/aboutUsSections/MeetOurTeam";
-import { OurMission } from "@/pages/aboutUsSections/OurMission";
-import { OurVision } from "@/pages/aboutUsSections/OurVision";
-import { WhatWeVission } from "@/pages/aboutUsSections/whatWeVission/WhatWeVission";
+import { BannerSection } from "@/components/AboutUs/BannerSection";
+import { ClientExpectation } from "@/components/AboutUs/clientExpect/ClientExpect";
+import { MeetOurTeam } from "@/components/AboutUs/MeetOurTeam";
+import { OurMission } from "@/components/AboutUs/OurMission";
+import { OurVision } from "@/components/AboutUs/OurVision";
+import { WhatWeVission } from "@/components/AboutUs/whatWeVission/WhatWeVission";
+import { GreatIdea } from "@/components/Home";
+
 
 const About = () => {
   return (
