@@ -37,12 +37,14 @@ export const Header = () => {
           <OptimizedImage src={Logo} />
         </a>
         <div className="flex items-center lg:order-2">
-          <Button
-            variant="primary"
-            className={"mr-2 lg:mr-0 py-[14px] !h-[45px] px-[24px]"}
-          >
-            Contact us
-          </Button>
+          <Link href={"/contactus"}>
+            <Button
+              variant="primary"
+              className={"mr-2 lg:mr-0 py-[14px] !h-[45px] px-[24px]"}
+            >
+              Contact us
+            </Button>
+          </Link>
           <button
             type="button"
             className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden"
@@ -52,8 +54,9 @@ export const Header = () => {
           </button>
         </div>
         <div
-          className={`${isMenuOpen ? "block" : "hidden"
-            } justify-between items-center w-full h-screen lg:h-auto lg:flex lg:w-auto lg:order-1`}
+          className={`${
+            isMenuOpen ? "block" : "hidden"
+          } justify-between items-center w-full h-screen lg:h-auto lg:flex lg:w-auto lg:order-1`}
         >
           <ul className=" flex flex-col mt-4 lg:flex-row lg:space-x-8 lg:mt-0">
             {menuItems?.map((item, i) => (
@@ -71,7 +74,7 @@ export const Header = () => {
                   }
                 >
                   {item.navItem}
-               </Link>
+                </Link>
               </li>
             ))}
           </ul>
