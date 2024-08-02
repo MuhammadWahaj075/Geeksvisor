@@ -39,11 +39,13 @@ import rocketIcon from "./icons/rocket.svg";
 import StarIcon from "./icons/star.svg";
 import TimProfile from "./images/tim.jpg";
 import MinusIcon from "./icons/minus-icon.svg";
+import grid from "./images/grid.svg";
 
 export {
   Logo,
   tech,
   sport,
+  grid,
   lifestyle,
   education,
   healthcare,
