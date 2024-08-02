@@ -12,13 +12,13 @@ export const WhatWeVission = () => {
         >
           {/* Image here */}
         </div>
-        <div className="flex flex-col mx-auto lg:w-[45%] xl:w-auto !justify-center  items-center lg:items-start">
-          <div className="flex flex-col gap-y-4 items-start">
+        <div className="flex flex-col mx-auto lg:w-[45%] xl:w-auto !justify-center !items-center lg:!items-start">
+          <div className="flex flex-col gap-y-4 lg:!items-start">
             <h1 className="title_text">{WhatVissionMockData.title}</h1>
-            <p className="description_text items-start w-[350px] lg:w-[585px]">
+            <p className="description_text text-center lg:text-start w-[350px] lg:w-[585px]">
               {WhatVissionMockData.description}
             </p>
-            <p className="description_text w-[350px] lg:w-[585px]">
+            <p className="description_text w-[350px] text-center lg:text-start lg:w-[585px]">
               {WhatVissionMockData.subtitle}
             </p>
           </div>
@@ -30,7 +30,7 @@ export const WhatWeVission = () => {
               </div>
             ))}
           </div>
-          <p className="description_text items-start w-[350px] lg:w-[585px]">
+          <p className="description_text text-center lg:text-start w-[350px] lg:w-[585px]">
             {WhatVissionMockData.description}
           </p>
         </div>
