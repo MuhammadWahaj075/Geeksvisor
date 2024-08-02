@@ -9,7 +9,7 @@
   left: 0;
   z-index: 1;
   width: 100%;
-  content: '';
+  content: "";
   height: 80px;
   position: absolute;
   background: linear-gradient(180deg, #000000, rgba(0, 0, 0, 0));
@@ -20,10 +20,25 @@
   bottom: 0;
   z-index: 1;
   width: 100%;
-  content: '';
+  content: "";
   height: 80px;
   position: absolute;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0), #000000);
+}
+
+@media only screen and (max-width: 1023px) {
+  .box {
+    height: 90px;
+  }
+  .box::before {
+    height: 30px;
+  }
+  .box::after {
+    height: 30px;
+  }
+  .item {
+    height: 20px;
+  }
 }
 
 .items {
@@ -84,7 +99,7 @@
 }
 
 .gridBoxes::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   bottom: 0;
@@ -104,7 +119,7 @@
   height: 100%;
   background-color: #5f5e5e46;
   opacity: 0;
-  transition: opacity 6s ease-out;
+  transition: opacity 4s ease-out;
   z-index: 2;
 }
 
@@ -119,7 +134,7 @@
 }
 
 .gridBoxes .right-shadow {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   bottom: 0;

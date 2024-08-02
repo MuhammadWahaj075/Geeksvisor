@@ -6,7 +6,7 @@ export const useResponsiveBoxes = () => {
   useEffect(() => {
     const updateTotalBoxes = () => {
       if (window.innerWidth >= 1024) {
-        setTotalBoxes(80); // Laptop
+        setTotalBoxes(90); // Laptop
       } else if (window.innerWidth >= 768) {
         setTotalBoxes(50); // Tablet
       } else {

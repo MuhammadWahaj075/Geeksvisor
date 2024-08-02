@@ -4,7 +4,7 @@ import { Button, OptimizedImage, Pill } from "@/components/comman";
 
 export const MeetOurTeam = () => {
   return (
-    <div className="mt-[100px] mx-auto flex justify-center max-w-screen-xl">
+    <div className="mt-[100px] mx-auto  flex justify-center max-w-screen-xl">
       <div className="flex flex-col items-center gap-[70px]">
         <div className="flex flex-col  gap-4 items-center">
           <h1 className="title_text">{MeetTeamMockData.title}</h1>
@@ -12,7 +12,7 @@ export const MeetOurTeam = () => {
             {MeetTeamMockData.subtitle}
           </p>
         </div>
-        <div className="flex gap-10 flex-wrap justify-center">
+        <div className="flex gap-10 px-5 flex-wrap justify-center">
           {teamMembers?.map((member, index) => (
             <div
               key={index}

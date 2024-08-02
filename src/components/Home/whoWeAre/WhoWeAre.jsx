@@ -1,5 +1,5 @@
+import { OptimizedImage } from "@/components/comman";
 import { whoWeAreMockData } from "@/utils/mockData";
-import { OptimizedImage } from "../comman";
 
 export function WhoWeAre() {
   return (

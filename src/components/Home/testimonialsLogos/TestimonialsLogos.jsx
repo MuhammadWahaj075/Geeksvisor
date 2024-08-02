@@ -1,5 +1,5 @@
 import { testimonialLogos } from "@/utils/mockData";
-import { OptimizedImage } from "../comman";
+import { OptimizedImage } from "../../comman";
 
 export const TestimonialsLogos = () => {
   return (
