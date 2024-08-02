@@ -1,11 +1,12 @@
-import { ContactForm } from '@/components'
-import { Faq } from '@/components/Home'
+import { CallToAction, ContactForm } from "@/components/Contact";
+import { Faq } from "@/components/Home";
 
 const ContactUs = () => (
-    <>
-        <ContactForm />
-        <Faq />
-    </>
-)
+  <>
+    <ContactForm />
+     <CallToAction />
+   <Faq />
+  </>
+);
 
-export default ContactUs
+export default ContactUs;

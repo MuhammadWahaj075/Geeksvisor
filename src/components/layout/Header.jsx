@@ -11,9 +11,7 @@ export const Header = () => {
   const { isMenuOpen, setIsMenuOpen } = useScroll();
   const [activeNavItem, setActiveNavItem] = useState("Home");
 
-  const handleMenuToggle = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  const handleMenuToggle = () => setIsMenuOpen(!isMenuOpen);
 
   const handleNavItemClick = (item) => {
     setActiveNavItem(item?.navItem);

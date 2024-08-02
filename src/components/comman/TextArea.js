@@ -1,6 +1,6 @@
 export const TextArea = (props) => (
   <div className={props.label && "pt-[18px]"}>
-    {props.label && <label className="text-[#525252]">{props.label}</label>}
+    {props.label && <label className="text-[#525252] label-text">{props.label}</label>}
     <textarea
       rows={props.rows}
       placeholder={props.placeholder}
