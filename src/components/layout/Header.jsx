@@ -11,9 +11,7 @@ export const Header = () => {
   const { isMenuOpen, setIsMenuOpen } = useScroll();
   const [activeNavItem, setActiveNavItem] = useState("Home");
 
-  const handleMenuToggle = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  const handleMenuToggle = () => setIsMenuOpen(!isMenuOpen);
 
   const handleNavItemClick = (item) => {
     setActiveNavItem(item?.navItem);
@@ -39,12 +37,14 @@ export const Header = () => {
           <OptimizedImage src={Logo} />
         </a>
         <div className="flex items-center lg:order-2">
-          <Button
-            variant="primary"
-            className={"mr-2 lg:mr-0 py-[14px] !h-[45px] px-[24px]"}
-          >
-            Contact us
-          </Button>
+          <Link href={"/contactus"}>
+            <Button
+              variant="primary"
+              className={"mr-2 lg:mr-0 py-[14px] !h-[45px] px-[24px]"}
+            >
+              Contact us
+            </Button>
+          </Link>
           <button
             type="button"
             className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden"
@@ -74,7 +74,7 @@ export const Header = () => {
                   }
                 >
                   {item.navItem}
-               </Link>
+                </Link>
               </li>
             ))}
           </ul>

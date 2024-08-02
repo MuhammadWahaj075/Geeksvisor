@@ -19,7 +19,7 @@ import {
 } from "@/utils/mockData";
 import useInView from "@/hooks/useInView";
 import "./style.css";
-import { Input } from "../comman/Input";
+import { Input } from "../comman/Input/Input";
 
 export const Footer = () => {
   const controls = useAnimation();

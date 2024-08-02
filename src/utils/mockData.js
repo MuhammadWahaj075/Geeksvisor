@@ -569,3 +569,18 @@ export const footerAddress = {
   addressLine:
     "Flat# 6 Building 19-C South Park Avenue, Ext, D.H.A. Phase 2 Defence Housing Authority, Karachi, Pakistan.",
 };
+
+// Contact info
+export const contact = {
+  title: "Let’s work together!",
+  description:
+    "Let’s get you scheduled on a 1 to 1 free call to learn more about your idea and see if we are a good fit, Cheers!",
+  contactInfo: {
+    mainTitle: "Contact Us",
+    message: "Contact us via email, phone, or visit us in person.",
+    email: "mailus@gmail.com",
+    phone: "+92 340 8636954",
+    location:
+      "Flat# 6 Building 19-C South Park Avenue, Ext, D.H.A. Phase 2 Defence Housing Authority, Karachi, Pakistan.",
+  },
+};
