@@ -3,7 +3,7 @@ import { healthData, WhatVissionMockData } from "@/utils/mockData";
 
 export const WhatWeVission = () => {
   return (
-    <div className=" mt-[60px]">
+    <div className="mt-[46px] md:mt-[160px]  lg:mt-[200px]">
       <div className="flex flex-wrap mx-auto flex-col xl:flex-row items-center xl:max-w-screen-xl justify-center gap-10">
         <div className="border-2 w-[320px] sm:w-[480px] xl:w-0 xl:h-[562px] border-l border-primary" />
         <div
