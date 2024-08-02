@@ -105,7 +105,37 @@ export const healthData = [
   },
 ];
 
-export const  AboutTeamMembers = [
+export const OurMissionMockData = {
+  title: "Our Mission",
+  subtitle: ` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.`,
+  description: `  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.`
+}
+
+
+export const OurVisionMockData = {
+  title: "Our Vision",
+  subtitle: ` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.`,
+  description: `  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.`
+}
+export const aboutBannerMockData = {
+  title: " This area is for big heading text for hero section",
+  description: ` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+};
+
+export const AboutTeamMembers = [
   {
     name: "Mughees Siddiqui",
     role: "AWS Expert",
@@ -196,10 +226,10 @@ export const faqData = [
 
 export const menuItems = [
   { navItem: "Home", href: "/" },
-  { navItem: "About", href: "/about"   },
-  { navItem: "Services", href: "/services"  },
-  { navItem: "Who we are", href: "/whoweare"  },
-  { navItem: "Work", href: "/work"  },
+  { navItem: "About", href: "/about" },
+  { navItem: "Services", href: "/services" },
+  { navItem: "Who we are", href: "/whoweare" },
+  { navItem: "Work", href: "/work" },
 ];
 
 export const servingIndustries = [

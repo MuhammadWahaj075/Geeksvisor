@@ -1,3 +1,5 @@
+import { OurVisionMockData } from "@/utils/mockData";
+
 export const OurVision = () => {
   return (
     <div className="mt-[70px] sm:mt-[160px] lg:mt-[262px]">
@@ -10,19 +12,13 @@ export const OurVision = () => {
           className="flex w-[320px] sm:w-[616px] xl:w-[474px]
           flex-col gap-4 items-start"
         >
-          <h1 className="title_text !text-neutral">Our Vision</h1>
+          <h1 className="title_text !text-neutral">{OurVisionMockData.title}</h1>
           <p className="text-start  description_text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+           {OurVisionMockData.subtitle}
           </p>
 
           <p className="text-start  description_text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+          {OurVisionMockData.description}
           </p>
         </div>
       </div>

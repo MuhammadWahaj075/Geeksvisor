@@ -1,5 +1,5 @@
 import { Button } from "@/components/comman";
-import { bannerMockData } from "@/utils/mockData";
+import { aboutBannerMockData, bannerMockData } from "@/utils/mockData";
 import { IoIosArrowRoundForward } from "react-icons/io";
 
 export const BannerSection = () => {
@@ -9,11 +9,10 @@ export const BannerSection = () => {
         <div className="flex items-center px-5 justify-center flex-wrap gap-10 lg:gap-60">
           <div className="flex flex-col gap-8  xl:w-[469px]">
             <h1 className="title_text !leading-[19.84px] md:!leading-[59.52px] !text-[16px] md:!text-[48px] xl:!text-start">
-              This area is for big heading text for hero section
+             {aboutBannerMockData.title}
             </h1>
             <p className="description_text !text-xs md:!text-xl !leading-[14.52px] md:!leading-8 text-center xl:!text-start">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+             {aboutBannerMockData.description}
             </p>
             <div className="flex flex-col lg:flex-row  justify-center xl:justify-start items-center gap-[40px] z-20">
               <Button
