@@ -1,6 +1,6 @@
 export const OurMission = () => {
   return (
-    <div className="mt-[70px] md:mt-[160px] lg:mt-[262px]">
+    <div className="mt-[70px] sm:!mt-[160px] xl:mt-[262px]">
       <div className="flex mx-auto px-5 items-center gap-4 flex-col-reverse lg:flex-row justify-center lg:gap-[118px]  lg:max-w-[1440px] flex-wrap">
         <div className="flex w-[320px] sm:w-[616px] xl:w-[474px] flex-col gap-4 items-start">
           <h1 className="title_text !text-neutral">Our Mission</h1>
@@ -19,8 +19,8 @@ export const OurMission = () => {
           </p>
         </div>
         <div
-          className="w-[320px] sm:w-[616px] xl:w-[668px]
-         h-[320px] sm:h-[616px] xl:h-[668px] flex bg-primary-imageTestColor  rounded-[8px]"
+          className="w-[320px] sm:w-[616px] xl:w-[568px]
+         h-[320px] sm:h-[616px] xl:h-[500px] flex bg-primary-imageTestColor  rounded-[8px]"
         />
       </div>
     </div>

@@ -105,6 +105,47 @@ export const healthData = [
   },
 ];
 
+export const  AboutTeamMembers = [
+  {
+    name: "Mughees Siddiqui",
+    role: "AWS Expert",
+    position: "CTO & Co-founder",
+    imageSrc: MugheesProf,
+  },
+  {
+    name: "Rafae Khatri",
+    role: "Full Stack Developer",
+    position: "CEO & Co-founder",
+    imageSrc: RafaeProf,
+  },
+  {
+    name: "Husnain khan",
+    role: "Undefined",
+    position: "Co-founder",
+    imageSrc: Project,
+  },
+
+  {
+    name: "Wahaj Siddiqui",
+    role: "Front End Developer",
+    position: "Developer",
+    imageSrc: Project,
+  },
+
+  {
+    name: "Zain Khan",
+    role: "AI Gen",
+    position: "Developer",
+    imageSrc: Project,
+  },
+  {
+    name: "Moheed Siddiqui",
+    role: "Back End Developer",
+    position: "Developer",
+    imageSrc: Project,
+  },
+];
+
 export const teamMembers = [
   {
     name: "Mughees Siddiqui",
@@ -119,9 +160,9 @@ export const teamMembers = [
     imageSrc: RafaeProf,
   },
   {
-    name: "Rafae Khatri",
-    role: "Full Stack Developer",
-    position: "CEO & Co-founder",
+    name: "Husnain khan",
+    role: "Undefined",
+    position: "Co-founder",
     imageSrc: Project,
   },
 ];

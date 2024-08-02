@@ -1,4 +1,4 @@
-import { WhatWeVission } from "@/components/Home";
+import { ClientExpectation, GreatIdea, WhatWeVission } from "@/components/Home";
 import { BannerSection } from "@/components/Home/aboutUsSections/BannerSection";
 import { MeetOurTeam } from "@/components/Home/aboutUsSections/MeetOurTeam";
 import { OurMission } from "@/components/Home/aboutUsSections/OurMission";
@@ -8,10 +8,12 @@ const About = () => {
   return (
     <>
       <BannerSection />
-      {/* <MeetOurTeam /> */}
+      <MeetOurTeam />
       <OurVision />
       <OurMission />
       <WhatWeVission />
+      <ClientExpectation />
+      <GreatIdea />
     </>
   );
 };

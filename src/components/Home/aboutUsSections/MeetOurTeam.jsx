@@ -1,19 +1,17 @@
 import { IoIosArrowRoundForward } from "react-icons/io";
-import { MeetTeamMockData, teamMembers } from "@/utils/mockData";
+import { AboutTeamMembers, MeetTeamMockData } from "@/utils/mockData";
 import { Button, OptimizedImage, Pill } from "@/components/comman";
 
 export const MeetOurTeam = () => {
   return (
-    <div className="mt-[70px] md:mt-[160px] mx-auto  flex justify-center max-w-screen-xl">
-      <div className="flex flex-col items-center gap-[70px]">
+    <div className="mt-[70px] md:mt-[160px] mx-auto flex justify-center max-w-screen-xl">
+      <div className="flex flex-col items-center overflow-hidden gap-[70px]">
         <div className="flex flex-col  gap-4 items-center">
           <h1 className="title_text">{MeetTeamMockData.title}</h1>
-          <p className="description_text">
-            {MeetTeamMockData.subtitle}
-          </p>
+          <p className="description_text">{MeetTeamMockData.subtitle}</p>
         </div>
-        <div className="flex gap-10 px-5 flex-wrap justify-center">
-          {teamMembers?.map((member, index) => (
+        <div className="flex gap-10 px-5 scroll_hidden overflow-hidden overflow-x-auto w-[95%]">
+          {AboutTeamMembers?.map((member, index) => (
             <div
               key={index}
               className="profile_sec flex items-start flex-col justify-center gap-y-6"
