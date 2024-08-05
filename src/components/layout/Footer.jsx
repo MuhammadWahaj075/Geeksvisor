@@ -52,12 +52,12 @@ export const Footer = () => {
   return (
     <motion.section
       ref={footerRef}
-      className="mt-[100px] lg:mt-[200px] !w-full"
+      className="mt-[100px] relative z-10 bg-black lg:mt-[200px] !w-full"
       variants={staggerContainer}
       initial="hidden"
       animate={controls}
     >
-      <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+      <div className="px-4  mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-10 gap-y-12 gap-x-8 xl:gap-x-12">
           <div className="col-span-2 md:col-span-4 xl:pr-8">
             <motion.h1
