@@ -77,7 +77,6 @@ export const WhatPeopleSay = () => {
                         <OptimizedImage
                           key={i}
                           src={StarIcon}
-                          alt={"star-icon"}
                         />
                       ))}
                     </div>
@@ -85,7 +84,6 @@ export const WhatPeopleSay = () => {
                     <div className="flex gap-x-2 items-center">
                       <OptimizedImage
                         src={profileImage}
-                        alt={"profile"}
                         className={"rounded-full w-14 h-14"}
                       />
                       <div className="flex gap-1 flex-col">

@@ -1,6 +1,6 @@
-import { Button } from "./Button";
-import { OptimizedImage } from "./OptimizedImage";
 import { Pill } from "./Pills";
+import { Button } from "./Button";
 import { TextArea } from "./TextArea";
+import { OptimizedImage } from "./OptimizedImage";
 
-export { Button, OptimizedImage, Pill,TextArea };
+export { Button, OptimizedImage, Pill, TextArea };

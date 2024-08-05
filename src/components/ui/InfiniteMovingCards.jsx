@@ -24,9 +24,8 @@ export const InfiniteMovingCards = ({
     >
       <ul
         ref={scrollerRef}
-        className={`flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap ${
-          start && "animate-scroll"
-        } ${hookPauseOnHover && "hover:[animation-play-state:paused]"}`}
+        className={`flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap ${start && "animate-scroll"
+          } ${hookPauseOnHover && "hover:[animation-play-state:paused]"}`}
       >
         {items?.map((item, i) => (
           <li
@@ -39,7 +38,6 @@ export const InfiniteMovingCards = ({
             ></div>
             <OptimizedImage
               src={item.image}
-              alt={item.name}
               width={"100%"}
               height={"100%"}
               className="object-contain"

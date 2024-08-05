@@ -75,7 +75,6 @@ export const VerticalScrollCarousel = () => {
                 <OptimizedImage
                   src={project.image}
                   className="w-[350px] lg:w-auto"
-                  alt={project.title}
                 />
               </div>
             </div>
