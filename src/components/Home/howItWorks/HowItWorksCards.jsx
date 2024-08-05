@@ -20,27 +20,16 @@ const Card = ({ title, description, src, i, number }) => {
     };
 
     return (
-        <div
-            className={`px-6 h-[700px] lg:h-[380px]  mt-10 mb-52 flex items-center justify-center sticky top-0 `}
-        >
-            <div
-                style={cardStyle}
+        <div className={`px-6 h-[700px] lg:h-[380px]  mt-10 mb-52 flex items-center justify-center sticky top-0`} >
+            <div style={cardStyle}
                 className={`flex flex-col relative overflow-hidden justify-center items-start h-auto lg:h-[340px] border rounded-[25px] p-[80px] transform origin-top `}
             >
-                <div>
-                    <div>
-                        <OptimizedImage src={src} alt="image" />
-                    </div>
-                </div>
+                <OptimizedImage src={src} />
                 <h2 className="text-neutral font-semibold text-3xl mt-6">{title}</h2>
                 <span className="text-[#FFFFFF0D] font-inter text-[128px] font-bold right-[-7px] top-[-50px]  absolute">
                     {number}
                 </span>
-                <div>
-                    <div>
-                        <p className="description_text mt-4">{description}</p>
-                    </div>
-                </div>
+                <p className="description_text mt-4">{description}</p>
             </div>
         </div>
     );

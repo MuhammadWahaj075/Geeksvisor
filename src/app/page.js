@@ -1,7 +1,7 @@
+import { Faq } from "@/components";
 import {
   BannerSection,
   ClientExpectation,
-  Faq,
   FeatureWork,
   GetFromUs,
   GreatIdea,

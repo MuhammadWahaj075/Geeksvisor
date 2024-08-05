@@ -7,18 +7,16 @@ import { WhatWeVission } from "@/components/AboutUs/whatWeVission/WhatWeVission"
 import { GreatIdea } from "@/components/Home";
 
 
-const About = () => {
-  return (
-    <>
-      <BannerSection />
-      <MeetOurTeam />
-      <OurVision />
-      <OurMission />
-      <WhatWeVission />
-      <ClientExpectation />
-      <GreatIdea />
-    </>
-  );
-};
+const About = () => (
+  <>
+    <BannerSection />
+    <MeetOurTeam />
+    <OurVision />
+    <OurMission />
+    <WhatWeVission />
+    <ClientExpectation />
+    <GreatIdea />
+  </>
+);
 
 export default About;

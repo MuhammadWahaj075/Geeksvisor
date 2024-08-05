@@ -2,15 +2,13 @@
 
 import { useState } from "react";
 import { faqData } from "@/utils/mockData";
-import { MinusIcon, PlusIcon } from "../../../../public/assets";
 import { OptimizedImage } from "@/components/comman";
+import { MinusIcon, PlusIcon } from "../../../public/assets";
 
 export const Faq = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
-  const toggleAccordion = (index) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
+  const toggleAccordion = (index) => setOpenIndex(openIndex === index ? null : index);
 
   return (
     <section className="mt-[100px] lg:mt-[200px]">
@@ -19,7 +17,6 @@ export const Faq = () => {
           <h2 className="title_text">Frequently Asked Questions</h2>
           <p className="description_text max-w-[474px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
         </div>
-
         <div className="max-w-[846px] mx-auto mt-8 space-y-4 md:mt-16">
           {faqData.map((item, index) => (
             <div
@@ -43,7 +40,6 @@ export const Faq = () => {
                 >
                   <OptimizedImage
                     src={openIndex === index ? MinusIcon : PlusIcon}
-                    alt="toggle icon"
                   />
                 </div>
               </button>

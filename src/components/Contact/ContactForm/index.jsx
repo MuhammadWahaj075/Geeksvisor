@@ -1,10 +1,9 @@
 import { contact } from "@/utils/mockData";
-import { Button, TextArea } from "../comman";
-import { Input } from "../comman/Input/Input";
+import { Button, TextArea } from "../../comman";
+import { Input } from "../../comman/Input/Input";
 
 // input
-const inputClass =
-  "!bg-eerieBlack mt-[8px] sm:h-[66px] h-[50px] lg:w-[568px] md:w-full";
+const inputClass = "!bg-eerieBlack mt-[8px] sm:h-[66px] h-[50px] lg:w-[568px] md:w-full";
 
 export const ContactForm = () => (
   <div className="flex justify-center mt-[50px]">

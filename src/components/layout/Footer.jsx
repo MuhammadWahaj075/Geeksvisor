@@ -158,27 +158,22 @@ export const Footer = () => {
               <OptimizedImage
                 className="cursor-pointer"
                 src={FacebookIcon}
-                alt={"fb-icon"}
               />
               <OptimizedImage
                 className="cursor-pointer"
                 src={InstagramIcon}
-                alt={"insta-icon"}
               />
               <OptimizedImage
                 className="cursor-pointer"
                 src={LinkedInIcon}
-                alt={"linkedin-icon"}
               />
               <OptimizedImage
                 className="cursor-pointer"
                 src={GithubIcon}
-                alt={"github-icon"}
               />
               <OptimizedImage
                 className="cursor-pointer"
                 src={DribbleIcon}
-                alt={"dribble-icon"}
               />
             </div>
             <hr className="w-[350px] lg:w-[1000px] 2xl:w-[1160px] mt-14 mb-10 opacity-[20%] border-t border-neutral-200" />

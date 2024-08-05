@@ -1,4 +1,4 @@
-import { CallToAction } from "./CallToAction";
 import { ContactForm } from "./ContactForm";
+import { CallToAction } from "./CallToAction";
 
 export { ContactForm, CallToAction };
