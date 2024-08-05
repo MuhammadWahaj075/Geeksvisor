@@ -41,12 +41,16 @@ import StarIcon from "./icons/star.svg";
 import TimProfile from "./images/tim.jpg";
 import MinusIcon from "./icons/minus-icon.svg";
 import grid from "./images/grid.svg";
+import first3DLogo from "./images/first3DLogo.svg";
+import second3DLogo from "./images/second3DLogo.svg";
 
 export {
   Logo,
   tech,
   sport,
   grid,
+  first3DLogo,
+  second3DLogo,
   lifestyle,
   education,
   healthcare,

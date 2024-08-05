@@ -11,10 +11,12 @@ import { FeatureWork } from "./featureWork/FeatureWork";
 import { WhatWeDo } from "./whatWeDo/WhatWeDo";
 import { WhoWeAre } from "./whoWeAre/WhoWeAre";
 import { GetFromUs } from "./getFromUs/GetFromUs";
+import { Consultation } from "./Consultation";
 
 export {
   BannerSection,
   TestimonialsLogos,
+  Consultation,
   InfiniteMovingImages,
   WhoWeAre,
   ServingIndustries,

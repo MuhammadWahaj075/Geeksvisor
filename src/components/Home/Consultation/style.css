@@ -1,0 +1,53 @@
+.left-logo {
+  left: 5%;
+  position: absolute;
+  z-index: 10;
+  bottom: -90px;
+  animation: firstLogoJump 3s infinite;
+}
+
+.right-logo {
+  top: -30px;
+  right: 5%;
+  position: absolute;
+  z-index: 10;
+  animation: secondLogoJump 3s infinite;
+}
+
+@media only screen and (max-width: 1300px) {
+  .left-logo {
+    width: 150px;
+    /* left: 100px; */
+    bottom: -60px;
+  }
+
+  .right-logo {
+    width: 150px;
+    top: -30px;
+    /* right: 260px; */
+  }
+}
+
+@keyframes firstLogoJump {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-30px);
+  }
+}
+
+@keyframes secondLogoJump {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-30px);
+  }
+}
