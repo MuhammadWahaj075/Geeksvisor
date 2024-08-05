@@ -32,12 +32,10 @@ export const BannerSection = () => (
               )
             )}
           </p>
-
           <div className="flex justify-center flex-col items-center">
             <p className="description_text py-[40px] text-center w-[350px] sm:w-[600px] lg:w-[700px]">
               {bannerMockData.description}
             </p>
-
             <div className="flex relative items-center gap-[40px] z-20">
               <Button
                 variant="primary"
