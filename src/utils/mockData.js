@@ -114,9 +114,8 @@ export const OurMissionMockData = {
   description: `  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.`
-}
-
+            aliquip ex ea commodo consequat.`,
+};
 
 export const OurVisionMockData = {
   title: "Our Vision",
@@ -127,12 +126,18 @@ export const OurVisionMockData = {
   description: `  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.`
-}
+            aliquip ex ea commodo consequat.`,
+};
 export const aboutBannerMockData = {
   title: " This area is for big heading text for hero section",
   description: ` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+};
+
+export const experiencesMockData = {
+  title: "Experience",
+  description: `  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod.`,
 };
 
 export const experiencesData = [
