@@ -17,7 +17,7 @@ export const WorkProjects = () => {
                   <div className="flex w-[177.97px] md:w-[302px] xl:!w-[400px] flex-wrap gap-1 lg:gap-3">
                     {project.tags.map((tag, tagIndex) => (
                       <Pill
-                        className={"!text-[8px] md:!text-[12px]"}
+                        className={"!text-[8px] md:!text-[12px] !px-[7.07px] !py-[4.71px] md:!px-[12px] md:!py-[8px]"}
                         key={tagIndex}
                         text={tag}
                       />

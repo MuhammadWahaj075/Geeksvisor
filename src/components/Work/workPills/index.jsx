@@ -13,8 +13,8 @@ export const Pills = () => {
 
   return (
     <div
-      className="relative z-20 overflow-hidden w-[376px] md:mx-auto 
-     md:w-[616px] xl:w-[1200px] mx-auto overflow-x-auto scroll_hidden"
+      className="relative z-20 px-5 md:px-0 overflow-hidden w-[376px] md:mx-auto 
+     md:w-[645px] xl:w-[1200px] mx-auto overflow-x-auto scroll_hidden"
     >
       <div className="mt-[118px] ">
         <div className="flex items-center  gap-4 justify-start">
@@ -25,8 +25,8 @@ export const Pills = () => {
               className={`${
                 selectedPill === pill.text
                   ? "text-neutral text-nowrap"
-                  : "text-nowrap  text-primary-light"
-              } ${pill.className || ""}`}
+                  : "text-nowrap   text-primary-light"
+              } ${pill.className || ""} `}
               onClick={() => handlePillClick(pill.text)}
             />
           ))}
