@@ -9,7 +9,7 @@ export const SeeProjects = () => {
         <h1 className="title_text">See more projects</h1>
       </div>
       <div className="overflow-hidden  mt-14 pb-10 overflow-x-auto w-full scroll_hidden">
-        <div className="flex gap-14 items-center">
+        <div className="flex gap-4 lg:gap-14 items-center">
           {seeMoreProjects?.map((project, index) => (
             <div
               key={index}
@@ -19,7 +19,7 @@ export const SeeProjects = () => {
                 <h1 className="md:text-[24px] text-neutral font-inter font-semibold">
                   {project.title}
                 </h1>
-                <div className="flex lg:!w-[400px] flex-wrap gap-1 lg:gap-3">
+                <div className="flex  xl:!w-[400px] flex-wrap !gap-1 lg:gap-3">
                   {project.tags.map((tag, tagIndex) => (
                     <Pill
                       className={"!text-[8px] md:!text-[12px]"}

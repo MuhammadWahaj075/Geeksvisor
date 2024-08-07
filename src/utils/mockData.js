@@ -511,33 +511,22 @@ export const seeMoreProjects = [
   {
     id: 2,
     title: "Project Title 2",
-    tags: ["React Native", "Express.js", "Lambda", "Azure"],
+    tags: ["React.js", "Node.js", "Serverless", "AWS"],
     image: "",
   },
   {
     id: 3,
     title: "Project Title 3",
-    tags: ["nextjs", "Mongodb", "redux", "tenstack query"],
+    tags: ["React.js", "Node.js", "Serverless", "AWS"],
     image: "",
   },
   {
     id: 4,
     title: "Project Title 4",
-    tags: ["nextjs", "Mongodb", "redux", "tenstack query"],
+    tags: ["React.js", "Node.js", "Serverless", "AWS"],
     image: "",
   },
-  {
-    id: 5,
-    title: "Project Title 5",
-    tags: ["nextjs", "Mongodb", "redux", "tenstack query"],
-    image: "",
-  },
-  {
-    id: 6,
-    title: "Project Title 6",
-    tags: ["nextjs", "Mongodb", "redux", "tenstack query"],
-    image: "",
-  },
+  
 ];
 
 export const technologies = [

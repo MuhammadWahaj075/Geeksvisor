@@ -8,7 +8,7 @@ import { clientFeedback, ProblemStatement, Solution } from "@/utils/mockData";
 
 const ProjectDetail = () => {
   return (
-    <div className="max-w-screen-xl mx-auto">
+    <div className="!max-w-screen-xl mx-auto">
       <ProjectDetailBanner />
       <DetailSection
         title={ProblemStatement.title}
