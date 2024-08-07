@@ -1,12 +1,15 @@
-"use client";
+'use client';
 
 import { useEffect, useRef, useState } from "react";
+import { useRouter } from 'next/navigation';
 import "./style.css";
 import { projects } from "@/utils/mockData";
 import { Button, OptimizedImage, Pill } from "@/components/comman";
 import { IoIosArrowRoundForward } from "react-icons/io";
 
 export const VerticalScrollCarousel = () => {
+  const router = useRouter();
+
   const Card = ({ opacity, children }) => {
     return (
       <div className="card" style={{ opacity }}>
@@ -48,6 +51,10 @@ export const VerticalScrollCarousel = () => {
     }
   }, []);
 
+  const navigateToProjectDetail = () => {
+    router.push(`/project-detail`);
+  };
+
   return (
     <>
       <div className="vertical-scroll" ref={scrollRef}>
@@ -67,6 +74,7 @@ export const VerticalScrollCarousel = () => {
                   variant="transparent"
                   icon={<IoIosArrowRoundForward size={25} />}
                   className={"!p-0 capitalize !h-0 mt-4 lg:mt-8 font-semibold"}
+                  onClick={navigateToProjectDetail}
                 >
                   See Project
                 </Button>

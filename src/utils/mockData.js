@@ -25,6 +25,7 @@ import {
   TimProfile,
   FilterSmallImg,
   FilterImg,
+  HasnainProf,
 } from "../../public/assets";
 
 export const OurQualityData = [
@@ -114,9 +115,8 @@ export const OurMissionMockData = {
   description: `  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.`
-}
-
+            aliquip ex ea commodo consequat.`,
+};
 
 export const OurVisionMockData = {
   title: "Our Vision",
@@ -127,8 +127,8 @@ export const OurVisionMockData = {
   description: `  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.`
-}
+            aliquip ex ea commodo consequat.`,
+};
 export const aboutBannerMockData = {
   title: " This area is for big heading text for hero section",
   description: ` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -152,7 +152,7 @@ export const AboutTeamMembers = [
     name: "Husnain khan",
     role: "Undefined",
     position: "Co-founder",
-    imageSrc: Project,
+    imageSrc: HasnainProf,
   },
 
   {
@@ -190,10 +190,10 @@ export const teamMembers = [
     imageSrc: RafaeProf,
   },
   {
-    name: "Husnain khan",
-    role: "Undefined",
+    name: "Hasnain khan",
+    role: "Full Stack Developer",
     position: "Co-founder",
-    imageSrc: Project,
+    imageSrc: HasnainProf,
   },
 ];
 
@@ -481,6 +481,87 @@ export const WhatVissionMockData = {
             aliquip ex ea commodo consequat.`,
   subtitle: `  We develop custom software solutions to meet the unique needs of
             various industries.`,
+};
+
+export const ProblemStatement = {
+  title: "Problem Statement",
+  description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+};
+
+export const Solution = {
+  title: "Solution",
+  description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+};
+
+export const clientFeedback = {
+  title: "Client Feedback",
+  description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+};
+
+export const seeMoreProjects = [
+  {
+    id: 1,
+    title: "Project Title 1",
+    tags: ["React.js", "Node.js", "Serverless", "AWS"],
+    image: "",
+  },
+  {
+    id: 2,
+    title: "Project Title 2",
+    tags: ["React Native", "Express.js", "Lambda", "Azure"],
+    image: "",
+  },
+  {
+    id: 3,
+    title: "Project Title 3",
+    tags: ["nextjs", "Mongodb", "redux", "tenstack query"],
+    image: "",
+  },
+  {
+    id: 4,
+    title: "Project Title 4",
+    tags: ["nextjs", "Mongodb", "redux", "tenstack query"],
+    image: "",
+  },
+  {
+    id: 5,
+    title: "Project Title 5",
+    tags: ["nextjs", "Mongodb", "redux", "tenstack query"],
+    image: "",
+  },
+  {
+    id: 6,
+    title: "Project Title 6",
+    tags: ["nextjs", "Mongodb", "redux", "tenstack query"],
+    image: "",
+  },
+];
+
+export const technologies = [
+  "AWS",
+  "Serverless",
+  "Next.js",
+  "React.js",
+  "React Native",
+  "Flutter",
+  "Node.js",
+];
+
+export const Technology = {
+  title: "Technologies Used",
+  description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+};
+
+export const projectDetailBannerData = {
+  title: "This area is for big heading text for hero section",
+  description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  status: "Live",
+  completionDate: "2nd of October, 2023",
 };
 
 export const MeetTeamMockData = {
