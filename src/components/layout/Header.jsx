@@ -54,18 +54,20 @@ export const Header = () => {
           </button>
         </div>
         <div
-          className={`${isMenuOpen ? "block" : "hidden"
-            } justify-between items-center w-full h-screen lg:h-auto lg:flex lg:w-auto lg:order-1`}
+          className={`${
+            isMenuOpen ? "block" : "hidden"
+          } justify-between items-center w-full h-screen lg:h-auto lg:flex lg:w-auto lg:order-1`}
         >
           <ul className=" flex flex-col mt-4 lg:flex-row lg:space-x-8 lg:mt-0">
             {menuItems?.map((item, i) => (
               <li key={i}>
                 <Link
                   href={item.href}
-                  className={` block border-2 border-b-secondary-light lg:border-none font-inter text-[14px] py-2 pr-4 pl-3 font-bold ${activeNavItem === item.navItem
+                  className={` block border-2 border-b-secondary-light lg:border-none font-inter text-[14px] py-2 pr-4 pl-3 font-bold ${
+                    activeNavItem === item.navItem
                       ? "text-neutral "
                       : "text-secondary-light font-normal"
-                    } border-b border-transparent lg:p-0 lg:border-0`}
+                  } border-b border-transparent lg:p-0 lg:border-0`}
                   onClick={() => handleNavItemClick(item)}
                   aria-current={
                     activeNavItem === item.navItem ? "page" : undefined

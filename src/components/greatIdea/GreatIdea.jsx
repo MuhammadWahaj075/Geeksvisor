@@ -1,8 +1,8 @@
 import Link from "next/link";
-import { ShineImg } from "../../../../public/assets";
 import { GreatIdeaMockData } from "@/utils/mockData";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { Button, OptimizedImage } from "@/components/comman";
+import { ShineImg } from "../../../public/assets";
 
 export const GreatIdea = () => (
   <div className="mt-[200px]">

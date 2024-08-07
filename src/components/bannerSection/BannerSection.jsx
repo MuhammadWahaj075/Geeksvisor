@@ -1,7 +1,7 @@
 import { bannerMockData } from "@/utils/mockData";
 import { IoIosArrowRoundForward } from "react-icons/io";
-import { Button, OptimizedImage, Pill } from "../../comman";
 import GridBoxAnimation from "@/components/ui/GridBoxAnimation";
+import { Button, OptimizedImage, Pill } from "../comman";
 
 export const BannerSection = () => (
   <div className="relative w-full">

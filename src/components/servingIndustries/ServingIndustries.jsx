@@ -1,9 +1,9 @@
 "use client";
 
 import { servingIndustries, ServingMockData } from "@/utils/mockData";
-import { OptimizedImage } from "../../comman";
 import { motion } from "framer-motion";
 import "./style.css";
+import { OptimizedImage } from "../comman";
 
 export const ServingIndustries = () => {
   const itemWidth = 200;
