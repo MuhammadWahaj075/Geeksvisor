@@ -4,7 +4,7 @@ import { Button, Pill } from "../../comman";
 
 export const WorkProjects = () => {
   return (
-    <div className="flex flex-col relative z-20 justify-center px-5 lg:px-0 items-center">
+    <div className="flex flex-col relative  z-20 justify-center px-5 lg:px-0 items-center">
       <div className="flex justify-center items-center mt-10">
         <div className="grid grid-cols-2 gap-10 place-content-center  place-items-start ">
           {aboutProjects?.map((project, index) => (
@@ -14,7 +14,7 @@ export const WorkProjects = () => {
                   <h1 className="md:text-[24px] text-neutral font-inter font-semibold">
                     {project.title}
                   </h1>
-                  <div className="flex lg:!w-[400px] flex-wrap gap-1 lg:gap-3">
+                  <div className="flex w-[177.97px] md:w-[302px] xl:!w-[400px] flex-wrap gap-1 lg:gap-3">
                     {project.tags.map((tag, tagIndex) => (
                       <Pill
                         className={"!text-[8px] md:!text-[12px]"}
