@@ -30,7 +30,7 @@ const Experience = () => {
                   {exp?.details.map((detail, detailIndex) => (
                     <li
                       key={detailIndex}
-                      className="w-[328px] sm:w-[520px] !text-primary-light text-[12px] md:text-[14px] lg:!text-[18px] description_text"
+                      className="w-[328px] sm:w-[520px] !text-primary-light !text-[12px] md:!text-[14px] lg:!text-[18px] description_text"
                     >
                       {detail}
                     </li>

@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { ProfileRatingData, WhatPeopleSayMockData } from "@/utils/mockData";
 import Masonry from "react-masonry-css";
 import { OptimizedImage } from "@/components/comman";
-import { StarIcon } from "../../../../public/assets";
+import { StarIcon } from "../../../public/assets";
 
 const scrollVariants = {
   animate: {

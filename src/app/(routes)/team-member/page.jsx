@@ -1,15 +1,10 @@
 import { BannerSection } from "@/components/AboutUs/BannerSection";
 import { ClientExpectation } from "@/components/AboutUs/clientExpect/ClientExpect";
-import {
-  FeatureWork,
-  GreatIdea,
-  TestimonialsLogos,
-  WhatPeopleSay,
-} from "@/components/Home";
+import { FeatureWork, GreatIdea, TestimonialsLogos } from "@/components/Home";
 import Experience from "@/components/TeamMember/Experience";
-import React from "react";
+import { WhatPeopleSay } from "@/components/whatPeopleSay/WhatPeopleSay";
 
-const TeamMembers = () => {
+const TeamMember = () => {
   return (
     <div>
       <BannerSection />
@@ -25,4 +20,4 @@ const TeamMembers = () => {
   );
 };
 
-export default TeamMembers;
+export default TeamMember;
