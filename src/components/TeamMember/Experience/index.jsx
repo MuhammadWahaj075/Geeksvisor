@@ -11,7 +11,7 @@ const Experience = () => {
               {experiencesMockData.description}
             </p>
           </div>
-          <div className="flex flex-col gap-16">
+          <div className="flex flex-col gap-6 md:gap-16">
             {experiencesData?.map((exp, index) => (
               <div
                 key={index}
