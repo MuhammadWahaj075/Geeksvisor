@@ -13,7 +13,7 @@ export const ProjectDetailBanner = () => {
             {projectDetailBannerData.description}
           </p>
         </div>
-        <div className="flex lg:mt-16 order-2 lg:order-1 items-center w-full lg:items-end lg:justify-end lg:w-auto justify-between lg:flex-col gap-6">
+        <div className="flex lg:mt-28 order-2 lg:order-1 items-center w-full lg:items-end lg:justify-end lg:w-auto justify-between lg:flex-col gap-6">
           <div className="status  flex justify-end items-center gap-5 text-center">
             <span className="text-[#CCCCCC] capitalize font-inter">status</span>
             <span className="text-primary capitalize font-inter !rounded-3xl py-2 px-5 bg-primary-pill">
