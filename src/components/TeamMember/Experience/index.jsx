@@ -7,7 +7,7 @@ const Experience = () => {
         <div className="flex flex-wrap gap-14  xl:gap-64 ">
           <div className="flex flex-col gap-4 items-start">
             <h1 className="title_text">{experiencesMockData.title}</h1>
-            <p className="description_text sm:w-[400px]">
+            <p className="description_text sm:w-[400px] !text-[12px] md:!text-[14px] lg:!text-[20px]">
               {experiencesMockData.description}
             </p>
           </div>
