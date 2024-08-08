@@ -41,6 +41,7 @@ import StarIcon from "./icons/star.svg";
 import TimProfile from "./images/tim.jpg";
 import MinusIcon from "./icons/minus-icon.svg";
 import grid from "./images/grid.svg";
+import HasnainProf from "./images/hasnain.png";
 
 export {
   Logo,
@@ -86,4 +87,5 @@ export {
   StarIcon,
   TimProfile,
   MinusIcon,
+  HasnainProf,
 };
