@@ -154,6 +154,57 @@ export const aboutBannerMockData = {
               eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
 };
 
+export const experiencesMockData = {
+  title: "Experience",
+  description: `  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod.`,
+};
+
+export const experiencesData = [
+  {
+    title: "Web Development Project",
+    location: "UK Remote",
+    year: "2021",
+    details: [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+    ],
+  },
+
+  {
+    title: "Web Development Project",
+    location: "UK Remote",
+    year: "2021",
+    details: [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+    ],
+  },
+
+  {
+    title: "Web Development Project",
+    location: "UK Remote",
+    year: "2021",
+    details: [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+    ],
+  },
+  {
+    title: "Web Development Project",
+    location: "UK Remote",
+    year: "2021",
+    details: [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+    ],
+  },
+];
+
 export const AboutTeamMembers = [
   {
     name: "Mughees Siddiqui",
