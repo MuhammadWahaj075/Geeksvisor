@@ -44,12 +44,18 @@ import AmazonIcon from "./icons/amazon-line.svg";
 import ContrastLine from "./icons/contrast-line.svg";
 import MacbookLine from "./icons/macbook-line.svg";
 import SmartphoneLine from "./icons/smartphone-line.svg";
+import LeftNotFound from "./icons/left-notFound.svg";
+import RightNotFound from "./icons/right-notFound.svg";
+import ArrowForward from "./icons/arrow_forward.svg";
 
 export {
   Logo,
   tech,
   sport,
   grid,
+  LeftNotFound,
+  RightNotFound,
+  ArrowForward,
   AmazonIcon,
   ContrastLine,
   MacbookLine,
