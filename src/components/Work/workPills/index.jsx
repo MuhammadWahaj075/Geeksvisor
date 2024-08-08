@@ -13,8 +13,8 @@ export const Pills = () => {
 
   return (
     <div
-      className="relative z-20 px-5 md:px-0 overflow-hidden w-[376px] md:mx-auto 
-     md:w-[645px] xl:w-[1200px] mx-auto overflow-x-auto scroll_hidden"
+      className="relative z-20  items-start px-5 md:px-0 overflow-hidden  w-[390px]  md:mx-auto 
+     md:w-[645px] xl:w-[1160px] mx-auto overflow-x-auto  scroll_hidden"
     >
       <div className="mt-[118px] ">
         <div className="flex items-center  gap-4 justify-start">
