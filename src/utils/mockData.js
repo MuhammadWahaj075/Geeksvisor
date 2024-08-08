@@ -26,6 +26,7 @@ import {
   FilterSmallImg,
   FilterImg,
   HasnainProf,
+  WorkBannerImg,
 } from "../../public/assets";
 
 export const OurQualityData = [
