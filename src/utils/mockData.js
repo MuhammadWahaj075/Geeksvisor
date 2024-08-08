@@ -25,6 +25,7 @@ import {
   TimProfile,
   FilterSmallImg,
   FilterImg,
+  WorkBannerImg,
 } from "../../public/assets";
 
 export const OurQualityData = [
@@ -76,6 +77,25 @@ export const bannerMockData = {
   images: {
     filterRightImg: FilterSmallImg,
     filterBottomImg: FilterImg,
+  },
+};
+
+export const workBannerMockData = {
+  title: "Power Your Vision with Next Generation Custom Software",
+  subtitle: "Raise $2.5M for startups",
+  description:
+    "We'll elevate your vision through custom software development as your digital transformation partner.",
+  button1: {
+    text: "Contact Us",
+    variant: "primary",
+  },
+  button2: {
+    text: "View Projects",
+    variant: "transparent",
+  },
+  images: {
+    filterRightImg: FilterImg,
+    filterBottomImg: WorkBannerImg,
   },
 };
 
@@ -395,6 +415,44 @@ export const cards = [
   },
 ];
 
+export const aboutProjects = [
+  {
+    id: 1,
+    title: "Project Title 1",
+    tags: ["React.js", "Node.js", "Serverless", "AWS"],
+    image: "",
+  },
+  {
+    id: 2,
+    title: "Project Title 2",
+    tags: ["React Native", "Express.js", "Lambda", "Azure"],
+    image: "",
+  },
+  {
+    id: 3,
+    title: "Project Title 3",
+    tags: ["nextjs", "Mongodb", "redux", "tenstack query"],
+    image: "",
+  },
+  {
+    id: 4,
+    title: "Project Title 4",
+    tags: ["nextjs", "Mongodb", "redux", "tenstack query"],
+    image: "",
+  },
+  {
+    id: 5,
+    title: "Project Title 5",
+    tags: ["nextjs", "Mongodb", "redux", "tenstack query"],
+    image: "",
+  },
+  {
+    id: 6,
+    title: "Project Title 6",
+    tags: ["nextjs", "Mongodb", "redux", "tenstack query"],
+    image: "",
+  },
+];
 export const projects = [
   {
     id: 1,
@@ -432,6 +490,15 @@ export const projects = [
     tags: ["nextjs", "Mongodb", "redux", "tenstack query"],
     image: Project,
   },
+];
+
+export const pillData = [
+  { text: "All" },
+  { text: "Mobile App Development" },
+  { text: "Web App Development" },
+  { text: "Front End Development" },
+  { text: "Backend End Development" },
+  { text: "AWS" },
 ];
 
 export const testimonialLogos = [
