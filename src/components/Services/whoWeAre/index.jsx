@@ -1,4 +1,5 @@
 import { Button } from "@/components/comman";
+import { whoWeAreMockData } from "@/utils/mockData";
 import { IoIosArrowRoundForward } from "react-icons/io";
 
 export const WhoWeAre = () => {
@@ -6,12 +7,9 @@ export const WhoWeAre = () => {
     <div >
       <div className="relative z-10 mt-[200px]">
         <div className="flex px-5 flex-col gap-4 items-center justify-center">
-          <h1 className="title_text">Who we are?</h1>
+          <h1 className="title_text">{whoWeAreMockData.title}</h1>
           <p className="description_text text-center max-w-[766px]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+           {whoWeAreMockData.description}
           </p>
           <Button
             variant={"transparent"}
