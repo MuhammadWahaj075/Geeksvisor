@@ -29,6 +29,8 @@ import {
   MacbookLine,
   SmartphoneLine,
   ContrastLine,
+  HasnainProf,
+  WorkBannerImg,
 } from "../../public/assets";
 
 export const OurQualityData = [
@@ -80,6 +82,25 @@ export const bannerMockData = {
   images: {
     filterRightImg: FilterSmallImg,
     filterBottomImg: FilterImg,
+  },
+};
+
+export const workBannerMockData = {
+  title: "Power Your Vision with Next Generation Custom Software",
+  subtitle: "Raise $2.5M for startups",
+  description:
+    "We'll elevate your vision through custom software development as your digital transformation partner.",
+  button1: {
+    text: "Contact Us",
+    variant: "primary",
+  },
+  button2: {
+    text: "View Projects",
+    variant: "transparent",
+  },
+  images: {
+    filterRightImg: FilterImg,
+    filterBottomImg: WorkBannerImg,
   },
 };
 
@@ -138,6 +159,57 @@ export const aboutBannerMockData = {
               eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
 };
 
+export const experiencesMockData = {
+  title: "Experience",
+  description: `  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod.`,
+};
+
+export const experiencesData = [
+  {
+    title: "Web Development Project",
+    location: "UK Remote",
+    year: "2021",
+    details: [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+    ],
+  },
+
+  {
+    title: "Web Development Project",
+    location: "UK Remote",
+    year: "2021",
+    details: [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+    ],
+  },
+
+  {
+    title: "Web Development Project",
+    location: "UK Remote",
+    year: "2021",
+    details: [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+    ],
+  },
+  {
+    title: "Web Development Project",
+    location: "UK Remote",
+    year: "2021",
+    details: [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+    ],
+  },
+];
+
 export const AboutTeamMembers = [
   {
     name: "Mughees Siddiqui",
@@ -155,7 +227,7 @@ export const AboutTeamMembers = [
     name: "Husnain khan",
     role: "Undefined",
     position: "Co-founder",
-    imageSrc: Project,
+    imageSrc: HasnainProf,
   },
 
   {
@@ -193,10 +265,10 @@ export const teamMembers = [
     imageSrc: RafaeProf,
   },
   {
-    name: "Husnain khan",
-    role: "Undefined",
+    name: "Hasnain khan",
+    role: "Full Stack Developer",
     position: "Co-founder",
-    imageSrc: Project,
+    imageSrc: HasnainProf,
   },
 ];
 
@@ -348,6 +420,44 @@ export const cards = [
   },
 ];
 
+export const aboutProjects = [
+  {
+    id: 1,
+    title: "Project Title 1",
+    tags: ["React.js", "Node.js", "Serverless", "AWS"],
+    image: "",
+  },
+  {
+    id: 2,
+    title: "Project Title 2",
+    tags: ["React Native", "Express.js", "Lambda", "Azure"],
+    image: "",
+  },
+  {
+    id: 3,
+    title: "Project Title 3",
+    tags: ["nextjs", "Mongodb", "redux", "tenstack query"],
+    image: "",
+  },
+  {
+    id: 4,
+    title: "Project Title 4",
+    tags: ["nextjs", "Mongodb", "redux", "tenstack query"],
+    image: "",
+  },
+  {
+    id: 5,
+    title: "Project Title 5",
+    tags: ["nextjs", "Mongodb", "redux", "tenstack query"],
+    image: "",
+  },
+  {
+    id: 6,
+    title: "Project Title 6",
+    tags: ["nextjs", "Mongodb", "redux", "tenstack query"],
+    image: "",
+  },
+];
 export const projects = [
   {
     id: 1,
@@ -385,6 +495,15 @@ export const projects = [
     tags: ["nextjs", "Mongodb", "redux", "tenstack query"],
     image: Project,
   },
+];
+
+export const pillData = [
+  { text: "All" },
+  { text: "Mobile App Development" },
+  { text: "Web App Development" },
+  { text: "Front End Development" },
+  { text: "Backend End Development" },
+  { text: "AWS" },
 ];
 
 export const testimonialLogos = [
@@ -484,6 +603,76 @@ export const WhatVissionMockData = {
             aliquip ex ea commodo consequat.`,
   subtitle: `  We develop custom software solutions to meet the unique needs of
             various industries.`,
+};
+
+export const ProblemStatement = {
+  title: "Problem Statement",
+  description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+};
+
+export const Solution = {
+  title: "Solution",
+  description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+};
+
+export const clientFeedback = {
+  title: "Client Feedback",
+  description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+};
+
+export const seeMoreProjects = [
+  {
+    id: 1,
+    title: "Project Title 1",
+    tags: ["React.js", "Node.js", "Serverless", "AWS"],
+    image: "",
+  },
+  {
+    id: 2,
+    title: "Project Title 2",
+    tags: ["React.js", "Node.js", "Serverless", "AWS"],
+    image: "",
+  },
+  {
+    id: 3,
+    title: "Project Title 3",
+    tags: ["React.js", "Node.js", "Serverless", "AWS"],
+    image: "",
+  },
+  {
+    id: 4,
+    title: "Project Title 4",
+    tags: ["React.js", "Node.js", "Serverless", "AWS"],
+    image: "",
+  },
+  
+];
+
+export const technologies = [
+  "AWS",
+  "Serverless",
+  "Next.js",
+  "React.js",
+  "React Native",
+  "Flutter",
+  "Node.js",
+];
+
+export const Technology = {
+  title: "Technologies Used",
+  description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+};
+
+export const projectDetailBannerData = {
+  title: "This area is for big heading text for hero section",
+  description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  status: "Live",
+  completionDate: "2nd of October, 2023",
 };
 
 export const MeetTeamMockData = {

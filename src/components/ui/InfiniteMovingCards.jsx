@@ -30,7 +30,7 @@ export const InfiniteMovingCards = ({
         {items?.map((item, i) => (
           <li
             className="w-[350px] max-w-full relative flex-shrink-0"
-            key={item.name}
+            key={i}
           >
             <div
               aria-hidden="true"
