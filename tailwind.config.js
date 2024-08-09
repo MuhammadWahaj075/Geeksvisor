@@ -19,7 +19,8 @@ module.exports = {
       backgroundImage: {
         "custom-gradient":
           "linear-gradient(to bottom, #0000008F 5%, #0000008F 30%)",
-        footerGradient: "linear-gradient(45deg, #EB7424, #9D4810)",
+        "footerGradient": "linear-gradient(45deg, #EB7424, #9D4810)",
+        'card-gradient': 'linear-gradient(180deg, #EB7424 0%, #DE5B10 100%)',
       },
       backgroundColor: {
         chaosBlack: "#101010",

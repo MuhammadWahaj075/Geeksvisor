@@ -25,6 +25,10 @@ import {
   TimProfile,
   FilterSmallImg,
   FilterImg,
+  AmazonIcon,
+  MacbookLine,
+  SmartphoneLine,
+  ContrastLine,
   HasnainProf,
   WorkBannerImg,
 } from "../../public/assets";
@@ -675,6 +679,94 @@ export const MeetTeamMockData = {
   title: "Meet our Team",
   subtitle: "We are incredible people with expert skills",
 };
+
+export const developmentCardsData = [
+  {
+    id: 1,
+    icon: AmazonIcon,
+    title: "Aws Solutions",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+  },
+  {
+    id: 2,
+    icon: MacbookLine,
+    title: "Another Solution",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+  },
+  {
+    id: 3,
+    icon: SmartphoneLine,
+    title: "Yet Another Solution",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+  },
+
+  {
+    id: 4,
+    icon: ContrastLine,
+    title: "Yet Another Solution",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+  },
+];
+
+export const technologyCardsData = [
+  {
+    id: 1,
+    icon: AmazonIcon,
+    title: "React Js",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+  },
+  {
+    id: 2,
+    icon: MacbookLine,
+    title: "AWS",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+  },
+  {
+    id: 3,
+    icon: SmartphoneLine,
+    title: "Node Js",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+  },
+
+  {
+    id: 4,
+    icon: ContrastLine,
+    title: "React Native",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+  },
+
+  {
+    id: 5,
+    icon: ContrastLine,
+    title: "Serverless",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+  },
+
+  {
+    id: 6,
+    icon: ContrastLine,
+    title: "Next Js",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+  },
+
+  {
+    id: 7,
+    icon: ContrastLine,
+    title: "Flutter",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+  },
+];
 
 export const ProfileRatingData = [
   {

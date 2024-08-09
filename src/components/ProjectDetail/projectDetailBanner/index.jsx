@@ -3,7 +3,7 @@ import { projectDetailBannerData } from "@/utils/mockData";
 export const ProjectDetailBanner = () => {
   return (
     <div className="mt-24">
-      <div className="flex  gap-10 justify-between flex-wrap px-5">
+      <div className="flex items-center gap-10 justify-between flex-wrap px-5">
         <div className="flex flex-col gap-8 justify-center">
           <p className="text-neutral font-inter">
             <span className="text-secondary-light">Home / </span>{" "}
@@ -17,7 +17,7 @@ export const ProjectDetailBanner = () => {
             {projectDetailBannerData.description}
           </p>
         </div>
-        <div className=" order-2 hidden sm:flex lg:order-1 items-center w-full lg:items-end lg:justify-end lg:w-auto justify-between lg:flex-col gap-6">
+        <div className="flex lg:mt-28 order-2 lg:order-1 items-center w-full lg:items-end lg:justify-end lg:w-auto justify-between lg:flex-col gap-6">
           <div className="status  flex justify-end items-center gap-5 text-center">
             <span className="text-[#CCCCCC] capitalize font-inter">status</span>
             <span className="text-primary capitalize font-inter !rounded-3xl py-2 px-5 bg-primary-pill">

@@ -6,10 +6,12 @@ export const OptimizedImage = ({
   alt,
   width,
   height,
+  style,
   ...props
 }) => {
   return (
     <Image
+    style={style}
       className={className}
       src={src}
       alt={src}

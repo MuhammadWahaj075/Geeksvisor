@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ProfileRatingData, WhatPeopleSayMockData } from "@/utils/mockData";
 import Masonry from "react-masonry-css";
-import { OptimizedImage } from "@/components/comman";
+import { OptimizedImage } from "../comman";
 import { StarIcon } from "../../../public/assets";
 
 const scrollVariants = {
