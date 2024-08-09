@@ -5,7 +5,11 @@ export const ProjectDetailBanner = () => {
     <div className="mt-24">
       <div className="flex items-center gap-10 justify-between flex-wrap px-5">
         <div className="flex flex-col gap-8 justify-center">
-          <p className="text-neutral font-inter"><span className="text-secondary-light">Home / </span> <span className="text-secondary-light">Projects / </span> Project Name</p>
+          <p className="text-neutral font-inter">
+            <span className="text-secondary-light">Home / </span>{" "}
+            <span className="text-secondary-light">Projects / </span> Project
+            Name
+          </p>
           <h1 className="title_text !text-start max-w-[550px]">
             {projectDetailBannerData.title}
           </h1>

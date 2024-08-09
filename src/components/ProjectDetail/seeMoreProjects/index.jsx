@@ -6,7 +6,9 @@ export const SeeProjects = () => {
   return (
     <div className="mt-16 md:mt-40 px-5 lg:mt-52 mx-auto">
       <div className="flex justify-start">
-        <h1 className="title_text !text-[16px] md:!text-[24px] lg:!text-[32px] ">See more projects</h1>
+        <h1 className="title_text !text-[16px] md:!text-[24px] lg:!text-[32px] ">
+          See more projects
+        </h1>
       </div>
       <div className="overflow-hidden mt-6 sm:mt-8 lg:mt-14 pb-10 overflow-x-auto w-full scroll_hidden">
         <div className="flex gap-4 lg:gap-14 items-center">
