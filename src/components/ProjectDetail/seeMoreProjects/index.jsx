@@ -4,7 +4,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 
 export const SeeProjects = () => {
   return (
-    <div className="mt-16 md:mt-40 px-5 lg:mt-52 mx-auto">
+    <div className="mt-16 md:mt-40  pl-5 md:px-5  lg:mt-52 mx-auto">
       <div className="flex justify-start">
         <h1 className="title_text !text-[16px] md:!text-[24px] lg:!text-[32px] ">See more projects</h1>
       </div>
