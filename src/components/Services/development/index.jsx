@@ -1,6 +1,6 @@
 import { OptimizedImage } from "@/components/comman";
 import { Spline } from "../../../../public/assets";
-import { developmentCardsData } from "@/utils/mockData";
+import { developmentCardsData, developmentMockData } from "@/utils/mockData";
 import { DevelopmentCard } from "./developmentCard/Card";
 
 export const Development = () => {
@@ -15,11 +15,10 @@ export const Development = () => {
       <div className="relative z-20 sm:max-w-[600px]  lg:!max-w-[1160px] mx-auto">
         <div className="flex flex-col gap-4 items-center md:items-start">
           <h1 className="title_text !text-[16px] md:!text-[24px] lg:text-[32px]">
-            Development
+            {developmentMockData.title}
           </h1>
           <p className="description_text w-[328px] md:w-auto !text-center md:!text-start">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod.
+            {developmentMockData.description}
           </p>
         </div>
       </div>

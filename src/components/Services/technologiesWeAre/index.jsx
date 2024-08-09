@@ -1,4 +1,4 @@
-import { technologyCardsData } from "@/utils/mockData";
+import { technologiesWeAre, technologyCardsData } from "@/utils/mockData";
 import Link from "next/link";
 import { Button } from "@/components/comman";
 import { IoIosArrowRoundForward } from "react-icons/io";
@@ -9,11 +9,10 @@ export const TechnologiesWeAre = () => {
     <div className="relative z-10 mt-10  max-w-[1440px] mx-auto md:mt-[132px] px-5 lg:mt-[200px]">
       <div className="flex flex-col gap-4 items-center">
         <h1 className="title_text !text-[16px] md:!text-[24px] lg:text-[32px]">
-          Technologies we are good at
+        {technologiesWeAre.title}
         </h1>
         <p className="description_text w-[320px] md:w-[474px] !text-center">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod.
+         {technologiesWeAre.description}
         </p>
       </div>
       <div

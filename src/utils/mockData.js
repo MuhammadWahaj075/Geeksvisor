@@ -52,6 +52,17 @@ export const OurQualityData = [
   },
 ];
 
+export const technologiesWeAre = {
+  title: "  Technologies we are good at",
+  description: ` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod.`,
+};
+export const developmentMockData = {
+  title: "Development",
+  description: ` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod.`,
+};
+
 export const ServingMockData = {
   title: "Serving all Industries",
   description: `See what our satisfied clients are saying about our exceptional
@@ -648,7 +659,6 @@ export const seeMoreProjects = [
     tags: ["React.js", "Node.js", "Serverless", "AWS"],
     image: "",
   },
-  
 ];
 
 export const technologies = [
