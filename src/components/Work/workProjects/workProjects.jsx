@@ -32,7 +32,7 @@ export const WorkProjects = () => {
   return (
     <div className="flex flex-col relative z-20 justify-center px-5 lg:px-0 items-center">
       <div className="flex justify-center items-center mt-10">
-        <div className="grid grid-cols-2 gap-y-10 md:gap-10 place-content-center place-items-start">
+        <div className="grid grid-cols-2 gap-5 gap-y-10 md:gap-10 place-content-center place-items-start">
           {visibleProjects.map((project, index) => (
             <div key={index} className="flex">
               <div className="flex flex-col-reverse xl:justify-between gap-8">
