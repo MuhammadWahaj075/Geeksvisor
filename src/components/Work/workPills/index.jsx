@@ -5,7 +5,7 @@ import { Pill } from "@/components/comman";
 import { pillData } from "@/utils/mockData";
 
 export const Pills = () => {
-  const [selectedPill, setSelectedPill] = useState(null);
+  const [selectedPill, setSelectedPill] = useState("All");
 
   const handlePillClick = (text) => {
     setSelectedPill(text);
@@ -13,11 +13,11 @@ export const Pills = () => {
 
   return (
     <div
-      className="relative z-20  items-start px-5 md:px-0 overflow-hidden  w-[390px]  md:mx-auto 
-     md:w-[645px] xl:w-[1160px] mx-auto overflow-x-auto  scroll_hidden"
+      className="relative z-20 items-start px-5 md:px-0 overflow-hidden w-[370px] sm:w-[390px] md:mx-auto 
+     md:w-[645px] xl:w-[1160px] mx-auto overflow-x-auto scroll_hidden"
     >
-      <div className="mt-[118px] ">
-        <div className="flex items-center  gap-4 justify-start">
+      <div className="mt-[118px]">
+        <div className="flex items-center gap-4 justify-start">
           {pillData.map((pill, index) => (
             <Pill
               key={index}
@@ -25,7 +25,7 @@ export const Pills = () => {
               className={`${
                 selectedPill === pill.text
                   ? "text-neutral text-nowrap"
-                  : "text-nowrap   text-primary-light"
+                  : "text-nowrap text-primary-light"
               } ${pill.className || ""} `}
               onClick={() => handlePillClick(pill.text)}
             />
