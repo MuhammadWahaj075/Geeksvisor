@@ -6,19 +6,18 @@ export const ProjectDetailBanner = () => {
       <div className="px-5">
         <div className="my-6">
           <p className="text-neutral font-inter">
-              <span className="text-secondary-light">Home / </span>{" "}
-              <span className="text-secondary-light">Projects / </span> Project
-              Name
-            </p>  
+            <span className="text-secondary-light">Home / </span>{" "}
+            <span className="text-secondary-light">Projects / </span> Project
+            Name
+          </p>
         </div>
-    
+
         <div className="flex gap-10 w-full lg:justify-between flex-wrap justify-center">
           <div className="flex flex-col gap-8 justify-center">
-           
             <h1 className="title_text  !leading-[19.84px] md:!leading-[48px] lg:!leading-[56px]  lg:!text-[40px] md:!text-[32px] !text-[16px] !text-center lg:!text-start mx-auto sm:max-w-[616px] xl:max-w-[700px]">
               {projectDetailBannerData.title}
             </h1>
-            <p className="description_text !text-center lg:!text-start !text-[12px] md:!text-[14px] lg:!text-[20px]  !leading-[14.52px] lg:!leading-[32px] mx-auto lg:mx-0 md:!leading-[22px] sm:max-w-[400px]">
+            <p className="description_text !text-center lg:!text-start !text-[12px] md:!text-[14px] lg:!text-[20px] !leading-[14.52px] lg:!leading-[32px] mx-auto lg:mx-0 md:!leading-[22px] sm:max-w-[400px] lg:max-w-[600px]">
               {projectDetailBannerData.description}
             </p>
           </div>
