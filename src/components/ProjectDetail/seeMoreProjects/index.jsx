@@ -11,7 +11,7 @@ export const SeeProjects = () => {
         </h1>
       </div>
       <div className="overflow-hidden mt-6 sm:mt-8 lg:mt-14 pb-10 overflow-x-auto w-full scroll_hidden">
-        <div className="flex gap-4 xl:gap-14 items-center">
+        <div className="flex gap-4 lg:gap-14 items-center">
           {seeMoreProjects?.map((project, index) => (
             <div
               key={index}
