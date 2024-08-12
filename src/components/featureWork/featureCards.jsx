@@ -89,13 +89,13 @@ export const VerticalScrollCarousel = () => {
           </Card>
         ))}
       </div>
-      <Button
+      {/* <Button
         variant="primary"
         className={"w-[275px] mt-[56px] lg:mt-[129px]"}
         icon={<IoIosArrowRoundForward size={25} />}
       >
         View All Projects
-      </Button>
+      </Button> */}
     </>
   );
 };

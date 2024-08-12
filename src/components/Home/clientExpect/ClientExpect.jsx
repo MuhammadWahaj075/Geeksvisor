@@ -68,12 +68,12 @@ export const ClientExpectation = () => (
             </div>
           ))}
         </div>
-        <Button
+        {/* <Button
           icon={<IoIosArrowRoundForward size={25} />}
           className={"py-[14px] px-[56px] mt-[76px]"}
         >
           Lets Connect
-        </Button>
+        </Button> */}
         <OptimizedImage
           src={Spline}
           height={"100%"}

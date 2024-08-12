@@ -26,7 +26,7 @@ export const BannerSection = () => {
               : "mt-[95px] right-[20px]"
           } absolute  top-0  z-20`}
         />
-        <div className="absolute pointer-events-none inset-0 flex items-center justify-center">
+        <div className="absolute z-[-1] pointer-events-none inset-0 flex items-center justify-center">
           <GridBoxAnimation />
         </div>
         <div className="flex justify-center">
@@ -60,13 +60,13 @@ export const BannerSection = () => {
                 >
                   {bannerMockData?.button1?.text}
                 </Button>
-                <Button
+                {/* <Button
                   variant={bannerMockData.button2.variant}
                   icon={<IoIosArrowRoundForward size={25} />}
                   className={"!h-0"}
                 >
                   {bannerMockData.button2.text}
-                </Button>
+                </Button> */}
               </div>
             </div>
           </div>
