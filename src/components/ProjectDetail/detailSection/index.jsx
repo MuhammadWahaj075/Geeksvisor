@@ -7,7 +7,7 @@ export const DetailSection = ({ title, description }) => {
         </h1>
         <p
           className="description_text  lg:!text-[18px]
-         md:!text-[16px] !text-[12px] leading-[14.52px] w-[320px] sm:w-[600px] lg:w-[474px]"
+         md:!text-[14px] !text-[12px] leading-[14.52px] w-[320px] sm:w-[600px] lg:w-[474px]"
         >
           {description}
         </p>

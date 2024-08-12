@@ -14,7 +14,7 @@ export const Development = () => {
       />
       <div className="relative z-20 sm:max-w-[600px]  lg:!max-w-[1160px] mx-auto">
         <div className="flex flex-col gap-4 items-center md:items-start">
-          <h1 className="title_text !text-[16px] md:!text-[24px] lg:text-[32px]">
+          <h1 className="title_text !text-[16px] md:!text-[24px] lg:!text-[32px]">
             {developmentMockData.title}
           </h1>
           <p className="description_text w-[328px] !leading-[14.52px] md:!leading-[22px] lg:!leading-[26px] !text-[12px] md:!text-[14px] lg:!text-[18px] md:w-auto !text-center md:!text-start">
