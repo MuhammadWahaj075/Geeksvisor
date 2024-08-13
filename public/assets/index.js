@@ -46,7 +46,7 @@ import ContrastLine from "./icons/contrast-line.svg";
 import MacbookLine from "./icons/macbook-line.svg";
 import SmartphoneLine from "./icons/smartphone-line.svg";
 import HasnainProf from "./images/hasnain.png";
-import corporate from "./images/corporate.jpg";
+import corporate from "./images/corporate.svg";
 
 export {
   Logo,
