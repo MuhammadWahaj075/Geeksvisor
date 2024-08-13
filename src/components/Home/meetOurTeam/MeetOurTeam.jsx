@@ -36,14 +36,14 @@ export const MeetOurTeam = () => {
                 <p className="description_text">{member?.role}</p>
                 <Pill text={member?.position} />
               </div>
-              <Button
+              {/* <Button
                 variant="transparent"
                 icon={<IoIosArrowRoundForward size={25} />}
                 className={"!p-0"}
                 onClick={handleViewProfileClick}
               >
                 View profile
-              </Button>
+              </Button> */}
             </div>
           ))}
         </div>

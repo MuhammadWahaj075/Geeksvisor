@@ -15,7 +15,7 @@ export const Faq = () => {
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="max-w-2xl mx-auto flex gap-y-4 flex-col items-center text-center">
           <h2 className="title_text">Frequently Asked Questions</h2>
-          <p className="description_text max-w-[474px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+          <p className="description_text max-w-[474px]">Find answers to the most common questions about our services and process</p>
         </div>
         <div className="max-w-[846px] mx-auto mt-8 space-y-4 md:mt-16">
           {faqData.map((item, index) => (

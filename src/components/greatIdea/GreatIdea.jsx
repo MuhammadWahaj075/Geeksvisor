@@ -16,13 +16,13 @@ export const GreatIdea = () => (
           {GreatIdeaMockData.subtitle}
         </p>
         <Link href={"contact"}>
-          <Button
+          {/* <Button
             className="!w-[329px] !h-[33px] md:!w-[167px] md:!h-[48px]"
             variant="primary"
             icon={<IoIosArrowRoundForward size={25} />}
           >
             Contact Us
-          </Button>
+          </Button> */}
         </Link>
       </div>
     </div>

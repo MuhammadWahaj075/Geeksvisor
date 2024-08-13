@@ -58,8 +58,8 @@ export const VerticalScrollCarousel = () => {
   return (
     <>
       <div className="vertical-scroll" ref={scrollRef}>
-        {projects?.map((project) => (
-          <Card key={project?.id} opacity={opacities}>
+        {projects?.map((project, index) => (
+          <Card key={index} opacity={opacities}>
             <div className="project_cards flex justify-center flex-col lg:flex-row items-center xl:justify-between flex-wrap gap-[30px] mb-10 lg:gap-x-60 lg:gap-y-20">
               <div className="order-1 flex items-start flex-col gap-4 justify-center">
                 <h1 className="text-[24px] text-neutral font-inter font-semibold">
@@ -70,14 +70,14 @@ export const VerticalScrollCarousel = () => {
                     <Pill key={tagIndex} text={tag} />
                   ))}
                 </div>
-                <Button
+                {/* <Button
                   variant="transparent"
                   icon={<IoIosArrowRoundForward size={25} />}
                   className={"!p-0 capitalize !h-0 mt-4 lg:mt-8 font-semibold"}
                   onClick={navigateToProjectDetail}
                 >
                   See Project
-                </Button>
+                </Button> */}
               </div>
               <div className="flex lg:order-2">
                 <OptimizedImage
@@ -89,13 +89,13 @@ export const VerticalScrollCarousel = () => {
           </Card>
         ))}
       </div>
-      <Button
+      {/* <Button
         variant="primary"
         className={"w-[275px] mt-[56px] lg:mt-[129px]"}
         icon={<IoIosArrowRoundForward size={25} />}
       >
         View All Projects
-      </Button>
+      </Button> */}
     </>
   );
 };

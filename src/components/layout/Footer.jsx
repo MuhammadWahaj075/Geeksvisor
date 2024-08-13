@@ -20,6 +20,7 @@ import {
 import useInView from "@/hooks/useInView";
 import "./style.css";
 import { Input } from "../comman/Input/Input";
+import Link from "next/link";
 
 export const Footer = () => {
   const controls = useAnimation();
@@ -52,12 +53,12 @@ export const Footer = () => {
   return (
     <motion.section
       ref={footerRef}
-      className="mt-[100px] relative z-10 bg-black lg:mt-[200px] !w-full"
+      className="mt-[100px] lg:mt-[200px] !w-full"
       variants={staggerContainer}
       initial="hidden"
       animate={controls}
     >
-      <div className="px-4  mx-auto sm:px-6 lg:px-8 max-w-7xl">
+      <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-10 gap-y-12 gap-x-8 xl:gap-x-12">
           <div className="col-span-2 md:col-span-4 xl:pr-8">
             <motion.h1
@@ -80,8 +81,7 @@ export const Footer = () => {
               </Button>
             </motion.div>
           </div>
-
-          <motion.div className="lg:col-span-2" variants={fadeInUp}>
+          {/* <motion.div className="lg:col-span-2" variants={fadeInUp}>
             <p className="text-base font-medium text-neutral">Main Pages</p>
 
             <ul className="mt-6 space-y-4">
@@ -97,8 +97,7 @@ export const Footer = () => {
                 </li>
               ))}
             </ul>
-          </motion.div>
-
+          </motion.div> */}
           <motion.div className="lg:col-span-2" variants={fadeInUp}>
             <p className="text-base font-medium text-neutral">Services</p>
 
@@ -132,7 +131,6 @@ export const Footer = () => {
                   </a>
                 </li>
               ))}
-
               <p className="text-base font-medium text-neutral">Address</p>
               <li>
                 <a className="flex text-sm text-primary-normal opacity-[60%] transition-all duration-200 hover:text-secondary-hover focus:text-secondary-hover">
@@ -145,40 +143,36 @@ export const Footer = () => {
       </div>
       <div className="relative mx-auto w-full">
         <motion.div variants={fadeInUp}>
-          <h1 className="mt-[108px] text-center text-gradient font-unbound font-normal w-full text-[50px] sm:text-[100px] md:text-[125px] lg:text-[160px] xl:text-[200px] ">
+          <h1 className="mt-[108px] text-center text-gradient font-unbound font-normal w-full text-[50px] sm:text-[85px] md:text-[110px] lg:text-[150px] xl:text-[185px] ">
             GeeksVisor
           </h1>
         </motion.div>
-        <div className="bg-custom-gradient w-full top-[50px] absolute sm:top-[90px] md:top-[115px] lg:top-[150px] xl:top-[190px] bg-[#0000008F]   backdrop-blur-xl">
+        <div className="bg-custom-gradient w-full top-[50px] absolute sm:top-[90px] md:top-[115px] lg:top-[150px] xl:top-[190px] bg-[#0000008F] backdrop-blur-xl">
           <div className="flex flex-col gap-6 mt-[150px] lg:mt-36 items-center justify-center">
             <h1 className="font-inter font-medium text-neutral text-[24px]">
               Follow us on Social Media
             </h1>
-            <div className="flex w-[320px] lg:w-[400px] justify-between">
-              <OptimizedImage
-                className="cursor-pointer"
-                src={FacebookIcon}
-              />
-              <OptimizedImage
+            <div className="flex justify-between gap-[50px]">
+              <Link href="https://facebook.com/geeksvisor" target="_blank">
+                <OptimizedImage
+                  className="cursor-pointer"
+                  src={FacebookIcon}
+                />
+              </Link>
+              {/* <OptimizedImage
                 className="cursor-pointer"
                 src={InstagramIcon}
-              />
-              <OptimizedImage
-                className="cursor-pointer"
-                src={LinkedInIcon}
-              />
-              <OptimizedImage
-                className="cursor-pointer"
-                src={GithubIcon}
-              />
-              <OptimizedImage
-                className="cursor-pointer"
-                src={DribbleIcon}
-              />
+              /> */}
+              <Link href="https://www.linkedin.com/company/geeksvisor" target="_blank">
+                <OptimizedImage
+                  className="cursor-pointer"
+                  src={LinkedInIcon}
+                />
+              </Link>
             </div>
             <hr className="w-[350px] lg:w-[1000px] 2xl:w-[1160px] mt-14 mb-10 opacity-[20%] border-t border-neutral-200" />
             <p className="description_text text-center mb-10">
-              Copyright © 2024 All rights reserved by Geekvisor
+              Copyright © 2024 All rights reserved by Geeksvisor
             </p>
           </div>
         </div>

@@ -1,16 +1,12 @@
 import { OptimizedImage } from "@/components/comman";
 import { healthData, WhatVissionMockData } from "@/utils/mockData";
+import { corporate } from "../../../../public/assets";
 
 export const WhatWeVission = () => (
   <div className="mt-[46px] sm:mt-[160px]  lg:mt-[200px]">
     <div className="flex flex-wrap mx-auto flex-col xl:flex-row items-center xl:max-w-screen-xl justify-center gap-10">
       <div className="border-2 w-[320px] sm:w-[480px] xl:w-0 xl:h-[562px] border-l border-primary" />
-      <div
-        className="w-[320px] h-[320px] sm:h-[510px] sm:w-[480px]
-         lg:w-[455px] lg:h-[455px] rounded-[8px] bg-primary-imageTestColor"
-      >
-        {/* Image here */}
-      </div>
+      <OptimizedImage src={corporate} className={"w-[320px] h-[320px] sm:h-[510px] sm:w-[480px] lg:w-[455px] lg:h-[455px] rounded-[8px]"} />
       <div className="flex flex-col mx-auto lg:w-[45%] xl:w-auto !justify-center  items-center lg:items-start">
         <div className="flex flex-col gap-y-4 items-start">
           <h1 className="title_text">{WhatVissionMockData.title}</h1>
@@ -30,7 +26,7 @@ export const WhatWeVission = () => (
           ))}
         </div>
         <p className="description_text items-start w-[350px] lg:w-[585px]">
-          {WhatVissionMockData.description}
+          {WhatVissionMockData.approachText}
         </p>
       </div>
     </div>
