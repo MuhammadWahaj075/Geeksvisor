@@ -5,6 +5,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import { Count } from "@/components/ui/CountingAnimation";
 import { Button, OptimizedImage } from "@/components/comman";
 import { FilterImg, Spline } from "../../../../public/assets";
+import Link from "next/link";
 
 export const ClientExpectation = () => (
   <div className="mt-[100px] lg:mt-[230px]">
@@ -68,12 +69,14 @@ export const ClientExpectation = () => (
             </div>
           ))}
         </div>
-        {/* <Button
-          icon={<IoIosArrowRoundForward size={25} />}
-          className={"py-[14px] px-[56px] mt-[76px]"}
-        >
-          Lets Connect
-        </Button> */}
+        <Link href="contact">
+          <Button
+            icon={<IoIosArrowRoundForward size={25} />}
+            className={"py-[14px] px-[56px] mt-[76px]"}
+          >
+            Lets Connect
+          </Button>
+        </Link>
         <OptimizedImage
           src={Spline}
           height={"100%"}

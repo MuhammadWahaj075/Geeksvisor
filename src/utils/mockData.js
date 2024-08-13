@@ -471,39 +471,48 @@ export const aboutProjects = [
 ];
 export const projects = [
   {
-    id: 1,
-    title: "Project Title 1",
-    tags: ["React.js", "Node.js", "Serverless", "AWS"],
+    title: "Earlybirdee",
+    tags: ["React.js", , "Tailwind CSS", "TypeScript", "Node.js", "Serverless", "Cognito", "AWS Lambda", "DynamoDB", "API Gateway", "AWS AppSync"],
     image: Project,
   },
   {
-    id: 2,
-    title: "Project Title 2",
-    tags: ["React Native", "Express.js", "Lambda", "Azure"],
+    title: "SoPlan",
+    tags: ["Nextjs", "Material UI", "Stripe", "TypeScript", "Node.js", "Serverless", "Cognito", "AWS Lambda", "AWS AppSync", "DynamoDB"],
     image: Project,
   },
   {
-    id: 3,
-    title: "Project Title 3",
-    tags: ["nextjs", "Mongodb", "redux", "tenstack query"],
+    title: "Agent Copilot",
+    tags: ["Reactjs", "Redux", "TailwindCss"],
     image: Project,
   },
   {
-    id: 4,
-    title: "Project Title 4",
-    tags: ["nextjs", "Mongodb", "redux", "tenstack query"],
+    title: "KyoGreen",
+    tags: ["Nextjs", "Material UI", "Charts", "Maps"],
     image: Project,
   },
   {
-    id: 5,
-    title: "Project Title 5",
-    tags: ["nextjs", "Mongodb", "redux", "tenstack query"],
+    title: "Mifu",
+    tags: ["Node.js", "Cognito", "Opensearch", "AWS Lambda", "API Gateway", "DynamoDB"],
     image: Project,
   },
   {
-    id: 6,
-    title: "Project Title 6",
-    tags: ["nextjs", "Mongodb", "redux", "tenstack query"],
+    title: "ViralApp",
+    tags: ["Node.js", "S3", "AWS Lambda", "AWS RDS", " Step Functions", "API Gateway"],
+    image: Project,
+  },
+  {
+    title: "Salvesen",
+    tags: ["Nextjs", "Gsap", "Framer Motion", "TailwindCss"],
+    image: Project,
+  },
+  {
+    title: "MultiModal Chatbot",
+    tags: ["Streamlit", "AWS Bedrock",],
+    image: Project,
+  },
+  {
+    title: "Generate Jokes from News Using LLM",
+    tags: ["Streamlit", "LangChain", "Hugging Face Transformers",],
     image: Project,
   },
 ];
