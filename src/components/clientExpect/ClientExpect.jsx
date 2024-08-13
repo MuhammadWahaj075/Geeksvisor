@@ -138,7 +138,7 @@ export const ClientExpectation = () => (
           src={Spline}
           height={"100%"}
           width={"100%"}
-          className="absolute hidden xl:block left-[-100px] bottom-0"
+          className="absolute hidden xl:block left-[-150px] bottom-0"
         />
       </div>
     </div>
