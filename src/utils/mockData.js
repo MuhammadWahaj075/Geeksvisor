@@ -32,6 +32,13 @@ import {
   HasnainProf,
   corporate,
   WorkBannerImg,
+  viralApp,
+  earlybirdee,
+  soplan,
+  agentcopilot,
+  salvesen,
+  kyogreen,
+  mifu
 } from "../../public/assets";
 
 export const OurQualityData = [
@@ -473,48 +480,48 @@ export const projects = [
   {
     title: "Earlybirdee",
     tags: ["React.js", , "Tailwind CSS", "TypeScript", "Node.js", "Serverless", "Cognito", "AWS Lambda", "DynamoDB", "API Gateway", "AWS AppSync"],
-    image: Project,
+    image: earlybirdee,
   },
   {
     title: "SoPlan",
     tags: ["Nextjs", "Material UI", "Stripe", "TypeScript", "Node.js", "Serverless", "Cognito", "AWS Lambda", "AWS AppSync", "DynamoDB"],
-    image: Project,
+    image: soplan,
   },
   {
     title: "Agent Copilot",
     tags: ["Reactjs", "Redux", "TailwindCss"],
-    image: Project,
+    image: agentcopilot,
   },
   {
     title: "KyoGreen",
     tags: ["Nextjs", "Material UI", "Charts", "Maps"],
-    image: Project,
+    image: kyogreen,
   },
   {
     title: "Mifu",
     tags: ["Node.js", "Cognito", "Opensearch", "AWS Lambda", "API Gateway", "DynamoDB"],
-    image: Project,
+    image: mifu,
   },
   {
     title: "ViralApp",
     tags: ["Node.js", "S3", "AWS Lambda", "AWS RDS", " Step Functions", "API Gateway"],
-    image: Project,
+    image: viralApp,
   },
   {
     title: "Salvesen",
     tags: ["Nextjs", "Gsap", "Framer Motion", "TailwindCss"],
-    image: Project,
+    image: salvesen,
   },
-  {
-    title: "MultiModal Chatbot",
-    tags: ["Streamlit", "AWS Bedrock",],
-    image: Project,
-  },
-  {
-    title: "Generate Jokes from News Using LLM",
-    tags: ["Streamlit", "LangChain", "Hugging Face Transformers",],
-    image: Project,
-  },
+  // {
+  //   title: "MultiModal Chatbot",
+  //   tags: ["Streamlit", "AWS Bedrock",],
+  //   image: Project,
+  // },
+  // {
+  //   title: "Generate Jokes from News Using LLM",
+  //   tags: ["Streamlit", "LangChain", "Hugging Face Transformers",],
+  //   image: Project,
+  // },
 ];
 
 export const pillData = [

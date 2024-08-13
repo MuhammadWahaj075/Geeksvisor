@@ -47,13 +47,26 @@ import MacbookLine from "./icons/macbook-line.svg";
 import SmartphoneLine from "./icons/smartphone-line.svg";
 import HasnainProf from "./images/hasnain.png";
 import corporate from "./images/corporate.svg";
+import viralApp from "./images/viralApp.svg";
+import earlybirdee from "./images/earlybirdee.png";
+import soplan from "./images/soplan.png";
+import agentcopilot from "./images/agentcopilot.png";
+import kyogreen from "./images/kyogreen.png";
+import salvesen from "./images/salvesen.png";
+import mifu from "./images/mifu.png";
+
 
 export {
   Logo,
+  mifu,
   tech,
   sport,
   grid,
+  salvesen,
+  kyogreen,
+  earlybirdee,
   AmazonIcon,
+  agentcopilot,
   ContrastLine,
   MacbookLine,
   corporate,
@@ -61,6 +74,8 @@ export {
   lifestyle,
   education,
   healthcare,
+  soplan,
+  viralApp,
   InfiniteImg,
   InfiniteImg2,
   WorkBannerImg,

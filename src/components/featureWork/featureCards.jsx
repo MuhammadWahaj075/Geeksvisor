@@ -82,7 +82,7 @@ export const VerticalScrollCarousel = () => {
               <div className="flex lg:order-2">
                 <OptimizedImage
                   src={project.image}
-                  className="w-[350px] lg:w-auto"
+                  className="w-[350px] md:w-[500px] h-[500px] rounded-[8px]"
                 />
               </div>
             </div>
