@@ -32,6 +32,7 @@ import {
   HasnainProf,
   corporate,
   WorkBannerImg,
+  viralApp,
 } from "../../public/assets";
 
 export const OurQualityData = [
@@ -473,7 +474,7 @@ export const projects = [
   {
     title: "Earlybirdee",
     tags: ["React.js", , "Tailwind CSS", "TypeScript", "Node.js", "Serverless", "Cognito", "AWS Lambda", "DynamoDB", "API Gateway", "AWS AppSync"],
-    image: Project,
+    image: viralApp,
   },
   {
     title: "SoPlan",

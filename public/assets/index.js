@@ -47,6 +47,7 @@ import MacbookLine from "./icons/macbook-line.svg";
 import SmartphoneLine from "./icons/smartphone-line.svg";
 import HasnainProf from "./images/hasnain.png";
 import corporate from "./images/corporate.svg";
+import viralApp from "./images/viralApp.svg";
 
 export {
   Logo,
@@ -61,6 +62,7 @@ export {
   lifestyle,
   education,
   healthcare,
+  viralApp,
   InfiniteImg,
   InfiniteImg2,
   WorkBannerImg,
