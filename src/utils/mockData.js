@@ -795,67 +795,59 @@ export const technologyCardsData = [
 export const ProfileRatingData = [
   {
     id: 1,
-    name: "Tim Carrender",
-    designation: "Project Manager and Scrum Master",
+    name: "Client",
+    designation: "Assist with AWS Hosting Solution for custom developed CRM software",
     profileImage: TimProfile,
-    testimonial: `Throughout my career, I've had the privilege of collaborating with
-                  developers from across the globe, and I'm incredibly grateful to
-                  have Geeksvisor from Pakistan as part of my team. Their commitment
-                  to cohesion and transparency stands out, making them an invaluable
-                  asset. As a Project Manager and Scrum Master, having such a
-                  reliable team is crucial for maintaining our project timelines and
-                  ensuring everything progresses.`,
+    testimonial: `Proficient in their field, GeeksVisor provided invaluable assistance to our backend developer with hosting solutions. They are easy to communicate and work with.`,
     rating: 5,
   },
   {
     id: 2,
-    name: "Moheed Siddiqui",
+    name: "Development of Saddlefit website in React",
     designation: "Software Engineer",
     profileImage: TimProfile,
-    testimonial: `Geeksvisor provided exceptional services and demonstrated great
-                  professionalism. Their team is knowledgeable and reliable.
-                  Throughout my career, I've had the privilege of collaborating with
-                  developers from across the globe, and I'm incredibly grateful to
-                  have Geeksvisor from Pakistan as part of my team. Their commitment
-                  to cohesion and transparency stands out, making them an invaluable
-                  asset. As a Project Manager and Scrum Master, having such a
-                  reliable team is crucial for maintaining our project timelines and
-                  ensuring everything progresses.`,
+    testimonial: `Throughout my career, I've had the privilege of collaborating with developers from across the globe, and I'm incredibly grateful to have Geeksvisor from Pakistan as part of my team. Their commitment to cohesion and transparency stands out, making them an invaluable asset. As a Project Manager and Scrum Master, having such a reliable team is crucial for maintaining our project timelines and ensuring everything progresses.`,
     rating: 4,
   },
-
   {
     id: 3,
-    name: "Dawood Siddiqui",
-    designation: "Software Engineer",
+    name: "Client",
+    designation: "Looking for an AWS lambda and nodejs expert to create a POC for me",
     profileImage: TimProfile,
-    testimonial: `Throughout my career, I've had the privilege of collaborating with developers from across the globe, and I'm incredibly grateful to have Geeksvisor from Pakistan as part of my team.`,
+    testimonial: `GeeksVisor consistently delivers as per expectations, highly recommended.`,
     rating: 3,
   },
-
   {
     id: 4,
-    name: "Muhammad Arsalan",
-    designation: "Software Engineer",
+    name: "Client",
+    designation: "Move Function from Vue to Lambda",
     profileImage: TimProfile,
-    testimonial: `Geeksvisor provided exceptional services and demonstrated great
-                  professionalism. Their team is knowledgeable and reliable.
-                  Throughout my career, I've had the privilege of collaborating with
-                  developers from across the globe, and I'm incredibly grateful to
-                  have Geeksvisor from Pakistan as part of my team. Their commitment
-                  to cohesion and transparency stands out, making them an invaluable
-                  asset. As a Project Manager and Scrum Master, having such a
-                  reliable team is crucial for maintaining our project timelines and
-                  ensuring everything progresses.`,
+    testimonial: `GeeksVisor swiftly resolved a complex issue! After spending countless hours trying to embed AWS Lambda in our VueJS web app, they solved it in under a week.`,
     rating: 4,
   },
 
   {
     id: 5,
-    name: "Jane Doe",
-    designation: "Software Engineer",
+    name: "Client",
+    designation: "AWS and React Application Improvements",
     profileImage: TimProfile,
-    testimonial: `Throughout my career, I've had the privilege of collaborating with developers from across the globe, and I'm incredibly grateful to have Geeksvisor from Pakistan as part of my team.`,
+    testimonial: `GeeksVisor, always a pleasure to collaborate with. They promptly address bugs and are proactive in enhancing the codebase for long-term application health. Their expertise in AWS services is truly beneficial. Looking forward to future collaborations! `,
+    rating: 3,
+  },
+  {
+    id: 5,
+    name: "Client",
+    designation: "Convert Ionic app to React Native app",
+    profileImage: TimProfile,
+    testimonial: `It was fun collaborating with GeeksVisor. They seamlessly converted our project from Angular to React and were highly responsive.`,
+    rating: 3,
+  },
+  {
+    id: 5,
+    name: "Client",
+    designation: "AWS Appsync work",
+    profileImage: TimProfile,
+    testimonial: `Working with GeeksVisor was truly amazing. I would be delighted to collaborate with them again. They completed the project promptly, exhibited thoughtfulness in their work, and offered detailed feedback. I highly recommend GeeksVisor!`,
     rating: 3,
   },
 ];
