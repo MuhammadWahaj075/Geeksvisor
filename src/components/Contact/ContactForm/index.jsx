@@ -46,7 +46,7 @@ export const ContactForm = () => {
     <div className="flex justify-center mt-[50px]">
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="flex flex-wrap justify-between bg-chaosBlack xl:w-[1159px] md:w-[95%] w-[95%] xl:h-[700px] h-auto rounded-[13px] md:px-[40px] md:py-[58px] py-[16px] px-[16px]"
+        className="flex flex-wrap justify-between bg-chaosBlack xl:w-[1159px] md:w-[95%] w-[95%] xl:h-[630px] h-auto rounded-[13px] md:px-[40px] md:py-[58px] py-[16px] px-[16px]"
       >
         <div className="xl:w-[405px] md:text-left text-center">
           <h1 className="title_text !text-primary-normal max-w-[737px] md:text-left text-center">
