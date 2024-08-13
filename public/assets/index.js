@@ -54,11 +54,12 @@ import agentcopilot from "./images/agentcopilot.png";
 import kyogreen from "./images/kyogreen.png";
 import salvesen from "./images/salvesen.png";
 import mifu from "./images/mifu.png";
-
+import avatar from "./images/avatar.png";
 
 export {
   Logo,
   mifu,
+  avatar,
   tech,
   sport,
   grid,
