@@ -32,8 +32,8 @@ export const MeetOurTeam = () => {
               <h2 className="text-neutral font-unbound font-semibold text-[24px]">
                 {member?.name}
               </h2>
-              <div className="flex justify-between w-[320px] lg:w-[370px]">
-                <p className="description_text">{member?.role}</p>
+              <div className="flex justify-between gap-5 w-[320px] lg:w-[370px]">
+                <p className="description_text text-nowrap">{member?.role}</p>
                 <Pill text={member?.position} />
               </div>
               {/* <Button

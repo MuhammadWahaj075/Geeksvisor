@@ -52,21 +52,23 @@ export const BannerSection = () => {
               <p className="relative z-20 description_text py-[40px] text-center w-[350px] sm:w-[600px] lg:w-[700px]">
                 {bannerMockData.description}
               </p>
-              <div className="flex relative items-center gap-[40px] z-20">
+              <div className="flex flex-col md:flex-row !w-full md:!w-auto relative items-center gap-[40px] z-20">
                 <Button
                   variant="primary"
-                  className={"py-[16px] px-[16px] lg:px-[24px] !h-[52px]"}
+                  className={
+                    "py-[16px] px-[16px] !w-full md:!w-auto lg:px-[24px] !h-[52px]"
+                  }
                   icon={<IoIosArrowRoundForward size={25} />}
                 >
                   {bannerMockData?.button1?.text}
                 </Button>
-                {/* <Button
+                <Button
                   variant={bannerMockData.button2.variant}
                   icon={<IoIosArrowRoundForward size={25} />}
                   className={"!h-0"}
                 >
                   {bannerMockData.button2.text}
-                </Button> */}
+                </Button>
               </div>
             </div>
           </div>

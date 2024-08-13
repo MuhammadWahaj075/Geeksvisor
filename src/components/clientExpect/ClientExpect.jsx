@@ -4,7 +4,7 @@ import { clientExpectationMockData, OurQualityData } from "@/utils/mockData";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { Count } from "@/components/ui/CountingAnimation";
 import { Button, OptimizedImage } from "@/components/comman";
-import { FilterImg, Spline } from "../../../../public/assets";
+import { FilterImg, Spline } from "../../../public/assets";
 
 export const ClientExpectation = () => (
   <div className="mt-[100px] lg:mt-[230px]">
@@ -24,25 +24,29 @@ export const ClientExpectation = () => (
             {clientExpectationMockData.description}
           </p>
         </div>
-        <div className="client-project_counts px-5 flex-col flex-wrap lg:flex-row gap-[80px] lg:gap-[120px] flex items-center justify-center mt-[140px]">
+        <div className="client-project_counts px-5 flex-col flex-wrap lg:flex-row gap-6 lg:gap-[120px] flex items-center justify-center mt-[140px]">
           <div className="lg:hidden flex items-center ">
             <div className="flex flex-col w-[150px] items-center">
               <Count
                 value={"100+"}
                 label={"+"}
-                className="font-unbound font-semibold flex text-[16px] lg:text-[64px] text-neutral"
+                className="font-unbound font-semibold flex !text-[16px] sm:!text-[24px] lg:!text-[64px] text-neutral"
               />
               <div>
-                <p className="description_text">projects</p>
+                <p className="description_text !text-[12px] sm:!text-[10px] lg:!text-[16px]">
+                  projects
+                </p>
               </div>
             </div>
             <div className="flex flex-col  w-[150px] items-center">
               <Count
                 value={"150+"}
                 label={"+"}
-                className="font-unbound font-semibold flex text-[16px] lg:text-[64px] text-neutral"
+                className="font-unbound font-semibold flex !text-[16px] sm:!text-[24px] lg:!text-[64px] text-neutral"
               />
-              <p className="description_text">Feedbacks</p>
+              <p className="description_text !text-[12px] sm:!text-[10px] lg:!text-[16px]">
+                Feedbacks
+              </p>
             </div>
           </div>
 
@@ -50,39 +54,47 @@ export const ClientExpectation = () => (
             <Count
               value={"100+"}
               label={"+"}
-              className="font-unbound font-semibold flex text-[64px] text-neutral"
+              className=" font-unbound font-semibold flex !text-[16px] sm:!text-[24px] lg:!text-[64px] text-neutral"
             />
             <div>
-              <p className="description_text">projects</p>
+              <p className="description_text !text-[12px] sm:!text-[10px] lg:!text-[16px]">
+                projects
+              </p>
             </div>
           </div>
           <div className="lg:flex hidden  flex-col  w-[230px] gap-y-6 items-center">
             <Count
               value={"150+"}
               label={"+"}
-              className="font-unbound font-semibold flex text-[64px] text-neutral"
+              className="font-unbound font-semibold flex !text-[16px] sm:!text-[24px] lg:!text-[64px] text-neutral"
             />
-            <p className="description_text">Feedbacks</p>
+            <p className="description_text !text-[12px] sm:!text-[10px] lg:!text-[16px]">
+              Feedbacks
+            </p>
           </div>
 
-          <div className="lg:hidden flex border border-secondary-borderDark w-[320px]" />
-          <div className="lg:hidden flex border absolute border-secondary-borderDark h-[300px] " />
+          <div className="lg:hidden flex border border-secondary-borderDark w-[340px]" />
+          <div className="lg:hidden flex border absolute border-secondary-borderDark h-[250px] " />
           <div className="lg:hidden flex">
             <div className="flex flex-col  w-[150px]  items-center">
               <Count
                 value={"7+"}
                 label={"+"}
-                className="font-unbound font-semibold flex text-[16px] lg:text-[64px] text-neutral"
+                className="font-unbound font-semibold flex !text-[16px] sm:!text-[24px] lg:!text-[64px] text-neutral"
               />
-              <p className="description_text">Years Experince</p>
+              <p className="description_text !text-[12px] sm:!text-[10px] lg:!text-[16px]">
+                Years Experince
+              </p>
             </div>
             <div className="flex flex-col  w-[150px]  items-center">
               <Count
                 value={"10+"}
                 label={"+"}
-                className="font-unbound font-semibold flex text-[16px] lg:text-[64px] text-neutral"
+                className="font-unbound font-semibold flex !text-[16px] sm:!text-[24px] lg:!text-[64px] text-neutral"
               />
-              <p className="description_text">Expert Devs</p>
+              <p className="description_text !text-[12px] sm:!text-[10px] lg:!text-[16px]">
+                Expert Devs
+              </p>
             </div>
           </div>
 
@@ -90,34 +102,38 @@ export const ClientExpectation = () => (
             <Count
               value={"7+"}
               label={"+"}
-              className="font-unbound font-semibold flex text-[64px] text-neutral"
+              className="font-unbound font-semibold flex !text-[16px] sm:!text-[24px] lg:!text-[64px] text-neutral"
             />
-            <p className="description_text">Years Experince</p>
+            <p className="description_text !text-[12px] sm:!text-[10px] lg:!text-[16px]">
+              Years Experince
+            </p>
           </div>
           <div className="lg:flex  hidden  flex-col  w-[230px] gap-y-6 items-center">
             <Count
               value={"10+"}
               label={"+"}
-              className="font-unbound font-semibold flex text-[64px] text-neutral"
+              className="font-unbound font-semibold flex !text-[16px] sm:!text-[24px] lg:!text-[64px] text-neutral"
             />
-            <p className="description_text">Expert Devs</p>
+            <p className="description_text !text-[12px] sm:!text-[10px] lg:!text-[16px]">
+              Expert Devs
+            </p>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row flex-wrap justify-center gap-14 mt-[80px]">
+        <div className="flex   md:flex-row flex-wrap justify-center gap-14 mt-[80px]">
           {OurQualityData?.map((items, i) => (
             <div key={i} className="flex gap-3 items-center">
               <OptimizedImage src={items.icon} />
-              <h2 className="description_text">{items.name}</h2>
+              <h2 className="description_text !text-[10px] lg:!text-[18px]">{items.name}</h2>
             </div>
           ))}
         </div>
-        {/* <Button
+        <Button
           variant="outline"
           icon={<IoIosArrowRoundForward size={25} />}
           className={"py-[14px] px-[56px] mt-[76px]"}
         >
           View All Projects{" "}
-        </Button> */}
+        </Button>
         <OptimizedImage
           src={Spline}
           height={"100%"}
