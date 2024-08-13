@@ -312,7 +312,7 @@ export const faqData = [
 ];
 
 export const menuItems = [
-  { navItem: "Home", href: "/" },
+  // { navItem: "Home", href: "/" },
   // { navItem: "About", href: "/about" },
   // { navItem: "Services", href: "/services" },
   // { navItem: "Who we are", href: "/whoweare" },

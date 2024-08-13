@@ -21,7 +21,7 @@ export default function Home() {
     <main>
       <div className="gridBoxGradient">
         <BannerSection />
-        <TestimonialsLogos />
+        {/* <TestimonialsLogos /> */}
         {/* <InfiniteMovingImages /> */}
       </div>
       <WhoWeAre />
