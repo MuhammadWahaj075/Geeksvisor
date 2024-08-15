@@ -127,18 +127,18 @@ export const ClientExpectation = () => (
             </div>
           ))}
         </div>
-        <Button
+        {/* <Button
           variant="outline"
           icon={<IoIosArrowRoundForward size={25} />}
           className={"py-[14px] px-[56px] mt-[76px]"}
         >
           View All Projects{" "}
-        </Button>
+        </Button> */}
         <OptimizedImage
           src={Spline}
           height={"100%"}
           width={"100%"}
-          className="absolute hidden xl:block left-[-100px] bottom-0"
+          className="absolute hidden xl:block left-[-150px] bottom-0"
         />
       </div>
     </div>
