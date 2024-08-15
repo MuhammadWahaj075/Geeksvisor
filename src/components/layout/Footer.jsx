@@ -21,6 +21,7 @@ import useInView from "@/hooks/useInView";
 import "./style.css";
 import { Input } from "../comman/Input/Input";
 import Link from "next/link";
+import { Toast } from "../comman/Toast";
 
 export const Footer = () => {
   const controls = useAnimation();
@@ -60,7 +61,7 @@ export const Footer = () => {
     >
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-10 gap-y-12 gap-x-8 xl:gap-x-12">
-          <div className="col-span-2 md:col-span-4 xl:pr-8">
+          {/* <div className="col-span-2 md:col-span-4 xl:pr-8">
             <motion.h1
               className="title_text lg:w-[393px] !font-normal !text-start"
               variants={fadeInUp}
@@ -80,7 +81,7 @@ export const Footer = () => {
                 Signup
               </Button>
             </motion.div>
-          </div>
+          </div> */}
           {/* <motion.div className="lg:col-span-2" variants={fadeInUp}>
             <p className="text-base font-medium text-neutral">Main Pages</p>
 

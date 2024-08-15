@@ -1,19 +1,19 @@
 "use client";
-import React, { useState } from "react";
 import "./style.css";
+import React, { useState } from "react";
 
 export const Input = ({
   label,
   name,
-  value,
-  onChange,
   className,
   placeholder,
+  register = () => { },
+  minLength,
+  pattern,
+  type,
   error,
-  ...rest
 }) => {
   const [isClicked, setIsClicked] = useState(false);
-
   const handleFocus = () => setIsClicked(true);
   const handleBlur = () => setIsClicked(false);
 
@@ -23,18 +23,20 @@ export const Input = ({
         <label className="text-[#525252] label-text mb-[8px]">{label}</label>
       )}
       <input
+        {...register(name, {
+          required: "This field is required", minLength: {
+            value: minLength,
+            message: `Minimum length should be ${minLength} characters`,
+          }, pattern
+        })}
         placeholder={placeholder}
-        type="text"
-        className={`${className} text-neutral focus:outline-none rounded-xl p-[16px] w-full md:w-[272px] h-[58px] bg-secondary-inputColor ${
-          isClicked ? "fade-animation" : ""
-        }`}
+        type={type ? type : "text"}
+        className={`${className} text-neutral focus:outline-none rounded-xl p-[16px] w-full md:w-[272px] h-[58px] bg-secondary-inputColor ${isClicked ? "fade-animation" : ""}`}
         onFocus={handleFocus}
         onBlur={handleBlur}
-        value={value}
-        onChange={onChange}
       />
-
-      {error && <p className="mt-1 text-xs font-inter text-red-500">{error}</p>}
+      {error && error[name] && (
+        <span className="text-[12px] w-full text-start text-red-500">{error[name].message} </span>)}
     </div>
   );
 };

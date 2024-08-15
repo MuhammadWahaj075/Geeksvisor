@@ -1,44 +1,47 @@
 "use client";
 
-import { useForm } from "react-hook-form";
-import { contact as contactMock } from "@/utils/mockData";
 import { contact } from "@/services";
-import { Input } from "@/components/comman/Input/Input";
+import { useState } from "react";
+import { useForm } from "react-hook-form";
 import { Button, TextArea } from "@/components/comman";
+import { Input } from "@/components/comman/Input/Input";
+import { contact as contactMock } from "@/utils/mockData";
 import { Loader } from "@/components/comman/loader/Loader";
+import { toast } from "react-toastify";
 
 // input
-const inputClass =
-  "!bg-eerieBlack mt-[8px] sm:h-[66px] h-[50px] lg:w-[568px] md:w-full";
+const inputClass = "!bg-eerieBlack mt-[8px] sm:h-[66px] h-[50px] lg:w-[568px] md:w-full"
 
 export const ContactForm = () => {
+
+  const [isLoader, setIsLoader] = useState(false)
+
+  const initialState = {
+    email: "",
+    subject: "",
+    message: "",
+  }
+
   const {
-    register,
     handleSubmit,
-    formState: { errors, isSubmitting },
-    reset,
+    formState: { errors },
+    reset, 
+    register,
   } = useForm({
-    defaultValues: {
-      email: "",
-      subject: "",
-      text: "",
-    },
-    mode: "onChange",
+    defaultValues: initialState,
+    mode: "onBlur",
   });
 
   const onSubmit = async (data) => {
-    console.log("🚀 ~ onSubmit ~ data:", data);
     try {
-      let response = await contact(data);
-      if (response.status === 200) {
-        alert("Message sent successfully!");
-        reset(); // Reset form fields after successful submission
-      } else {
-        alert("Failed to send the message. Please try again later.");
-      }
+      setIsLoader(true)
+      await contact(data);
+      setIsLoader(false)
+      reset(initialState); 
+      toast.success("Message sent successfully!")
     } catch (error) {
-      console.error(error);
-      alert("Failed to send the message. Please try again later.");
+      setIsLoader(false)
+      toast.error(error)
     }
   };
 
@@ -46,7 +49,7 @@ export const ContactForm = () => {
     <div className="flex justify-center mt-[50px]">
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="flex flex-wrap justify-between bg-chaosBlack xl:w-[1159px] md:w-[95%] w-[95%] xl:h-[630px] h-auto rounded-[13px] md:px-[40px] md:py-[58px] py-[16px] px-[16px]"
+        className="flex flex-wrap justify-between bg-chaosBlack xl:w-[1159px] md:w-[95%] w-[95%] xl:h-auto h-auto rounded-[13px] md:px-[40px] md:py-[58px] py-[16px] px-[16px]"
       >
         <div className="xl:w-[405px] md:text-left text-center">
           <h1 className="title_text !text-primary-normal max-w-[737px] md:text-left text-center">
@@ -61,39 +64,40 @@ export const ContactForm = () => {
             label="Email"
             name="email"
             className={inputClass}
+            type="email"
             placeholder="Email here"
-            {...register("email", {
-              required: "Email is required",
-              pattern: {
-                value: /^\S+@\S+\.\S+$/,
-                message: "Invalid email format",
-              },
-            })}
-            error={errors.email && errors.email.message}
+            register={register}
+            pattern={{
+              value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+              message: 'Invalid email address',
+            }}
+            error={errors}
+            required={true}
           />
           <Input
             label="Subject"
             name="subject"
             className={inputClass}
+            type="text"
+            minLength={5}
             placeholder="Subject here"
-            {...register("subject", {
-              required: "Subject is required",
-            })}
-            error={errors.subject && errors.subject.message}
+            register={register}
+            error={errors}
+            required={true}
           />
           <TextArea
             label="Message"
-            name="text"
+            name="message"
             rows={6}
-            className={"!bg-eerieBlack mt-[8px] lg:w-[568px] md:w-full"}
+            minLength={10}
+            className={"!bg-eerieBlack mt-[8px] lg:w-[568px] md:w-full md:!h-[190px] !h-[100px]"}
             placeholder="Enter here"
-            {...register("text", {
-              required: "Message is required",
-            })}
-            error={errors.text && errors.text.message}
+            register={register}
+            error={errors}
+            required={true}
           />
-          <Button className="mt-[18px]" type="submit" disabled={isSubmitting}>
-            {isSubmitting ? <Loader /> : "Submit"}
+          <Button className="mt-[18px] " type="submit" disabled={isLoader} >
+            {isLoader ? <Loader /> : "Submit"}
           </Button>
         </div>
       </form>
