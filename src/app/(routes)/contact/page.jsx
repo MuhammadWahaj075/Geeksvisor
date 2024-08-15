@@ -1,6 +1,6 @@
 import { Faq } from "@/components";
-import { CallToAction, ContactForm } from "@/components/Contact";
 import GridBoxAnimation from "@/components/ui/GridBoxAnimation";
+import { CallToAction, ContactForm } from "@/components/Contact";
 
 const ContactUs = () => (
   <>
