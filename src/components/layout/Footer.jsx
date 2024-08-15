@@ -53,7 +53,7 @@ export const Footer = () => {
   return (
     <motion.section
       ref={footerRef}
-      className="mt-[100px] lg:mt-[200px] !w-full"
+      className="mt-10 md:mt-[100px] lg:mt-[200px] !w-full"
       variants={staggerContainer}
       initial="hidden"
       animate={controls}

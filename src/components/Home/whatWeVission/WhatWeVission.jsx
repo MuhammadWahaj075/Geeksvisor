@@ -12,17 +12,18 @@ export const WhatWeVission = () => (
           "w-[320px] h-[320px] sm:h-[510px] sm:w-[480px] lg:w-[455px] lg:h-[455px] rounded-[8px]"
         }
       />
-      <div className="flex flex-col mx-auto lg:w-[45%] xl:w-auto !justify-center  !items-center lg:!items-start">
+      <div className="flex flex-col mx-auto lg:w-[45%] xl:w-auto !justify-center !items-center lg:!items-start">
         <div className="flex flex-col gap-y-4 !items-center  lg:!items-start">
           <h1 className="title_text">{WhatVissionMockData.title}</h1>
-          <p className="description_text !text-center lg:!text-start w-[350px] lg:w-[585px]">
+          <p className="description_text !text-[12px] sm:!text-[14px] lg:text-[18px]
+           !leading-[14.52px] sm:!leading-[22px] lg:leading-[26px] !text-center lg:!text-start w-[350px] lg:w-[585px]">
             {WhatVissionMockData.description}
           </p>
           <p className="description_text !text-center lg:!text-start w-[350px] lg:w-[585px]">
             {WhatVissionMockData.subtitle}
           </p>
         </div>
-        <div className="flex flex-wrap gap-5 w-[260px] md:w-[40%] my-10">
+        <div className="flex flex-wrap gap-5 w-[216px] md:w-[40%] my-10">
           {healthData?.map((items, i) => (
             <div key={i} className="flex gap-3 items-center">
               <OptimizedImage src={items.icon} />

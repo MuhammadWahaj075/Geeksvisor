@@ -21,7 +21,7 @@ export const ServingIndustries = () => {
     <div className="mt-[100px] lg:mt-[206px] px-5 mx-auto lg:max-w-[1164px] center-div">
       <div className="flex-center-column text-center">
         <div className="flex justify-center items-center flex-col">
-          <h2 className="title_text font-bold text-center">
+          <h2 className="title_text font-bold text-center text">
             {ServingMockData?.title}
           </h2>
           <p className="description_text max-w-[653px] mt-[16px] text-center">
@@ -56,7 +56,7 @@ export const ServingIndustries = () => {
                         src={item?.icon}
                         className="rounded-[8px] h-[31.85px] w-[35.81px]"
                       />
-                      <p className="description_text !text-[12px] mt-[8px]">
+                      <p className="description_text text !text-[8px] sm:!text-[6.59px] lg:!text-[12px] mt-[8px]">
                         {item?.name}
                       </p>
                     </div>
