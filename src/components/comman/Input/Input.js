@@ -1,24 +1,42 @@
-"use client"
+"use client";
+import "./style.css";
 import React, { useState } from "react";
-import "./style.css"
 
-export const Input = (props) => {
+export const Input = ({
+  label,
+  name,
+  className,
+  placeholder,
+  register = () => { },
+  minLength,
+  pattern,
+  type,
+  error,
+}) => {
   const [isClicked, setIsClicked] = useState(false);
-
-  const handleFocus = () =>  setIsClicked(true);
-  const handleBlur = () =>  setIsClicked(false);
+  const handleFocus = () => setIsClicked(true);
+  const handleBlur = () => setIsClicked(false);
 
   return (
-    <div className={props.label ? "pt-[18px]" : ""}>
-      {props.label && <label className="text-[#525252] label-text mb-[8px]">{props.label}</label>}
+    <div className={label ? "pt-[18px]" : ""}>
+      {label && (
+        <label className="text-[#525252] label-text mb-[8px]">{label}</label>
+      )}
       <input
-        rows={props.rows}
-        placeholder={props.placeholder}
-        type="text"
-        className={`${props.className} text-neutral focus:outline-none rounded-xl p-[16px] w-full md:w-[272px] h-[58px] bg-secondary-inputColor ${isClicked ? 'fade-animation' : ''}`}
+        {...register(name, {
+          required: "This field is required", minLength: {
+            value: minLength,
+            message: `Minimum length should be ${minLength} characters`,
+          }, pattern
+        })}
+        placeholder={placeholder}
+        type={type ? type : "text"}
+        className={`${className} text-neutral focus:outline-none rounded-xl p-[16px] w-full md:w-[272px] h-[58px] bg-secondary-inputColor ${isClicked ? "fade-animation" : ""}`}
         onFocus={handleFocus}
         onBlur={handleBlur}
       />
+      {error && error[name] && (
+        <span className="text-[12px] w-full text-start text-red-500">{error[name].message} </span>)}
     </div>
   );
 };

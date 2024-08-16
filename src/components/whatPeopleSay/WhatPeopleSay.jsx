@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { ProfileRatingData, WhatPeopleSayMockData } from "@/utils/mockData";
 import Masonry from "react-masonry-css";
 import { OptimizedImage } from "../comman";
-import { StarIcon } from "../../../public/assets";
+import { avatar, StarIcon } from "../../../public/assets";
 
 const scrollVariants = {
   animate: {
@@ -83,8 +83,8 @@ export const WhatPeopleSay = () => {
                     <p className="description_text">{testimonial}</p>
                     <div className="flex gap-x-2 items-center">
                       <OptimizedImage
-                        src={profileImage}
-                        className={"rounded-full w-14 h-14"}
+                        src={avatar}
+                        className={"bg-[#b6b6b6] p-2 rounded-full w-14 h-14"}
                       />
                       <div className="flex gap-1 flex-col">
                         <h1 className="font-inter text-white font-semibold leading-[19.36px]">

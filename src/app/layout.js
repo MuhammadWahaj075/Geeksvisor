@@ -1,8 +1,9 @@
-import { Inter, Unbounded } from "next/font/google";
 import "./globals.css";
+import { Inter, Unbounded } from "next/font/google";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const inter = Inter({
   subsets: ["latin"],
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${inter.variable} ${unbound.variable}`}>
+        <ToastContainer />
         <Header />
         {children}
         <Footer />

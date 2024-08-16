@@ -9,7 +9,7 @@ export const RollingWords = () => (
       {[...mockQuotations, ...mockQuotations].map((item, i) => (
         <li
           key={i}
-          className="text-[24px] lg:text-[48px] !font-unbound english-text english-text-1"
+          className="!text-[24px] sm:!text-[32px] lg:!text-[48px] !font-unbound english-text english-text-1"
         >
           {item}
         </li>

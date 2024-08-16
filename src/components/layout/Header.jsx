@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
+import { usePathname } from "next/navigation";
 import { CloseIcon, Logo, MenuIcon } from "../../../public/assets";
 import { menuItems } from "@/utils/mockData";
 import { Button, OptimizedImage } from "../comman";
@@ -8,15 +9,10 @@ import { useScroll } from "@/hooks/UseScroll";
 import Link from "next/link";
 
 export const Header = () => {
+  const pathname = usePathname();
   const { isMenuOpen, setIsMenuOpen } = useScroll();
-  const [activeNavItem, setActiveNavItem] = useState("Home");
 
   const handleMenuToggle = () => setIsMenuOpen(!isMenuOpen);
-
-  const handleNavItemClick = (item) => {
-    setActiveNavItem(item?.navItem);
-    setIsMenuOpen(false);
-  };
 
   useEffect(() => {
     if (isMenuOpen) {
@@ -58,7 +54,7 @@ export const Header = () => {
             isMenuOpen ? "block" : "hidden"
           } justify-between items-center w-full h-screen lg:h-auto lg:flex lg:w-auto lg:order-1`}
         >
-          <ul className=" flex flex-col mt-4 lg:flex-row lg:space-x-8 lg:mt-0">
+          <ul className="flex flex-col mt-4 lg:flex-row lg:space-x-8 lg:mt-0">
             {menuItems?.map((item, i) => (
               <li key={i}>
                 <Link
@@ -69,9 +65,7 @@ export const Header = () => {
                       : "text-secondary-light font-normal"
                   } border-b border-transparent lg:p-0 lg:border-0`}
                   onClick={() => handleNavItemClick(item)}
-                  aria-current={
-                    activeNavItem === item.navItem ? "page" : undefined
-                  }
+                  aria-current={pathname === item.href ? "page" : undefined}
                 >
                   {item.navItem}
                 </Link>

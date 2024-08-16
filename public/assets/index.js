@@ -13,6 +13,7 @@ import TestimonialsLogo4 from "./images/TestimonialsLogo4.png";
 import TestimonialsLogo5 from "./images/TestimonialsLogo5.png";
 import TestimonialsLogo6 from "./images/TestimonialsLogo6.png";
 import FilterImg from "./images/filterImg.png";
+import WorkBannerImg from "./images/workbanner.png";
 import FilterSmallImg from "./images/smallFilter.png";
 import Logo from "./images/logo.png";
 import CardImg from "./images/cardImg.png";
@@ -47,24 +48,44 @@ import SmartphoneLine from "./icons/smartphone-line.svg";
 import LeftNotFound from "./icons/left-notFound.svg";
 import RightNotFound from "./icons/right-notFound.svg";
 import ArrowForward from "./icons/arrow_forward.svg";
+import HasnainProf from "./images/hasnain.png";
+import corporate from "./images/corporate.svg";
+import viralApp from "./images/viralApp.svg";
+import earlybirdee from "./images/earlybirdee.png";
+import soplan from "./images/soplan.png";
+import agentcopilot from "./images/agentcopilot.png";
+import kyogreen from "./images/kyogreen.png";
+import salvesen from "./images/salvesen.png";
+import mifu from "./images/mifu.png";
+import avatar from "./images/avatar.png";
 
 export {
   Logo,
+  mifu,
+  avatar,
   tech,
   sport,
   grid,
   LeftNotFound,
   RightNotFound,
   ArrowForward,
+  salvesen,
+  kyogreen,
+  earlybirdee,
   AmazonIcon,
+  agentcopilot,
   ContrastLine,
   MacbookLine,
+  corporate,
   SmartphoneLine,
   lifestyle,
   education,
   healthcare,
+  soplan,
+  viralApp,
   InfiniteImg,
   InfiniteImg2,
+  WorkBannerImg,
   InfiniteImg3,
   TestimonialsLogo1,
   TestimonialsLogo2,
@@ -98,4 +119,5 @@ export {
   StarIcon,
   TimProfile,
   MinusIcon,
+  HasnainProf,
 };

@@ -1,9 +1,9 @@
 import { OptimizedImage } from "@/components/comman";
 
-export const Card = ({ icon, title, description }) => {
+export const DevelopmentCard = ({ icon, title, description }) => {
   return (
     <div
-      className="develop_cards w-[156px] h-[182px] md:w-[272px] flex
+      className="develop_cards w-[156px] h-[182px] md:w-[304px] lg:w-[272px] flex
      flex-col items-center md:items-start gap-4 md:gap-6 p-4 md:p-8 md:h-[298px] bg-[#101010] rounded-xl"
     >
       <OptimizedImage

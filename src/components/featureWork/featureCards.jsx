@@ -1,12 +1,15 @@
-"use client";
+'use client';
 
 import { useEffect, useRef, useState } from "react";
+import { useRouter } from 'next/navigation';
 import "./style.css";
 import { projects } from "@/utils/mockData";
 import { Button, OptimizedImage, Pill } from "@/components/comman";
 import { IoIosArrowRoundForward } from "react-icons/io";
 
 export const VerticalScrollCarousel = () => {
+  const router = useRouter();
+
   const Card = ({ opacity, children }) => {
     return (
       <div className="card" style={{ opacity }}>
@@ -51,11 +54,11 @@ export const VerticalScrollCarousel = () => {
   return (
     <>
       <div className="vertical-scroll" ref={scrollRef}>
-        {projects?.map((project) => (
-          <Card key={project?.id} opacity={opacities}>
+        {projects?.map((project, index) => (
+          <Card key={index} opacity={opacities}>
             <div className="project_cards flex justify-center flex-col lg:flex-row items-center xl:justify-between flex-wrap gap-[30px] mb-10 lg:gap-x-60 lg:gap-y-20">
               <div className="order-1 flex items-start flex-col gap-4 justify-center">
-                <h1 className="text-[24px] text-neutral font-inter font-semibold">
+                <h1 className="!text-[16px] sm:text-[24px] text-neutral font-inter font-semibold">
                   {project.title}
                 </h1>
                 <div className="flex w-[320px] lg:w-[400px] flex-wrap gap-2 lg:gap-3">
@@ -63,31 +66,32 @@ export const VerticalScrollCarousel = () => {
                     <Pill key={tagIndex} text={tag} />
                   ))}
                 </div>
-                <Button
+                {/* <Button
                   variant="transparent"
                   icon={<IoIosArrowRoundForward size={25} />}
                   className={"!p-0 capitalize !h-0 mt-4 lg:mt-8 font-semibold"}
+                  onClick={navigateToProjectDetail}
                 >
                   See Project
-                </Button>
+                </Button> */}
               </div>
-              <div className="flex lg:order-2">
+              <div className="flex lg:order-2 w-[350px] md:w-[500px] h-[500px]">
                 <OptimizedImage
                   src={project.image}
-                  className="w-[350px] lg:w-auto"
+                  className="object-cover rounded-[8px]"
                 />
               </div>
             </div>
           </Card>
         ))}
       </div>
-      <Button
+      {/* <Button
         variant="primary"
         className={"w-[275px] mt-[56px] lg:mt-[129px]"}
         icon={<IoIosArrowRoundForward size={25} />}
       >
         View All Projects
-      </Button>
+      </Button> */}
     </>
   );
 };
