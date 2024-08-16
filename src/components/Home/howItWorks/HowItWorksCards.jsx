@@ -25,11 +25,11 @@ const Card = ({ title, description, src, i, number }) => {
         className={`flex flex-col relative overflow-hidden justify-center items-start h-auto lg:h-[340px] border rounded-[25px] p-[80px] transform origin-top `}
       >
         <OptimizedImage src={src} />
-        <h2 className="text-neutral font-semibold text-3xl mt-6">{title}</h2>
+        <h2 className="text-neutral font-semibold !text-[14.57px] md:!text-[24px]  lg:!text-[32px] mt-6">{title}</h2>
         <span className="text-[#FFFFFF0D] !font-inter !text-[60.71px] sm:!text-[100px] lg:!text-[94.98px] font-bold right-[-8px] md:right-[-14px] top-[-18px] md:top-[-40px] absolute">
           {number}
         </span>
-        <p className="description_text mt-4">{description}</p>
+        <p className="description_text !text-[12.86px] md:!text-[14px] lg:!text-[18px] mt-4">{description}</p>
       </div>
     </div>
   );

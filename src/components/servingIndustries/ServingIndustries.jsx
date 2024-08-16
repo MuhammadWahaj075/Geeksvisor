@@ -32,7 +32,7 @@ export const ServingIndustries = () => {
 
       <div className="main mt-[72px]">
         <div className="inner-div">
-          <div className="overflow-hidden mx-auto lg:w-full h-[304px] flex items-center">
+          <div className="overflow-hidden mx-auto lg:w-full !h-[204px] md:!h-[304px] flex items-center">
             <motion.div
               className="flex"
               animate={{ x: [`0%`, `-${totalWidth}px`] }}
@@ -50,17 +50,17 @@ export const ServingIndustries = () => {
                     className="serving_card flex flex-row items-center"
                     style={{ width: `${itemWidth}px` }}
                   >
-                    <div className="w-[60px] border-[0.5px] border-primary-borderColor" />
-                    <div className="flex justify-center flex-col items-center w-[85px] h-[85px] border border-primary-borderColor rounded-[12px]">
+                    <div className="w-[70px] lg:!w-[60px] border-[0.5px] border-primary-borderColor" />
+                    <div className="flex gap-2 !justify-center flex-col !items-center !w-[56px] !h-[56px] lg:!w-[85px] lg:!h-[85px] border border-primary-borderColor rounded-[12px]">
                       <OptimizedImage
                         src={item?.icon}
-                        className="rounded-[8px] h-[31.85px] w-[35.81px]"
+                        className="rounded-[8px] w-[21.96px] h-[21.96px] lg:!h-[31.85px] lg:!w-[35.81px]"
                       />
-                      <p className="description_text text !text-[8px] sm:!text-[6.59px] lg:!text-[12px] mt-[8px]">
+                      <p className="description_text !leading-[9.68px] lg:!leading-[12px] !text-[8px] lg:!text-[12px] ">
                         {item?.name}
                       </p>
                     </div>
-                    <div className="w-[60px] border-[0.5px] border-primary-borderColor" />
+                    <div className="!w-[70px] lg:!w-[60px] border-[0.5px] border-primary-borderColor" />
                     {index < itemCount * 2 - 1 && (
                       <div className="dot w-2 h-2 bg-primary rounded-full" />
                     )}

@@ -119,7 +119,7 @@ export const ClientExpectation = () => (
             </p>
           </div>
         </div>
-        <div className="flex   md:flex-row flex-wrap justify-center gap-14 mt-[80px]">
+        <div className="flex md:flex-row flex-wrap justify-center max-w-[279px] md:max-w-max gap-4 lg:gap-14 mt-[80px]">
           {OurQualityData?.map((items, i) => (
             <div key={i} className="flex gap-3 items-center">
               <OptimizedImage src={items.icon} />

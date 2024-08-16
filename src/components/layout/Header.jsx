@@ -33,17 +33,17 @@ export const Header = () => {
           <OptimizedImage src={Logo} />
         </a>
         <div className="flex items-center lg:order-2">
-          <Link href={"contact"}>
+          <Link href={"/contact"}>
             <Button
               variant="primary"
-              className={"mr-2 lg:mr-0 py-[14px] !h-[45px] px-[24px]"}
+              className={"!hidden sm:!block mr-2 lg:mr-0 py-[14px] !h-[45px] px-[24px]"}
             >
               Contact us
             </Button>
           </Link>
           <button
             type="button"
-            className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden"
+            className="inline-flex items-center p-2 ml-1 text-sm !text-neutral rounded-lg lg:hidden"
             onClick={handleMenuToggle}
           >
             <OptimizedImage src={isMenuOpen ? CloseIcon : MenuIcon} />

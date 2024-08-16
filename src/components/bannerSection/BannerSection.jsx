@@ -12,17 +12,15 @@ export const BannerSection = () => {
   return (
     <div className="relative w-full">
       <div
-        className={`${currentPath === "/work" ? "h-auto mt-[118px]" : "h-[50rem]"
-          }  mx-auto max-w-[1440px] relative flex items-center justify-center`}
+        className={`${currentPath === "/work" ? "h-auto mt-[118px]" : ""
+          }  mx-auto max-w-[1440px] relative flex items-center h-[361px] md:h-[50rem] justify-center`}
       >
         <OptimizedImage
           src={bannerMockData?.images?.filterRightImg}
-          height={"100%"}
-          width={"100%"}
           className={`${currentPath === "/work"
-              ? "mt-[0px] right-[0px]"
-              : "mt-[95px] right-[20px]"
-            } absolute  top-0  z-20`}
+            ? "mt-[0px] right-[0px]"
+            : ""
+            } absolute right-0 md:mt-[95px] md:right-[20px] top-0  z-20`}
         />
         <div className="absolute z-[-1] pointer-events-none inset-0 flex items-center justify-center">
           <GridBoxAnimation />
@@ -73,10 +71,16 @@ export const BannerSection = () => {
         </div>
         <OptimizedImage
           src={bannerMockData.images.filterBottomImg}
-          height={"100%"}
-          width={"100%"}
+
           className={`${currentPath === "/work" ? "xl:left-[0px]" : "xl:left-[90px]"
-            } absolute z-10 left-0 sm:left-[30px]  bottom-0`}
+            } absolute z-10 left-0 sm:left-[30px] !hidden md:!block bottom-0`}
+        />
+
+        <OptimizedImage
+          src={bannerMockData.images.filterRightImg}
+
+          className={`${currentPath === "/work" ? "xl:left-[0px]" : "xl:left-[90px]"
+            } absolute z-10 left-0 sm:left-[30px] !block md:!hideen  bottom-0`}
         />
       </div>
     </div>
