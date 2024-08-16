@@ -20,8 +20,8 @@ export const BannerSection = () => {
           height={"100%"}
           width={"100%"}
           className={`${currentPath === "/work"
-            ? "mt-[0px] right-[0px]"
-            : "mt-[95px] right-[20px]"
+              ? "mt-[0px] right-[0px]"
+              : "mt-[95px] right-[20px]"
             } absolute  top-0  z-20`}
         />
         <div className="absolute z-[-1] pointer-events-none inset-0 flex items-center justify-center">

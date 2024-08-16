@@ -1,6 +1,6 @@
 import { Button } from "@/components/comman";
-import { aboutBannerMockData, bannerMockData } from "@/utils/mockData";
 import { IoIosArrowRoundForward } from "react-icons/io";
+import { aboutBannerMockData, bannerMockData } from "@/utils/mockData";
 
 export const BannerSection = () => (
   <div className="mt-[85px] w-full">
