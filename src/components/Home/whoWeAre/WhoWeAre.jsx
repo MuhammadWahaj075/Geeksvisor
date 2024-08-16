@@ -2,7 +2,7 @@ import { OptimizedImage } from "@/components/comman";
 import { whoWeAreMockData } from "@/utils/mockData";
 
 export const WhoWeAre = () => (
-  <div className="relative z-20 mt-[90px] lg:mt-[200px]">
+  <div className="relative z-20 mt-16 md:mt-10 lg:mt-[160px]">
     <div className="flex px-5 items-center gap-4 flex-col-reverse xl:flex-row justify-center lg:gap-16 mx-auto lg:max-w-screen-xl flex-wrap">
       <OptimizedImage
         src={whoWeAreMockData?.image}

@@ -150,13 +150,13 @@ export const Footer = () => {
         </motion.div>
         <div className="bg-custom-gradient w-full top-[50px] absolute sm:top-[90px] md:top-[115px] lg:top-[150px] xl:top-[190px] bg-[#0000008F] backdrop-blur-xl">
           <div className="flex flex-col gap-6 mt-[150px] lg:mt-36 items-center justify-center">
-            <h1 className="font-inter font-medium text-neutral text-[24px]">
+            <h1 className="font-inter font-medium text-neutral text-[12.13px] md:text-[24px]">
               Follow us on Social Media
             </h1>
-            <div className="flex justify-between gap-[50px]">
+            <div className="flex justify-between gap-6 md:gap-12 lg:gap-[50px]">
               <Link href="https://facebook.com/geeksvisor" target="_blank">
                 <OptimizedImage
-                  className="cursor-pointer"
+                  className="cursor-pointer !w-[12.13px] md:!w-[24px] lg:!w-[40px] "
                   src={FacebookIcon}
                 />
               </Link>
@@ -166,7 +166,7 @@ export const Footer = () => {
               /> */}
               <Link href="https://www.linkedin.com/company/geeksvisor" target="_blank">
                 <OptimizedImage
-                  className="cursor-pointer"
+                  className="cursor-pointer !w-[12.13px] md:!w-[24px] lg:!w-[40px] "
                   src={LinkedInIcon}
                 />
               </Link>

@@ -7,7 +7,7 @@ import { Button, OptimizedImage } from "@/components/comman";
 import { FilterImg, Spline } from "../../../public/assets";
 
 export const ClientExpectation = () => (
-  <div className="mt-[100px] lg:mt-[230px]">
+  <div className="!mt-16 md:!mt-10 lg:!mt-[160px]">
     <div className="flex px-5 justify-center">
       <div className="flex flex-col relative items-center w-[1326px] mx-[20px] xl:mx-auto py-[72px] bg-lines rounded-[72px] bg-[#101010]">
         <OptimizedImage

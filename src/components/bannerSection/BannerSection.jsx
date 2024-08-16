@@ -13,7 +13,7 @@ export const BannerSection = () => {
     <div className="relative w-full">
       <div
         className={`${currentPath === "/work" ? "h-auto mt-[118px]" : ""
-          }  mx-auto max-w-[1440px] relative flex items-center h-[361px] md:my-[151px] justify-center`}
+          }  mx-auto max-w-[1440px] relative flex items-center h-[290px] md:h-[361px] md:mt-[151px] justify-center`}
       >
         <OptimizedImage
           src={bannerMockData?.images?.filterRightImg}
@@ -52,7 +52,7 @@ export const BannerSection = () => {
                 <Button
                   variant="primary"
                   className={
-                    "!py-[8px] md:!py-[16px] !px-[16px] !w-full md:!w-[167px] lg:px-[24px] !h-[52px]"
+                    "!py-[8px] md:!py-[16px] !px-[16px] !w-full md:!w-[167px] lg:px-[24px] !h-[36px] md:!h-[52px]"
                   }
                   icon={<IoIosArrowRoundForward size={25} />}
                 >

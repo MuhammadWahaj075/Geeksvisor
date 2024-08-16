@@ -18,7 +18,7 @@ export const ServingIndustries = () => {
   };
 
   return (
-    <div className="mt-[100px] lg:mt-[206px] px-5 mx-auto lg:max-w-[1164px] center-div">
+    <div className="!mt-16 md:!mt-10 lg:!mt-[160px] px-5 mx-auto lg:max-w-[1164px] center-div">
       <div className="flex-center-column text-center">
         <div className="flex justify-center items-center flex-col">
           <h2 className="title_text font-bold text-center text">

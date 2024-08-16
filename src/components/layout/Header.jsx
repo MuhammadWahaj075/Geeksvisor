@@ -2,7 +2,7 @@
 
 import React, { useEffect } from "react";
 import { usePathname } from "next/navigation";
-import { CloseIcon, Logo, MenuIcon } from "../../../public/assets";
+import { CloseIcon, Logo, MenuIcon, MobLogo } from "../../../public/assets";
 import { menuItems } from "@/utils/mockData";
 import { Button, OptimizedImage } from "../comman";
 import { useScroll } from "@/hooks/UseScroll";
@@ -29,8 +29,11 @@ export const Header = () => {
          lg:bg-opacity-[12%] backdrop-blur-xl`}
     >
       <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-        <a href="/" className="flex items-center">
+        <a href="/" className="hidden md:flex items-center">
           <OptimizedImage src={Logo} />
+        </a>
+        <a href="/" className="flex md:hidden items-center">
+          <OptimizedImage src={MobLogo} />
         </a>
         <div className="flex items-center lg:order-2">
           <Link href={"/contact"}>
@@ -50,20 +53,18 @@ export const Header = () => {
           </button>
         </div>
         <div
-          className={`${
-            isMenuOpen ? "block" : "hidden"
-          } justify-between items-center w-full h-screen lg:h-auto lg:flex lg:w-auto lg:order-1`}
+          className={`${isMenuOpen ? "block" : "hidden"
+            } justify-between items-center w-full h-screen lg:h-auto lg:flex lg:w-auto lg:order-1`}
         >
           <ul className="flex flex-col mt-4 lg:flex-row lg:space-x-8 lg:mt-0">
             {menuItems?.map((item, i) => (
               <li key={i}>
                 <Link
                   href={item.href}
-                  className={`block border-2 border-b-secondary-light lg:border-none font-inter text-[14px] py-2 pr-4 pl-3 font-bold ${
-                    pathname === item.href
+                  className={`block border-2 border-b-secondary-light lg:border-none font-inter text-[14px] py-2 pr-4 pl-3 font-bold ${pathname === item.href
                       ? "text-neutral font-bold font-inter"
                       : "text-secondary-light font-normal"
-                  } border-b border-transparent lg:p-0 lg:border-0`}
+                    } border-b border-transparent lg:p-0 lg:border-0`}
                   onClick={() => handleNavItemClick(item)}
                   aria-current={pathname === item.href ? "page" : undefined}
                 >

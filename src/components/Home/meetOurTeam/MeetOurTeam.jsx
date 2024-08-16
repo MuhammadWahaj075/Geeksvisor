@@ -13,7 +13,7 @@ export const MeetOurTeam = () => {
   };
 
   return (
-    <div className="mt-[100px] mx-auto flex justify-center max-w-screen-xl">
+  <div className="!mt-16 md:!mt-10 lg:!mt-[160px] mx-auto flex justify-center max-w-screen-xl">
       <div className="flex flex-col items-center gap-[70px]">
         <div className="flex flex-col gap-4 items-center">
           <h1 className="title_text">{MeetTeamMockData.title}</h1>

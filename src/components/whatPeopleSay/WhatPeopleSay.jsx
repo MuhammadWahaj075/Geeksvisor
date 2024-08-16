@@ -44,7 +44,7 @@ export const WhatPeopleSay = () => {
     .flat();
 
   return (
-    <div className="mt-[96px] lg:mt-60">
+    <div className="!mt-16 md:!mt-10 lg:!mt-[160px]">
       <div className="flex flex-col gap-y-[70px]">
         <div className="flex flex-col gap-y-4 items-center justify-center">
           <h1 className="title_text">{WhatPeopleSayMockData.title}</h1>
