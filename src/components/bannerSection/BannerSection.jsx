@@ -13,14 +13,14 @@ export const BannerSection = () => {
     <div className="relative w-full">
       <div
         className={`${currentPath === "/work" ? "h-auto mt-[118px]" : ""
-          }  mx-auto max-w-[1440px] relative flex items-center h-[361px] md:h-[50rem] justify-center`}
+          }  mx-auto max-w-[1440px] relative flex items-center h-[361px] md:my-[151px] justify-center`}
       >
         <OptimizedImage
           src={bannerMockData?.images?.filterRightImg}
           className={`${currentPath === "/work"
             ? "mt-[0px] right-[0px]"
             : ""
-            } absolute right-0 md:mt-[95px] md:right-[20px] top-0  z-20`}
+            } absolute right-0  md:right-[20px] top-[-30px] md:top-[-130px] z-20`}
         />
         <div className="absolute z-[-1] pointer-events-none inset-0 flex items-center justify-center">
           <GridBoxAnimation />
@@ -52,7 +52,7 @@ export const BannerSection = () => {
                 <Button
                   variant="primary"
                   className={
-                    "!py-[8px] md:!py-[16px] !px-[16px] !w-full md:!w-auto lg:px-[24px] !h-[52px]"
+                    "!py-[8px] md:!py-[16px] !px-[16px] !w-full md:!w-[167px] lg:px-[24px] !h-[52px]"
                   }
                   icon={<IoIosArrowRoundForward size={25} />}
                 >
@@ -73,14 +73,14 @@ export const BannerSection = () => {
           src={bannerMockData.images.filterBottomImg}
 
           className={`${currentPath === "/work" ? "xl:left-[0px]" : "xl:left-[90px]"
-            } absolute z-10 left-0 sm:left-[30px] !hidden md:!block bottom-0`}
+            } absolute z-10 left-0 sm:left-[30px] !hidden md:!block bottom-[-100px]`}
         />
 
         <OptimizedImage
           src={bannerMockData.images.filterRightImg}
 
           className={`${currentPath === "/work" ? "xl:left-[0px]" : "xl:left-[90px]"
-            } absolute z-10 left-0 sm:left-[30px] !block md:!hideen  bottom-0`}
+            } absolute z-10 left-0 sm:left-[30px] !block md:!hidden  bottom-[-50px] lg:bottom-0`}
         />
       </div>
     </div>
