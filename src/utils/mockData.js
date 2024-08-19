@@ -272,13 +272,13 @@ export const AboutTeamMembers = [
 
 export const teamMembers = [
   {
-    name: "Mughees",
+    name: "Muhammad Mughees",
     role: "AWS & GenAI Expert",
     position: "CTO & Co-founder",
     imageSrc: MugheesProf,
   },
   {
-    name: "Rafae",
+    name: "Muhammad Rafae",
     role: "Backend & GenAI Expert",
     position: "CEO & Co-founder",
     imageSrc: RafaeProf,

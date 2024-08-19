@@ -1,7 +1,7 @@
 import { HorizontalScrollCarousel } from "@/components/ui/HorizontalScrollCarousel";
 
 export const GetFromUs = () => (
-  <div className="mt-[170px]">
+  <div className="!mt-16 md:!mt-10 lg:!mt-[160px]">
     <div className="flex items-center flex-col justify-center">
       <div className="flex flex-col  items-center text-center">
         <h1 className="title_text">What can you get from us?</h1>

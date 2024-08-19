@@ -13,7 +13,7 @@ export function HowItWorks() {
     });
 
     return (
-        <div className="mt-[200px]">
+        <div className="!mt-16 md:!mt-10 lg:!mt-[160px]">
             <div className="flex justify-center flex-col items-center">
                 <div className="bg-union flex flex-col gap-4">
                     <h1 className="title_text pt-[180px]">How it works</h1>
