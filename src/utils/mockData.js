@@ -38,7 +38,7 @@ import {
   agentcopilot,
   salvesen,
   kyogreen,
-  mifu
+  mifu,
 } from "../../public/assets";
 
 export const OurQualityData = [
@@ -871,9 +871,10 @@ export const contact = {
   description:
     "Let’s get you scheduled on a 1 to 1 free call to learn more about your idea and see if we are a good fit, Cheers!",
   contactInfo: {
+    image: corporate,
     mainTitle: "Contact Us",
     message: "Contact us via email, phone, or visit us in person.",
-    email: "mailus@gmail.com",
+    email: "contact@geeksvisor.com ",
     phone: "+92 340 8636954",
     location:
       "Flat# 6 Building 19-C South Park Avenue, Ext, D.H.A. Phase 2 Defence Housing Authority, Karachi, Pakistan.",
