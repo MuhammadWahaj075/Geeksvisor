@@ -19,9 +19,9 @@ export const ContactForm = () => {
   const initialState = {
     name: "",
     email: "",
-    contact: "",
+    number: "",
     subject: "",
-    message: "",
+    text: "",
   }
 
   const {
@@ -88,7 +88,7 @@ export const ContactForm = () => {
           />
           <Input
             label="Contact"
-            name="contact"
+            name="number"
             className={inputClass}
             type="tel"
             placeholder="Contact here"
@@ -109,7 +109,7 @@ export const ContactForm = () => {
           />
           <TextArea
             label="Message"
-            name="message"
+            name="text"
             rows={6}
             minLength={10}
             className={"!bg-eerieBlack mt-[8px] lg:w-[568px] md:w-full md:!h-[190px] !h-[100px]"}
