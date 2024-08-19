@@ -61,8 +61,9 @@ export const Header = () => {
               <li key={i}>
                 <Link
                   href={item.href}
-                  className={`block border-2 border-b-secondary-light lg:border-none font-inter text-[14px] py-2 pr-4 pl-3 font-bold ${pathname === item.href
-                      ? "text-neutral font-bold font-inter"
+                  className={` block border-2 border-b-secondary-light lg:border-none font-inter text-[14px] py-2 pr-4 pl-3 font-bold ${
+                    activeNavItem === item.navItem
+                      ? "text-primary"
                       : "text-secondary-light font-normal"
                     } border-b border-transparent lg:p-0 lg:border-0`}
                   onClick={() => handleNavItemClick(item)}

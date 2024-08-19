@@ -45,6 +45,9 @@ import AmazonIcon from "./icons/amazon-line.svg";
 import ContrastLine from "./icons/contrast-line.svg";
 import MacbookLine from "./icons/macbook-line.svg";
 import SmartphoneLine from "./icons/smartphone-line.svg";
+import LeftNotFound from "./icons/left-notFound.svg";
+import RightNotFound from "./icons/right-notFound.svg";
+import ArrowForward from "./icons/arrow_forward.svg";
 import HasnainProf from "./images/hasnain.png";
 import corporate from "./images/corporate.svg";
 import viralApp from "./images/viralApp.svg";
@@ -65,6 +68,9 @@ export {
   tech,
   sport,
   grid,
+  LeftNotFound,
+  RightNotFound,
+  ArrowForward,
   salvesen,
   kyogreen,
   earlybirdee,
