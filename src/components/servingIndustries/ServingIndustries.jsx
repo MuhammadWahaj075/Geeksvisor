@@ -51,7 +51,7 @@ export const ServingIndustries = () => {
                     style={{ width: `${itemWidth}px` }}
                   >
                     <div className="w-[70px] lg:!w-[60px] border-[0.5px] border-primary-borderColor" />
-                    <div className="flex gap-2 !justify-center flex-col !items-center !w-[56px] !h-[56px] lg:!w-[85px] lg:!h-[85px] border border-primary-borderColor rounded-[12px]">
+                    <div className="flex gap-2 !justify-center flex-col !items-center !w-[56px] !h-[56px] lg:!w-[102px] lg:!h-[88px] border border-primary-borderColor rounded-[12px]">
                       <OptimizedImage
                         src={item?.icon}
                         className="rounded-[8px] w-[21.96px] h-[21.96px] lg:!h-[31.85px] lg:!w-[35.81px]"

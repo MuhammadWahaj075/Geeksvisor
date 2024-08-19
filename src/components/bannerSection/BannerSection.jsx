@@ -5,6 +5,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import GridBoxAnimation from "@/components/ui/GridBoxAnimation";
 import { useCustomRouter } from "@/hooks/useRouter";
 import { OptimizedImage, Button, Pill } from "../comman";
+import Link from "next/link";
 
 export const BannerSection = () => {
   const { currentPath } = useCustomRouter();
@@ -49,6 +50,7 @@ export const BannerSection = () => {
                 {bannerMockData.description}
               </p>
               <div className="flex flex-col md:flex-row !w-full md:!w-auto relative items-center gap-[40px] z-20">
+              <Link href={"/contact"}>
                 <Button
                   variant="primary"
                   className={
@@ -58,6 +60,7 @@ export const BannerSection = () => {
                 >
                   {bannerMockData?.button1?.text}
                 </Button>
+                </Link>
                 {/* <Button
                   variant={bannerMockData.button2.variant}
                   icon={<IoIosArrowRoundForward size={25} />}

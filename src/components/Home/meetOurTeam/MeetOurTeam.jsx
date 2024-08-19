@@ -13,7 +13,7 @@ export const MeetOurTeam = () => {
   };
 
   return (
-  <div className="!mt-16 md:!mt-10 lg:!mt-[160px] mx-auto flex justify-center max-w-screen-xl">
+    <div className="!mt-16 md:!mt-10 lg:!mt-[160px] mx-auto flex justify-center max-w-screen-xl">
       <div className="flex flex-col items-center gap-[70px]">
         <div className="flex flex-col gap-4 items-center">
           <h1 className="title_text">{MeetTeamMockData.title}</h1>
@@ -23,7 +23,7 @@ export const MeetOurTeam = () => {
           {teamMembers?.map((member, index) => (
             <div
               key={index}
-              className="profile_sec flex items-start flex-col justify-center gap-y-3"
+              className="profile_sec  flex items-start flex-col justify-center gap-y-3"
             >
               <OptimizedImage
                 src={member?.imageSrc}
@@ -32,9 +32,9 @@ export const MeetOurTeam = () => {
               <h2 className="text-neutral font-unbound font-semibold !text-[14px] md:!text-[24px]">
                 {member?.name}
               </h2>
-              <div className="flex justify-between gap-2  ">
-                <p className="description_text text-nowrap !text-[12px] md:!text-[18px]">{member?.role}</p>
-                <Pill className={'!text-[12px] !capitalize md:!text-[16px]'} text={member?.position} />
+              <div className="flex justify-between items-center w-full gap-[44px] ">
+                <p className="text-primary-light font-inter !font-medium !w-[169px] truncate !text-[12px] md:!text-[18px]">{member?.role}</p>
+                <Pill className={'!text-[12px] !capitalize md:!text-[16px] !font-normal'} text={member?.position} />
               </div>
               {/* <Button
                 variant="transparent"
