@@ -90,8 +90,7 @@ export const ContactForm = () => {
             label="Contact"
             name="contact"
             className={inputClass}
-            minLength={11}
-            type="number"
+            type="tel"
             placeholder="Contact here"
             register={register}
             error={errors}
