@@ -25,12 +25,16 @@ export default function GridBoxAnimation() {
   return (
     <div className="gridBoxes-container">
       {Array.from({ length: totalBoxes }, (_, index) => (
+        <>
+        
+        <div className="left-shadow" />
         <div
           key={index}
           className={`gridBoxes ${highlightedIndices.includes(index) ? "highlighted" : ""}`}
         >
-          <div className="right-shadow"></div>
+          <div className="right-shadow" />
         </div>
+        </>
       ))}
     </div>
   );
