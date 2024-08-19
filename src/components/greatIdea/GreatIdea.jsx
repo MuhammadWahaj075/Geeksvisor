@@ -1,14 +1,14 @@
 import Link from "next/link";
 import { GreatIdeaMockData } from "@/utils/mockData";
-import { IoIosArrowRoundForward } from "react-icons/io";
 import { ShineImg } from "../../../public/assets";
 import { Button, OptimizedImage } from "../comman";
+import { IoIosArrowRoundForward } from "react-icons/io";
 
 export const GreatIdea = () => (
-  <div className="mt-[200px]">
+  <div className="!mt-16 md:!mt-10 lg:!mt-[160px]">
     <div className="flex relative items-center flex-col">
       <OptimizedImage src={ShineImg} className="absolute" />
-      <div className="flex  relative z-10 gap-[32px] items-center mt-24 flex-col">
+      <div className="flex  relative z-10 gap-y-[32px] items-center mt-24 flex-col">
         <h1 className="title_text !text-[28px] md:!text-[48px]">
           {GreatIdeaMockData.title}
         </h1>
@@ -16,13 +16,13 @@ export const GreatIdea = () => (
           {GreatIdeaMockData.subtitle}
         </p>
         <Link href={"contact"}>
-          {/* <Button
+          <Button
             className="!w-[329px] !h-[33px] md:!w-[167px] md:!h-[48px]"
             variant="primary"
             icon={<IoIosArrowRoundForward size={25} />}
           >
             Contact Us
-          </Button> */}
+          </Button>
         </Link>
       </div>
     </div>

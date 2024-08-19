@@ -133,13 +133,26 @@
   border-color: transparent;
 }
 
+.gridBoxes .left-shadow {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 700px;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  pointer-events: none;
+  z-index: 1;
+}
+
+
 .gridBoxes .right-shadow {
   content: "";
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
-  width: 20px;
+  width: 700px;
   background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   pointer-events: none;
   z-index: 1;

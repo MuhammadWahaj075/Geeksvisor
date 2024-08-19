@@ -7,7 +7,7 @@ import { Button, OptimizedImage } from "@/components/comman";
 import { FilterImg, Spline } from "../../../public/assets";
 
 export const ClientExpectation = () => (
-  <div className="mt-[100px] lg:mt-[230px]">
+  <div className="!mt-16 md:!mt-10 lg:!mt-[160px]">
     <div className="flex px-5 justify-center">
       <div className="flex flex-col relative items-center w-[1326px] mx-[20px] xl:mx-auto py-[72px] bg-lines rounded-[72px] bg-[#101010]">
         <OptimizedImage
@@ -17,10 +17,10 @@ export const ClientExpectation = () => (
           className="absolute hidden 2xl:block top-0 right-[-100px] z-10"
         />
         <div className="flex flex-col gap-6 px-2 items-center">
-          <h1 className="title_text !text-primary-normal md:w-[737px]">
+          <h1 className="title_text !text-primary-normal  w-[279px] sm:w-[539px] lg:w-[737px]">
             {clientExpectationMockData.title}
           </h1>
-          <p className="description_text text-center md:w-[737px]">
+          <p className="description_text text-center w-[279px] sm:w-[539px] lg:w-[737px]">
             {clientExpectationMockData.description}
           </p>
         </div>
@@ -50,7 +50,7 @@ export const ClientExpectation = () => (
             </div>
           </div>
 
-          <div className="lg:flex  hidden flex-col w-[230px] gap-y-6 items-center">
+          <div className="lg:flex  hidden flex-col  gap-y-6 items-center">
             <Count
               value={"100+"}
               label={"+"}
@@ -62,7 +62,7 @@ export const ClientExpectation = () => (
               </p>
             </div>
           </div>
-          <div className="lg:flex hidden  flex-col  w-[230px] gap-y-6 items-center">
+          <div className="lg:flex hidden  flex-col  gap-y-6 items-center">
             <Count
               value={"150+"}
               label={"+"}
@@ -98,7 +98,7 @@ export const ClientExpectation = () => (
             </div>
           </div>
 
-          <div className="lg:flex  hidden flex-col  w-[230px] gap-y-6 items-center">
+          <div className="lg:flex  hidden flex-col  gap-y-6 items-center">
             <Count
               value={"7+"}
               label={"+"}
@@ -108,7 +108,7 @@ export const ClientExpectation = () => (
               Years Experince
             </p>
           </div>
-          <div className="lg:flex  hidden  flex-col  w-[230px] gap-y-6 items-center">
+          <div className="lg:flex  hidden  flex-col   gap-y-6 items-center">
             <Count
               value={"10+"}
               label={"+"}
@@ -119,7 +119,7 @@ export const ClientExpectation = () => (
             </p>
           </div>
         </div>
-        <div className="flex   md:flex-row flex-wrap justify-center gap-14 mt-[80px]">
+        <div className="flex md:flex-row flex-wrap justify-center max-w-[279px] md:max-w-max gap-4 lg:gap-14 mt-[80px]">
           {OurQualityData?.map((items, i) => (
             <div key={i} className="flex gap-3 items-center">
               <OptimizedImage src={items.icon} />

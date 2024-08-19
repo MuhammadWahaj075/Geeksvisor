@@ -20,7 +20,7 @@ import CardImg from "./images/cardImg.png";
 import Project from "./images/project.png";
 import CheckIcon from "./images/check.png";
 import Spline from "./images/spline.png";
-import MugheesProf from "./images/mugheesprof.png";
+import MugheesProf from "./images/mugheesprof.jpg";
 import RafaeProf from "./images/rafaeProf.jpg";
 import ShineImg from "./images/shine-gradient.png";
 import FooterLogo from "./images/footer-logo.png";
@@ -58,8 +58,10 @@ import kyogreen from "./images/kyogreen.png";
 import salvesen from "./images/salvesen.png";
 import mifu from "./images/mifu.png";
 import avatar from "./images/avatar.png";
+import MobLogo from "./icons/mobLogo.svg";
 
 export {
+  MobLogo,
   Logo,
   mifu,
   avatar,
