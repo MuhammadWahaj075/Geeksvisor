@@ -162,13 +162,13 @@ body {
 
 .gridBoxGradient::before {
   left: 0;
-  width: 620px !important;
+  max-width: 920px !important;
   background: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0));
 }
 
 .gridBoxGradient::after {
   right: 0;
-  width: 620px !important;
+  max-width: 920px !important;
   background: linear-gradient(to left, rgba(0, 0, 0), rgba(0, 0, 0, 0));
 }
 
