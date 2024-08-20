@@ -12,9 +12,7 @@ export const ClientExpectation = () => (
       <div className="flex flex-col relative items-center w-[1326px] mx-[20px] xl:mx-auto py-[72px] bg-lines rounded-[72px] bg-[#101010]">
         <OptimizedImage
           src={FilterImg}
-          height={"100%"}
-          width={"100%"}
-          className="absolute hidden 2xl:block top-0 right-[-100px] z-10"
+          className="absolute -top-10 -right-4 sm:-top-20 sm:-right-10 w-[79px] xl:right-[-100px] h-[79px] sm:w-[125px] sm:h-[125px] xl:w-[247.25px] xl:h-[250px] z-10"
         />
         <div className="flex flex-col gap-6 px-2 items-center">
           <h1 className="title_text !text-primary-normal  w-[279px] sm:w-[539px] lg:w-[737px]">
@@ -24,8 +22,8 @@ export const ClientExpectation = () => (
             {clientExpectationMockData.description}
           </p>
         </div>
-        <div className="client-project_counts px-5 flex-col flex-wrap lg:flex-row gap-6 lg:gap-[120px] flex items-center justify-center mt-[140px]">
-          <div className="lg:hidden flex items-center ">
+        <div className="client-project_counts px-5 flex-col flex-wrap sm:flex-row gap-6 lg:gap-[120px] flex items-center justify-center mt-[140px]">
+          <div className="sm:hidden flex items-center ">
             <div className="flex flex-col w-[150px] items-center">
               <Count
                 value={"100+"}
@@ -50,7 +48,7 @@ export const ClientExpectation = () => (
             </div>
           </div>
 
-          <div className="lg:flex  hidden flex-col !w-[150px]  gap-y-6 items-center">
+          <div className="sm:flex  hidden flex-col w-[100px] lg:!w-[150px]  gap-y-6 items-center">
             <Count
               value={"100+"}
               label={"+"}
@@ -62,7 +60,7 @@ export const ClientExpectation = () => (
               </p>
             </div>
           </div>
-          <div className="lg:flex hidden  flex-col !w-[150px]  gap-y-6 items-center">
+          <div className="sm:flex hidden  flex-col w-[100px] lg:!w-[150px]  gap-y-6 items-center">
             <Count
               value={"150+"}
               label={"+"}
@@ -73,9 +71,9 @@ export const ClientExpectation = () => (
             </p>
           </div>
 
-          <div className="lg:hidden flex border border-secondary-borderDark w-[340px]" />
-          <div className="lg:hidden flex border absolute border-secondary-borderDark h-[250px] " />
-          <div className="lg:hidden flex">
+          <div className="sm:hidden flex border border-secondary-borderDark w-[340px]" />
+          <div className="sm:hidden flex border absolute border-secondary-borderDark h-[250px] " />
+          <div className="sm:hidden flex">
             <div className="flex flex-col  w-[150px]  items-center">
               <Count
                 value={"7+"}
@@ -98,7 +96,7 @@ export const ClientExpectation = () => (
             </div>
           </div>
 
-          <div className="lg:flex  hidden flex-col !w-[150px] gap-y-6 items-center">
+          <div className="sm:flex  hidden flex-col w-[100px] lg:!w-[150px] gap-y-6 items-center">
             <Count
               value={"7+"}
               label={"+"}
@@ -108,7 +106,7 @@ export const ClientExpectation = () => (
               Years Experince
             </p>
           </div>
-          <div className="lg:flex  hidden  flex-col !w-[150px]  gap-y-6 items-center">
+          <div className="sm:flex  hidden  flex-col w-[100px] lg:!w-[150px]  gap-y-6 items-center">
             <Count
               value={"10+"}
               label={"+"}
@@ -138,7 +136,7 @@ export const ClientExpectation = () => (
           src={Spline}
           height={"100%"}
           width={"100%"}
-          className="absolute hidden xl:block left-[-150px] bottom-0"
+          className="absolute left-0 md:left-[-150px] bottom-0 xl:-bottom-20 w-[86.43px] h-[86.43px] sm:h-[163.3px] sm:w-[163.3px] xl:w-[242.44px] xl:h-[244.77px]"
         />
       </div>
     </div>
