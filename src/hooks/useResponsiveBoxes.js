@@ -8,9 +8,9 @@ export const useResponsiveBoxes = () => {
       if (window.innerWidth >= 1024) {
         setTotalBoxes(90); // Laptop
       } else if (window.innerWidth >= 768) {
-        setTotalBoxes(50); // Tablet
+        setTotalBoxes(20); // Tablet
       } else {
-        setTotalBoxes(40); // Mobile
+        setTotalBoxes(10); // Mobile
       }
     };
 

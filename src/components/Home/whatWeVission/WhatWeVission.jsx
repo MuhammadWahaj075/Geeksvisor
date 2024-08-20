@@ -3,7 +3,7 @@ import { healthData, WhatVissionMockData } from "@/utils/mockData";
 import { corporate } from "../../../../public/assets";
 
 export const WhatWeVission = () => (
-  <div className="!mt-16 md:!mt-10 lg:!mt-[160px]">
+  <div className=" !mt-16 md:!mt-10 lg:!mt-[160px]">
     <div className="flex flex-wrap mx-auto flex-col xl:flex-row items-center xl:max-w-screen-xl justify-center gap-10">
       <div className="border-2 w-[320px] sm:w-[480px] xl:w-0 xl:h-[562px] border-l border-primary" />
       <OptimizedImage
@@ -31,7 +31,7 @@ export const WhatWeVission = () => (
             </div>
           ))}
         </div>
-        <p className="description_text !text-center lg:!text-start w-[350px] lg:w-[585px]">
+        <p className="mb-10 description_text !text-center lg:!text-start w-[350px] lg:w-[585px]">
           {WhatVissionMockData.approachText}
         </p>
       </div>
