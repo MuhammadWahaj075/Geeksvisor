@@ -2,6 +2,7 @@ import { Faq } from "@/components";
 import {
   BannerSection,
   ClientExpectation,
+  Consultation,
   FeatureWork,
   GetFromUs,
   GreatIdea,
@@ -31,6 +32,7 @@ export default function Home() {
       <WhatWeDo />
       <ClientExpectation />
       <HowItWorks />
+      <Consultation />
       <WhatPeopleSay />
       <WhatWeVission />
       <MeetOurTeam />

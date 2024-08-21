@@ -21,7 +21,7 @@ export function HowItWorks() {
                         Leave the details to us—we bring your vision to life from start to finish.
                     </p>
                 </div>
-                <div className="mt-8">
+                <div className="!mb-16 mt-8">
                     {HowItWorksData.map((project, i) => {
                         const targetScale = 1 - (HowItWorksData.length - i) * 0.05;
                         return (
