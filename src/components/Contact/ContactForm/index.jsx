@@ -7,12 +7,13 @@ import { Button, TextArea } from "@/components/comman";
 import { Input } from "@/components/comman/Input/Input";
 import { contact as contactMock } from "@/utils/mockData";
 import { Loader } from "@/components/comman/loader/Loader";
-import { toast } from "react-toastify";
+import { Toast } from "@/components/comman/Toast";
 
 // input
 const inputClass = "!bg-eerieBlack mt-[8px] sm:h-[66px] h-[50px] lg:w-[568px] md:w-full"
 
 export const ContactForm = () => {
+  const [toast, setToast] = useState({ show: false, message: '', type: '' });
 
   const [isLoader, setIsLoader] = useState(false)
 
@@ -40,15 +41,21 @@ export const ContactForm = () => {
       await contact(data);
       setIsLoader(false)
       reset(initialState);
-      toast.success("Message sent successfully!")
+      setToast({ show: true, message: "Message sent successfully!", type: 'success' });
     } catch (error) {
-      setIsLoader(false)
-      toast.error(error)
+      setIsLoader(false);
+      setToast({ show: true, message: error.message || "Failed to send message.", type: 'error' });
     }
   };
 
+  const closeToast = () => {
+    setToast({ ...toast, show: false });
+  };
+
+
   return (
     <div className="flex justify-center mt-[50px]">
+      {toast.show && <Toast message={toast.message} type={toast.type} onClose={closeToast} />}
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="flex flex-wrap justify-between bg-chaosBlack xl:w-[1159px] md:w-[95%] w-[95%] xl:h-auto h-auto rounded-[13px] md:px-[40px] md:py-[58px] py-[16px] px-[16px]"

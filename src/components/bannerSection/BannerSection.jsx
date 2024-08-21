@@ -11,7 +11,7 @@ export const BannerSection = () => {
   const { currentPath } = useCustomRouter();
 
   return (
-    <div className="relative w-full">
+    <div className="relative z-20 w-full">
       <div
         className={`${currentPath === "/work" ? "h-auto mt-[118px]" : ""
           }  mx-auto max-w-[1440px] relative flex items-center h-[290px] md:h-[361px] md:mt-[151px] justify-center`}
@@ -27,7 +27,7 @@ export const BannerSection = () => {
           <GridBoxAnimation />
         </div>
         <div className="flex justify-center">
-          <div className="flex relative z-20 flex-col justify-center items-center">
+          <div className="flex  flex-col justify-center items-center">
             {currentPath !== "/work" && (
               <Pill
                 text={bannerMockData?.subtitle}
