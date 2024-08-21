@@ -31,7 +31,6 @@ export default function Home() {
       {/* <FeatureWork /> */}
       <WhatWeDo />
       <ClientExpectation />
-      <Consultation />
       <HowItWorks />
       <Consultation />
       <WhatPeopleSay />

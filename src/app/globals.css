@@ -106,11 +106,11 @@ body {
   }
 
   .title_text {
-    @apply !text-[16px] sm:!text-[24px] lg:!text-[32px] text-center font-unbound font-bold leading-[19.84px] md:leading-[40px] text-neutral;
+    @apply !text-[16px] sm:!text-[24px] lg:!text-[32px] text-center font-unbound font-bold leading-[19.84px] sm:leading-[40px] text-neutral;
   }
 
   .description_text {
-    @apply text-[12px] sm:text-[14px] lg:!text-[18px] font-inter leading-[14.52px] md:leading-[22px] lg:!leading-[26px] font-normal text-primary-light;
+    @apply text-[12px] sm:text-[14px] lg:!text-[18px] font-inter leading-[14.52px] sm:leading-[22px] lg:!leading-[26px] font-normal text-primary-light;
   }
 
   .scroll_hidden {
