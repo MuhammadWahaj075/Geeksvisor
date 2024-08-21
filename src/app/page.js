@@ -22,13 +22,13 @@ export default function Home() {
     <main>
       <div className="gridBoxGradient">
         <BannerSection />
-        <TestimonialsLogos />
-        <InfiniteMovingImages />
+        {/* <TestimonialsLogos /> */}
+        {/* <InfiniteMovingImages /> */}
       </div>
       <WhoWeAre />
       <ServingIndustries />
       <GetFromUs />
-      <FeatureWork />
+      {/* <FeatureWork /> */}
       <WhatWeDo />
       <ClientExpectation />
       <Consultation />

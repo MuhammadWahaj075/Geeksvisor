@@ -13,13 +13,12 @@ export function HowItWorks() {
     });
 
     return (
-        <div className="mt-[200px]">
+        <div className="!mt-16 md:!mt-10 lg:!mt-[160px]">
             <div className="flex justify-center flex-col items-center">
                 <div className="bg-union flex flex-col gap-4">
                     <h1 className="title_text pt-[180px]">How it works</h1>
                     <p className="description_text text-center w-[320px] lg:w-[470px]">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod.
+                        Leave the details to us—we bring your vision to life from start to finish.
                     </p>
                 </div>
                 <div className="mt-8">

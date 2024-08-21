@@ -25,7 +25,20 @@ import {
   TimProfile,
   FilterSmallImg,
   FilterImg,
+  AmazonIcon,
+  MacbookLine,
+  SmartphoneLine,
+  ContrastLine,
+  HasnainProf,
+  corporate,
   WorkBannerImg,
+  viralApp,
+  earlybirdee,
+  soplan,
+  agentcopilot,
+  salvesen,
+  kyogreen,
+  mifu,
 } from "../../public/assets";
 
 export const OurQualityData = [
@@ -47,6 +60,17 @@ export const OurQualityData = [
   },
 ];
 
+export const technologiesWeAre = {
+  title: "  Technologies we are good at",
+  description: ` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod.`,
+};
+export const developmentMockData = {
+  title: "Development",
+  description: ` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod.`,
+};
+
 export const ServingMockData = {
   title: "Serving all Industries",
   description: `See what our satisfied clients are saying about our exceptional
@@ -58,7 +82,7 @@ export const whoWeAreMockData = {
   description: `Our aim is to provide top-quality services that help businesses of all sizes achieve their goals. 
                 We strive to deliver innovative, cost-effective solutions that meet our clients' unique needs, 
                 and to build long-term relationships based on collaboration, communication, and trust.`,
-  image: InfiniteImg,
+  image: corporate,
 };
 
 export const bannerMockData = {
@@ -101,7 +125,7 @@ export const workBannerMockData = {
 
 export const healthData = [
   {
-    name: "lifestyle",
+    name: "Lifestyle",
     icon: CheckIcon,
   },
   {
@@ -154,6 +178,57 @@ export const aboutBannerMockData = {
               eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
 };
 
+export const experiencesMockData = {
+  title: "Experience",
+  description: `  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod.`,
+};
+
+export const experiencesData = [
+  {
+    title: "Web Development Project",
+    location: "UK Remote",
+    year: "2021",
+    details: [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+    ],
+  },
+
+  {
+    title: "Web Development Project",
+    location: "UK Remote",
+    year: "2021",
+    details: [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+    ],
+  },
+
+  {
+    title: "Web Development Project",
+    location: "UK Remote",
+    year: "2021",
+    details: [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+    ],
+  },
+  {
+    title: "Web Development Project",
+    location: "UK Remote",
+    year: "2021",
+    details: [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+    ],
+  },
+];
+
 export const AboutTeamMembers = [
   {
     name: "Mughees Siddiqui",
@@ -171,7 +246,7 @@ export const AboutTeamMembers = [
     name: "Husnain khan",
     role: "Undefined",
     position: "Co-founder",
-    imageSrc: Project,
+    imageSrc: HasnainProf,
   },
 
   {
@@ -197,58 +272,58 @@ export const AboutTeamMembers = [
 
 export const teamMembers = [
   {
-    name: "Mughees Siddiqui",
-    role: "AWS Expert",
+    name: "Muhammad Mughees",
+    role: "AWS & GenAI Expert",
     position: "CTO & Co-founder",
     imageSrc: MugheesProf,
   },
   {
-    name: "Rafae Khatri",
-    role: "Full Stack Developer",
+    name: "Muhammad Rafae",
+    role: "Backend & GenAI Expert",
     position: "CEO & Co-founder",
     imageSrc: RafaeProf,
   },
   {
-    name: "Husnain khan",
-    role: "Undefined",
+    name: "Hasnain",
+    role: "Frontend | GenAI Expert",
     position: "Co-founder",
-    imageSrc: Project,
+    imageSrc: HasnainProf,
   },
 ];
 
 export const faqData = [
   {
-    question: "What are the five regions of Pakistan near the oceans?",
+    question: "What types of software solutions do you specialize in?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "We specialize in custom software development across various industries, including SaaS platforms, AI-driven applications, cloud solutions, and API integrations. Our expertise spans the entire software development lifecycle, ensuring scalable, secure, and innovative solutions tailored to your specific needs.",
   },
   {
-    question: "What are the five regions of Pakistan near the oceans?",
+    question: "How long does it typically take to develop a custom software solution?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "The timeline for developing a custom software solution depends on the complexity and scope of the project. On average, projects can take anywhere from a few weeks to several months. We work closely with our clients to set clear timelines and milestones, ensuring timely delivery without compromising quality.",
   },
   {
-    question: "What are the five regions of Pakistan near the oceans?",
+    question: "Do you provide ongoing support and maintenance after the software is launched?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, consequat.",
+      "Yes, we offer comprehensive post-launch support and maintenance services to ensure your software remains up-to-date, secure, and fully functional. Our team is committed to long-term partnerships, providing regular updates, performance monitoring, and enhancements as needed.",
   },
   {
-    question: "What are the five regions of Pakistan near the oceans?",
+    question: "How do you ensure the security and privacy of the software you develop?",
     answer:
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Security is a top priority in our development process. We implement industry best practices, including encryption, secure coding standards, and regular security assessments, to protect your software from potential threats. Additionally, we comply with relevant data protection regulations to ensure the privacy of your users.",
   },
   {
-    question: "What are the five regions of Pakistan near the oceans?",
-    answer: "Lorem ipsum dolor sit amet,",
+    question: "Can you integrate existing systems and third-party services into the software?",
+    answer: "Absolutely. We have extensive experience in integrating existing systems, databases, and third-party services into new or existing software solutions. Our team ensures seamless integration, enhancing your software’s functionality and enabling smooth communication between different platforms.",
   },
 ];
 
 export const menuItems = [
-  { navItem: "Home", href: "/" },
-  { navItem: "About", href: "/about" },
-  { navItem: "Services", href: "/services" },
-  { navItem: "Who we are", href: "/whoweare" },
-  { navItem: "Work", href: "/work" },
+  // { navItem: "Home", href: "/" },
+  // { navItem: "About", href: "/about" },
+  // { navItem: "Services", href: "/services" },
+  // { navItem: "Who we are", href: "/whoweare" },
+  // { navItem: "Work", href: "/work" },
 ];
 
 export const servingIndustries = [
@@ -315,51 +390,50 @@ export const testimonials = [
 export const cards = [
   {
     url: CardImg,
-    title: "Aws Solutions",
-    description:
-      "Revolutionize and optimize your cloud infrastructure with our comprehensive suite.",
+    title: "AWS",
+    description: "Leverage AWS cloud solutions for scalable, secure, and cost-efficient application deployments.",
     id: 1,
   },
   {
     url: CardImg,
-    title: "Aws Solutions",
+    title: "GenAI",
     description:
-      "Revolutionize and optimize your cloud infrastructure with our comprehensive suite.",
+      "Integrate cutting-edge Generative AI to create intelligent, user-centric experiences.",
     id: 2,
   },
   {
     url: CardImg,
-    title: "Aws Solutions",
+    title: "Backend",
     description:
-      "Revolutionize and optimize your cloud infrastructure with our comprehensive suite.",
+      "Build robust and scalable backend systems that power your applications efficiently.",
     id: 3,
   },
   {
     url: CardImg,
-    title: "Aws Solutions",
+    title: "Frontend",
     description:
-      "Revolutionize and optimize your cloud infrastructure with our comprehensive suite.",
+      "Craft visually stunning and highly functional frontends that enhance user engagement.",
     id: 4,
   },
   {
     url: CardImg,
-    title: "Aws Solutions",
+    title: "Full Stack",
     description:
-      "Revolutionize and optimize your cloud infrastructure with our comprehensive suite.",
+      "Deliver end-to-end solutions with expert full stack development, from concept to deployment.",
     id: 5,
   },
   {
     url: CardImg,
-    title: "Aws Solutions",
+    title: "DevOps",
     description:
-      "Revolutionize and optimize your cloud infrastructure with our comprehensive suite.",
+      "Streamline your development pipeline with our efficient, automated DevOps practices.",
     id: 6,
   },
   {
     url: CardImg,
-    title: "Aws Solutions",
+    title: "API Integration",
     description:
-      "Revolutionize and optimize your cloud infrastructure with our comprehensive suite.",
+      "Seamlessly integrate APIs to extend your app’s capabilities and improve interoperability",
     id: 7,
   },
 ];
@@ -404,41 +478,50 @@ export const aboutProjects = [
 ];
 export const projects = [
   {
-    id: 1,
-    title: "Project Title 1",
-    tags: ["React.js", "Node.js", "Serverless", "AWS"],
-    image: Project,
+    title: "Earlybirdee",
+    tags: ["React.js", , "Tailwind CSS", "TypeScript", "Node.js", "Serverless", "Cognito", "AWS Lambda", "DynamoDB", "API Gateway", "AWS AppSync"],
+    image: earlybirdee,
   },
   {
-    id: 2,
-    title: "Project Title 2",
-    tags: ["React Native", "Express.js", "Lambda", "Azure"],
-    image: Project,
+    title: "SoPlan",
+    tags: ["Nextjs", "Material UI", "Stripe", "TypeScript", "Node.js", "Serverless", "Cognito", "AWS Lambda", "AWS AppSync", "DynamoDB"],
+    image: soplan,
   },
   {
-    id: 3,
-    title: "Project Title 3",
-    tags: ["nextjs", "Mongodb", "redux", "tenstack query"],
-    image: Project,
+    title: "Agent Copilot",
+    tags: ["Reactjs", "Redux", "TailwindCss"],
+    image: agentcopilot,
   },
   {
-    id: 4,
-    title: "Project Title 4",
-    tags: ["nextjs", "Mongodb", "redux", "tenstack query"],
-    image: Project,
+    title: "KyoGreen",
+    tags: ["Nextjs", "Material UI", "Charts", "Maps"],
+    image: kyogreen,
   },
   {
-    id: 5,
-    title: "Project Title 5",
-    tags: ["nextjs", "Mongodb", "redux", "tenstack query"],
-    image: Project,
+    title: "Mifu",
+    tags: ["Node.js", "Cognito", "Opensearch", "AWS Lambda", "API Gateway", "DynamoDB"],
+    image: mifu,
   },
   {
-    id: 6,
-    title: "Project Title 6",
-    tags: ["nextjs", "Mongodb", "redux", "tenstack query"],
-    image: Project,
+    title: "ViralApp",
+    tags: ["Node.js", "S3", "AWS Lambda", "AWS RDS", " Step Functions", "API Gateway"],
+    image: viralApp,
   },
+  {
+    title: "Salvesen",
+    tags: ["Nextjs", "Gsap", "Framer Motion", "TailwindCss"],
+    image: salvesen,
+  },
+  // {
+  //   title: "MultiModal Chatbot",
+  //   tags: ["Streamlit", "AWS Bedrock",],
+  //   image: Project,
+  // },
+  // {
+  //   title: "Generate Jokes from News Using LLM",
+  //   tags: ["Streamlit", "LangChain", "Hugging Face Transformers",],
+  //   image: Project,
+  // },
 ];
 
 export const pillData = [
@@ -478,36 +561,36 @@ export const services = [
 ];
 
 export const inquiries = [
-  { name: "mailus@gmail.com", link: "#" },
+  { name: "contact@geeksvisor.com", link: "#" },
   { name: "+92 340 8636954", link: "#" },
 ];
 
 export const HowItWorksData = [
   {
-    title: "Matthias Leidinger",
+    title: "Requirements Gathering & Planning",
     description:
-      "Originally hailing from Austria, Berlin-based photographer Matthias Leindinger is a young creative brimming with talent and ideas.",
+      "Define project scope, objectives, and gather detailed requirements from stakeholders to create a clear project plan",
     src: CompassIcon,
     number: "01",
   },
   {
-    title: "Clément Chapillon",
+    title: "Design & Development",
     description:
-      "This is a story on the border between reality and imaginary, about the contradictory feelings that the insularity of a rocky, arid, and wild territory provokes”—so French photographer Clément Chapillon describes his latest highly captivating project Les rochers fauves (French for ‘The tawny rocks’).",
+      "Architect the software’s structure, design user interfaces, and develop the core functionality, ensuring alignment with the project goals",
     src: BulbIcon,
     number: "02",
   },
   {
-    title: "Zissou",
+    title: "Testing & Quality Assurance",
     description:
-      "Though he views photography as a medium for storytelling, Zissou’s images don’t insist on a narrative. Both crisp and ethereal, they’re encoded with an ambiguity—a certain tension—that lets the viewer find their own story within them.",
+      "Rigorously test the software for functionality, performance, and security, identifying and resolving any issues to ensure a high-quality product.",
     src: CodeIcon,
     number: "03",
   },
   {
-    title: "Launch",
+    title: "Deployment & Maintenance",
     description:
-      "Crafting a new idea together and managing less error occurrence so that you get more by investing less.",
+      "Deploy the software to production, monitor its performance, and provide ongoing maintenance and updates to keep the system running smoothly.",
     src: rocketIcon,
     number: "04",
   },
@@ -541,12 +624,79 @@ export const WhatPeopleSayMockData = {
 
 export const WhatVissionMockData = {
   title: "What we vission",
-  description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.`,
-  subtitle: `  We develop custom software solutions to meet the unique needs of
-            various industries.`,
+  description: `At our core, we envision a world where technology empowers every industry to achieve its full potential. Our mission is to create innovative, custom software solutions that address the unique challenges and opportunities within various sectors. 
+  We believe in the transformative power of technology to drive growth, efficiency, and success.`,
+  subtitle: `We develop custom software solutions to meet the unique needs of various industries`,
+  approachText: "Our approach is rooted in understanding the specific requirements of each industry, allowing us to deliver tailored solutions that make a real impact. We are committed to excellence in every project, ensuring that our software not only meets but exceeds expectations, enabling our clients to thrive in an ever-evolving digital landscape."
+};
+
+export const ProblemStatement = {
+  title: "Problem Statement",
+  description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+};
+
+export const Solution = {
+  title: "Solution",
+  description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+};
+
+export const clientFeedback = {
+  title: "Client Feedback",
+  description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+};
+
+export const seeMoreProjects = [
+  {
+    id: 1,
+    title: "Project Title 1",
+    tags: ["React.js", "Node.js", "Serverless", "AWS"],
+    image: "",
+  },
+  {
+    id: 2,
+    title: "Project Title 2",
+    tags: ["React.js", "Node.js", "Serverless", "AWS"],
+    image: "",
+  },
+  {
+    id: 3,
+    title: "Project Title 3",
+    tags: ["React.js", "Node.js", "Serverless", "AWS"],
+    image: "",
+  },
+  {
+    id: 4,
+    title: "Project Title 4",
+    tags: ["React.js", "Node.js", "Serverless", "AWS"],
+    image: "",
+  },
+];
+
+export const technologies = [
+  "AWS",
+  "Serverless",
+  "Next.js",
+  "React.js",
+  "React Native",
+  "Flutter",
+  "Node.js",
+];
+
+export const Technology = {
+  title: "Technologies Used",
+  description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+};
+
+export const projectDetailBannerData = {
+  title: "This area is for big heading text for hero section",
+  description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  status: "Live",
+  completionDate: "2nd of October, 2023",
 };
 
 export const MeetTeamMockData = {
@@ -554,70 +704,150 @@ export const MeetTeamMockData = {
   subtitle: "We are incredible people with expert skills",
 };
 
-export const ProfileRatingData = [
+export const developmentCardsData = [
   {
     id: 1,
-    name: "Tim Carrender",
-    designation: "Project Manager and Scrum Master",
-    profileImage: TimProfile,
-    testimonial: `Throughout my career, I've had the privilege of collaborating with
-                  developers from across the globe, and I'm incredibly grateful to
-                  have Geeksvisor from Pakistan as part of my team. Their commitment
-                  to cohesion and transparency stands out, making them an invaluable
-                  asset. As a Project Manager and Scrum Master, having such a
-                  reliable team is crucial for maintaining our project timelines and
-                  ensuring everything progresses.`,
-    rating: 5,
+    icon: AmazonIcon,
+    title: "Aws Solutions",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
   },
   {
     id: 2,
-    name: "Moheed Siddiqui",
-    designation: "Software Engineer",
-    profileImage: TimProfile,
-    testimonial: `Geeksvisor provided exceptional services and demonstrated great
-                  professionalism. Their team is knowledgeable and reliable.
-                  Throughout my career, I've had the privilege of collaborating with
-                  developers from across the globe, and I'm incredibly grateful to
-                  have Geeksvisor from Pakistan as part of my team. Their commitment
-                  to cohesion and transparency stands out, making them an invaluable
-                  asset. As a Project Manager and Scrum Master, having such a
-                  reliable team is crucial for maintaining our project timelines and
-                  ensuring everything progresses.`,
-    rating: 4,
+    icon: MacbookLine,
+    title: "Another Solution",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
   },
-
   {
     id: 3,
-    name: "Dawood Siddiqui",
-    designation: "Software Engineer",
-    profileImage: TimProfile,
-    testimonial: `Throughout my career, I've had the privilege of collaborating with developers from across the globe, and I'm incredibly grateful to have Geeksvisor from Pakistan as part of my team.`,
-    rating: 3,
+    icon: SmartphoneLine,
+    title: "Yet Another Solution",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
   },
 
   {
     id: 4,
-    name: "Muhammad Arsalan",
+    icon: ContrastLine,
+    title: "Yet Another Solution",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+  },
+];
+
+export const technologyCardsData = [
+  {
+    id: 1,
+    icon: AmazonIcon,
+    title: "React Js",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+  },
+  {
+    id: 2,
+    icon: MacbookLine,
+    title: "AWS",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+  },
+  {
+    id: 3,
+    icon: SmartphoneLine,
+    title: "Node Js",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+  },
+
+  {
+    id: 4,
+    icon: ContrastLine,
+    title: "React Native",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+  },
+
+  {
+    id: 5,
+    icon: ContrastLine,
+    title: "Serverless",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+  },
+
+  {
+    id: 6,
+    icon: ContrastLine,
+    title: "Next Js",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+  },
+
+  {
+    id: 7,
+    icon: ContrastLine,
+    title: "Flutter",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+  },
+];
+
+export const ProfileRatingData = [
+  {
+    id: 1,
+    name: "Client",
+    designation: "Assist with AWS Hosting Solution for custom developed CRM software",
+    profileImage: TimProfile,
+    testimonial: `Proficient in their field, GeeksVisor provided invaluable assistance to our backend developer with hosting solutions. They are easy to communicate and work with.`,
+    rating: 5,
+  },
+  {
+    id: 2,
+    name: "Development of Saddlefit website in React",
     designation: "Software Engineer",
     profileImage: TimProfile,
-    testimonial: `Geeksvisor provided exceptional services and demonstrated great
-                  professionalism. Their team is knowledgeable and reliable.
-                  Throughout my career, I've had the privilege of collaborating with
-                  developers from across the globe, and I'm incredibly grateful to
-                  have Geeksvisor from Pakistan as part of my team. Their commitment
-                  to cohesion and transparency stands out, making them an invaluable
-                  asset. As a Project Manager and Scrum Master, having such a
-                  reliable team is crucial for maintaining our project timelines and
-                  ensuring everything progresses.`,
+    testimonial: `Throughout my career, I've had the privilege of collaborating with developers from across the globe, and I'm incredibly grateful to have Geeksvisor from Pakistan as part of my team. Their commitment to cohesion and transparency stands out, making them an invaluable asset. As a Project Manager and Scrum Master, having such a reliable team is crucial for maintaining our project timelines and ensuring everything progresses.`,
+    rating: 4,
+  },
+  {
+    id: 3,
+    name: "Client",
+    designation: "Looking for an AWS lambda and nodejs expert to create a POC for me",
+    profileImage: TimProfile,
+    testimonial: `GeeksVisor consistently delivers as per expectations, highly recommended.`,
+    rating: 3,
+  },
+  {
+    id: 4,
+    name: "Client",
+    designation: "Move Function from Vue to Lambda",
+    profileImage: TimProfile,
+    testimonial: `GeeksVisor swiftly resolved a complex issue! After spending countless hours trying to embed AWS Lambda in our VueJS web app, they solved it in under a week.`,
     rating: 4,
   },
 
   {
     id: 5,
-    name: "Jane Doe",
-    designation: "Software Engineer",
+    name: "Client",
+    designation: "AWS and React Application Improvements",
     profileImage: TimProfile,
-    testimonial: `Throughout my career, I've had the privilege of collaborating with developers from across the globe, and I'm incredibly grateful to have Geeksvisor from Pakistan as part of my team.`,
+    testimonial: `GeeksVisor, always a pleasure to collaborate with. They promptly address bugs and are proactive in enhancing the codebase for long-term application health. Their expertise in AWS services is truly beneficial. Looking forward to future collaborations! `,
+    rating: 3,
+  },
+  {
+    id: 5,
+    name: "Client",
+    designation: "Convert Ionic app to React Native app",
+    profileImage: TimProfile,
+    testimonial: `It was fun collaborating with GeeksVisor. They seamlessly converted our project from Angular to React and were highly responsive.`,
+    rating: 3,
+  },
+  {
+    id: 5,
+    name: "Client",
+    designation: "AWS Appsync work",
+    profileImage: TimProfile,
+    testimonial: `Working with GeeksVisor was truly amazing. I would be delighted to collaborate with them again. They completed the project promptly, exhibited thoughtfulness in their work, and offered detailed feedback. I highly recommend GeeksVisor!`,
     rating: 3,
   },
 ];
@@ -627,7 +857,6 @@ export const mockQuotations = [
   "Cloud Services",
   "AI Gen",
   "Full Stack Development",
-  "Web3",
   "DevOps",
 ];
 
@@ -642,9 +871,10 @@ export const contact = {
   description:
     "Let’s get you scheduled on a 1 to 1 free call to learn more about your idea and see if we are a good fit, Cheers!",
   contactInfo: {
+    image: corporate,
     mainTitle: "Contact Us",
     message: "Contact us via email, phone, or visit us in person.",
-    email: "mailus@gmail.com",
+    email: "contact@geeksvisor.com ",
     phone: "+92 340 8636954",
     location:
       "Flat# 6 Building 19-C South Park Avenue, Ext, D.H.A. Phase 2 Defence Housing Authority, Karachi, Pakistan.",

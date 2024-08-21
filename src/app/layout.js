@@ -1,8 +1,7 @@
-import { Inter, Unbounded } from "next/font/google";
 import "./globals.css";
+import { Inter, Unbounded } from "next/font/google";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-
 
 const inter = Inter({
   subsets: ["latin"],

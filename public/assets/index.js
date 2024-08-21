@@ -20,7 +20,7 @@ import CardImg from "./images/cardImg.png";
 import Project from "./images/project.png";
 import CheckIcon from "./images/check.png";
 import Spline from "./images/spline.png";
-import MugheesProf from "./images/mugheesprof.png";
+import MugheesProf from "./images/mugheesprof.jpg";
 import RafaeProf from "./images/rafaeProf.jpg";
 import ShineImg from "./images/shine-gradient.png";
 import FooterLogo from "./images/footer-logo.png";
@@ -43,17 +43,52 @@ import MinusIcon from "./icons/minus-icon.svg";
 import grid from "./images/grid.svg";
 import first3DLogo from "./images/first3DLogo.svg";
 import second3DLogo from "./images/second3DLogo.svg";
+import AmazonIcon from "./icons/amazon-line.svg";
+import ContrastLine from "./icons/contrast-line.svg";
+import MacbookLine from "./icons/macbook-line.svg";
+import SmartphoneLine from "./icons/smartphone-line.svg";
+import LeftNotFound from "./icons/left-notFound.svg";
+import RightNotFound from "./icons/right-notFound.svg";
+import ArrowForward from "./icons/arrow_forward.svg";
+import HasnainProf from "./images/hasnain.png";
+import corporate from "./images/corporate.svg";
+import viralApp from "./images/viralApp.svg";
+import earlybirdee from "./images/earlybirdee.png";
+import soplan from "./images/soplan.png";
+import agentcopilot from "./images/agentcopilot.png";
+import kyogreen from "./images/kyogreen.png";
+import salvesen from "./images/salvesen.png";
+import mifu from "./images/mifu.png";
+import avatar from "./images/avatar.png";
+import MobLogo from "./icons/mobLogo.svg";
 
 export {
+  MobLogo,
   Logo,
+  mifu,
+  avatar,
   tech,
   sport,
   grid,
   first3DLogo,
   second3DLogo,
+  LeftNotFound,
+  RightNotFound,
+  ArrowForward,
+  salvesen,
+  kyogreen,
+  earlybirdee,
+  AmazonIcon,
+  agentcopilot,
+  ContrastLine,
+  MacbookLine,
+  corporate,
+  SmartphoneLine,
   lifestyle,
   education,
   healthcare,
+  soplan,
+  viralApp,
   InfiniteImg,
   InfiniteImg2,
   WorkBannerImg,
@@ -90,4 +125,5 @@ export {
   StarIcon,
   TimProfile,
   MinusIcon,
+  HasnainProf,
 };
