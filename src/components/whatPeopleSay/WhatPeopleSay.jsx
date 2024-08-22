@@ -52,7 +52,7 @@ export const WhatPeopleSay = () => {
             {WhatPeopleSayMockData.description}
           </p>
         </div>
-        <div className="people_cards_wrapper scroll_hidden relative h-[700px] mx-auto overflow-hidden flex items-center justify-center flex-wrap gap-y-8">
+        <div className="people_cards_wrapper scroll_hidden relative h-[470px] sm:h-[700px] mx-auto overflow-hidden flex items-center justify-center flex-wrap gap-y-8">
           <motion.div
             variants={scrollVariants}
             animate="animate"
