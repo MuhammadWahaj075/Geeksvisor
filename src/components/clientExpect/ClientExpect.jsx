@@ -9,10 +9,10 @@ import { FilterImg, Spline } from "../../../public/assets";
 export const ClientExpectation = () => (
   <div className="!mt-16 md:!mt-10 lg:!mt-[160px]">
     <div className="flex px-5 justify-center">
-      <div className="flex flex-col relative items-center w-[1326px] mx-[20px] xl:mx-auto py-[72px] bg-lines rounded-[72px] bg-[#101010]">
+      <div className="flex flex-col relative items-center !w-[360px] sm:!w-[1326px] py-6 sm:py-[35.93px] lg:py-[72px] bg-lines rounded-[72px] bg-[#101010]">
         <OptimizedImage
           src={FilterImg}
-          className="absolute -top-10 -right-4 sm:-top-20 sm:-right-10 w-[79px] xl:right-[-100px] h-[79px] sm:w-[125px] sm:h-[125px] xl:w-[247.25px] xl:h-[250px] z-10"
+          className="absolute top-[-20px] sm:top-[-60px] right-[-20px] sm:right-[-60px] w-[79px] h-[79px] sm:w-[125px] sm:h-[125px] xl:w-[247.25px] xl:h-[250px] z-10"
         />
         <div className="flex flex-col gap-6 px-2 items-center">
           <h1 className="title_text !text-primary-normal  w-[279px] sm:w-[539px] lg:w-[737px]">
@@ -22,7 +22,7 @@ export const ClientExpectation = () => (
             {clientExpectationMockData.description}
           </p>
         </div>
-        <div className="client-project_counts px-5 flex-col flex-wrap sm:flex-row gap-6 lg:gap-[120px] flex items-center justify-center mt-[140px]">
+        <div className="client-project_counts px-5 flex-col flex-wrap sm:flex-row gap-6 lg:gap-[120px] flex items-center justify-center mt-16">
           <div className="sm:hidden flex items-center ">
             <div className="flex flex-col w-[150px] items-center">
               <Count
@@ -71,8 +71,8 @@ export const ClientExpectation = () => (
             </p>
           </div>
 
-          <div className="sm:hidden flex border border-secondary-borderDark w-[340px]" />
-          <div className="sm:hidden flex border absolute border-secondary-borderDark h-[250px] " />
+          <div className="sm:hidden flex border border-secondary-borderDark w-[250px]" />
+          <div className="sm:hidden flex border absolute border-secondary-borderDark h-[200px] " />
           <div className="sm:hidden flex">
             <div className="flex flex-col  w-[150px]  items-center">
               <Count
@@ -117,10 +117,10 @@ export const ClientExpectation = () => (
             </p>
           </div>
         </div>
-        <div className="flex md:flex-row flex-wrap justify-center max-w-[279px] md:max-w-max gap-4 lg:gap-14 mt-[80px]">
+        <div className="flex md:flex-row flex-wrap  mx-auto sm:justify-center max-w-[240px] sm:max-w-max gap-4 lg:gap-14  sm:mt-12 mt-16">
           {OurQualityData?.map((items, i) => (
-            <div key={i} className="flex gap-3 items-center">
-              <OptimizedImage src={items.icon} />
+            <div key={i} className="flex gap-[6.24px] lg:gap-3 items-center">
+              <OptimizedImage src={items.icon} className='h-[6.25px] w-[8.47px] sm:h-[12.47px] sm:w-[12.47px] lg:w-auto lg:h-auto' />
               <h2 className="description_text !text-[10px] lg:!text-[18px]">{items.name}</h2>
             </div>
           ))}
@@ -136,7 +136,7 @@ export const ClientExpectation = () => (
           src={Spline}
           height={"100%"}
           width={"100%"}
-          className="absolute left-0 md:left-[-150px] bottom-0 xl:-bottom-20 w-[86.43px] h-[86.43px] sm:h-[163.3px] sm:w-[163.3px] xl:w-[242.44px] xl:h-[244.77px]"
+          className="absolute bottom-[-20px] sm:bottom-[-60px] left-[-20px] sm:left-[-60px] w-[86.43px] h-[86.43px] sm:h-[163.3px] sm:w-[163.3px] xl:w-[242.44px] xl:h-[244.77px]"
         />
       </div>
     </div>

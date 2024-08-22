@@ -28,7 +28,7 @@ export default function Home() {
       <WhoWeAre />
       <ServingIndustries />
       <GetFromUs />
-      {/* <FeatureWork /> */}
+      <FeatureWork />
       <WhatWeDo />
       <ClientExpectation />
       <HowItWorks />
