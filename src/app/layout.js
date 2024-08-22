@@ -2,6 +2,7 @@ import "./globals.css";
 import { Inter, Unbounded } from "next/font/google";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import BottomToTopBtn from "@/components/BottomToTop";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -21,10 +22,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" class="!scroll-smooth">
       <body className={`${inter.variable} ${unbound.variable}`}>
         <Header />
         {children}
+        <BottomToTopBtn />
         <Footer />
       </body>
     </html>
