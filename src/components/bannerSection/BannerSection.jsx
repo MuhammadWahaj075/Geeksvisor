@@ -54,7 +54,7 @@ export const BannerSection = () => {
                 <Button
                   variant="primary"
                   className={
-                    "!py-[8px] md:!py-[16px] !px-[16px] !w-full md:!w-[167px] lg:px-[24px] !h-[36px] md:!h-[52px]"
+                    "!py-[8px] sm:!py-[16px] !px-[16px] !w-[328px] sm:!w-[167px] lg:px-[24px] !h-[36px] sm:!h-[52px]"
                   }
                   icon={<IoIosArrowRoundForward size={25} />}
                 >
