@@ -38,7 +38,7 @@ export const Faq = () => {
                 <div
                   style={{
                     transform:
-                      openIndex === index ? "scale(1.1)" : "scale(1.0)",
+                      openIndex === index ? "scale(1.2)" : "scale(1.0)",
                     transition: "transform 0.3s ease",
                   }}
                 >
@@ -53,7 +53,7 @@ export const Faq = () => {
                   transition:
                     openIndex === index
                       ? "max-height 0.5s ease-in-out"
-                      : "max-height 0.5s ease-in-out ",
+                      : "max-height 0.3s ease-in-out ",
                   overflow: "hidden",
                 }}
               >

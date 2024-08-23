@@ -20,9 +20,9 @@ const Card = ({ title, description, src, i, number }) => {
   };
 
   return (
-    <div className={`px-6 !h-[141.45px] sm:!h-[273.65px] lg:!h-[380px] mt-32 mb-[400px] sm:!mt-20 sm:!mb-96 flex items-center justify-center sticky top-0`} >
+    <div className={`px-6 !h-[541.45px]  sm:!h-[730px]  mt-32 mb-[100px] sm:!mt-40 sm:!mb-44 flex items-center justify-center sticky top-0`} >
       <div style={cardStyle}
-        className={`flex flex-col relative overflow-hidden justify-center items-start h-auto lg:h-[340px] border rounded-[25px] p-8 sm:p-[80px] transform origin-top `}
+        className={`flex flex-col relative overflow-hidden  justify-center items-start h-auto lg:h-[340px] border rounded-[25px] p-8 sm:p-[80px] transform origin-top `}
       >
         <OptimizedImage src={src} />
         <h2 className="text-neutral font-semibold !text-[14.57px] md:!text-[24px]  lg:!text-[32px] mt-6">{title}</h2>

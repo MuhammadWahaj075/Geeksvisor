@@ -276,18 +276,21 @@ export const teamMembers = [
     role: "AWS & GenAI Expert",
     position: "CTO & Co-founder",
     imageSrc: MugheesProf,
+    profile: "https://www.linkedin.com/in/muhammad-mughees-siddiqui/"
   },
   {
     name: "Muhammad Rafae",
     role: "Backend & GenAI Expert",
     position: "CEO & Co-founder",
     imageSrc: RafaeProf,
+    profile: ""
   },
   {
     name: "Hasnain",
     role: "Frontend | GenAI Expert",
     position: "Co-founder",
     imageSrc: HasnainProf,
+    profile: ""
   },
 ];
 

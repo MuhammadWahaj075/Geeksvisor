@@ -1,12 +1,15 @@
 "use client";
 
+import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { MeetTeamMockData, teamMembers } from "@/utils/mockData";
 import { Button, OptimizedImage, Pill } from "@/components/comman";
+import Link from "next/link";
 
 export const MeetOurTeam = () => {
   const router = useRouter();
+  const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const handleViewProfileClick = () => {
     router.push(`/team-member`);
@@ -25,7 +28,27 @@ export const MeetOurTeam = () => {
               key={index}
               className="profile_sec !mx-auto flex flex-col w-auto sm:w-[616px] lg:w-auto xl:w-[370px] justify-center gap-y-3"
             >
-              <div>
+              <div className="relative overflow-hidden">
+                <Link
+                  target="_blank"
+                  href={member?.profile}
+                  className="hover:!h-[100.79px] hover:!w-[100.79px] !w-[44px] !h-[44px]"
+                >
+                  <Button
+                    variant=""
+                    className={
+                      "absolute font-unbound  text-neutral !bg-[#0066C8] hover:border hover:-bottom-4 hover:-right-5 transition-all duration-1000 hover:!h-[100.79px] hover:!w-[100.79px] bottom-4 right-3 !w-[44px] !h-[44px] !text-[24px] !rounded-full !lowercase flex items-center justify-center"
+                    }
+                    onMouseEnter={() => setHoveredIndex(index)}
+                    onMouseLeave={() => setHoveredIndex(null)}
+                  >
+                    <div
+                      className={`transition-all duration-1000 flex items-center  justify-center gap-2`}
+                    >
+                      <span className="">in</span>
+                    </div>
+                  </Button>
+                </Link>
                 <OptimizedImage
                   src={member?.imageSrc}
                   className="rounded-[8px] w-[328px] h-[317px] sm:w-[616px] sm:h-[370px]  lg:w-[370px]"

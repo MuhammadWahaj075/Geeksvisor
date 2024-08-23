@@ -36,7 +36,6 @@
 .main .inner-div {
   background: var(--background);
   background-color: #0a0a0a;
-  margin: 1.9px;
   border: 1px solid #000000;
   border-radius: calc(var(--border-radius) - var(--border-size));
 }
