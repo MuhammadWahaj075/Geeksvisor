@@ -3,9 +3,7 @@
 import React, { useEffect, useState } from "react";
 import { FaAngleUp } from "react-icons/fa";
 
-
-
-const BottomToTopBtn = () => {
+export const BottomToTopBtn = () => {
     const [isVisible, setIsVisible] = useState(false);
 
     const goToBtn = () => {
@@ -26,19 +24,25 @@ const BottomToTopBtn = () => {
 
     useEffect(() => {
         window.addEventListener("scroll", listenToScroll);
+        return () => {
+            window.removeEventListener("scroll", listenToScroll);
+        };
     }, []);
 
     return (
         <>
-            {isVisible && (
-                <div onClick={goToBtn} className="bg-secondary-bannerPill p-2 rounded-full
-                 w-14 h-14 fixed z-20  bottom-14 right-5 md:right-14 cursor-pointer">
-
-                    <FaAngleUp className="text-primary absolute top-4 left-4 text-[24px] " />
-                </div>
-            )}
+            <div
+                onClick={goToBtn}
+                className={`bg-secondary-bannerPill hover:bg-[linear-gradient(90deg,#3f1f18_0%,#EE6E24_100%)] text-primary hover:text-secondary-bannerPill p-2 rounded-l-xl
+                 w-12 h-12 fixed z-20 bottom-10 transform transition-all duration-300 
+                 ${isVisible ? 'right-0' : '-right-0'} cursor-pointer`}
+                style={{
+                    right: isVisible ? "0px" : "-100px",
+                }}
+            >
+                <FaAngleUp className="absolute top-3 left-4 text-[24px]" />
+            </div>
         </>
     );
 };
 
-export default BottomToTopBtn;
