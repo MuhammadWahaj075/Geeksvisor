@@ -29,3 +29,89 @@
     transform: translateY(-30px);
   }
 }
+
+
+@property --border-angle-1 {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0deg;
+}
+
+:root {
+  --white: #ffffff;
+  --background: #000000;
+  --border-size: 3px !important;
+  --border-radius: 40px;
+}
+
+@keyframes rotateBackground {
+  to {
+    --border-angle-1: 360deg;
+  }
+}
+
+@media only screen and (min-width: 640px) and (max-width: 1280px)  {
+  .main_consalt {
+    --border-angle-1: 0deg;
+    border: 0;
+    width: 613px !important;
+    padding: var(--border-size);
+    border-radius: var(--border-radius);
+    background-image: conic-gradient(from var(--border-angle-1) at 50% 50%,
+        transparent,
+        var(--white) 5%,
+        transparent 25%,
+        transparent 50%,
+        var(--white) 60%,
+        transparent 75%,
+        transparent);
+    animation: rotateBackground 12s linear infinite;
+  }
+}
+
+@media only screen and (min-width: 325px) and (max-width: 639px)  {
+  .main_consalt {
+    --border-angle-1: 0deg;
+    border: 0;
+    width: 325px !important;
+    padding: var(--border-size);
+    border-radius: var(--border-radius);
+    background-image: conic-gradient(from var(--border-angle-1) at 50% 50%,
+        transparent,
+        var(--white) 5%,
+        transparent 25%,
+        transparent 50%,
+        var(--white) 60%,
+        transparent 75%,
+        transparent);
+    animation: rotateBackground 12s linear infinite;
+  }
+}
+
+.main_consalt {
+  --border-angle-1: 0deg;
+  border: 0;
+  width: 1161px;
+  padding: var(--border-size);
+  border-radius: var(--border-radius);
+  background-image: conic-gradient(from var(--border-angle-1) at 70% 70%,
+      transparent,
+      var(--white) 5%,
+      transparent 25%,
+      transparent 50%,
+      var(--white) 60%,
+      transparent 75%,
+      transparent);
+  animation: rotateBackground 12s linear infinite;
+}
+
+.main_consalt .inner-div_consalt {
+  background: var(--background);
+  background-color: #0a0a0a;
+  border: 2px solid #FFFFFF6B;
+  border-radius: calc(var(--border-radius) - var(--border-size));
+}
+
+.inner-div_consalt {
+  position: relative;
+}

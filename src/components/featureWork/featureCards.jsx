@@ -57,7 +57,7 @@ export const VerticalScrollCarousel = () => {
         {projects?.map((project, index) => (
           <Card key={index} opacity={opacities}>
             <div className="project_cards flex justify-center flex-col lg:flex-row items-center xl:justify-between flex-wrap gap-[30px] mb-10 lg:gap-x-60 lg:gap-y-20">
-              <div className="order-1 flex items-start flex-col gap-4 justify-center">
+              <div className="order-1 flex w-[350px] sm:w-[500px] items-start flex-col gap-4 justify-center">
                 <h1 className="!text-[16px] sm:!text-[24px] text-neutral font-inter font-semibold">
                   {project.title}
                 </h1>
@@ -75,7 +75,7 @@ export const VerticalScrollCarousel = () => {
                   See Project
                 </Button> */}
               </div>
-              <div className="flex lg:order-2  md:w-[500px] h-[500px]">
+              <div className="flex lg:order-2 w-auto h-[311px] sm:w-[500px] sm:h-[500px]">
                 <OptimizedImage
                   src={project.image}
                   className="object-cover rounded-[8px]"

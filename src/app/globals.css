@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
+html {
+  scroll-behavior: smooth !important;
+}
+
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -125,6 +130,19 @@ body {
   .my-masonry-grid_column>div {
     margin-bottom: 32px;
   }
+
+  @keyframes moveIcon {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(5px);
+    }
+  }
+  .hover\:icon-move:hover .transition-all {
+    animation: moveIcon 0.3s ease-in-out forwards;
+  }
+    
 
   .my-masonry-grid {
     display: flex;

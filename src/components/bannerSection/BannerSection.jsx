@@ -37,7 +37,7 @@ export const BannerSection = () => {
             <p className="text-[16px] w-full px-5 leading-[19.84px] sm:leading-[40px] lg:leading-[80px] sm:max-w-[1160px] text-center sm:text-[32px] lg:text-[56px] font-unbound font-bold relative z-20 bg-clip-text text-transparent bg-neutral">
               {bannerMockData?.title?.split(" ")?.map((word, index) =>
                 word === "Vision" ? (
-                  <span key={index} className="text-primary pr-2">
+                  <span key={index} className="bg-clip-text bg-[linear-gradient(90deg,#ef8648_0%,#FF2E00_100%)] pr-2">
                     {word}
                   </span>
                 ) : (
@@ -50,16 +50,23 @@ export const BannerSection = () => {
                 {bannerMockData.description}
               </p>
               <div className="flex flex-col md:flex-row !w-full md:!w-auto relative items-center gap-[40px] z-20">
-              <Link href={"/contact"}>
-                <Button
-                  variant="primary"
-                  className={
-                    "!py-[8px] sm:!py-[16px] !px-[16px] !w-[328px] sm:!w-[167px] lg:px-[24px] !h-[36px] sm:!h-[52px]"
-                  }
-                  icon={<IoIosArrowRoundForward size={25} />}
-                >
-                  {bannerMockData?.button1?.text}
-                </Button>
+                <Link href={"/contact"}>
+                  <Button
+                    variant="primary"
+                    className={
+                      "!py-[8px] sm:!py-[16px] !px-[16px] !w-[328px] sm:!w-[167px] lg:px-[24px] !h-[36px] sm:!h-[52px] hover:icon-move"
+                    }
+                    icon={
+                      <IoIosArrowRoundForward
+                        size={25}
+                        className="transition-all duration-300 ease-in-out"
+                      />
+                    }
+                  >
+                    {bannerMockData?.button1?.text}
+                  </Button>
+
+
                 </Link>
                 {/* <Button
                   variant={bannerMockData.button2.variant}
