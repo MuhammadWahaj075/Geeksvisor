@@ -283,14 +283,14 @@ export const teamMembers = [
     role: "Backend & GenAI Expert",
     position: "CEO & Co-founder",
     imageSrc: RafaeProf,
-    profile: ""
+    profile: "https://www.linkedin.com/in/muhammad-rafae-04125a142/"
   },
   {
     name: "Hasnain",
     role: "Frontend | GenAI Expert",
     position: "Co-founder",
     imageSrc: HasnainProf,
-    profile: "https://www.linkedin.com/in/muhammad-rafae-04125a142/"
+    profile: "https://www.linkedin.com/in/itshasnainkhanofficial/"
   },
 ];
 
