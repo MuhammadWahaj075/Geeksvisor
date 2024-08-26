@@ -13,7 +13,7 @@ export const FeatureWork = () => (
         items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
         <div className="flex gap-y-4 flex-col relative z-20 text-center">
           <h1 className="title_text">{featureWorkMockData?.title}</h1>
-          <p className="description_text w-[300px] lg:w-[527px] ">
+          <p className="description_text w-[300px] sm:w-[527px] ">
             {featureWorkMockData?.description}
           </p>
         </div>
