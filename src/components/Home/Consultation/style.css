@@ -40,7 +40,7 @@
 :root {
   --white: #ffffff;
   --background: #000000;
-  --border-size: 3px !important;
+  --border-size: 2px !important;
   --border-radius: 40px;
 }
 
@@ -57,7 +57,7 @@
     width: 613px !important;
     padding: var(--border-size);
     border-radius: var(--border-radius);
-    background-image: conic-gradient(from var(--border-angle-1) at 50% 50%,
+    background-image: conic-gradient(from var(--border-angle-1) at 60% 60%,
         transparent,
         var(--white) 5%,
         transparent 25%,
@@ -76,7 +76,7 @@
     width: 325px !important;
     padding: var(--border-size);
     border-radius: var(--border-radius);
-    background-image: conic-gradient(from var(--border-angle-1) at 50% 50%,
+    background-image: conic-gradient(from var(--border-angle-1) at 60% 60%,
         transparent,
         var(--white) 5%,
         transparent 25%,

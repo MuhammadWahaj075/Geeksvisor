@@ -59,7 +59,7 @@ export const BannerSection = () => {
                     icon={
                       <IoIosArrowRoundForward
                         size={25}
-                        className="transition-all duration-300 ease-in-out"
+                        className=""
                       />
                     }
                   >
