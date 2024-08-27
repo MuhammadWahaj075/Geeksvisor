@@ -49,7 +49,7 @@ module.exports = {
           light: "#9C9C9C",
           DEFAULT: "#10b981",
           dark: "#059669",
-          hover: "#ea580c",
+          hover: "#e77940",
           inputColor: "#0E0F13",
           bannerPill: "#1b1b1d",
           borderDark: "#1F1F1F",
