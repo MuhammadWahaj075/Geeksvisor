@@ -12,7 +12,7 @@ export const ClientExpectation = () => (
       <div className="flex flex-col relative items-center !w-[360px] sm:!w-[1326px] py-6 sm:py-[35.93px] lg:py-[72px] bg-lines rounded-[72px] bg-[#101010]">
         <OptimizedImage
           src={FilterImg}
-          className="absolute top-[-20px] sm:top-[-60px] right-[-20px] sm:right-[-60px] w-[79px] h-[79px] sm:w-[125px] sm:h-[125px] xl:w-[247.25px] xl:h-[250px] z-10"
+          className="absolute overflow-hidden top-[-20px] sm:top-[-60px] right-[-20px] sm:right-[-20px] lg:top-[-100px] lg:right-[-60px] w-[79px] h-[79px] sm:w-[125px] sm:h-[125px] xl:w-[247.25px] xl:h-[250px] z-10"
         />
         <div className="flex flex-col gap-6 px-2 items-center">
           <h1 className="title_text !text-primary-normal  w-[279px] sm:w-[539px] lg:w-[737px]">

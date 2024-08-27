@@ -1,3 +1,5 @@
+// pages/index.js
+
 import { Faq } from "@/components";
 import {
   BannerSection,
@@ -16,28 +18,32 @@ import {
   WhoWeAre,
 } from "@/components/Home";
 import { HowItWorks } from "@/components/Home/howItWorks/HowItWorks";
+import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
 
 export default function Home() {
   return (
-    <main>
-      <div className="gridBoxGradient">
-        <BannerSection />
-        {/* <TestimonialsLogos /> */}
-        {/* <InfiniteMovingImages /> */}
-      </div>
-      <WhoWeAre />
-      <ServingIndustries />
-      <GetFromUs />
-      <FeatureWork />
-      <WhatWeDo />
-      <ClientExpectation />
-      <HowItWorks />
-      <Consultation />
-      <WhatPeopleSay />
-      <WhatWeVission />
-      <MeetOurTeam />
-      <Faq />
-      <GreatIdea />
-    </main>
+      <main>
+        <Header />
+        <div className="gridBoxGradient">
+          <BannerSection />
+          {/* <TestimonialsLogos /> */}
+          {/* <InfiniteMovingImages /> */}
+        </div>
+        <WhoWeAre />
+        <ServingIndustries />
+        <GetFromUs />
+        <FeatureWork />
+        <WhatWeDo />
+        <ClientExpectation />
+        <HowItWorks />
+        <Consultation />
+        <WhatPeopleSay />
+        <WhatWeVission />
+        <MeetOurTeam />
+        <Faq />
+        <GreatIdea />
+        <Footer />
+      </main>
   );
 }

@@ -40,8 +40,18 @@
 :root {
   --white: #ffffff;
   --background: #000000;
-  --border-size: 2px !important;
+  --border-size: 2.5px !important;
   --border-radius: 40px;
+}
+
+@media only screen and (min-width: 325px) and (max-width: 639px) {
+  :root {
+    --white: #ffffff;
+    --background: #000000;
+    --border-size: 1px !important;
+    --border-radius: 40px;
+  }
+  
 }
 
 @keyframes rotateBackground {

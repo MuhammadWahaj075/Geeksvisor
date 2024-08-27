@@ -24,10 +24,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" class="!scroll-smooth">
       <body className={`${inter.variable} ${unbound.variable}`}>
-        <Header />
+        {/* <Header /> */}
         {children}
         <BottomToTopBtn />
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
