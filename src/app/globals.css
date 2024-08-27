@@ -206,3 +206,16 @@ body {
   z-index: 10;
   pointer-events: none;
 }
+
+
+
+.not-found-container {
+  overflow: hidden;
+  position: fixed; 
+  width: 100vw; 
+  height: 100vh; 
+}
+
+.overlay{
+  background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0) 100%) !important;
+}
