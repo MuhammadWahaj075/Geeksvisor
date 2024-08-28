@@ -26,7 +26,7 @@ export const MeetOurTeam = () => {
           {teamMembers?.map((member, index) => (
             <div
               key={index}
-              className="profile_sec !mx-auto flex flex-col w-auto sm:w-[616px] lg:w-auto xl:w-[370px] justify-center gap-y-3"
+              className="profile_sec !mx-auto  flex flex-col w-auto sm:w-[616px] lg:w-auto xl:w-[370px] justify-center gap-y-3"
             >
               <div className="relative overflow-hidden">
                 <Link
@@ -56,19 +56,22 @@ export const MeetOurTeam = () => {
               </div>
               <h2 className="text-neutral font-unbound font-semibold !text-[14px] sm:!text-[24px]">
                 {member?.name}
+                <p className={'description_text !text-[12px] !capitalize sm:!text-[16px] !font-normal'} >{member?.position}</p>
               </h2>
-              <div className="flex justify-between items-center  w-[320px] sm:w-full gap-[44px]">
-                <p className="text-primary-light font-inter !font-medium !w-[169px] sm:!w-full lg:!w-[169px]  !text-[12px] sm:!text-[18px]">{member?.role}</p>
-                <Pill className={'!text-[12px] !capitalize sm:!text-[16px] !font-normal'} text={member?.position} />
+              <div className="flex justify-start flex-col items-start gap-4 lg:gap-6">
+                <p className="text-primary-light font-inter !font-medium !text-[12px] sm:!text-[18px]">{member?.role}</p>
+
+                <Link href={member.profile}>
+                  <Button
+                    variant="transparent"
+                    icon={<IoIosArrowRoundForward size={25} />}
+                    className={"!p-0"}
+                    onClick={handleViewProfileClick}
+                  >
+                    View profile
+                  </Button>
+                </Link>
               </div>
-              {/* <Button
-                variant="transparent"
-                icon={<IoIosArrowRoundForward size={25} />}
-                className={"!p-0"}
-                onClick={handleViewProfileClick}
-              >
-                View profile
-              </Button> */}
             </div>
           ))}
         </div>
