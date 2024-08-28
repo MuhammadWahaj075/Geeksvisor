@@ -27,9 +27,8 @@ export default function GridBoxAnimation() {
       {Array.from({ length: totalBoxes }, (_, index) => (
         <>
         
-        <div className="left-shadow" />
+        <div key={index} className="left-shadow" />
         <div
-          key={index}
           className={`gridBoxes ${highlightedIndices.includes(index) ? "highlighted" : ""}`}
         >
           <div className="right-shadow" />
