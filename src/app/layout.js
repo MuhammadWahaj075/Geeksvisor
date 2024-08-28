@@ -22,12 +22,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" class="!scroll-smooth">
+    <html lang="en" className="!scroll-smooth">
       <body className={`${inter.variable} ${unbound.variable}`}>
-        {/* <Header /> */}
         {children}
         <BottomToTopBtn />
-        {/* <Footer /> */}
       </body>
     </html>
   );
