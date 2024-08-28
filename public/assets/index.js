@@ -16,7 +16,7 @@ import FilterImg from "./images/filterImg.png";
 import WorkBannerImg from "./images/workbanner.png";
 import FilterSmallImg from "./images/smallFilter.png";
 import Logo from "./images/logo.png";
-import CardImg from "./images/cardImg.svg";
+import CardImg from "./icons/aws.svg";
 import Project from "./images/project.png";
 import CheckIcon from "./images/check.png";
 import Spline from "./images/spline.png";
