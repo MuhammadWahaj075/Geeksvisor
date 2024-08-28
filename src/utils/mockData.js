@@ -7,7 +7,12 @@ import {
   lifestyle,
   sport,
   tech,
-  CardImg,
+  AwsImg,
+  BackendImg,
+  FrontendImg,
+  GenAIImg,
+  DevOpsImg,
+  FullStackImg,
   Project,
   TestimonialsLogo1,
   TestimonialsLogo2,
@@ -39,6 +44,7 @@ import {
   salvesen,
   kyogreen,
   mifu,
+  APIImg,
 } from "../../public/assets";
 
 export const OurQualityData = [
@@ -392,48 +398,48 @@ export const testimonials = [
 
 export const cards = [
   {
-    url: CardImg,
+    url: AwsImg,
     title: "AWS",
     description: "Leverage AWS cloud solutions for scalable, secure, and cost-efficient application deployments.",
     id: 1,
   },
   {
-    url: CardImg,
+    url: GenAIImg,
     title: "GenAI",
     description:
       "Integrate cutting-edge Generative AI to create intelligent, user-centric experiences.",
     id: 2,
   },
   {
-    url: CardImg,
+    url: BackendImg,
     title: "Backend",
     description:
       "Build robust and scalable backend systems that power your applications efficiently.",
     id: 3,
   },
   {
-    url: CardImg,
+    url: FrontendImg,
     title: "Frontend",
     description:
       "Craft visually stunning and highly functional frontends that enhance user engagement.",
     id: 4,
   },
   {
-    url: CardImg,
+    url: FullStackImg,
     title: "Full Stack",
     description:
       "Deliver end-to-end solutions with expert full stack development, from concept to deployment.",
     id: 5,
   },
   {
-    url: CardImg,
+    url: DevOpsImg,
     title: "DevOps",
     description:
       "Streamline your development pipeline with our efficient, automated DevOps practices.",
     id: 6,
   },
   {
-    url: CardImg,
+    url: APIImg,
     title: "API Integration",
     description:
       "Seamlessly integrate APIs to extend your app’s capabilities and improve interoperability",

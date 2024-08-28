@@ -16,7 +16,13 @@ import FilterImg from "./images/filterImg.png";
 import WorkBannerImg from "./images/workbanner.png";
 import FilterSmallImg from "./images/smallFilter.png";
 import Logo from "./images/logo.png";
-import CardImg from "./icons/aws.svg";
+import AwsImg from "./icons/aws.svg";
+import BackendImg from "./icons/backend.svg";
+import FrontendImg from "./icons/frontend.svg";
+import GenAIImg from "./icons/GenAI.svg";
+import DevOpsImg from "./icons/devOps.svg";
+import FullStackImg from "./icons/full-stack.svg";
+import APIImg from "./icons/api.svg";
 import Project from "./images/project.png";
 import CheckIcon from "./images/check.png";
 import Spline from "./images/spline.png";
@@ -101,7 +107,13 @@ export {
   TestimonialsLogo6,
   FilterImg,
   FilterSmallImg,
-  CardImg,
+  AwsImg,
+  FrontendImg,
+  BackendImg,
+  DevOpsImg,
+  GenAIImg,
+  APIImg,
+  FullStackImg,
   Project,
   CheckIcon,
   Spline,
