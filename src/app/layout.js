@@ -1,7 +1,5 @@
 import "./globals.css";
 import { Inter, Unbounded } from "next/font/google";
-import { Header } from "@/components/layout/Header";
-import { Footer } from "@/components/layout/Footer";
 import { BottomToTopBtn } from "@/components/BottomToTop";
 
 const inter = Inter({
