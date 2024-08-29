@@ -131,15 +131,7 @@ export const workBannerMockData = {
 
 export const healthData = [
   {
-    name: "Lifestyle",
-    icon: CheckIcon,
-  },
-  {
     name: "Healthcare",
-    icon: CheckIcon,
-  },
-  {
-    name: "Sports",
     icon: CheckIcon,
   },
   {
@@ -147,13 +139,25 @@ export const healthData = [
     icon: CheckIcon,
   },
   {
+    name: "Lifestyle",
+    icon: CheckIcon,
+  },
+  
+];
+
+export const MorehealthData = [
+  {
     name: "Tech",
+    icon: CheckIcon,
+  },
+  {
+    name: "Sports",
     icon: CheckIcon,
   },
   {
     name: "and more...",
   },
-];
+]
 
 export const OurMissionMockData = {
   title: "Our Mission",
