@@ -10,10 +10,27 @@
   transform: scale(1.05);
 }
 
+@media only screen and (min-width: 350px) and (max-width: 1024px) {
+  .vertical-scroll {
+    height: 570px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    margin: 0 auto;
+    scroll-snap-type: y mandatory;
+    position: relative;
+    scroll-behavior: smooth;
+    position: relative;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
 .vertical-scroll {
   height: 570px;
   overflow-y: scroll;
   overflow-x: hidden;
+  padding: 30px;
   box-sizing: border-box;
   margin: 0 auto;
   scroll-snap-type: y mandatory;
