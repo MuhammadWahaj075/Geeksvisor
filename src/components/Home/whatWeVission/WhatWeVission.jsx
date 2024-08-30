@@ -1,5 +1,5 @@
 import { OptimizedImage } from "@/components/comman";
-import { healthData, WhatVissionMockData } from "@/utils/mockData";
+import { healthData, MorehealthData, WhatVissionMockData } from "@/utils/mockData";
 import { corporate } from "../../../../public/assets";
 
 export const WhatWeVission = () => (
@@ -23,9 +23,16 @@ export const WhatWeVission = () => (
             {WhatVissionMockData.subtitle}
           </p>
         </div>
-        <div className="flex flex-wrap gap-5 w-[216px] sm:w-[316px] lg:w-[40%] my-10">
+        <div className="flex flex-wrap  sm:gap-x-10 gap-y-4 justify-center w-[356px] my-10">
           {healthData?.map((items, i) => (
-            <div key={i} className="flex gap-3 items-center">
+            <div key={i} className="flex gap-3 w-[134px] items-center">
+              <OptimizedImage src={items.icon} />
+              <h2 className="description_text">{items.name}</h2>
+            </div>
+          ))}
+
+          {MorehealthData.map((items, i) => (
+            <div key={i} className="flex gap-3 w-[134px] items-center">
               <OptimizedImage src={items.icon} />
               <h2 className="description_text">{items.name}</h2>
             </div>

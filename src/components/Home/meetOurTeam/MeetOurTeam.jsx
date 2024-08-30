@@ -10,9 +10,26 @@ import Link from "next/link";
 export const MeetOurTeam = () => {
   const router = useRouter();
   const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [showIcon, setShowIcon] = useState(false);
 
   const handleViewProfileClick = () => {
     router.push(`/team-member`);
+  };
+
+  const handleMouseEnter = (index) => {
+    setHoveredIndex(index);
+    setShowIcon(false); // Reset the icon visibility when hover starts
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredIndex(null);
+    setShowIcon(false); // Hide the icon when hover ends
+  };
+
+  const handleTransitionEnd = () => {
+    if (hoveredIndex !== null) {
+      setShowIcon(true); // Show the icon after the transition is complete
+    }
   };
 
   return (
@@ -32,20 +49,29 @@ export const MeetOurTeam = () => {
                 <Link
                   target="_blank"
                   href={member?.profile}
-                  className="hover:!h-[100.79px] hover:!w-[100.79px] !w-[44px] !h-[44px]"
+                  className=" hover:!h-[100.79px] hover:!w-[100.79px] !w-[44px] !h-[44px]"
                 >
                   <Button
                     variant=""
-                    className={
-                      "absolute font-unbound  text-neutral !bg-[#0066C8] hover:border hover:-bottom-4 hover:-right-5 transition-all duration-1000 hover:!h-[100.79px] hover:!w-[100.79px] bottom-4 right-3 !w-[44px] !h-[44px] !text-[24px] !rounded-full !lowercase flex items-center justify-center"
-                    }
-                    onMouseEnter={() => setHoveredIndex(index)}
-                    onMouseLeave={() => setHoveredIndex(null)}
+                    className="linkedIn_btn absolute font-unbound text-neutral !bg-[#0066C8] hover:border hover:-bottom-4 hover:-right-5 transition-all duration-1000 hover:!h-[100.79px] hover:!w-[100.79px] bottom-4 right-3 !w-[44px] !h-[44px] !text-[24px] !rounded-full !lowercase flex items-center justify-center"
+                    onMouseEnter={() => handleMouseEnter(index)}
+                    onMouseLeave={handleMouseLeave}
+                    onTransitionEnd={handleTransitionEnd}
                   >
                     <div
-                      className={`transition-all duration-1000 flex items-center  justify-center gap-2`}
+                      className={`transition-all bg duration-500 ease-in-out flex items-center justify-center gap-1`}
                     >
-                      <span className="">in</span>
+                      <span
+                        className={`transition-all duration-500 ease-in-out transform `}
+                      >
+                        in
+                      </span>
+                      {showIcon && hoveredIndex === index && (
+                        <IoIosArrowRoundForward
+                          className=""
+                          size={25}
+                        />
+                      )}
                     </div>
                   </Button>
                 </Link>
@@ -56,10 +82,18 @@ export const MeetOurTeam = () => {
               </div>
               <h2 className="text-neutral font-unbound font-semibold !text-[14px] sm:!text-[24px]">
                 {member?.name}
-                <p className={'description_text !text-[12px] !capitalize sm:!text-[16px] !font-normal'} >{member?.position}</p>
+                <p
+                  className={
+                    "description_text !text-[12px] !capitalize sm:!text-[16px] !font-normal"
+                  }
+                >
+                  {member?.position}
+                </p>
               </h2>
               <div className="flex justify-start flex-col items-start gap-4 lg:gap-6">
-                <p className="text-primary-light font-inter !font-medium !text-[12px] sm:!text-[18px]">{member?.role}</p>
+                <p className="text-primary-light font-inter !font-medium !text-[12px] sm:!text-[18px]">
+                  {member?.role}
+                </p>
 
                 <Link href={member.profile}>
                   <Button
