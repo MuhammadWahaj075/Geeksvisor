@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { CloseIcon, Logo, MenuIcon, MobLogo } from "../../../public/assets";
 import { menuItems } from "@/utils/mockData";
@@ -24,7 +24,7 @@ export const Header = () => {
 
   return (
     <nav
-      className={`px-4 pb-5 pt-[22px] z-40 w-full top-0 sticky left-0 
+      className={`px-4 pb-5 pt-[22px] z-30 w-full top-0 sticky left-0 
         lg:px-6 py-2.5 transition-all duration-300 lg:bg-transparent
          lg:bg-opacity-[12%] backdrop-blur-xl`}
     >
@@ -61,10 +61,12 @@ export const Header = () => {
               <li key={i}>
                 <Link
                   href={item.href}
-                  className={` block border-2 border-b-secondary-light lg:border-none font-inter text-[14px] py-2 pr-4 pl-3 font-bold ${pathname === item.href
+                  className={` block border-2 border-b-secondary-light lg:border-none font-inter text-[14px] py-2 pr-4 pl-3 font-bold ${
+                    activeNavItem === item.navItem
                       ? "text-primary"
                       : "text-secondary-light font-normal"
                     } border-b border-transparent lg:p-0 lg:border-0`}
+                  onClick={() => handleNavItemClick(item)}
                   aria-current={pathname === item.href ? "page" : undefined}
                 >
                   {item.navItem}
