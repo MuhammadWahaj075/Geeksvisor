@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { CloseIcon, Logo, MenuIcon, MobLogo } from "../../../public/assets";
 import { menuItems } from "@/utils/mockData";
@@ -21,6 +21,10 @@ export const Header = () => {
       document.body.classList.remove("no-scroll");
     }
   }, [isMenuOpen]);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   return (
     <nav
@@ -61,11 +65,11 @@ export const Header = () => {
               <li key={i}>
                 <Link
                   href={item.href}
-                  className={` block border-2 border-b-secondary-light lg:border-none font-inter text-[14px] py-2 pr-4 pl-3 font-bold ${pathname === item.href
+                  className={` block border-2 border-b-secondary-light lg:border-none font-inter text-[14px] py-2 pr-4 pl-3 font-bold
+                     ${pathname === item.href
                       ? "text-primary"
                       : "text-secondary-light font-normal"
                     } border-b border-transparent lg:p-0 lg:border-0`}
-                  aria-current={pathname === item.href ? "page" : undefined}
                 >
                   {item.navItem}
                 </Link>
