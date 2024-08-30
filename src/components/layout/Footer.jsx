@@ -148,8 +148,11 @@ export const Footer = () => {
             GeeksVisor
           </h1>
         </motion.div>
-        <div className="bg-custom-gradient w-full top-[50px] absolute sm:top-[90px] md:top-[115px] lg:top-[150px] xl:top-[190px] bg-[#0000008F] backdrop-blur-xl">
-          <div className="flex flex-col gap-6 mt-[150px] lg:mt-36 items-center justify-center">
+        <div style={{
+          boxShadow: ' 0px -12px 59.8px 0px #000000'
+        }}
+          className="bg-custom-gradient backdrop-blur-3xl backdrop-brightness-50 w-full absolute top-[50px] sm:top-[70px] md:top-[99px] lg:top-[150px] xl:top-[160px] bg-[#0000008F] ">
+          <div className="flex flex-col  gap-6 mt-[150px] lg:mt-36 items-center justify-center">
             <h1 className="font-inter font-medium text-neutral text-[12.13px] md:text-[24px]">
               Follow us on Social Media
             </h1>
