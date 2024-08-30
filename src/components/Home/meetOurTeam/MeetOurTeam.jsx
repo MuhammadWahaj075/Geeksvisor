@@ -49,7 +49,7 @@ export const MeetOurTeam = () => {
                 <Link
                   target="_blank"
                   href={member?.profile}
-                  className=" hover:!h-[100.79px] hover:!w-[100.79px] !w-[44px] !h-[44px]"
+                  className="hover:!h-[100.79px] hover:!w-[100.79px] !w-[44px] !h-[44px]"
                 >
                   <Button
                     variant=""
@@ -59,22 +59,25 @@ export const MeetOurTeam = () => {
                     onTransitionEnd={handleTransitionEnd}
                   >
                     <div
-                      className={`transition-all bg duration-500 ease-in-out flex items-center justify-center gap-1`}
+                      className={`transition-all duration-500 ease-in-out flex items-center justify-center gap-1`}
                     >
                       <span
-                        className={`transition-all duration-500 ease-in-out transform `}
+                        className={`transition-all duration-500 ease-in-out transform ${showIcon && hoveredIndex === index ? "-translate-x-1" : ""
+                          }`}
                       >
                         in
                       </span>
                       {showIcon && hoveredIndex === index && (
                         <IoIosArrowRoundForward
-                          className=""
+                          className="transition-all duration-500 ease-in-out transform"
                           size={25}
                         />
                       )}
                     </div>
                   </Button>
                 </Link>
+
+
                 <OptimizedImage
                   src={member?.imageSrc}
                   className="rounded-[8px] w-[328px] h-[317px] sm:w-[616px] sm:h-[370px]  lg:w-[370px]"
