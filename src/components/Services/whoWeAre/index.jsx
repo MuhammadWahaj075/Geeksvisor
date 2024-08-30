@@ -5,7 +5,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 export const WhoWeAre = () => {
   return (
     <div >
-      <div className="relative z-30 mt-[200px]">
+      <div className="relative z-10 mt-[200px]">
         <div className="flex px-5 flex-col gap-4 items-center justify-center">
           <h1 className="title_text">{whoWeAreMockData.title}</h1>
           <p className="description_text text-center max-w-[766px]">
