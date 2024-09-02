@@ -1,6 +1,5 @@
-import { BannerSection } from "@/components/bannerSection/BannerSection"
 import { GreatIdea } from "@/components/greatIdea/GreatIdea"
-import { TestimonialsLogos, WhatPeopleSay } from "@/components/Home"
+import { BannerSection, TestimonialsLogos, WhatPeopleSay } from "@/components/Home"
 import { Footer } from "@/components/layout/Footer"
 import { Header } from "@/components/layout/Header"
 import { Development } from "@/components/Services/development"
