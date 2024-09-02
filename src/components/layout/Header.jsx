@@ -67,8 +67,8 @@ export const Header = () => {
                   href={item.href}
                   className={` block border-2 border-b-secondary-light lg:border-none font-inter text-[14px] py-2 pr-4 pl-3 font-bold
                      ${pathname === item.href
-                      ? "text-neutral"
-                      : "text-secondary-light font-normal"
+                      ? "text-primary "
+                      : "text-secondary-light transition-all duration-150 font-normal hover:text-neutral"
                     } border-b border-transparent lg:p-0 lg:border-0`}
                 >
                   {item.navItem}
