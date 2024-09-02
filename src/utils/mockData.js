@@ -564,19 +564,20 @@ export const mainPages = [
 ];
 
 export const services = [
-  { name: "AWS", link: "#" },
-  { name: "Serverless", link: "#" },
-  { name: "React.Js", link: "#" },
-  { name: "Nodejs", link: "#" },
-  { name: "Next.js", link: "#" },
-  { name: "React Native", link: "#" },
-  { name: "Flutter", link: "#" },
+  { name: "AWS",  },
+  { name: "Serverless",  },
+  { name: "React.Js",  },
+  { name: "Nodejs",  },
+  { name: "Next.js",  },
+  { name: "React Native",  },
+  { name: "Flutter",  },
 ];
 
 export const inquiries = [
-  { name: "contact@geeksvisor.com", link: "#" },
-  { name: "+92 340 8636954", link: "#" },
+  { name: "contact@geeksvisor.com", link: "mailto:contact@geeksvisor.com" },
+  { name: "+92 340 8636954", link: "tel:+923408636954" },
 ];
+
 
 export const HowItWorksData = [
   {

@@ -21,7 +21,6 @@ import useInView from "@/hooks/useInView";
 import "./style.css";
 import { Input } from "../comman/Input/Input";
 import Link from "next/link";
-import { Toast } from "../comman/Toast";
 
 export const Footer = () => {
   const controls = useAnimation();
@@ -105,13 +104,12 @@ export const Footer = () => {
             <ul className="mt-6 space-y-5">
               {services.map((service, index) => (
                 <li key={index}>
-                  <a
-                    href={service.link}
+                  <p
                     title={service.name}
                     className="flex text-sm text-primary-normal opacity-[60%] transition-all duration-200 hover:text-secondary-hover focus:text-secondary-hover"
                   >
                     {service.name}
-                  </a>
+                  </p>
                 </li>
               ))}
             </ul>
@@ -123,20 +121,20 @@ export const Footer = () => {
             <ul className="mt-6 space-y-5">
               {inquiries.map((inquiry, index) => (
                 <li key={index}>
-                  <a
+                  <Link
                     href={inquiry.link}
                     title={inquiry.name}
                     className="flex text-sm text-primary-normal opacity-[60%] transition-all duration-200 hover:text-secondary-hover focus:text-secondary-hover"
                   >
                     {inquiry.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
               <p className="text-base font-medium text-neutral">Address</p>
               <li>
-                <a className="flex text-sm text-primary-normal opacity-[60%] transition-all duration-200 hover:text-secondary-hover focus:text-secondary-hover">
+                <p className="flex text-sm text-primary-normal opacity-[60%] transition-all duration-200 hover:text-secondary-hover focus:text-secondary-hover">
                   {footerAddress.addressLine}
-                </a>
+                </p>
               </li>
             </ul>
           </motion.div>

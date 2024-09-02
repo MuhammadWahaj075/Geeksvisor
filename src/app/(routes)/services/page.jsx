@@ -13,7 +13,7 @@ const Services = () => {
       <Header />
       <div className="max-w-[1440px] mx-auto">
         <BannerSection />
-        <TestimonialsLogos />
+        {/* <TestimonialsLogos /> */}
         <WhoWeAre />
         <ServingIndustries />
         <Development />
