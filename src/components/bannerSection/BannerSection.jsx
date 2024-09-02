@@ -6,9 +6,51 @@ import GridBoxAnimation from "@/components/ui/GridBoxAnimation";
 import { useCustomRouter } from "@/hooks/useRouter";
 import { OptimizedImage, Button, Pill } from "../comman";
 import Link from "next/link";
+import { motion } from "framer-motion";
+
+const typingAnimation = {
+  hidden: { opacity: 0 },
+  visible: (i) => ({
+    opacity: 1,
+    transition: {
+      delay: i * 0.05, // Delay between each letter for typewriter effect
+      duration: 0.05,  // Duration of each letter appearance
+    },
+  }),
+};
 
 export const BannerSection = () => {
   const { currentPath } = useCustomRouter();
+
+  const titleElements = [];
+  let letterIndex = 0;
+  const titleWords = bannerMockData?.title?.split(" ");
+  titleWords.forEach((word, wordIndex) => {
+    const isVision = word.toLowerCase() === "vision";
+    const letters = word.split("");
+    letters.forEach((letter) => {
+      const key = `letter-${letterIndex}`;
+      const letterStyle = isVision ? "bg-clip-text bg-[linear-gradient(90deg,#ef8648_0%,#FF2E00_100%)]" : "";
+      titleElements.push(
+        <motion.span
+          key={key}
+          initial="hidden"
+          animate="visible"
+          custom={letterIndex}
+          variants={typingAnimation}
+          style={{ display: "inline-block" }}
+          className={letterStyle}
+        >
+          {letter}
+        </motion.span>
+      );
+      letterIndex++;
+    });
+    if (wordIndex < titleWords.length - 1) {
+      titleElements.push(<motion.span key={`space-${letterIndex}`}>&nbsp;</motion.span>);
+      letterIndex++;
+    }
+  });
 
   return (
     <div className="relative z-20 w-full">
@@ -34,17 +76,9 @@ export const BannerSection = () => {
                 className=" py-2 px-3 normal-case !mb-[24px] !text-[#ccc] font-inter !bg-secondary-bannerPill"
               />
             )}
-            <p className="text-[16px] w-full px-5 leading-[19.84px] sm:leading-[40px] lg:leading-[80px] sm:max-w-[1160px] text-center sm:text-[32px] lg:text-[56px] font-unbound font-bold relative z-20 bg-clip-text text-transparent bg-neutral">
-              {bannerMockData?.title?.split(" ")?.map((word, index) =>
-                word === "Vision" ? (
-                  <span key={index} className="bg-clip-text bg-[linear-gradient(90deg,#ef8648_0%,#FF2E00_100%)] pr-2">
-                    {word}
-                  </span>
-                ) : (
-                  word + " "
-                )
-              )}
-            </p>
+            <div className="text-[16px] w-full px-5 leading-[19.84px] sm:leading-[40px] lg:leading-[80px] sm:max-w-[1100px] text-center sm:text-[32px] lg:text-[56px] font-unbound font-bold relative z-20 bg-clip-text text-transparent bg-neutral">
+              {titleElements}
+            </div>
             <div className="flex justify-center flex-col items-center">
               <p className="relative z-20 description_text py-6 lg:py-[40px] text-center w-[350px] sm:w-[600px] lg:w-[700px]">
                 {bannerMockData.description}
@@ -65,30 +99,18 @@ export const BannerSection = () => {
                   >
                     {bannerMockData?.button1?.text}
                   </Button>
-
-
                 </Link>
-                {/* <Button
-                  variant={bannerMockData.button2.variant}
-                  icon={<IoIosArrowRoundForward size={25} />}
-                  className={"!h-0"}
-                >
-                  {bannerMockData.button2.text}
-                </Button> */}
               </div>
             </div>
           </div>
         </div>
         <OptimizedImage
           src={bannerMockData.images.filterBottomImg}
-
           className={`${currentPath === "/work" ? "xl:left-[0px]" : "xl:left-[90px]"
             } absolute z-10 left-0 sm:left-[30px] !hidden md:!block bottom-[-100px]`}
         />
-
         <OptimizedImage
           src={bannerMockData.images.filterRightImg}
-
           className={`${currentPath === "/work" ? "xl:left-[0px]" : "xl:left-[90px]"
             } absolute z-10 left-0 sm:left-[30px] !block md:!hidden  bottom-[-50px] lg:bottom-0`}
         />
