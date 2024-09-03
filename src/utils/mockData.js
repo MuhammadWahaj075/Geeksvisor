@@ -92,10 +92,11 @@ export const whoWeAreMockData = {
 };
 
 export const bannerMockData = {
-  title: "Power Your Vision with Next Generation Custom Software",
-  subtitle: "Raise $2.5M for startups",
+  title: "Let’s build Future Proof, scalable and cost effective AWS serverless solutions",
+  subtitle: "2.5M+ active users",
   description:
-    "We'll elevate your vision through custom software development as your digital transformation partner.",
+    `We build scalable SaaS products on-demand, Let’s elevate your business with our expert guidance on AWS cloud serverless architecture for scalable and cost effective solutions.
+`,
   button1: {
     text: "Contact Us",
     variant: "primary",
@@ -112,9 +113,10 @@ export const bannerMockData = {
 
 export const workBannerMockData = {
   title: "Power Your Vision with Next Generation Custom Software",
-  subtitle: "Raise $2.5M for startups",
+  subtitle: "2.5M+ active users",
   description:
-    "We'll elevate your vision through custom software development as your digital transformation partner.",
+    `We build scalable SaaS products on-demand, Let’s elevate your business with our expert guidance on AWS cloud serverless architecture for scalable and cost effective solutions.
+`,
   button1: {
     text: "Contact Us",
     variant: "primary",
@@ -142,7 +144,7 @@ export const healthData = [
     name: "Lifestyle",
     icon: CheckIcon,
   },
-  
+
 ];
 
 export const MorehealthData = [
@@ -428,13 +430,13 @@ export const cards = [
       "Craft visually stunning and highly functional frontends that enhance user engagement.",
     id: 4,
   },
-  {
-    url: FullStackImg,
-    title: "Full Stack",
-    description:
-      "Deliver end-to-end solutions with expert full stack development, from concept to deployment.",
-    id: 5,
-  },
+  // {
+  //   url: FullStackImg,
+  //   title: "Full Stack",
+  //   description:
+  //     "Deliver end-to-end solutions with expert full stack development, from concept to deployment.",
+  //   id: 5,
+  // },
   {
     url: DevOpsImg,
     title: "DevOps",
@@ -564,13 +566,13 @@ export const mainPages = [
 ];
 
 export const services = [
-  { name: "AWS",  },
-  { name: "Serverless",  },
-  { name: "React.Js",  },
-  { name: "Nodejs",  },
-  { name: "Next.js",  },
-  { name: "React Native",  },
-  { name: "Flutter",  },
+  { name: "AWS", },
+  { name: "Serverless", },
+  { name: "React.Js", },
+  { name: "Nodejs", },
+  { name: "Next.js", },
+  { name: "React Native", },
+  { name: "Flutter", },
 ];
 
 export const inquiries = [
@@ -611,7 +613,7 @@ export const HowItWorksData = [
 ];
 
 export const clientExpectationMockData = {
-  title: "We Always Try To Understand Our Client's Expectation",
+  title: "Numbers Speaks",
   description: ` From web apps to mobile apps and everything in between, our recent
               works showcase our expertise in developing innovative solutions
               that meet our clients unique needs. Contact us now to discuss your
@@ -619,7 +621,7 @@ export const clientExpectationMockData = {
 };
 
 export const featureWorkMockData = {
-  title: "Featured Work",
+  title: "Our Proven Results",
   description: ` Take a look at some of our recent projects that showcase our
               expertise and commitment to delivering exceptional results for our
               clients.`,
@@ -631,7 +633,7 @@ export const GreatIdeaMockData = {
 };
 
 export const WhatPeopleSayMockData = {
-  title: "What people say?",
+  title: "Reason to Choose Us",
   description: ` See what our satisfied clients are saying about our exceptional
             services and personalized approach to their unique business needs.`,
 };

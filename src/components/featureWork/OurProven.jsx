@@ -1,4 +1,4 @@
-import { VerticalScrollCarousel } from "./featureCards";
+import { VerticalScrollCarousel } from "./OurProvenCards";
 import { featureWorkMockData } from "@/utils/mockData";
 
 export const FeatureWork = () => (
