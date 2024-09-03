@@ -26,11 +26,11 @@ export const BannerSection = () => {
   let letterIndex = 0;
   const titleWords = bannerMockData?.title?.split(" ");
   titleWords.forEach((word, wordIndex) => {
-    const isVision = word.toLowerCase() === "vision";
+    const isFutureProof = word.toLowerCase() === "future" || word.toLowerCase() === "proof,";
     const letters = word.split("");
     letters.forEach((letter) => {
       const key = `letter-${letterIndex}`;
-      const letterStyle = isVision ? "bg-clip-text bg-[linear-gradient(90deg,#ef8648_0%,#FF2E00_100%)]" : "";
+      const letterStyle = isFutureProof ? "bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-red-600 pr-[5px]" : "";
       titleElements.push(
         <motion.span
           key={key}
@@ -76,7 +76,7 @@ export const BannerSection = () => {
                 className=" py-2 px-3 normal-case !mb-[24px] !text-[#ccc] font-inter !bg-secondary-bannerPill"
               />
             )}
-            <div className="text-[16px] w-full px-5 leading-[19.84px] sm:leading-[40px] lg:leading-[80px] sm:max-w-[1100px] text-center sm:text-[32px] lg:text-[56px] font-unbound font-bold relative z-20 bg-clip-text text-transparent bg-neutral">
+            <div className="text-[16px] w-full px-5 leading-[19.84px] sm:leading-[40px] lg:leading-[80px]  sm:max-w-[1290px] text-center sm:text-[32px] lg:text-[56px] font-unbound font-bold relative z-20 text-neutral">
               {titleElements}
             </div>
             <div className="flex justify-center flex-col items-center">

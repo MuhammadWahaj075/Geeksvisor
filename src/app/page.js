@@ -17,7 +17,7 @@ import {
   WhatWeVission,
   WhoWeAre,
 } from "@/components/Home";
-import { HowItWorks } from "@/components/Home/howItWorks/HowItWorks";
+import { HowItWorks } from "@/components/Home/ourProcess/OurProcess";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 

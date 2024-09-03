@@ -18,9 +18,10 @@ export const TechnologiesWeAre = () => {
       <div
         className={`flex mt-8 max-w-[1200px] mx-auto items-center gap-4 md:gap-6 flex-wrap justify-center`}
       >
-        {technologyCardsData.map((card) => (
+        {technologyCardsData.map((card, index) => (
           <TechnologyCards
             className
+            index={index}
             key={card.id}
             title={card.title}
             description={card.description}
@@ -35,13 +36,16 @@ export const TechnologiesWeAre = () => {
         >
           Need something else?
         </Link>
-        <Button
-          variant="primary"
-          className={"py-4 px-4 xl:px-6 w-full md:w-auto  !h-[52px]"}
-          icon={<IoIosArrowRoundForward size={25} />}
-        >
-          Contact us
-        </Button>
+
+        <Link href={'/contact'}>
+          <Button
+            variant="primary"
+            className={"py-4 px-4 xl:px-6 w-full md:w-auto  !h-[52px]"}
+            icon={<IoIosArrowRoundForward size={25} />}
+          >
+            Contact us
+          </Button>
+        </Link>
       </div>
     </div>
   );
