@@ -49,6 +49,7 @@ import {
   CloudArchictectureImg,
   DevOpsSolutionImg,
   SupportImg,
+  ServerlessIcon,
 } from "../../public/assets";
 
 export const OurQualityData = [
@@ -634,7 +635,7 @@ export const OurStrengthData = [
   {
     id: 2,
     title: "Serverless Development",
-    image: "https://www.svgrepo.com/show/354334/serverless.svg",
+    image: ServerlessIcon,
     description: "We create serverless applications that reduce costs and improve performance. By using serverless architecture, we help you focus on your core business while we handle the infrastructure"
     ,
     buttonLabel: "Connect with Serverless Development"

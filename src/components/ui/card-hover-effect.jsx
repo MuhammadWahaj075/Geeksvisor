@@ -10,7 +10,7 @@ export const HoverEffect = ({
 
     return (
         (<div
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10">
+            className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 py-10">
             {items.map((item, idx) => (
                 <div
                     key={item?.link}
@@ -60,7 +60,7 @@ export const CardTitle = ({
     children
 }) => {
     return (
-        (<h4 className={"text-zinc-100 font-inter font-bold tracking-wide mt-4"}>
+        (<h4 className={"text-zinc-100 text-xl font-inter font-bold tracking-wide mt-4"}>
             {children}
         </h4>)
     );

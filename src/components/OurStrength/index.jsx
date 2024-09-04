@@ -12,19 +12,19 @@ export const OurStrength = () => {
                         We recognized for the following exceptional services
                     </p>
                 </div>
-                <div className="grid grid-cols-1 px-5 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 px-5 lg:grid-cols-3 gap-6">
                     {OurStrengthData?.map((item, index) => (
-                        <div className={`relative p-5 flex flex-col items-center ${index === 0 ? "" : "justify-center"}  hover:scale-105 transition duration-500 bg-secondary-bannerPill rounded-3xl shadow-lg 
+                        <div className={`relative p-5  ${index === 0 ? "" : "justify-center flex flex-col"} hover:scale-105 transition duration-500 bg-secondary-bannerPill rounded-3xl shadow-lg 
                             ${index === 0 ? "lg:row-span-2" : ""}`}>
 
                             <div>
                                 {index === 0 && <OptimizedImage src={CloudImg} className={'object-cover rounded-3xl h-[196.66px]'} />}
                                 <div key={item?.id} className="p-4 flex flex-col gap-3 ">
                                     <div>
-                                        <OptimizedImage src={item?.image} width={120} height={120} />
+                                        <OptimizedImage src={item?.image} className='!h-[150px] object-contain' />
                                     </div>
                                     <h3 className="text-xl font-inter text-neutral font-semibold">{item?.title}</h3>
-                                    <p className="mt-2 description_text">{item?.description}</p>
+                                    <p className="mt-2 description_text w-[320px]">{item?.description}</p>
                                     {/* <Button className="mt-4 absolute bottom-4 !rounded-3xl">
                                     {item?.buttonLabel}
                                 </Button> */}
