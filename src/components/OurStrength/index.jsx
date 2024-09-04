@@ -14,10 +14,10 @@ export const OurStrength = () => {
                 </div>
                 <div className="grid grid-cols-1 px-5 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {OurStrengthData?.map((item, index) => (
-                        <div className={`relative p-5 hover:scale-105 transition duration-500 bg-secondary-bannerPill rounded-3xl shadow-lg 
+                        <div className={`relative p-5 flex flex-col items-center ${index === 0 ? "" : "justify-center"}  hover:scale-105 transition duration-500 bg-secondary-bannerPill rounded-3xl shadow-lg 
                             ${index === 0 ? "lg:row-span-2" : ""}`}>
 
-                            <div  >
+                            <div>
                                 {index === 0 && <OptimizedImage src={CloudImg} className={'object-cover rounded-3xl h-[196.66px]'} />}
                                 <div key={item?.id} className="p-4 flex flex-col gap-3 ">
                                     <div>
