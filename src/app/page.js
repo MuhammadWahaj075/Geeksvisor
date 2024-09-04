@@ -3,23 +3,24 @@
 import { Faq } from "@/components";
 import {
   BannerSection,
-  ClientExpectation,
   Consultation,
-  FeatureWork,
   GetFromUs,
   GreatIdea,
-  InfiniteMovingImages,
   MeetOurTeam,
+  NumbersSpeaks,
+  OurProcess,
+  OurProven,
+  ReasonToChoose,
   ServingIndustries,
-  TestimonialsLogos,
-  WhatPeopleSay,
-  WhatWeDo,
   WhatWeVission,
-  WhoWeAre,
+  YouCanGet,
 } from "@/components/Home";
-import { HowItWorks } from "@/components/Home/ourProcess/OurProcess";
+
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { OurCoreValue } from "@/components/OurCore";
+import { OurStrength } from "@/components/OurStrength";
+
 
 export default function Home() {
   return (
@@ -30,17 +31,19 @@ export default function Home() {
           {/* <TestimonialsLogos /> */}
           {/* <InfiniteMovingImages /> */}
         </div>
-        <WhoWeAre />
-        <ServingIndustries />
+        <OurCoreValue />
+        {/* <WhoWeAre /> */}
+        <OurStrength />
         <GetFromUs />
-        <FeatureWork />
-        <WhatWeDo />
-        <ClientExpectation />
-        <HowItWorks />
+        <OurProven />
+        <ServingIndustries />
+        <NumbersSpeaks />
+        <ReasonToChoose />
+        <OurProcess />
+        <YouCanGet />
         <Consultation />
-        <WhatPeopleSay />
-        <WhatWeVission />
         <MeetOurTeam />
+        <WhatWeVission />
         <Faq />
         <GreatIdea />
         <Footer />

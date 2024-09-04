@@ -1,5 +1,5 @@
 import { GreatIdea } from "@/components/greatIdea/GreatIdea"
-import { BannerSection, TestimonialsLogos, WhatPeopleSay } from "@/components/Home"
+import { BannerSection, ReasonToChoose } from "@/components/Home"
 import { Footer } from "@/components/layout/Footer"
 import { Header } from "@/components/layout/Header"
 import { Development } from "@/components/Services/development"
@@ -18,7 +18,7 @@ const Services = () => {
         <ServingIndustries />
         <Development />
         <TechnologiesWeAre />
-        <WhatPeopleSay />
+        <ReasonToChoose />
         <GreatIdea />
       </div>
       <Footer />

@@ -20,7 +20,7 @@ const scrollVariants = {
   },
 };
 
-export const WhatPeopleSay = () => {
+export const ReasonToChoose = () => {
   const [columns, setColumns] = useState(3);
 
   const updateColumns = () => {

@@ -2,16 +2,17 @@ import { TestimonialsLogos } from "../testimonialsLogos/TestimonialsLogos";
 import { BannerSection } from "../bannerSection/BannerSection";
 import { InfiniteMovingImages } from "./infiniteMovingImage/InfiniteMovingImage";
 import { ServingIndustries } from "../servingIndustries/ServingIndustries";
-import { WhatPeopleSay } from "../reasonToChoose/ReasonToChoose";
+import { ReasonToChoose } from "../reasonToChoose/ReasonToChoose";
 import { WhatWeVission } from "./whatWeVission/WhatWeVission";
 import { MeetOurTeam } from "./meetOurTeam/MeetOurTeam";
 import { GreatIdea } from "../greatIdea/GreatIdea";
-import { FeatureWork } from "../featureWork/OurProven";
-import { WhatWeDo } from "./youCanGet/YouCanGet";
+import { OurProven } from "../ourProven/OurProven";
+import { YouCanGet } from "./youCanGet/YouCanGet";
 import { WhoWeAre } from "./whoWeAre/WhoWeAre";
 import { GetFromUs } from "./getFromUs/GetFromUs";
 import { Consultation } from "./Consultation";
-import { ClientExpectation } from "../numbersSpeaks/NumbersSpeaks";
+import { NumbersSpeaks } from "../numbersSpeaks/NumbersSpeaks";
+import { OurProcess } from "./ourProcess/OurProcess";
 
 export {
   BannerSection,
@@ -21,11 +22,12 @@ export {
   WhoWeAre,
   ServingIndustries,
   GetFromUs,
-  FeatureWork,
-  WhatWeDo,
-  ClientExpectation,
-  WhatPeopleSay,
+  OurProven,
+  YouCanGet,
+  NumbersSpeaks,
+  ReasonToChoose,
   WhatWeVission,
   MeetOurTeam,
   GreatIdea,
+  OurProcess,
 };
