@@ -12,6 +12,9 @@ import TestimonialsLogo3 from "./images/TestimonialsLogo3.png";
 import TestimonialsLogo4 from "./images/TestimonialsLogo4.png";
 import TestimonialsLogo5 from "./images/TestimonialsLogo5.png";
 import TestimonialsLogo6 from "./images/TestimonialsLogo6.png";
+import CloudImg from "./images/cloud.jpg";
+import DevOpsSolutionImg from "./images/devops.png";
+import SupportImg from "./images/support.png";
 import FilterImg from "./images/filterImg.png";
 import WorkBannerImg from "./images/workbanner.png";
 import FilterSmallImg from "./images/smallFilter.png";
@@ -67,11 +70,21 @@ import salvesen from "./images/salvesen.png";
 import mifu from "./images/mifu.png";
 import avatar from "./images/avatar.png";
 import MobLogo from "./icons/mobLogo.svg";
+import AIMachineImg from './images/AI-machine.png'
+import CloudArchictectureImg from './images/cloud-data.png'
+import ServerlessIcon from './images/serverless-develop.png'
+
 
 export {
   MobLogo,
+  ServerlessIcon,
+  CloudArchictectureImg,
+  SupportImg,
+  DevOpsSolutionImg,
+  AIMachineImg,
   Logo,
   mifu,
+  CloudImg,
   avatar,
   tech,
   sport,

@@ -5,7 +5,7 @@ import { HowItWorksData } from "@/utils/mockData";
 import { useScroll } from "framer-motion";
 import Card from "./OurProcessCards";
 
-export function HowItWorks() {
+export function OurProcess() {
     const container = useRef(null);
     const { scrollYProgress } = useScroll({
         target: container,

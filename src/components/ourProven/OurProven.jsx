@@ -1,7 +1,7 @@
 import { VerticalScrollCarousel } from "./OurProvenCards";
 import { featureWorkMockData } from "@/utils/mockData";
 
-export const FeatureWork = () => (
+export const OurProven = () => (
   <div className="!mt-16 md:!mt-10 lg:!mt-[160px]">
     <div className="flex items-center flex-col justify-center">
       <div
