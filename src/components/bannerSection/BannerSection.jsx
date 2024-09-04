@@ -30,7 +30,7 @@ export const BannerSection = () => {
     const letters = word.split("");
     letters.forEach((letter) => {
       const key = `letter-${letterIndex}`;
-      const letterStyle = isFutureProof ? "bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-red-600 pr-[5px]" : "";
+      const letterStyle = isFutureProof ? "bg-clip-text text-transparent bg-[linear-gradient(90deg,#EE6E24_0%,#FF2E00_100%)] pr-[4px]" : "";
       titleElements.push(
         <motion.span
           key={key}
@@ -63,7 +63,7 @@ export const BannerSection = () => {
           className={`${currentPath === "/work"
             ? "mt-[0px] right-[0px]"
             : ""
-            } absolute right-0  md:right-[20px] top-[-30px] md:top-[-130px] z-20`}
+            } absolute right-0 md:right-[20px] top-[-30px] md:top-[-130px] z-20`}
         />
         <div className="absolute z-[-1] pointer-events-none inset-0 flex items-center justify-center">
           <GridBoxAnimation />

@@ -67,14 +67,16 @@
     width: 613px !important;
     padding: var(--border-size);
     border-radius: var(--border-radius);
-    background-image: conic-gradient(from var(--border-angle-1) at 60% 60%,
-        transparent,
-        var(--white) 5%,
-        transparent 25%,
-        transparent 50%,
-        var(--white) 60%,
-        transparent 75%,
-        transparent);
+    background-image: conic-gradient(
+    from var(--border-angle-1) at 50% 50%,
+    transparent,
+    var(--white) 5%,
+    transparent 25%,
+    transparent 50%,
+    var(--white) 60%,
+    transparent 75%,
+    transparent
+  );
     animation: rotateBackground 12s linear infinite;
   }
 }
@@ -86,14 +88,16 @@
     width: 325px !important;
     padding: var(--border-size);
     border-radius: var(--border-radius);
-    background-image: conic-gradient(from var(--border-angle-1) at 60% 60%,
-        transparent,
-        var(--white) 5%,
-        transparent 25%,
-        transparent 50%,
-        var(--white) 60%,
-        transparent 75%,
-        transparent);
+    background-image: conic-gradient(
+      from var(--border-angle-1) at 50% 50%,
+      transparent,
+      var(--white) 5%,
+      transparent 25%,
+      transparent 50%,
+      var(--white) 60%,
+      transparent 75%,
+      transparent
+    );
     animation: rotateBackground 12s linear infinite;
   }
 }
@@ -104,14 +108,16 @@
   width: 1161px;
   padding: var(--border-size);
   border-radius: var(--border-radius);
-  background-image: conic-gradient(from var(--border-angle-1) at 70% 70%,
-      transparent,
-      var(--white) 5%,
-      transparent 25%,
-      transparent 50%,
-      var(--white) 60%,
-      transparent 75%,
-      transparent);
+  background-image: conic-gradient(
+    from var(--border-angle-1) at 50% 50%,
+    transparent,
+    var(--white) 5%,
+    transparent 25%,
+    transparent 50%,
+    var(--white) 60%,
+    transparent 75%,
+    transparent
+  );
   animation: rotateBackground 12s linear infinite;
 }
 
