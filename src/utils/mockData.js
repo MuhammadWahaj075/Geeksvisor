@@ -623,7 +623,8 @@ export const OurCoreMockData = {
 }
 
 
-export const OurStrengthData = [
+
+export const OurStrengthCardData = [
   {
     id: 1,
     title: "Cloud Architecture",
@@ -632,6 +633,17 @@ export const OurStrengthData = [
     ,
     buttonLabel: "Connect with Cloud Architects"
   },
+  
+];
+export const OurStrengthData = [
+  // {
+  //   id: 1,
+  //   title: "Cloud Architecture",
+  //   image: CloudArchictectureImg,
+  //   description: "We design and build cloud solutions tailored to your business needs, ensuring they are scalable, secure, and efficient. Our AWS Certified team will help you navigate the cloud with ease"
+  //   ,
+  //   buttonLabel: "Connect with Cloud Architects"
+  // },
   {
     id: 2,
     title: "Serverless Development",
