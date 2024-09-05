@@ -87,7 +87,7 @@ module.exports = {
     },
   },
   plugins: [
-    require("tailwindcss-animate"),
+    // require("tailwindcss-animate"),
     addVariablesForColors,
     function ({ matchUtilities, theme }) {
       matchUtilities(

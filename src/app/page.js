@@ -43,7 +43,7 @@ export default function Home() {
         <YouCanGet />
         <Consultation />
         <MeetOurTeam />
-        <WhatWeVission />
+        {/* <WhatWeVission /> */}
         <Faq />
         <GreatIdea />
         <Footer />
