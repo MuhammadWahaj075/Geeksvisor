@@ -2,11 +2,12 @@
 
 import React, { useEffect } from "react";
 import { usePathname } from "next/navigation";
-import { CloseIcon, Logo, MenuIcon, MobLogo } from "../../../public/assets";
 import { menuItems } from "@/utils/mockData";
 import { Button, OptimizedImage } from "../comman";
 import { useScroll } from "@/hooks/UseScroll";
 import Link from "next/link";
+import { sendGTMEvent } from '@next/third-parties/google'
+import { CloseIcon, Logo, MenuIcon, MobLogo } from "../../../public/assets";
 
 export const Header = () => {
   const pathname = usePathname();
@@ -40,7 +41,7 @@ export const Header = () => {
           <OptimizedImage src={MobLogo} />
         </a>
         <div className="flex items-center lg:order-2">
-          <Link href={"/contact"}>
+          <Link href={"/contact"} onClick={() => sendGTMEvent('event', 'buttonClicked', { value: '123' })}          >
             <Button
               variant="primary"
               className={"!hidden sm:!block mr-2 lg:mr-0 py-[14px] !h-[45px] px-[24px]"}
