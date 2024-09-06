@@ -1,5 +1,5 @@
 import { BannerSection } from "@/components/bannerSection/BannerSection";
-import { WhatPeopleSay } from "@/components/reasonToChoose/ReasonToChoose";
+import { ReasonToChoose } from "@/components/reasonToChoose/ReasonToChoose";
 import { Pills } from "@/components/Work/workPills";
 import { WorkProjects } from "@/components/Work/workProjects/workProjects";
 
@@ -9,7 +9,7 @@ const WorkPage = () => {
       <BannerSection />
       <Pills />
       <WorkProjects />
-      <WhatPeopleSay />
+      <ReasonToChoose />
     </div>
   );
 };

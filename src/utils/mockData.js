@@ -633,7 +633,7 @@ export const OurStrengthCardData = [
     ,
     buttonLabel: "Connect with Cloud Architects"
   },
-  
+
 ];
 export const OurStrengthData = [
   // {
@@ -645,7 +645,7 @@ export const OurStrengthData = [
   //   buttonLabel: "Connect with Cloud Architects"
   // },
   {
-    id: 2,
+    id: 1,
     title: "Serverless Development",
     image: ServerlessIcon,
     description: "We create serverless applications that reduce costs and improve performance. By using serverless architecture, we help you focus on your core business while we handle the infrastructure"
@@ -653,7 +653,7 @@ export const OurStrengthData = [
     buttonLabel: "Connect with Serverless Development"
   },
   {
-    id: 3,
+    id: 2,
     title: "DevOps Solutions",
     image: DevOpsSolutionImg,
     description: "We implement DevOps practices to streamline your development and operations. This means faster delivery of software updates and improved collaboration between your teams"
@@ -661,14 +661,14 @@ export const OurStrengthData = [
     buttonLabel: "Connect with DevOps"
   },
   {
-    id: 4,
+    id: 3,
     title: "AI & Machine Learning",
     image: AIMachineImg,
     description: "We leverage the latest in AI and machine learning to provide smart solutions that can automate tasks, analyze data, and enhance decision-making for your business",
     buttonLabel: "Connect with AI & Machine Learning"
   },
   {
-    id: 5,
+    id: 4,
     title: "Support & Maintenance",
     image: SupportImg,
     description: "We offer ongoing support and maintenance for all our solutions. Our team is always here to help you troubleshoot issues and keep your systems running smoothly",
