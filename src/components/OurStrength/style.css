@@ -3,9 +3,3 @@
         width: 441.672px;
     }
 }
-
-@media  (max-width: 639px) {
-    .our_strength_card {
-        background-color: red;
-    }
-}

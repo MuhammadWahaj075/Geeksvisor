@@ -27,7 +27,7 @@ export const BannerSection = () => {
   const titleWords = bannerMockData?.title?.split(" ");
   titleWords.forEach((word, wordIndex) => {
     const isFutureProof = word.toLowerCase() === "future" || word.toLowerCase() === "proof,";
-    const letters = word.split(" ");
+    const letters = word.split("");
     letters.forEach((letter) => {
       const key = `letter-${letterIndex}`;
       const letterStyle = isFutureProof ? "bg-clip-text text-transparent bg-[linear-gradient(90deg,#EE6E24_0%,#FF2E00_100%)] pr-[3.5px]" : "";
