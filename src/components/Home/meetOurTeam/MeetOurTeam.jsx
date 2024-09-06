@@ -1,11 +1,13 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { MeetTeamMockData, teamMembers } from "@/utils/mockData";
 import { Button, OptimizedImage, Pill } from "@/components/comman";
-import Link from "next/link";
+
+import './style.css' 
 
 export const MeetOurTeam = () => {
   const router = useRouter();
@@ -46,35 +48,17 @@ export const MeetOurTeam = () => {
               className="profile_sec !mx-auto  flex flex-col w-auto sm:w-[616px] lg:w-auto xl:w-[370px] justify-center gap-y-3"
             >
               <div className="relative overflow-hidden">
-                <Link
+              <Link
                   target="_blank"
                   href={member?.profile}
-                  className="hover:!h-[100.79px] hover:!w-[100.79px] !w-[44px] !h-[44px]"
                 >
-                  <Button
-                    variant=""
-                    className="linkedIn_btn absolute font-unbound text-neutral !bg-[#0066C8] hover:border hover:-bottom-4 hover:-right-5 transition-all duration-1000 hover:!h-[100.79px] hover:!w-[100.79px] bottom-4 right-3 !w-[44px] !h-[44px] !text-[24px] !rounded-full !lowercase flex items-center justify-center"
-                    onMouseEnter={() => handleMouseEnter(index)}
-                    onMouseLeave={handleMouseLeave}
-                    onTransitionEnd={handleTransitionEnd}
-                  >
-                    <div
-                      className={`transition-all duration-500 ease-in-out flex items-center justify-center gap-1`}
-                    >
-                      <span
-                        className={`transition-all duration-500 ease-in-out transform ${showIcon && hoveredIndex === index ? "-translate-x-1" : ""
-                          }`}
-                      >
-                        in
-                      </span>
-                      {showIcon && hoveredIndex === index && (
-                        <IoIosArrowRoundForward
-                          className="transition-all duration-500 ease-in-out transform"
-                          size={25}
-                        />
-                      )}
-                    </div>
-                  </Button>
+                    <Button variant="" className="linkedin_btn absolute right-3 bottom-2 !bg-[#0066C8]">
+                      <span className="icon_in">in</span>
+                      <IoIosArrowRoundForward
+                        className="arrow_icon"
+                        size={25}
+                      />
+                    </Button>
                 </Link>
 
 
