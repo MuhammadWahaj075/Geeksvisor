@@ -13,7 +13,7 @@ export const OurStrength = () => {
                         We recognized for the following exceptional services
                     </p>
                 </div>
-                <div className="flex justify-center gap-5  2xl:gap-3 px-5 !flex-col 2xl:!flex-row">
+                <div className="flex justify-center gap-5  2xl:gap-0 px-5 !flex-col 2xl:!flex-row">
                     <div className="flex justify-center">
                         {OurStrengthCardData?.map((item, index) => (
                             <div key={item?.id} className={`relative p-5 h-auto w-[100%] sm:max-w-[441.672px] md:!max-w-[900px] our_strength_card xl:w-auto hover:scale-105 hover:gap-5 transition duration-500 bg-secondary-bannerPill 
