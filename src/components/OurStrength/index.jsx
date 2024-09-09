@@ -36,7 +36,7 @@ export const OurStrength = () => {
                             </div>
                         ))}
                     </div>
-                    <div className="flex justify-center mx-auto flex-wrap  max-w-[1200px] 2xl:w-[1300px] gap-5">
+                    <div className="flex justify-center mx-auto flex-wrap  max-w-[1200px] 2xl:w-[1400px] gap-5">
                         {OurStrengthData?.map((item) => (
                             <div key={item?.id} className={`relative p-5  max-w-[441.672px] 2xl:max-w-[341.672px] sm:h-[351px] lg:h-auto hover:scale-105 transition duration-500 bg-secondary-bannerPill 
                             rounded-3xl shadow-lg 
