@@ -339,9 +339,9 @@ export const faqData = [
 ];
 
 export const menuItems = [
-  { navItem: "Home", href: "/" },
+  // { navItem: "Home", href: "/" },
   // { navItem: "About", href: "/about" },
-  { navItem: "Services", href: "/services" },
+  // { navItem: "Services", href: "/services" },
   // { navItem: "Who we are", href: "/whoweare" },
   // { navItem: "Work", href: "/work" },
 ];
@@ -527,11 +527,11 @@ export const projects = [
     tags: ["Node.js", "S3", "AWS Lambda", "AWS RDS", " Step Functions", "API Gateway"],
     image: viralApp,
   },
-  {
-    title: "Salvesen",
-    tags: ["Nextjs", "Gsap", "Framer Motion", "TailwindCss"],
-    image: salvesen,
-  },
+  // {
+  //   title: "Salvesen",
+  //   tags: ["Nextjs", "Gsap", "Framer Motion", "TailwindCss"],
+  //   image: salvesen,
+  // },
   // {
   //   title: "MultiModal Chatbot",
   //   tags: ["Streamlit", "AWS Bedrock",],
@@ -814,8 +814,8 @@ export const projectDetailBannerData = {
 };
 
 export const MeetTeamMockData = {
-  title: "Meet our Team",
-  subtitle: "We are incredible people with expert skills",
+  title: "Meet Founders",
+  subtitle: "The founders of GeeksVisor are experts in their respective niches. They bring a wealth of experience and knowledge to the table, ensuring that your success is their highest priority.",
 };
 
 export const developmentCardsData = [

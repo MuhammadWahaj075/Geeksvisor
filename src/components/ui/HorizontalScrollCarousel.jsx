@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import { cards } from "@/utils/mockData";
-import { Card } from "../Home/getFromUs/GetFromUsCards";
+import { Card } from "../Home/modernTechStack/GetFromUsCards";
 import { motion, useTransform, useScroll } from "framer-motion";
 
 export const HorizontalScrollCarousel = () => {

@@ -9,14 +9,14 @@ import { Button, OptimizedImage, Pill } from "@/components/comman";
 
 import './style.css' 
 
-export const MeetOurTeam = () => {
+export const MeetFounders = () => {
   const router = useRouter();
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const [showIcon, setShowIcon] = useState(false);
 
-  const handleViewProfileClick = () => {
-    router.push(`/team-member`);
-  };
+  // const handleViewProfileClick = () => {
+  //   router.push(`/team-member`);
+  // };
 
   const handleMouseEnter = (index) => {
     setHoveredIndex(index);
@@ -37,11 +37,11 @@ export const MeetOurTeam = () => {
   return (
     <div className="!mt-10 lg:!mt-[160px] mx-auto flex justify-center max-w-screen-xl">
       <div className="flex flex-col px-5 items-center gap-[70px]">
-        <div className="flex flex-col gap-4 items-center sm:items-start w-full lg:items-center">
+        <div className="flex flex-col gap-4 items-center  sm:items-start w-full lg:items-center">
           <h1 className="title_text">{MeetTeamMockData.title}</h1>
-          <p className="description_text">{MeetTeamMockData.subtitle}</p>
+          <p className="description_text text-center sm:text-start lg:text-center w-[320px] sm:w-[600px] lg:w-[705px]">{MeetTeamMockData.subtitle}</p>
         </div>
-        <div className="flex gap-4 md:gap-6  flex-col lg:flex-row flex-wrap justify-center">
+        <div className="flex gap-4 md:gap-6 flex-col lg:flex-row flex-wrap justify-center">
           {teamMembers?.map((member, index) => (
             <div
               key={index}
@@ -82,12 +82,12 @@ export const MeetOurTeam = () => {
                   {member?.role}
                 </p>
 
-                <Link href={member.profile}>
+                <Link  target="_blank" href={member.profile}>
                   <Button
                     variant="transparent"
                     icon={<IoIosArrowRoundForward size={25} />}
                     className={"!p-0"}
-                    onClick={handleViewProfileClick}
+                    // onClick={handleViewProfileClick}
                   >
                     View profile
                   </Button>
