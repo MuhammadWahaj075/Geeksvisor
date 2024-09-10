@@ -4,15 +4,14 @@ import { Faq } from "@/components";
 import {
   BannerSection,
   Consultation,
-  GetFromUs,
   GreatIdea,
-  MeetOurTeam,
+  MeetFounders,
+  ModernTech,
   NumbersSpeaks,
   OurProcess,
   OurProven,
   ReasonToChoose,
   ServingIndustries,
-  WhatWeVission,
   YouCanGet,
 } from "@/components/Home";
 
@@ -34,7 +33,7 @@ export default function Home() {
         <OurCoreValue />
         {/* <WhoWeAre /> */}
         <OurStrength />
-        <GetFromUs />
+        {/* <ModernTech /> */}
         <OurProven />
         <ServingIndustries />
         <NumbersSpeaks />
@@ -42,8 +41,7 @@ export default function Home() {
         <OurProcess />
         <YouCanGet />
         <Consultation />
-        <MeetOurTeam />
-        {/* <WhatWeVission /> */}
+        <MeetFounders />
         <Faq />
         <GreatIdea />
         <Footer />
