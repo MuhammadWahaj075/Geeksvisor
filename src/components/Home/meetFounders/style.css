@@ -1,0 +1,37 @@
+.linkedin_btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease; 
+    overflow: hidden;
+  }
+  
+  .linkedin_btn:hover {
+    width: 100px; 
+    height: 100px;
+    bottom: -15px;
+    right: -15px;
+    border:1px solid white;
+  }
+  
+  .icon_in {
+    font-size: 24px;
+    color: white;
+    transition: opacity 0.5s ease; 
+  }
+  
+  .arrow_icon {
+    display: block; 
+    position: absolute;
+    opacity: 0; 
+  }
+  
+  .linkedin_btn:hover .arrow_icon {
+    opacity: 1;
+    right: 17px; 
+    transform: translateX(25%) translateY(0); 
+    color: white; 
+  }

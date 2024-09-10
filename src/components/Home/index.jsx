@@ -2,16 +2,17 @@ import { TestimonialsLogos } from "../testimonialsLogos/TestimonialsLogos";
 import { BannerSection } from "../bannerSection/BannerSection";
 import { InfiniteMovingImages } from "./infiniteMovingImage/InfiniteMovingImage";
 import { ServingIndustries } from "../servingIndustries/ServingIndustries";
-import { WhatPeopleSay } from "../whatPeopleSay/WhatPeopleSay";
+import { ReasonToChoose } from "../reasonToChoose/ReasonToChoose";
 import { WhatWeVission } from "./whatWeVission/WhatWeVission";
-import { MeetOurTeam } from "./meetOurTeam/MeetOurTeam";
+import { MeetFounders } from "./meetFounders/MeetFounders";
 import { GreatIdea } from "../greatIdea/GreatIdea";
-import { FeatureWork } from "../featureWork/FeatureWork";
-import { WhatWeDo } from "./whatWeDo/WhatWeDo";
+import { OurProven } from "../ourProven/OurProven";
+import { YouCanGet } from "./youCanGet/YouCanGet";
 import { WhoWeAre } from "./whoWeAre/WhoWeAre";
-import { GetFromUs } from "./getFromUs/GetFromUs";
 import { Consultation } from "./Consultation";
-import { ClientExpectation } from "../clientExpect/ClientExpect";
+import { NumbersSpeaks } from "../numbersSpeaks/NumbersSpeaks";
+import { OurProcess } from "./ourProcess/OurProcess";
+import { ModernTech } from "./modernTechStack/ModernTechStack";
 
 export {
   BannerSection,
@@ -20,12 +21,13 @@ export {
   InfiniteMovingImages,
   WhoWeAre,
   ServingIndustries,
-  GetFromUs,
-  FeatureWork,
-  WhatWeDo,
-  ClientExpectation,
-  WhatPeopleSay,
+  ModernTech,
+  OurProven,
+  YouCanGet,
+  NumbersSpeaks,
+  ReasonToChoose,
   WhatWeVission,
-  MeetOurTeam,
+  MeetFounders,
   GreatIdea,
+  OurProcess,
 };

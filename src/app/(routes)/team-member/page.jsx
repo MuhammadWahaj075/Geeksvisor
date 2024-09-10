@@ -1,7 +1,6 @@
 import { BannerSection } from "@/components/AboutUs/BannerSection";
-import { ClientExpectation, FeatureWork, GreatIdea, TestimonialsLogos } from "@/components/Home";
+import {  GreatIdea, NumbersSpeaks, OurProven, ReasonToChoose, TestimonialsLogos } from "@/components/Home";
 import Experience from "@/components/TeamMember/Experience";
-import { WhatPeopleSay } from "@/components/whatPeopleSay/WhatPeopleSay";
 
 const TeamMember = () => {
   return (
@@ -11,9 +10,9 @@ const TeamMember = () => {
         <TestimonialsLogos />
       </div>
       <Experience />
-      <ClientExpectation />
-      <FeatureWork />
-      <WhatPeopleSay />
+      <NumbersSpeaks />
+      <OurProven />
+      <ReasonToChoose />
       <GreatIdea />
     </div>
   );

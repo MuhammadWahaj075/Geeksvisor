@@ -2,11 +2,12 @@
 
 import React, { useEffect } from "react";
 import { usePathname } from "next/navigation";
-import { CloseIcon, Logo, MenuIcon, MobLogo } from "../../../public/assets";
 import { menuItems } from "@/utils/mockData";
 import { Button, OptimizedImage } from "../comman";
 import { useScroll } from "@/hooks/UseScroll";
 import Link from "next/link";
+import { sendGTMEvent } from '@next/third-parties/google'
+import { CloseIcon, Logo, MenuIcon, MobLogo } from "../../../public/assets";
 
 export const Header = () => {
   const pathname = usePathname();
@@ -22,6 +23,10 @@ export const Header = () => {
     }
   }, [isMenuOpen]);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <nav
       className={`px-4 pb-5 pt-[22px] z-30 w-full top-0 sticky left-0 
@@ -36,7 +41,7 @@ export const Header = () => {
           <OptimizedImage src={MobLogo} />
         </a>
         <div className="flex items-center lg:order-2">
-          <Link href={"/contact"}>
+          <Link href={"/contact"} onClick={() => sendGTMEvent('event', 'buttonClicked', { value: '123' })}          >
             <Button
               variant="primary"
               className={"!hidden sm:!block mr-2 lg:mr-0 py-[14px] !h-[45px] px-[24px]"}
@@ -61,13 +66,11 @@ export const Header = () => {
               <li key={i}>
                 <Link
                   href={item.href}
-                  className={` block border-2 border-b-secondary-light lg:border-none font-inter text-[14px] py-2 pr-4 pl-3 font-bold ${
-                    activeNavItem === item.navItem
-                      ? "text-primary"
-                      : "text-secondary-light font-normal"
+                  className={` block border-2 border-b-secondary-light lg:border-none font-inter text-[14px] py-2 pr-4 pl-3 font-bold
+                     ${pathname === item.href
+                      ? "text-primary "
+                      : "text-secondary-light transition-all duration-150 font-normal hover:text-neutral"
                     } border-b border-transparent lg:p-0 lg:border-0`}
-                  onClick={() => handleNavItemClick(item)}
-                  aria-current={pathname === item.href ? "page" : undefined}
                 >
                   {item.navItem}
                 </Link>

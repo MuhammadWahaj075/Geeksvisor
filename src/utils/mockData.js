@@ -45,6 +45,11 @@ import {
   kyogreen,
   mifu,
   APIImg,
+  AIMachineImg,
+  CloudArchictectureImg,
+  DevOpsSolutionImg,
+  SupportImg,
+  ServerlessIcon,
 } from "../../public/assets";
 
 export const OurQualityData = [
@@ -92,10 +97,11 @@ export const whoWeAreMockData = {
 };
 
 export const bannerMockData = {
-  title: "Power Your Vision with Next Generation Custom Software",
-  subtitle: "Raise $2.5M for startups",
+  title: "Let’s build Future Proof, scalable and cost effective AWS serverless solutions",
+  subtitle: "2.5M+ active users",
   description:
-    "We'll elevate your vision through custom software development as your digital transformation partner.",
+    `We build scalable SaaS products on-demand, Let’s elevate your business with our expert guidance on AWS cloud serverless architecture for scalable and cost effective solutions.
+`,
   button1: {
     text: "Contact Us",
     variant: "primary",
@@ -112,9 +118,10 @@ export const bannerMockData = {
 
 export const workBannerMockData = {
   title: "Power Your Vision with Next Generation Custom Software",
-  subtitle: "Raise $2.5M for startups",
+  subtitle: "2.5M+ active users",
   description:
-    "We'll elevate your vision through custom software development as your digital transformation partner.",
+    `We build scalable SaaS products on-demand, Let’s elevate your business with our expert guidance on AWS cloud serverless architecture for scalable and cost effective solutions.
+`,
   button1: {
     text: "Contact Us",
     variant: "primary",
@@ -142,7 +149,7 @@ export const healthData = [
     name: "Lifestyle",
     icon: CheckIcon,
   },
-  
+
 ];
 
 export const MorehealthData = [
@@ -428,13 +435,13 @@ export const cards = [
       "Craft visually stunning and highly functional frontends that enhance user engagement.",
     id: 4,
   },
-  {
-    url: FullStackImg,
-    title: "Full Stack",
-    description:
-      "Deliver end-to-end solutions with expert full stack development, from concept to deployment.",
-    id: 5,
-  },
+  // {
+  //   url: FullStackImg,
+  //   title: "Full Stack",
+  //   description:
+  //     "Deliver end-to-end solutions with expert full stack development, from concept to deployment.",
+  //   id: 5,
+  // },
   {
     url: DevOpsImg,
     title: "DevOps",
@@ -520,11 +527,11 @@ export const projects = [
     tags: ["Node.js", "S3", "AWS Lambda", "AWS RDS", " Step Functions", "API Gateway"],
     image: viralApp,
   },
-  {
-    title: "Salvesen",
-    tags: ["Nextjs", "Gsap", "Framer Motion", "TailwindCss"],
-    image: salvesen,
-  },
+  // {
+  //   title: "Salvesen",
+  //   tags: ["Nextjs", "Gsap", "Framer Motion", "TailwindCss"],
+  //   image: salvesen,
+  // },
   // {
   //   title: "MultiModal Chatbot",
   //   tags: ["Streamlit", "AWS Bedrock",],
@@ -564,19 +571,20 @@ export const mainPages = [
 ];
 
 export const services = [
-  { name: "AWS", link: "#" },
-  { name: "Serverless", link: "#" },
-  { name: "React.Js", link: "#" },
-  { name: "Nodejs", link: "#" },
-  { name: "Next.js", link: "#" },
-  { name: "React Native", link: "#" },
-  { name: "Flutter", link: "#" },
+  { name: "AWS", },
+  { name: "Serverless", },
+  { name: "React.Js", },
+  { name: "Nodejs", },
+  { name: "Next.js", },
+  { name: "React Native", },
+  { name: "Flutter", },
 ];
 
 export const inquiries = [
-  { name: "contact@geeksvisor.com", link: "#" },
-  { name: "+92 340 8636954", link: "#" },
+  { name: "contact@geeksvisor.com", link: "mailto:contact@geeksvisor.com" },
+  { name: "+92 340 8636954", link: "tel:+923408636954" },
 ];
+
 
 export const HowItWorksData = [
   {
@@ -609,8 +617,101 @@ export const HowItWorksData = [
   },
 ];
 
+export const OurCoreMockData = {
+  title: "Our Core Values",
+  description: `Core Values that Drive Our Brand Forward`
+}
+
+
+
+export const OurStrengthCardData = [
+  {
+    id: 1,
+    title: "Cloud Architecture",
+    image: CloudArchictectureImg,
+    description: "We design and build cloud solutions tailored to your business needs, ensuring they are scalable, secure, and efficient. Our AWS Certified team will help you navigate the cloud with ease"
+    ,
+    buttonLabel: "Connect with Cloud Architects"
+  },
+
+];
+export const OurStrengthData = [
+  // {
+  //   id: 1,
+  //   title: "Cloud Architecture",
+  //   image: CloudArchictectureImg,
+  //   description: "We design and build cloud solutions tailored to your business needs, ensuring they are scalable, secure, and efficient. Our AWS Certified team will help you navigate the cloud with ease"
+  //   ,
+  //   buttonLabel: "Connect with Cloud Architects"
+  // },
+  {
+    id: 1,
+    title: "Serverless Development",
+    image: ServerlessIcon,
+    description: "We create serverless applications that reduce costs and improve performance. By using serverless architecture, we help you focus on your core business while we handle the infrastructure"
+    ,
+    buttonLabel: "Connect with Serverless Development"
+  },
+  {
+    id: 2,
+    title: "DevOps Solutions",
+    image: DevOpsSolutionImg,
+    description: "We implement DevOps practices to streamline your development and operations. This means faster delivery of software updates and improved collaboration between your teams"
+    ,
+    buttonLabel: "Connect with DevOps"
+  },
+  {
+    id: 3,
+    title: "AI & Machine Learning",
+    image: AIMachineImg,
+    description: "We leverage the latest in AI and machine learning to provide smart solutions that can automate tasks, analyze data, and enhance decision-making for your business",
+    buttonLabel: "Connect with AI & Machine Learning"
+  },
+  {
+    id: 4,
+    title: "Support & Maintenance",
+    image: SupportImg,
+    description: "We offer ongoing support and maintenance for all our solutions. Our team is always here to help you troubleshoot issues and keep your systems running smoothly",
+    buttonLabel: "Connect with Support & Maintenance"
+  }
+];
+
+
+export const OurCoreprojects = [
+  {
+    title: "Transparency",
+    description:
+      "We keep everything open, clear, and straightforward, so you’re always informed and confident in what’s happening.",
+  },
+  {
+    title: "Proactive Communication",
+    description:
+      "We stay in regular contact with our clients, aligning everything early, addressing concerns quickly, and keeping everyone on the same page.",
+  },
+  {
+    title: "Innovative Approach",
+    description:
+      "We love to implement modern technologies, bring fresh ideas to the table and think creatively, delivering the best and most future proof solutions possible.",
+  },
+  {
+    title: "Zero Waste Mindset",
+    description:
+      "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
+  },
+  {
+    title: "Meet Deadlines",
+    description:
+      "We always deliver on time with reliable consistency, so you never have to worry about delays or setbacks",
+  },
+  {
+    title: "AWS Certified",
+    description:
+      "We are AWS Certified, which means we have the skills and knowledge to provide top-notch cloud solutions that truly benefit your business.",
+  },
+];
+
 export const clientExpectationMockData = {
-  title: "We Always Try To Understand Our Client's Expectation",
+  title: "Numbers Speaks",
   description: ` From web apps to mobile apps and everything in between, our recent
               works showcase our expertise in developing innovative solutions
               that meet our clients unique needs. Contact us now to discuss your
@@ -618,7 +719,7 @@ export const clientExpectationMockData = {
 };
 
 export const featureWorkMockData = {
-  title: "Featured Work",
+  title: "Our Proven Results",
   description: ` Take a look at some of our recent projects that showcase our
               expertise and commitment to delivering exceptional results for our
               clients.`,
@@ -630,7 +731,7 @@ export const GreatIdeaMockData = {
 };
 
 export const WhatPeopleSayMockData = {
-  title: "What people say?",
+  title: "Reason to Choose Us",
   description: ` See what our satisfied clients are saying about our exceptional
             services and personalized approach to their unique business needs.`,
 };
@@ -713,8 +814,8 @@ export const projectDetailBannerData = {
 };
 
 export const MeetTeamMockData = {
-  title: "Meet our Team",
-  subtitle: "We are incredible people with expert skills",
+  title: "Meet Founders",
+  subtitle: "The founders of GeeksVisor are experts in their respective niches. They bring a wealth of experience and knowledge to the table, ensuring that your success is their highest priority.",
 };
 
 export const developmentCardsData = [

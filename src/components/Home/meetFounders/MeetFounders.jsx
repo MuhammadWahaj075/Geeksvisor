@@ -1,20 +1,22 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { MeetTeamMockData, teamMembers } from "@/utils/mockData";
 import { Button, OptimizedImage, Pill } from "@/components/comman";
-import Link from "next/link";
 
-export const MeetOurTeam = () => {
+import './style.css' 
+
+export const MeetFounders = () => {
   const router = useRouter();
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const [showIcon, setShowIcon] = useState(false);
 
-  const handleViewProfileClick = () => {
-    router.push(`/team-member`);
-  };
+  // const handleViewProfileClick = () => {
+  //   router.push(`/team-member`);
+  // };
 
   const handleMouseEnter = (index) => {
     setHoveredIndex(index);
@@ -35,45 +37,28 @@ export const MeetOurTeam = () => {
   return (
     <div className="!mt-10 lg:!mt-[160px] mx-auto flex justify-center max-w-screen-xl">
       <div className="flex flex-col px-5 items-center gap-[70px]">
-        <div className="flex flex-col gap-4 items-center sm:items-start w-full lg:items-center">
+        <div className="flex flex-col gap-4 items-center  sm:items-start w-full lg:items-center">
           <h1 className="title_text">{MeetTeamMockData.title}</h1>
-          <p className="description_text">{MeetTeamMockData.subtitle}</p>
+          <p className="description_text text-center sm:text-start lg:text-center w-[320px] sm:w-[600px] lg:w-[705px]">{MeetTeamMockData.subtitle}</p>
         </div>
-        <div className="flex gap-4 md:gap-6  flex-col lg:flex-row flex-wrap justify-center">
+        <div className="flex gap-4 md:gap-6 flex-col lg:flex-row flex-wrap justify-center">
           {teamMembers?.map((member, index) => (
             <div
               key={index}
               className="profile_sec !mx-auto  flex flex-col w-auto sm:w-[616px] lg:w-auto xl:w-[370px] justify-center gap-y-3"
             >
               <div className="relative overflow-hidden">
-                <Link
+              <Link
                   target="_blank"
                   href={member?.profile}
-                  className=" hover:!h-[100.79px] hover:!w-[100.79px] !w-[44px] !h-[44px]"
                 >
-                  <Button
-                    variant=""
-                    className="linkedIn_btn absolute font-unbound text-neutral !bg-[#0066C8] hover:border hover:-bottom-4 hover:-right-5 transition-all duration-1000 hover:!h-[100.79px] hover:!w-[100.79px] bottom-4 right-3 !w-[44px] !h-[44px] !text-[24px] !rounded-full !lowercase flex items-center justify-center"
-                    onMouseEnter={() => handleMouseEnter(index)}
-                    onMouseLeave={handleMouseLeave}
-                    onTransitionEnd={handleTransitionEnd}
-                  >
-                    <div
-                      className={`transition-all bg duration-500 ease-in-out flex items-center justify-center gap-1`}
-                    >
-                      <span
-                        className={`transition-all duration-500 ease-in-out transform `}
-                      >
-                        in
-                      </span>
-                      {showIcon && hoveredIndex === index && (
-                        <IoIosArrowRoundForward
-                          className=""
-                          size={25}
-                        />
-                      )}
-                    </div>
-                  </Button>
+                    <Button variant="" className="linkedin_btn absolute right-3 bottom-2 !bg-[#0066C8]">
+                      <span className="icon_in">in</span>
+                      <IoIosArrowRoundForward
+                        className="arrow_icon"
+                        size={25}
+                      />
+                    </Button>
                 </Link>
                 <OptimizedImage
                   src={member?.imageSrc}
@@ -95,12 +80,12 @@ export const MeetOurTeam = () => {
                   {member?.role}
                 </p>
 
-                <Link href={member.profile}>
+                <Link  target="_blank" href={member.profile}>
                   <Button
                     variant="transparent"
                     icon={<IoIosArrowRoundForward size={25} />}
                     className={"!p-0"}
-                    onClick={handleViewProfileClick}
+                    // onClick={handleViewProfileClick}
                   >
                     View profile
                   </Button>

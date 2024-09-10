@@ -6,7 +6,7 @@ import { Count } from "@/components/ui/CountingAnimation";
 import { Button, OptimizedImage } from "@/components/comman";
 import { FilterImg, Spline } from "../../../public/assets";
 
-export const ClientExpectation = () => (
+export const NumbersSpeaks = () => (
   <div className="!mt-16  md:!mt-10 lg:!mt-[160px]">
     <div className="flex  px-5 justify-center">
       <div className="flex  flex-col relative items-center !w-[360px] sm:!w-[1326px] py-6 sm:py-[35.93px] lg:py-[72px] bg-lines rounded-[72px] bg-[#101010]">
