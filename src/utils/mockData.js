@@ -1,3 +1,4 @@
+import { FaAws, FaReact, FaRobot, FaLink } from 'react-icons/fa';
 import {
   InfiniteImg,
   InfiniteImg2,
@@ -51,6 +52,8 @@ import {
   SupportImg,
   ServerlessIcon,
 } from "../../public/assets";
+
+
 
 export const OurQualityData = [
   {
@@ -285,6 +288,52 @@ export const AboutTeamMembers = [
     position: "Developer",
     imageSrc: Project,
   },
+];
+
+export const tabs = [
+  {
+    title: "AWS & Backend",
+    content: [
+      "Node.js: A JavaScript runtime that allows for building scalable network applications, enabling efficient server-side scripting.",
+      "AWS Lambda: A serverless compute service that runs your code in response to events, allowing for automatic scaling and management of resources without the need for server provisioning.",
+      "Amazon API Gateway: A fully managed service that enables you to create, publish, maintain, and secure APIs at any scale, facilitating communication between your frontend and backend services.",
+      "Amazon DynamoDB: A fully managed NoSQL database service that offers fast and predictable performance with seamless scalability, ideal for handling large volumes of data.",
+      "Amazon S3: A scalable object storage service for storing and retrieving any amount of data, which is essential for serving static assets and backups.",
+      "AWS Elastic Load Balancer: Distributes incoming application traffic across multiple targets, ensuring high availability and reliability by automatically adjusting to traffic demands.",
+      "Amazon RDS: A managed relational database service that simplifies database setup, operation, and scaling, providing automated backups and patch management."
+    ],
+    icon: <FaAws size={25} />
+  },
+  {
+    title: "Frontend",
+    content: [
+      "Next.js: A React framework for building server-rendered applications with features like static site generation and API routes, enhancing performance and SEO.",
+      "TypeScript: A superset of JavaScript that adds optional static typing, helping to catch errors during development and improving code maintainability.",
+      "Tailwind CSS: A utility-first CSS framework that provides a set of pre-defined classes for styling UI components quickly and consistently, allowing for rapid design and development."
+    ],
+    icon: <FaReact size={25} />
+  },
+  {
+    title: "AI Integration",
+    content: [
+      "Generative AI: We integrate advanced AI models to enhance user experience by generating personalized content based on user interactions. This includes:",
+      "Natural Language Processing (NLP): Utilizing NLP techniques to understand and process user input, enabling the app to respond intelligently and contextually.",
+      "Content Generation: Automatically creating relevant content, such as product descriptions, recommendations, or even creative writing, tailored to user preferences.",
+      "Machine Learning Models: Leveraging pre-trained models and fine-tuning them for specific tasks, such as sentiment analysis or user behavior prediction, to improve engagement and personalization.",
+      "Amazon Bedrock: A fully managed service that offers access to a variety of foundation models (FMs) from leading AI companies, allowing us to build and scale AI applications efficiently.",
+      "Real-time Analytics: Implementing real-time data processing to analyze user interactions and feedback, allowing the app to adapt and improve its responses over time."
+    ],
+    icon: <FaRobot size={25} />
+  },
+  {
+    title: "API Integration",
+    content: [
+      "REST API: We implement RESTful APIs to facilitate seamless communication between the frontend and backend. This architecture allows for easy integration with third-party services and provides a straightforward way to access resources.",
+      "GraphQL: We use GraphQL for more flexible and efficient data retrieval. With GraphQL, clients can request exactly the data they need, reducing over-fetching and under-fetching of information, and improving performance.",
+      "Webhook Integrations: Event-driven integrations that allow external services to notify your application when certain events occur, like payments or new user registrations."
+    ],
+    icon: <FaLink size={25} />
+  }
 ];
 
 export const teamMembers = [
