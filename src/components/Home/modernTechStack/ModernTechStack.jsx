@@ -1,8 +1,9 @@
 'use client';
 
+import { useState } from 'react';
 import { tabs } from '@/utils/mockData';
 import { AnimatePresence, motion } from 'framer-motion';
-import { useState } from 'react';
+import './style.css'
 
 export const ModernTech = () => {
   const [selectedTab, setSelectedTab] = useState(tabs[0].title);
@@ -16,12 +17,14 @@ export const ModernTech = () => {
             We build apps with modern and future-proof tech stacks.
           </p>
         </div>
+       
+
         <div className="max-w-[1400px] px-5 flex flex-col items-start  justify-center shadow-2xl mt-[72px]">
-          <ul className="flex items-center flex-wrap justify-center rounded-t-xl bg-[#1b1b1d7a] p-2">
+          <ul className="flex items-center flex-wrap  justify-center rounded-t-xl bg-[#1b1b1d7a] p-2">
             {tabs.map((tab, index) => (
-              <div key={tab.title} className="flex items-center">
+              <div key={tab.title} className="flex items-center modernTechStackTabs w-[200px] sm:w-[250px]  md:w-auto ">
                 <motion.li
-                  className={`description_text w-[168px] sm:w-auto  cursor-pointer flex items-center flex-col gap-2 p-3 rounded-lg ${selectedTab === tab.title ? 'bg-black text-white' : 'text-black hover:text-white transition-all'
+                  className={`description_text modernTechStackTabs w-[200px] sm:w-[250px] md:w-auto cursor-pointer flex items-center flex-col gap-2 p-3 rounded-lg ${selectedTab === tab.title ? 'bg-black text-white' : 'text-black hover:text-white transition-all'
                     }`}
                   onClick={() => setSelectedTab(tab.title)}
                   layoutId={tab.title === selectedTab ? "selectedTab" : undefined}
@@ -39,7 +42,7 @@ export const ModernTech = () => {
                   )}
                 </motion.li>
                 {index < tabs.length - 1 && (
-                  <div className="w-[1px] h-10 hidden sm:block bg-gray-400 mx-4" />
+                  <div className="w-[1px] h-10 hidden md:block  bg-gray-400 md:mx-4" />
                 )}
               </div>
             ))}
