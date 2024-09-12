@@ -17,14 +17,14 @@ export const ModernTech = () => {
             We build apps with modern and future-proof tech stacks.
           </p>
         </div>
-       
+
 
         <div className="max-w-[1400px] px-5 flex flex-col items-start  justify-center shadow-2xl mt-[72px]">
           <ul className="flex items-center flex-wrap  justify-center rounded-t-xl bg-[#1b1b1d7a] p-2">
             {tabs.map((tab, index) => (
-              <div key={tab.title} className="flex items-center modernTechStackTabs w-[200px] sm:w-[250px]  md:w-auto ">
+              <div key={tab.title} className="flex items-center modernTechStackTabs w-[200px] sm:w-[280px]  md:w-auto ">
                 <motion.li
-                  className={`description_text modernTechStackTabs w-[200px] sm:w-[250px] md:w-auto cursor-pointer flex items-center flex-col gap-2 p-3 rounded-lg ${selectedTab === tab.title ? 'bg-black text-white' : 'text-black hover:text-white transition-all'
+                  className={`description_text modernTechStackTabs w-[200px] sm:w-[280px] md:w-auto cursor-pointer flex items-center flex-col gap-2 p-3 rounded-lg ${selectedTab === tab.title ? 'bg-black !text-white' : 'text-black hover:text-white transition-all'
                     }`}
                   onClick={() => setSelectedTab(tab.title)}
                   layoutId={tab.title === selectedTab ? "selectedTab" : undefined}
@@ -44,10 +44,16 @@ export const ModernTech = () => {
                 {index < tabs.length - 1 && (
                   <div className="w-[1px] h-10 hidden md:block  bg-gray-400 md:mx-4" />
                 )}
+                {index === 0 && (
+                  <div className="w-[1px] h-10 block md:hidden bg-gray-400  md:mx-4" />
+                )}
+                {index === 2 && (
+                  <div className="w-[1px] h-10 block md:hidden bg-gray-400  md:mx-4" />
+                )}
               </div>
             ))}
           </ul>
-          <div className="bg-[#1b1b1d7a] rounded-b-xl w-[100%] sm:max-w-[710px] lg:max-w-[810px] shadow-md p-5">
+          <div className="bg-[#1b1b1d7a] rounded-b-xl w-[100%] sm:max-w-[720px] md:max-w-[710px] lg:max-w-[810px] shadow-md p-5">
             <AnimatePresence mode="wait">
               {tabs.map(
                 (tab) =>
