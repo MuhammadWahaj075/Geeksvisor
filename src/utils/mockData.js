@@ -182,15 +182,10 @@ export const OurMissionMockData = {
 };
 
 export const OurVisionMockData = {
-  title: "Our Vision",
-  subtitle: ` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.`,
-  description: `  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.`,
+  title: "How did we get here?",
+  subtitle: ` Three friends, Mughees, Rafae, and Hasnain, united their expertise to revolutionize the tech industry. Mughees, an expert in AWS architecture, designs powerful scalable solutions that drive business success. Rafae, the full-stack developer, creates seamless applications connecting backend and frontend, while Hasnain crafts a visually appealing and user-friendly app experience to attract customers and help the business grow.`,
+  description: `Together, they tackle challenges and empower clients with innovative cloud and AI solutions. Mughees ensures his architecture is scalable and efficient, while Rafae optimizes deployment processes. Hasnain brings fresh ideas to the table. Their combined skills and passion for technology make them a dynamic trio, committed to making your growth a top priority.
+`,
 };
 export const aboutBannerMockData = {
   title: " This area is for big heading text for hero section",
@@ -388,8 +383,8 @@ export const faqData = [
 ];
 
 export const menuItems = [
-  // { navItem: "Home", href: "/" },
-  // { navItem: "About", href: "/about" },
+  { navItem: "Home", href: "/" },
+  { navItem: "About", href: "/about" },
   // { navItem: "Services", href: "/services" },
   // { navItem: "Who we are", href: "/whoweare" },
   // { navItem: "Work", href: "/work" },
@@ -760,7 +755,7 @@ export const OurCoreprojects = [
 ];
 
 export const clientExpectationMockData = {
-  title: "Numbers Speaks",
+  title: "Numbers Speak",
   description: ` From web apps to mobile apps and everything in between, our recent
               works showcase our expertise in developing innovative solutions
               that meet our clients unique needs. Contact us now to discuss your

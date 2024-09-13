@@ -64,7 +64,7 @@ export const MeetFounders = () => {
 
                 <OptimizedImage
                   src={member?.imageSrc}
-                  className="rounded-[8px] w-[328px] h-[317px] sm:w-[616px] sm:h-[370px]  lg:w-[370px]"
+                  className="rounded-[8px] w-[328px]  h-[317px] sm:w-[616px] sm:h-[370px]  lg:w-[370px]"
                 />
               </div>
               <h2 className="text-neutral font-unbound font-semibold !text-[14px] sm:!text-[24px]">
