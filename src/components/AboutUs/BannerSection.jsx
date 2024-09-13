@@ -1,6 +1,7 @@
 import { Button } from "@/components/comman";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { aboutBannerMockData, bannerMockData } from "@/utils/mockData";
+import Link from "next/link";
 
 export const BannerSection = () => (
   <div className="mt-[85px] w-full">
@@ -14,13 +15,15 @@ export const BannerSection = () => (
             {aboutBannerMockData.description}
           </p>
           <div className="flex flex-col lg:flex-row  justify-center xl:justify-start items-center gap-[40px] z-20">
+            <Link href={'/contact'}>
             <Button
               variant="primary"
               className={"py-4 px-4 xl:px-6 w-full md:w-auto  !h-[52px]"}
               icon={<IoIosArrowRoundForward size={25} />}
-            >
+              >
               {bannerMockData?.button1?.text}
             </Button>
+              </Link>
             <Button
               variant={bannerMockData.button2.variant}
               icon={<IoIosArrowRoundForward size={25} />}

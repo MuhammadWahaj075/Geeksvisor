@@ -10,7 +10,7 @@ export const OurStrength = () => {
                 <div className="flex flex-col gap-y-4 items-center justify-center">
                     <h1 className="title_text">Our Strength</h1>
                     <p className="description_text text-center lg:w-[605px]">
-                        We recognized for the following exceptional services
+                        We are recognized for the following exceptional services
                     </p>
                 </div>
                 <div className="flex justify-center gap-5  2xl:gap-0 px-5 !flex-col 2xl:!flex-row">
