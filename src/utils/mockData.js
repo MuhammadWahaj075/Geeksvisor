@@ -182,9 +182,15 @@ export const OurMissionMockData = {
 };
 
 export const OurVisionMockData = {
-  title: "How did we get here?",
-  subtitle: ` Three friends, Mughees, Rafae, and Hasnain, united their expertise to revolutionize the tech industry. Mughees, an expert in AWS architecture, designs powerful scalable solutions that drive business success. Rafae, the full-stack developer, creates seamless applications connecting backend and frontend, while Hasnain crafts a visually appealing and user-friendly app experience to attract customers and help the business grow.`,
-  description: `Together, they tackle challenges and empower clients with innovative cloud and AI solutions. Mughees ensures his architecture is scalable and efficient, while Rafae optimizes deployment processes. Hasnain brings fresh ideas to the table. Their combined skills and passion for technology make them a dynamic trio, committed to making your growth a top priority.
+  head: "We Build Serverless Apps That Scale with Your Business",
+  para: " We build serverless applications using the latest technologies, ensuring cost-effectiveness and scalability that align perfectly with your business growth.",
+  missionTitle: "Mission",
+  missionDescription: " Our mission is to help businesses like yours succeed by providing top-notch cloud and AI solutions. We focus on building future-proof applications that not only meet today's demands but also anticipate tomorrow's challenges. By leveraging cutting-edge technology, we aim to transform your ideas into reality, empowering you to stay ahead of the competition. We're not just another tech company - we're your trusted partners in growth.",
+  visionTitle: "Vision",
+  visionDescription: "  We believe that the future belongs to those who embrace innovation. Our goal is to stay ahead of the curve by continuously exploring new ways to leverage cloud and AI technology. We envision a world where every business can harness the power of cutting-edge solutions to drive efficiency, innovation, and sustainable success. At the end of the day, we're not just building apps - we're building a better future for businesses everywhere. Join us on this exciting journey and let's reach new heights together!",
+  storyTitle: "How did we get here?",
+  storySubtitle: ` Three friends, Mughees, Rafae, and Hasnain, united their expertise to revolutionize the tech industry. Mughees, an expert in AWS architecture, designs powerful scalable solutions that drive business success. Rafae, the full-stack developer, creates seamless applications connecting backend and frontend, while Hasnain crafts a visually appealing and user-friendly app experience to attract customers and help the business grow.`,
+  storyDescription: `Together, they tackle challenges and empower clients with innovative cloud and AI solutions. Mughees ensures his architecture is scalable and efficient, while Rafae optimizes deployment processes. Hasnain brings fresh ideas to the table. Their combined skills and passion for technology make them a dynamic trio, committed to making your growth a top priority.
 `,
 };
 export const aboutBannerMockData = {
@@ -297,7 +303,7 @@ export const tabs = [
       "AWS Elastic Load Balancer: Distributes incoming application traffic across multiple targets, ensuring high availability and reliability by automatically adjusting to traffic demands.",
       "Amazon RDS: A managed relational database service that simplifies database setup, operation, and scaling, providing automated backups and patch management."
     ],
-    icon: <FaAws size={25} />
+    icon: <FaAws size={20} />
   },
   {
     title: "Frontend",
@@ -306,7 +312,7 @@ export const tabs = [
       "TypeScript: A superset of JavaScript that adds optional static typing, helping to catch errors during development and improving code maintainability.",
       "Tailwind CSS: A utility-first CSS framework that provides a set of pre-defined classes for styling UI components quickly and consistently, allowing for rapid design and development."
     ],
-    icon: <FaReact size={25} />
+    icon: <FaReact size={20} />
   },
   {
     title: "AI Integration",
@@ -318,7 +324,7 @@ export const tabs = [
       "Amazon Bedrock: A fully managed service that offers access to a variety of foundation models (FMs) from leading AI companies, allowing us to build and scale AI applications efficiently.",
       "Real-time Analytics: Implementing real-time data processing to analyze user interactions and feedback, allowing the app to adapt and improve its responses over time."
     ],
-    icon: <FaRobot size={25} />
+    icon: <FaRobot size={20} />
   },
   {
     title: "API Integration",
@@ -327,7 +333,7 @@ export const tabs = [
       "GraphQL: We use GraphQL for more flexible and efficient data retrieval. With GraphQL, clients can request exactly the data they need, reducing over-fetching and under-fetching of information, and improving performance.",
       "Webhook Integrations: Event-driven integrations that allow external services to notify your application when certain events occur, like payments or new user registrations."
     ],
-    icon: <FaLink size={25} />
+    icon: <FaLink size={20} />
   }
 ];
 
