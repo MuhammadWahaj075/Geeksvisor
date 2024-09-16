@@ -303,7 +303,7 @@ export const tabs = [
       "AWS Elastic Load Balancer: Distributes incoming application traffic across multiple targets, ensuring high availability and reliability by automatically adjusting to traffic demands.",
       "Amazon RDS: A managed relational database service that simplifies database setup, operation, and scaling, providing automated backups and patch management."
     ],
-    icon: <FaAws size={25} />
+    icon: <FaAws size={20} />
   },
   {
     title: "Frontend",
@@ -312,7 +312,7 @@ export const tabs = [
       "TypeScript: A superset of JavaScript that adds optional static typing, helping to catch errors during development and improving code maintainability.",
       "Tailwind CSS: A utility-first CSS framework that provides a set of pre-defined classes for styling UI components quickly and consistently, allowing for rapid design and development."
     ],
-    icon: <FaReact size={25} />
+    icon: <FaReact size={20} />
   },
   {
     title: "AI Integration",
@@ -324,7 +324,7 @@ export const tabs = [
       "Amazon Bedrock: A fully managed service that offers access to a variety of foundation models (FMs) from leading AI companies, allowing us to build and scale AI applications efficiently.",
       "Real-time Analytics: Implementing real-time data processing to analyze user interactions and feedback, allowing the app to adapt and improve its responses over time."
     ],
-    icon: <FaRobot size={25} />
+    icon: <FaRobot size={20} />
   },
   {
     title: "API Integration",
@@ -333,7 +333,7 @@ export const tabs = [
       "GraphQL: We use GraphQL for more flexible and efficient data retrieval. With GraphQL, clients can request exactly the data they need, reducing over-fetching and under-fetching of information, and improving performance.",
       "Webhook Integrations: Event-driven integrations that allow external services to notify your application when certain events occur, like payments or new user registrations."
     ],
-    icon: <FaLink size={25} />
+    icon: <FaLink size={20} />
   }
 ];
 

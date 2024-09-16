@@ -5,7 +5,7 @@ export const OurVision = () => (
     <div className="flex flex-col gap-4 mb-[70px] items-center text-center">
       <h1 className="title_text w-[350px] md:w-[680px]">{OurVisionMockData.head}
       </h1>
-      <p className="w-[350px] lg:w-[527px] description_text">
+      <p className="max-w-[350px] sm:max-w-[653px] description_text">
         {OurVisionMockData.para}
       </p>
     </div>

@@ -30,8 +30,8 @@ export const ModernTech = () => {
                   layoutId={tab.title === selectedTab ? "selectedTab" : undefined}
                 >
                   <div className='flex items-center gap-3'>
-                    <span>{tab.icon}</span>
-                    <span className='text-nowrap'>{tab.title}</span>
+                    <span className='!h-[20px] !w-[20px] sm:!h-[25px] sm:!w-[25px]'>{tab.icon}</span>
+                    <span className='text-nowrap text-[8px] sm:text-[14px]'>{tab.title}</span>
                   </div>
                   {tab.title === selectedTab && (
                     <motion.div
@@ -53,7 +53,7 @@ export const ModernTech = () => {
               </div>
             ))}
           </ul>
-          <div className="bg-[#1b1b1d7a] rounded-b-xl w-[100%] sm:max-w-[720px] md:max-w-[710px] lg:max-w-[810px] shadow-md p-5">
+          <div className="bg-[#1b1b1d7a] rounded-b-xl w-[100%] sm:max-w-[720px] md:max-w-[710px] shadow-md p-5">
             <AnimatePresence mode="wait">
               {tabs.map(
                 (tab) =>
