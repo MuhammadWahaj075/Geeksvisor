@@ -22,7 +22,7 @@ export const ModernTech = () => {
         <div className="max-w-[1400px] px-5 flex flex-col items-start  justify-center shadow-2xl mt-[72px]">
           <ul className="flex items-center flex-wrap  justify-center rounded-t-xl bg-[#1b1b1d7a] p-2">
             {tabs.map((tab, index) => (
-              <div key={tab.title} className="flex items-center modernTechStackTabs w-[200px] sm:w-[280px]  md:w-auto ">
+              <div key={tab.title} className="flex items-center justify-center modernTechStackTabs w-[200px] sm:w-[280px]  md:w-auto ">
                 <motion.li
                   className={`description_text modernTechStackTabs w-[200px] sm:w-[280px] md:w-auto cursor-pointer flex items-center flex-col gap-2 p-3 rounded-lg ${selectedTab === tab.title ? 'bg-black !text-white' : 'text-black hover:text-white transition-all'
                     }`}
@@ -31,7 +31,7 @@ export const ModernTech = () => {
                 >
                   <div className='flex items-center gap-3'>
                     <span>{tab.icon}</span>
-                    <span>{tab.title}</span>
+                    <span className='text-nowrap'>{tab.title}</span>
                   </div>
                   {tab.title === selectedTab && (
                     <motion.div
@@ -42,13 +42,13 @@ export const ModernTech = () => {
                   )}
                 </motion.li>
                 {index < tabs.length - 1 && (
-                  <div className="w-[1px] h-10 hidden md:block  bg-gray-400 md:mx-4" />
+                  <div className="w-[1px] h-10 hidden md:block  bg-gray-400  md:mx-4" />
                 )}
                 {index === 0 && (
-                  <div className="w-[1px] h-10 block md:hidden bg-gray-400  md:mx-4" />
+                  <div className="w-[1px] h-10 block md:hidden bg-gray-400 mx-[12px] sm:mx-4" />
                 )}
                 {index === 2 && (
-                  <div className="w-[1px] h-10 block md:hidden bg-gray-400  md:mx-4" />
+                  <div className="w-[1px] h-10 block md:hidden bg-gray-400 mx-[12px] sm:mx-4" />
                 )}
               </div>
             ))}
