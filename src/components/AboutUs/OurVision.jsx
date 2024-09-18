@@ -1,7 +1,7 @@
 import { OurVisionMockData } from "@/utils/mockData";
 
 export const OurVision = () => (
-  <div className=" mt-[70px] sm:mt-[160px] h-screen sm:h-[120vh] xl:h-screen  lg:mt-[262px]">
+  <div className=" mt-[70px] sm:mt-[160px] h-screen xl:h-auto  lg:mt-[162px]">
     <div className="relative flex mx-auto px-5 items-center gap-4 justify-center xl:justify-start lg:gap-[118px]  lg:max-w-screen-xl flex-wrap">
       <div
         className="w-auto lg:w-[926.66px]
