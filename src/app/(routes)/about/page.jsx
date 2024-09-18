@@ -11,9 +11,9 @@ const About = () => (
   <>
    <Header />
     <BannerSection />
+    <OurVision />
     <MeetFounders />
     <OurProven />
-    <OurVision />
     {/* <OurMission /> */}
     {/* <WhatWeVission /> */}
     <NumbersSpeaks />

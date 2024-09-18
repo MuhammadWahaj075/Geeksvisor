@@ -24,14 +24,12 @@ export const OurVision = () => (
         </p>
       </div>
       <div
-        className="absolute -bottom-52 lg:-bottom-80  xl:bottom-auto xl:right-[30px] rounded-xl bg flex w-[333px] p-8 bg-[linear-gradient(90deg,#c9672f_0%,#FF2E00_100%)]  sm:w-[500px] xl:w-[533px]
+        className="absolute -bottom-52 lg:-bottom-80 xl:bottom-auto xl:right-[30px] rounded-xl bg flex w-[333px] p-8 bg-[linear-gradient(90deg,#c9672f_0%,#FF2E00_100%)]  sm:w-[500px] xl:w-[533px]
           flex-col gap-4 items-start"
       >
         <h1 className="title_text !text-neutral">{OurVisionMockData.storyTitle}</h1>
         <p className="text-start !text-neutral description_text">
           {OurVisionMockData.storySubtitle}
-          
-           
         </p>
 
         {/* <p className="text-start  description_text">
