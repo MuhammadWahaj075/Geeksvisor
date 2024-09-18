@@ -194,9 +194,8 @@ export const OurVisionMockData = {
 `,
 };
 export const aboutBannerMockData = {
-  title: " This area is for big heading text for hero section",
-  description: ` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+  title: "We Build Serverless Apps That Scale with Your Business",
+  description: `We build serverless applications using the latest technologies, ensuring cost-effectiveness and scalability that align perfectly with your business growth.`,
 };
 
 export const experiencesMockData = {
