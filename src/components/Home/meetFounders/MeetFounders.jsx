@@ -37,7 +37,7 @@ export const MeetFounders = () => {
   return (
     <div className="!mt-28 lg:!mt-[160px] mx-auto flex justify-center max-w-screen-xl">
       <div className="flex flex-col px-5 items-center gap-[70px]">
-        <div className="flex flex-col gap-4 items-center  sm:items-start w-full lg:items-center">
+        <div className="flex flex-col gap-4 items-center   w-full ">
           <h1 className="title_text">{MeetTeamMockData.title}</h1>
           <p className="description_text text-center sm:text-start lg:text-center w-[320px] sm:w-[600px] lg:w-[705px]">{MeetTeamMockData.subtitle}</p>
         </div>
