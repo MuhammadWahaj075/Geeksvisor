@@ -33,7 +33,7 @@ export default function Home() {
         <OurCoreValue />
         {/* <WhoWeAre /> */}
         <OurStrength />
-        {/* <ModernTech /> */}
+        <ModernTech />
         <OurProven />
         <ServingIndustries />
         <NumbersSpeaks />

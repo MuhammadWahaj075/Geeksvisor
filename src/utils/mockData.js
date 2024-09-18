@@ -1,3 +1,4 @@
+import { FaAws, FaReact, FaRobot, FaLink } from 'react-icons/fa';
 import {
   InfiniteImg,
   InfiniteImg2,
@@ -51,6 +52,8 @@ import {
   SupportImg,
   ServerlessIcon,
 } from "../../public/assets";
+
+
 
 export const OurQualityData = [
   {
@@ -113,6 +116,7 @@ export const bannerMockData = {
   images: {
     filterRightImg: FilterSmallImg,
     filterBottomImg: FilterImg,
+    corporateImg: corporate,
   },
 };
 
@@ -179,20 +183,20 @@ export const OurMissionMockData = {
 };
 
 export const OurVisionMockData = {
-  title: "Our Vision",
-  subtitle: ` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.`,
-  description: `  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.`,
+  head: "We Build Serverless Apps That Scale with Your Business",
+  para: " We build serverless applications using the latest technologies, ensuring cost-effectiveness and scalability that align perfectly with your business growth.",
+  missionTitle: "Mission",
+  missionDescription: " Our mission is to help businesses like yours succeed by providing top-notch cloud and AI solutions. We focus on building future-proof applications that not only meet today's demands but also anticipate tomorrow's challenges. By leveraging cutting-edge technology, we aim to transform your ideas into reality, empowering you to stay ahead of the competition. We're not just another tech company - we're your trusted partners in growth.",
+  visionTitle: "Vision",
+  visionDescription: "  We believe that the future belongs to those who embrace innovation. Our goal is to stay ahead of the curve by continuously exploring new ways to leverage cloud and AI technology. We envision a world where every business can harness the power of cutting-edge solutions to drive efficiency, innovation, and sustainable success. At the end of the day, we're not just building apps - we're building a better future for businesses everywhere. Join us on this exciting journey and let's reach new heights together!",
+  storyTitle: "How did we get here?",
+  storySubtitle: ` Three friends, Mughees, Rafae, and Hasnain, united their expertise to revolutionize the tech industry. Mughees, an expert in AWS architecture, designs powerful scalable solutions that drive business success. Rafae, the full-stack developer, creates seamless applications connecting backend and frontend, while Hasnain crafts a visually appealing and user-friendly app experience to attract customers and help the business grow.`,
+  storyDescription: `Together, they tackle challenges and empower clients with innovative cloud and AI solutions. Mughees ensures his architecture is scalable and efficient, while Rafae optimizes deployment processes. Hasnain brings fresh ideas to the table. Their combined skills and passion for technology make them a dynamic trio, committed to making your growth a top priority.
+`,
 };
 export const aboutBannerMockData = {
-  title: " This area is for big heading text for hero section",
-  description: ` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+  title: "We Build Serverless Apps That Scale with Your Business",
+  description: `We build serverless applications using the latest technologies, ensuring cost-effectiveness and scalability that align perfectly with your business growth.`,
 };
 
 export const experiencesMockData = {
@@ -287,6 +291,52 @@ export const AboutTeamMembers = [
   },
 ];
 
+export const tabs = [
+  {
+    title: "AWS & Backend",
+    content: [
+      "Node.js: A JavaScript runtime that allows for building scalable network applications, enabling efficient server-side scripting.",
+      "AWS Lambda: A serverless compute service that runs your code in response to events, allowing for automatic scaling and management of resources without the need for server provisioning.",
+      "Amazon API Gateway: A fully managed service that enables you to create, publish, maintain, and secure APIs at any scale, facilitating communication between your frontend and backend services.",
+      "Amazon DynamoDB: A fully managed NoSQL database service that offers fast and predictable performance with seamless scalability, ideal for handling large volumes of data.",
+      "Amazon S3: A scalable object storage service for storing and retrieving any amount of data, which is essential for serving static assets and backups.",
+      "AWS Elastic Load Balancer: Distributes incoming application traffic across multiple targets, ensuring high availability and reliability by automatically adjusting to traffic demands.",
+      "Amazon RDS: A managed relational database service that simplifies database setup, operation, and scaling, providing automated backups and patch management."
+    ],
+    icon: <FaAws size={20} />
+  },
+  {
+    title: "Frontend",
+    content: [
+      "Next.js: A React framework for building server-rendered applications with features like static site generation and API routes, enhancing performance and SEO.",
+      "TypeScript: A superset of JavaScript that adds optional static typing, helping to catch errors during development and improving code maintainability.",
+      "Tailwind CSS: A utility-first CSS framework that provides a set of pre-defined classes for styling UI components quickly and consistently, allowing for rapid design and development."
+    ],
+    icon: <FaReact size={20} />
+  },
+  {
+    title: "AI Integration",
+    content: [
+      "Generative AI: We integrate advanced AI models to enhance user experience by generating personalized content based on user interactions. This includes:",
+      "Natural Language Processing (NLP): Utilizing NLP techniques to understand and process user input, enabling the app to respond intelligently and contextually.",
+      "Content Generation: Automatically creating relevant content, such as product descriptions, recommendations, or even creative writing, tailored to user preferences.",
+      "Machine Learning Models: Leveraging pre-trained models and fine-tuning them for specific tasks, such as sentiment analysis or user behavior prediction, to improve engagement and personalization.",
+      "Amazon Bedrock: A fully managed service that offers access to a variety of foundation models (FMs) from leading AI companies, allowing us to build and scale AI applications efficiently.",
+      "Real-time Analytics: Implementing real-time data processing to analyze user interactions and feedback, allowing the app to adapt and improve its responses over time."
+    ],
+    icon: <FaRobot size={20} />
+  },
+  {
+    title: "API Integration",
+    content: [
+      "REST API: We implement RESTful APIs to facilitate seamless communication between the frontend and backend. This architecture allows for easy integration with third-party services and provides a straightforward way to access resources.",
+      "GraphQL: We use GraphQL for more flexible and efficient data retrieval. With GraphQL, clients can request exactly the data they need, reducing over-fetching and under-fetching of information, and improving performance.",
+      "Webhook Integrations: Event-driven integrations that allow external services to notify your application when certain events occur, like payments or new user registrations."
+    ],
+    icon: <FaLink size={20} />
+  }
+];
+
 export const teamMembers = [
   {
     name: "Muhammad Mughees",
@@ -339,8 +389,8 @@ export const faqData = [
 ];
 
 export const menuItems = [
-  // { navItem: "Home", href: "/" },
-  // { navItem: "About", href: "/about" },
+  { navItem: "Home", href: "/" },
+  { navItem: "About", href: "/about" },
   // { navItem: "Services", href: "/services" },
   // { navItem: "Who we are", href: "/whoweare" },
   // { navItem: "Work", href: "/work" },
@@ -711,7 +761,7 @@ export const OurCoreprojects = [
 ];
 
 export const clientExpectationMockData = {
-  title: "Numbers Speaks",
+  title: "Numbers Speak",
   description: ` From web apps to mobile apps and everything in between, our recent
               works showcase our expertise in developing innovative solutions
               that meet our clients unique needs. Contact us now to discuss your

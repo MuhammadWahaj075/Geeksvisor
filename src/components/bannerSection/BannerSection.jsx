@@ -26,8 +26,8 @@ export const BannerSection = () => {
   return (
     <div className="relative z-20 w-full">
       <div
-        className={`${currentPath === "/work" ? "h-auto mt-[118px]" : ""
-          }  mx-auto max-w-[1440px] relative flex items-center h-[290px] md:h-[361px] md:mt-[151px] justify-center`}
+        className={`${currentPath === "/work" ? "h-auto mt-[125px]" : ""
+          }  mx-auto max-w-[1440px] relative flex items-center h-[290px] sm:h-[361px] md:mt-[151px] justify-center`}
       >
         <OptimizedImage
           src={bannerMockData?.images?.filterRightImg}
