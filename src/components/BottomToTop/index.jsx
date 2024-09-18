@@ -31,8 +31,8 @@ export const BottomToTopBtn = () => {
         <>
             <div
                 onClick={goToBtn}
-                className={`bg-secondary-bannerPill hover:bg-[linear-gradient(90deg,#EE6E24_0%,#FF2E00_100%)]  text-primary hover:text-secondary-bannerPill p-2 rounded-l-xl
-                 w-12 h-12 fixed z-20 bottom-10 transform transition-all duration-300 
+                className={`bg-secondary-bannerPill hover:text-neutral hover:bg-[linear-gradient(90deg,#EE6E24_0%,#FF2E00_100%)]  text-primary  p-2 rounded-l-xl
+                 w-12 h-12 fixed z-20 bottom-10 transform transition-all duration-500 
                  ${isVisible ? 'right-0' : '-right-0'} cursor-pointer`}
                 style={{
                     right: isVisible ? "0px" : "-100px",
