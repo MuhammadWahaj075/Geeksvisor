@@ -60,8 +60,6 @@ export const MeetFounders = () => {
                     />
                   </Button>
                 </Link>
-
-
                 <OptimizedImage
                   src={member?.imageSrc}
                   className="rounded-[8px] w-[328px] lg:w-[370px]"
