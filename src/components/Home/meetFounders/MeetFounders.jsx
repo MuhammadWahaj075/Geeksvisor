@@ -7,7 +7,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import { MeetTeamMockData, teamMembers } from "@/utils/mockData";
 import { Button, OptimizedImage, Pill } from "@/components/comman";
 
-import './style.css' 
+import './style.css'
 
 export const MeetFounders = () => {
   const router = useRouter();
@@ -41,30 +41,30 @@ export const MeetFounders = () => {
           <h1 className="title_text">{MeetTeamMockData.title}</h1>
           <p className="description_text text-center sm:text-start lg:text-center w-[320px] sm:w-[600px] lg:w-[705px]">{MeetTeamMockData.subtitle}</p>
         </div>
-        <div className="flex gap-4 md:gap-6 flex-col lg:flex-row flex-wrap justify-center">
+        <div className="flex gap-4 md:gap-6 flex-col sm:flex-row flex-wrap justify-center">
           {teamMembers?.map((member, index) => (
             <div
               key={index}
-              className="profile_sec !mx-auto  flex flex-col w-auto sm:w-[616px] lg:w-auto xl:w-[370px] justify-center gap-y-3"
+              className="profile_sec !mx-auto  flex flex-col w-auto   xl:w-[370px] justify-center gap-y-3"
             >
               <div className="relative overflow-hidden">
-              <Link
+                <Link
                   target="_blank"
                   href={member?.profile}
                 >
-                    <Button variant="" className="linkedin_btn absolute right-3 bottom-2 !bg-[#0066C8]">
-                      <span className="icon_in">in</span>
-                      <IoIosArrowRoundForward
-                        className="arrow_icon"
-                        size={25}
-                      />
-                    </Button>
+                  <Button variant="" className="linkedin_btn absolute right-3 bottom-2 !bg-[#0066C8]">
+                    <span className="icon_in">in</span>
+                    <IoIosArrowRoundForward
+                      className="arrow_icon"
+                      size={25}
+                    />
+                  </Button>
                 </Link>
 
 
                 <OptimizedImage
                   src={member?.imageSrc}
-                  className="rounded-[8px] w-[328px] sm:w-[616px]  lg:w-[370px]"
+                  className="rounded-[8px] w-[328px] lg:w-[370px]"
                 />
               </div>
               <h2 className="text-neutral font-unbound font-semibold !text-[14px] sm:!text-[24px]">
@@ -82,12 +82,12 @@ export const MeetFounders = () => {
                   {member?.role}
                 </p>
 
-                <Link  target="_blank" href={member.profile}>
+                <Link target="_blank" href={member.profile}>
                   <Button
                     variant="transparent"
                     icon={<IoIosArrowRoundForward size={25} />}
                     className={"!p-0"}
-                    // onClick={handleViewProfileClick}
+                  // onClick={handleViewProfileClick}
                   >
                     View profile
                   </Button>
