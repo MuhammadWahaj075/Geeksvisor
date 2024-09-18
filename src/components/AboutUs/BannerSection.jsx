@@ -1,4 +1,4 @@
-import { Button } from "@/components/comman";
+import { Button, OptimizedImage } from "@/components/comman";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { aboutBannerMockData, bannerMockData } from "@/utils/mockData";
 import Link from "next/link";
@@ -34,10 +34,13 @@ export const BannerSection = () => (
           </div>
         </div>
         <div
-          className="w-[320px] sm:w-[616px] xl:w-[568px]
-         h-[328px] sm:h-[350px] xl:h-[568px] bg-primary-imageTestColor rounded-xl"
+          className=""
         >
-          {/* Image here */}
+           <OptimizedImage
+        src={bannerMockData?.images?.corporateImg}
+        className="w-[320px] sm:w-[616px] xl:w-[568px]
+         h-[328px] sm:h-[350px] xl:h-[568px] flex rounded-[8px]"
+      />
         </div>
       </div>
     </div>
