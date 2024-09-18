@@ -116,6 +116,7 @@ export const bannerMockData = {
   images: {
     filterRightImg: FilterSmallImg,
     filterBottomImg: FilterImg,
+    corporateImg: corporate,
   },
 };
 
