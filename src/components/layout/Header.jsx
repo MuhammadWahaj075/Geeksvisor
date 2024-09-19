@@ -44,7 +44,7 @@ export const Header = () => {
           <Link href={"/contact"} onClick={() => sendGTMEvent('event', 'buttonClicked', { value: '123' })}          >
             <Button
               variant="primary"
-              className={"!hidden sm:!block mr-2 lg:mr-0 py-[14px] !h-[45px] px-[24px]"}
+              className={"!hidden md:!block mr-2 lg:mr-0 py-[14px] !h-[45px] px-[24px]"}
             >
               Contact us
             </Button>
@@ -63,7 +63,7 @@ export const Header = () => {
         >
           <ul className="flex flex-col mt-4 lg:flex-row lg:space-x-8 lg:mt-0">
             {menuItems?.map((item, i) => (
-              <li key={i}>
+              <li className={`${item.navItem === 'Contact' ? 'md:hidden' : ''}`} key={i}>
                 <Link
                   href={item.href}
                   className={` block border-2 border-b-secondary-light lg:border-none font-inter text-[14px] py-2 pr-4 pl-3 font-bold
