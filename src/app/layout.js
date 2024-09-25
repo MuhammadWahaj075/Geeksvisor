@@ -16,7 +16,7 @@ const unbound = Unbounded({
 });
 
 export const metadata = {
-  title: "Geeksvisor - Expert in building AWS Serverless Solutions",
+  title: "GeeksVisor - Expert in building AWS Serverless Solutions",
   description: "Geeksvisor is a leading provider of scalable, cost-effective AWS serverless solutions and custom app development. With a focus on transparency, proactive communication, and innovative approaches, we deliver future-proof solutions tailored to your business needs. Our AWS certified team specializes in cloud architecture, serverless development, DevOps, AI & ML, and API integrations across various industries.",
 };
 
