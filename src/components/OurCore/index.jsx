@@ -3,7 +3,7 @@ import { HoverEffect } from "../ui/card-hover-effect"
 
 export const OurCoreValue = () => {
   return (
-    <div className="relative z-20 !mt-16 md:!mt-10 lg:!mt-[160px]">
+    <div className="relative z-20 main_container_gapper">
     <div className="flex flex-col">
       <div className="flex flex-col gap-y-4 items-center justify-center">
         <h1 className="title_text">{OurCoreMockData.title}</h1>

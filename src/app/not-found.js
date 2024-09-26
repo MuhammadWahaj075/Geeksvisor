@@ -34,7 +34,7 @@ const NotFound = () => {
                 <Button
                   variant="outline"
                   icon={<IoArrowBack size={20} />}
-                   className="w-[320px] sm:w-[186px] h-[36px] sm:!h-[52px] flex items-center flex-row-reverse  sm:px-0"
+                  className="w-[320px] sm:w-[186px] h-[36px] sm:!h-[52px] flex items-center flex-row-reverse  sm:px-0"
                 >
                   Back to home
                 </Button>

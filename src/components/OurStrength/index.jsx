@@ -5,7 +5,7 @@ import './style.css'
 
 export const OurStrength = () => {
     return (
-        <div className="!mt-16 md:!mt-10 lg:!mt-[160px] max-w-screen-xl mx-auto">
+        <div className="main_container_gapper max-w-screen-xl mx-auto">
             <div className="flex flex-col gap-y-16 ">
                 <div className="flex flex-col gap-y-4 items-center justify-center">
                     <h1 className="title_text">Our Strength</h1>

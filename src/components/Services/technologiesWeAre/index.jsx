@@ -11,7 +11,7 @@ export const TechnologiesWeAre = () => {
         <h1 className="title_text !text-[16px] md:!text-[24px] lg:!text-[32px]">
           {technologiesWeAre.title}
         </h1>
-        <p className="description_text w-[320px] md:w-[474px] !leading-[14.52px] md:!leading-[22px] lg:!leading-[26px] !text-[12px] md:!text-[14px] lg:!text-[18px]  !text-center">
+        <p className="description_text w-[320px] md:w-[474px] !leading-[14.52px] md:!leading-[22px] lg:!leading-[26px]  !text-center">
           {technologiesWeAre.description}
         </p>
       </div>

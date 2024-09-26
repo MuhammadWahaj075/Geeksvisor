@@ -2,7 +2,7 @@ import { VerticalScrollCarousel } from "./OurProvenCards";
 import { featureWorkMockData } from "@/utils/mockData";
 
 export const OurProven = () => (
-  <div className="!mt-16 md:!mt-10 lg:!mt-[160px]">
+  <div className="main_container_gapper">
     <div className="flex items-center flex-col justify-center">
       <div
         className="h-[20rem] w-auto !bg-black bg-grid-medium-white/[0.1] 

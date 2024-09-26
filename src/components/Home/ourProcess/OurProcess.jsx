@@ -13,7 +13,7 @@ export function OurProcess() {
     });
 
     return (
-        <div className="relative !mt-16 md:!mt-10 lg:!mt-[160px]">
+        <div className="relative main_container_gapper">
             <div className="flex justify-center flex-col items-center">
                 <div className="bg-union absolute !top-0 pb-[300px] flex flex-col gap-4">
                     <h1 className="title_text pt-[180px]">Our process</h1>

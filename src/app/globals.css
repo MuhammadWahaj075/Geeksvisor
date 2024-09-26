@@ -118,6 +118,10 @@ body {
     @apply text-[12px] sm:text-[14px] lg:!text-[18px] font-inter leading-[14.52px] sm:leading-[22px] lg:!leading-[26px] font-normal text-primary-light;
   }
 
+  .main_container_gapper {
+    @apply !mt-16 md:!mt-10 lg:!mt-[160px];
+  }
+
   .scroll_hidden {
     -ms-overflow-style: none;
     scrollbar-width: none;

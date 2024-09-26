@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import { useResponsiveBoxes } from "@/hooks/useResponsiveBoxes";
 
 export default function GridBoxAnimation() {
@@ -25,15 +25,14 @@ export default function GridBoxAnimation() {
   return (
     <div className="gridBoxes-container">
       {Array.from({ length: totalBoxes }, (_, index) => (
-        <>
-        
-        <div key={index} className="left-shadow" />
+        <Fragment key={index}>
+        <div className="left-shadow" />
         <div
           className={`gridBoxes ${highlightedIndices.includes(index) ? "highlighted" : ""}`}
         >
           <div className="right-shadow" />
         </div>
-        </>
+        </Fragment>
       ))}
     </div>
   );

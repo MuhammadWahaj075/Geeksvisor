@@ -5,7 +5,7 @@ import { Button, OptimizedImage } from "../comman";
 import { IoIosArrowRoundForward } from "react-icons/io";
 
 export const GreatIdea = () => (
-  <div className="!mt-16 md:!mt-10 lg:!mt-[160px]">
+  <div className="main_container_gapper">
     <div className="flex relative items-center flex-col">
       <OptimizedImage src={ShineImg} className="absolute" />
       <div className="flex  relative z-10 gap-y-[32px] items-center mt-24 flex-col">

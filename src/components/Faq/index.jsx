@@ -11,7 +11,7 @@ export const Faq = () => {
   const toggleAccordion = (index) => setOpenIndex(openIndex === index ? null : index);
 
   return (
-    <section className="!mt-16 md:!mt-10 lg:!mt-[160px]">
+    <section className="main_container_gapper">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="max-w-2xl mx-auto flex !gap-4 flex-col items-center text-center">
           <h2 className="title_text">Frequently Asked Questions</h2>

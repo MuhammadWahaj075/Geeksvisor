@@ -9,7 +9,7 @@ export const ModernTech = () => {
   const [selectedTab, setSelectedTab] = useState(tabs[0].title);
 
   return (
-    <div className="!mt-16 md:!mt-10 lg:!mt-[160px]">
+    <div className="main_container_gapper">
       <div className="flex items-center flex-col justify-center">
         <div className="flex flex-col gap-4 items-center text-center">
           <h1 className="title_text">Modern Tech Stack</h1>
