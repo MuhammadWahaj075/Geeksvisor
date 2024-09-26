@@ -1,0 +1,19 @@
+    .filter_img {
+        @apply absolute overflow-hidden top-[-20px] sm:top-[-60px] right-[-20px] sm:right-[-20px] 2xl:top-[-100px] 2xl:right-[-60px] w-[79px] h-[79px] sm:w-[125px] sm:h-[125px] xl:w-[247.25px] xl:h-[250px] z-10;
+
+    }
+
+    .speaks_counts {
+        @apply font-unbound font-semibold flex !text-[16px] sm:!text-[24px] lg:!text-[64px] text-neutral;
+
+    }
+
+    .speaks_title {
+        @apply !text-[12px] sm:!text-[10px] lg:!text-[16px];
+    }
+
+    .spline_img {
+        @apply absolute bottom-[-20px] sm:bottom-[-60px] left-[-20px] sm:left-[-60px] w-[86.43px] h-[86.43px] sm:h-[163.3px] sm:w-[163.3px] xl:w-[242.44px] xl:h-[244.77px]
+    }
+
+    

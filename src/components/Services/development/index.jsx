@@ -17,7 +17,7 @@ export const Development = () => {
           <h1 className="title_text !text-[16px] md:!text-[24px] lg:!text-[32px]">
             {developmentMockData.title}
           </h1>
-          <p className="description_text w-[328px] !leading-[14.52px] md:!leading-[22px] lg:!leading-[26px] md:w-auto !text-center md:!text-start">
+          <p className="description_text w-[328px] leading_relaxed md:w-auto !text-center md:!text-start">
             {developmentMockData.description}
           </p>
         </div>

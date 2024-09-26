@@ -2,6 +2,7 @@
 
 import { OptimizedImage } from "@/components/comman";
 import { motion } from 'framer-motion';
+import './style.css'
 
 export const DevelopmentCard = ({ icon, title, description }) => {
   return (
@@ -17,10 +18,10 @@ export const DevelopmentCard = ({ icon, title, description }) => {
           src={icon}
           className="bg-card-gradient px-2 py-2 md:w-[48px] rounded-xl"
         />
-        <h1 className="title_text !font-medium !text-center !text-[14px] !leading-[17.36px] md:!text-[18px] md:!leading-[29.76px] lg:!text-[24px] md:!text-start">
+        <h1 className="title_text develop_card_title">
           {title}
         </h1>
-        <p className="description_text text-center md:text-start !leading-[12.1px] md:!leading-[22px] !text-[10px] lead md:!text-[15px] lg:!text-[18px] !font-normal">
+        <p className="description_text develop_card_description">
           {description}
         </p>
       </motion.div>

@@ -90,7 +90,7 @@ export const Footer = () => {
                   <a
                     href={page.link}
                     title={page.name}
-                    className="flex text-sm text-primary-normal opacity-[60%] transition-all duration-200 hover:text-secondary-hover focus:text-secondary-hover"
+                    className="footer_social_links"
                   >
                     {page.name}
                   </a>
@@ -106,7 +106,7 @@ export const Footer = () => {
                 <li key={index}>
                   <p
                     title={service.name}
-                    className="flex text-sm text-primary-normal opacity-[60%] transition-all duration-200 hover:text-secondary-hover focus:text-secondary-hover"
+                    className="footer_social_links"
                   >
                     {service.name}
                   </p>
@@ -124,7 +124,7 @@ export const Footer = () => {
                   <Link
                     href={inquiry.link}
                     title={inquiry.name}
-                    className="flex text-sm text-primary-normal opacity-[60%] transition-all duration-200 hover:text-secondary-hover focus:text-secondary-hover"
+                    className="footer_social_links"
                   >
                     {inquiry.name}
                   </Link>
@@ -132,7 +132,7 @@ export const Footer = () => {
               ))}
               <p className="text-base font-medium text-neutral">Address</p>
               <li>
-                <p className="flex text-sm text-primary-normal opacity-[60%] transition-all duration-200 hover:text-secondary-hover focus:text-secondary-hover">
+                <p className="footer_social_links">
                   {footerAddress.addressLine}
                 </p>
               </li>

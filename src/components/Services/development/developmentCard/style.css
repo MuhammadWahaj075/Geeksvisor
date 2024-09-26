@@ -1,0 +1,7 @@
+.develop_card_title {
+    @apply !font-medium !text-center !text-[14px] md:!text-[18px] lg:!text-[24px] !leading-[17.36px]  md:!leading-[29.76px]  md:!text-start;
+}
+
+.develop_card_description {
+    @apply text-center md:text-start !leading-[12.1px] md:!leading-[22px] !text-[10px] md:!text-[15px] lg:!text-[18px] !font-normal;
+}

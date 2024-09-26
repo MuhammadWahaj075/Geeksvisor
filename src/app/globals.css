@@ -122,6 +122,18 @@ body {
     @apply !mt-16 md:!mt-10 lg:!mt-[160px];
   }
 
+  .leading_relaxed {
+    @apply !leading-[14.52px] sm:!leading-[22px] lg:!leading-[26px];
+  }
+  
+  .text-secondary {
+    @apply text-secondary-light
+   }
+
+   .text_alignment  {
+    @apply text-center lg:text-start;
+   }
+
   .scroll_hidden {
     -ms-overflow-style: none;
     scrollbar-width: none;

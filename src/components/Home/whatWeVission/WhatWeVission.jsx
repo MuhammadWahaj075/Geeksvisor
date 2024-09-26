@@ -2,6 +2,8 @@ import { OptimizedImage } from "@/components/comman";
 import { healthData, MorehealthData, WhatVissionMockData } from "@/utils/mockData";
 import { corporate } from "../../../../public/assets";
 
+import './style.css';
+
 export const WhatWeVission = () => (
   <div className=" main_container_gapper">
     <div className="flex flex-wrap mx-auto flex-col xl:flex-row items-center xl:max-w-screen-xl justify-center gap-10">
@@ -15,11 +17,11 @@ export const WhatWeVission = () => (
       <div className="flex flex-col mx-auto sm:w-[500px] xl:w-auto !justify-center !items-center sm:!items-start">
         <div className="flex flex-col gap-y-4 !items-center  sm:!items-start">
           <h1 className="title_text">{WhatVissionMockData.title}</h1>
-          <p className="description_text !text-[12px] sm:!text-[14px] lg:text-[18px]
-           !leading-[14.52px] sm:!leading-[22px] lg:leading-[26px] !text-center sm:!text-start w-[350px] sm:w-[576px]">
+          <p className="description_text 
+           leading_relaxed vissions_text">
             {WhatVissionMockData.description}
           </p>
-          <p className="description_text !text-center sm:!text-start w-[350px] sm:w-[576px]">
+          <p className="description_text vissions_text">
             {WhatVissionMockData.subtitle}
           </p>
         </div>
@@ -38,7 +40,7 @@ export const WhatWeVission = () => (
             </div>
           ))}
         </div>
-        <p className="mb-10 description_text !text-center sm:!text-start w-[350px] sm:w-[576px]">
+        <p className="mb-10 description_text vissions_text">
           {WhatVissionMockData.approachText}
         </p>
       </div>

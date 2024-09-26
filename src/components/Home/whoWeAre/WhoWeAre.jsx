@@ -10,7 +10,7 @@ export const WhoWeAre = () => (
       />
       <div className="flex flex-col gap-4 items-center lg:items-start">
         <h1 className="title_text  !text-neutral">{whoWeAreMockData?.title}</h1>
-        <p className="text-center lg:text-start max-w-[500px] description_text">
+        <p className="text_alignment max-w-[500px] description_text">
           {whoWeAreMockData?.description}
         </p>
       </div>

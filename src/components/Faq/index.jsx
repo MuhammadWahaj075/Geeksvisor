@@ -18,7 +18,7 @@ export const Faq = () => {
           <p
             className="description_text !max-w-[328px] sm:!max-w-[300px] lg:!max-w-[474px] !text-[12px]
            md:!text-[14px] lg:!text-[18px] 
-           !leading-[14.52px] md:!leading-[22px] lg:!leading-[26px]"
+           leading_relaxed"
           >Find answers to the most common questions about our services and process</p>
         </div>
         <div className="max-w-[846px] mx-auto mt-8 space-y-4 md:mt-16">
@@ -32,7 +32,7 @@ export const Faq = () => {
                 className="flex items-center justify-between w-full px-4 py-5 sm:p-6"
                 onClick={() => toggleAccordion(index)}
               >
-                <span className="flex text-start !text-[14px] !leading-[16.94px] md:!leading-[26px] lg:!text-[18px] font-inter font-semibold text-neutral">
+                <span className="flex text-start !text-[14px] lg:!text-[18px] !leading-[16.94px] md:!leading-[26px]  font-inter font-semibold text-neutral">
                   {item.question}
                 </span>
                 <div
@@ -57,7 +57,7 @@ export const Faq = () => {
                   overflow: "hidden",
                 }}
               >
-                <p className="px-4 pb-5 sm:px-6 sm:pb-6 text-[12px] md:!text-[14px] !leading-[14.52px] md:!leading-[26px] lg:!text-[18px] description_text">
+                <p className="px-4 pb-5 sm:px-6 sm:pb-6 text-[12px] md:!text-[14px] lg:!text-[18px] leading_relaxed description_text">
                   {item.answer}
                 </p>
               </div>

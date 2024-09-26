@@ -1,0 +1,3 @@
+.vissions_text {
+    @apply  !text-center sm:!text-start w-[350px] sm:w-[576px];
+}

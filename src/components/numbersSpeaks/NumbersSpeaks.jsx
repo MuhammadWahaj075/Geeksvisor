@@ -6,13 +6,15 @@ import { Count } from "@/components/ui/CountingAnimation";
 import { Button, OptimizedImage } from "@/components/comman";
 import { FilterImg, Spline } from "../../../public/assets";
 
+import './style.css';
+
 export const NumbersSpeaks = () => (
   <div className="!mt-16  md:!mt-10 lg:!mt-[160px]">
     <div className="flex  px-5 justify-center">
       <div className="flex  flex-col relative items-center !w-[360px] sm:!w-[1326px] py-6 sm:py-[35.93px] lg:py-[72px] bg-lines rounded-[72px] bg-[#101010]">
         <OptimizedImage
           src={FilterImg}
-          className="absolute overflow-hidden top-[-20px] sm:top-[-60px] right-[-20px] sm:right-[-20px] 2xl:top-[-100px] 2xl:right-[-60px] w-[79px] h-[79px] sm:w-[125px] sm:h-[125px] xl:w-[247.25px] xl:h-[250px] z-10"
+          className="filter_img"
         />
 
         <div className="flex flex-col gap-6 px-2 items-center">
@@ -29,10 +31,10 @@ export const NumbersSpeaks = () => (
               <Count
                 value={"100+"}
                 label={"+"}
-                className="font-unbound font-semibold flex !text-[16px] sm:!text-[24px] lg:!text-[64px] text-neutral"
+                className="speaks_counts"
               />
               <div>
-                <p className="description_text !text-[12px] sm:!text-[10px] lg:!text-[16px]">
+                <p className="description_text speaks_counts_title">
                   projects
                 </p>
               </div>
@@ -41,9 +43,9 @@ export const NumbersSpeaks = () => (
               <Count
                 value={"150+"}
                 label={"+"}
-                className="font-unbound font-semibold flex !text-[16px] sm:!text-[24px] lg:!text-[64px] text-neutral"
+                className="speaks_counts"
               />
-              <p className="description_text !text-[12px] sm:!text-[10px] lg:!text-[16px]">
+              <p className="description_text speaks_counts_title">
                 Feedbacks
               </p>
             </div>
@@ -53,10 +55,10 @@ export const NumbersSpeaks = () => (
             <Count
               value={"100+"}
               label={"+"}
-              className=" font-unbound font-semibold flex !text-[16px] sm:!text-[24px] lg:!text-[64px] text-neutral"
+              className=" speaks_counts"
             />
             <div>
-              <p className="description_text !text-[12px] sm:!text-[10px] lg:!text-[16px]">
+              <p className="description_text speaks_counts_title">
                 projects
               </p>
             </div>
@@ -65,9 +67,9 @@ export const NumbersSpeaks = () => (
             <Count
               value={"150+"}
               label={"+"}
-              className="font-unbound font-semibold flex !text-[16px] sm:!text-[24px] lg:!text-[64px] text-neutral"
+              className="speaks_counts"
             />
-            <p className="description_text !text-[12px] sm:!text-[10px] lg:!text-[16px]">
+            <p className="description_text speaks_counts_title">
               Feedbacks
             </p>
           </div>
@@ -79,9 +81,9 @@ export const NumbersSpeaks = () => (
               <Count
                 value={"7+"}
                 label={"+"}
-                className="font-unbound font-semibold flex !text-[16px] sm:!text-[24px] lg:!text-[64px] text-neutral"
+                className="speaks_counts"
               />
-              <p className="description_text !text-[12px] sm:!text-[10px] lg:!text-[16px]">
+              <p className="description_text speaks_counts_title">
                 Years Experince
               </p>
             </div>
@@ -89,9 +91,9 @@ export const NumbersSpeaks = () => (
               <Count
                 value={"10+"}
                 label={"+"}
-                className="font-unbound font-semibold flex !text-[16px] sm:!text-[24px] lg:!text-[64px] text-neutral"
+                className="speaks_counts"
               />
-              <p className="description_text !text-[12px] sm:!text-[10px] lg:!text-[16px]">
+              <p className="description_text speaks_counts_title">
                 Expert Devs
               </p>
             </div>
@@ -101,9 +103,9 @@ export const NumbersSpeaks = () => (
             <Count
               value={"7+"}
               label={"+"}
-              className="font-unbound font-semibold flex !text-[16px] sm:!text-[24px] lg:!text-[64px] text-neutral"
+              className="speaks_counts"
             />
-            <p className="description_text !text-[12px] sm:!text-[10px] lg:!text-[16px]">
+            <p className="description_text speaks_counts_title">
               Years Experince
             </p>
           </div>
@@ -111,9 +113,9 @@ export const NumbersSpeaks = () => (
             <Count
               value={"10+"}
               label={"+"}
-              className="font-unbound font-semibold flex !text-[16px] sm:!text-[24px] lg:!text-[64px] text-neutral"
+              className="speaks_counts"
             />
-            <p className="description_text !text-[12px] sm:!text-[10px] lg:!text-[16px]">
+            <p className="description_text speaks_counts_title">
               Expert Devs
             </p>
           </div>
@@ -137,7 +139,7 @@ export const NumbersSpeaks = () => (
           src={Spline}
           height={"100%"}
           width={"100%"}
-          className="absolute bottom-[-20px] sm:bottom-[-60px] left-[-20px] sm:left-[-60px] w-[86.43px] h-[86.43px] sm:h-[163.3px] sm:w-[163.3px] xl:w-[242.44px] xl:h-[244.77px]"
+          className="spline_img"
         />
       </div>
     </div>
