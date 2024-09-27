@@ -593,9 +593,6 @@ export const OurCoreMockData = {
   title: "Our Core Values",
   description: `Core Values that Drive Our Brand Forward`
 }
-
-
-
 export const OurStrengthCardData = [
   {
     id: 1,
