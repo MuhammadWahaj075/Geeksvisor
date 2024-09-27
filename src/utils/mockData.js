@@ -1,19 +1,10 @@
 import { FaAws, FaReact, FaRobot, FaLink } from 'react-icons/fa';
 import {
-  InfiniteImg,
-  InfiniteImg2,
-  InfiniteImg3,
   education,
   healthcare,
   lifestyle,
   sport,
   tech,
-  AwsImg,
-  BackendImg,
-  FrontendImg,
-  GenAIImg,
-  DevOpsImg,
-  FullStackImg,
   Project,
   TestimonialsLogo1,
   TestimonialsLogo2,
@@ -42,18 +33,14 @@ import {
   earlybirdee,
   soplan,
   agentcopilot,
-  salvesen,
   kyogreen,
   mifu,
-  APIImg,
   AIMachineImg,
   CloudArchictectureImg,
   DevOpsSolutionImg,
   SupportImg,
   ServerlessIcon,
 } from "../../public/assets";
-
-
 
 export const OurQualityData = [
   {
@@ -443,72 +430,6 @@ export const clientProjectsData = [
   },
 ];
 
-export const testimonials = [
-  {
-    image: InfiniteImg,
-  },
-  {
-    image: InfiniteImg2,
-  },
-  {
-    image: InfiniteImg3,
-  },
-  {
-    image: InfiniteImg2,
-  },
-];
-
-export const cards = [
-  {
-    url: AwsImg,
-    title: "AWS",
-    description: "Leverage AWS cloud solutions for scalable, secure, and cost-efficient application deployments.",
-    id: 1,
-  },
-  {
-    url: GenAIImg,
-    title: "GenAI",
-    description:
-      "Integrate cutting-edge Generative AI to create intelligent, user-centric experiences.",
-    id: 2,
-  },
-  {
-    url: BackendImg,
-    title: "Backend",
-    description:
-      "Build robust and scalable backend systems that power your applications efficiently.",
-    id: 3,
-  },
-  {
-    url: FrontendImg,
-    title: "Frontend",
-    description:
-      "Craft visually stunning and highly functional frontends that enhance user engagement.",
-    id: 4,
-  },
-  // {
-  //   url: FullStackImg,
-  //   title: "Full Stack",
-  //   description:
-  //     "Deliver end-to-end solutions with expert full stack development, from concept to deployment.",
-  //   id: 5,
-  // },
-  {
-    url: DevOpsImg,
-    title: "DevOps",
-    description:
-      "Streamline your development pipeline with our efficient, automated DevOps practices.",
-    id: 6,
-  },
-  {
-    url: APIImg,
-    title: "API Integration",
-    description:
-      "Seamlessly integrate APIs to extend your app’s capabilities and improve interoperability",
-    id: 7,
-  },
-];
-
 export const aboutProjects = [
   {
     id: 1,
@@ -687,14 +608,6 @@ export const OurStrengthCardData = [
 
 ];
 export const OurStrengthData = [
-  // {
-  //   id: 1,
-  //   title: "Cloud Architecture",
-  //   image: CloudArchictectureImg,
-  //   description: "We design and build cloud solutions tailored to your business needs, ensuring they are scalable, secure, and efficient. Our AWS Certified team will help you navigate the cloud with ease"
-  //   ,
-  //   buttonLabel: "Connect with Cloud Architects"
-  // },
   {
     id: 1,
     title: "Serverless Development",

@@ -1,6 +1,5 @@
 import { TestimonialsLogos } from "../testimonialsLogos/TestimonialsLogos";
 import { BannerSection } from "../bannerSection/BannerSection";
-import { InfiniteMovingImages } from "./infiniteMovingImage/InfiniteMovingImage";
 import { ServingIndustries } from "../servingIndustries/ServingIndustries";
 import { ReasonToChoose } from "../reasonToChoose/ReasonToChoose";
 import { WhatWeVission } from "./whatWeVission/WhatWeVission";
@@ -18,7 +17,6 @@ export {
   BannerSection,
   TestimonialsLogos,
   Consultation,
-  InfiniteMovingImages,
   WhoWeAre,
   ServingIndustries,
   ModernTech,
