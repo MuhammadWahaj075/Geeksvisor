@@ -10,7 +10,7 @@ import { OurProven } from "../ourProven/OurProven";
 import { YouCanGet } from "./youCanGet/YouCanGet";
 import { WhoWeAre } from "./whoWeAre/WhoWeAre";
 import { Consultation } from "./Consultation";
-import { NumbersSpeaks } from "../numbersSpeaks/NumbersSpeaks";
+import { NumbersSpeaks } from "../numbersSpeak/NumbersSpeak";
 import { OurProcess } from "./ourProcess/OurProcess";
 import { ModernTech } from "./modernTechStack/ModernTechStack";
 

@@ -29,7 +29,7 @@ const Card = ({ title, description, src, i, number }) => {
         <span className="text-[#FFFFFF0D] !font-inter !text-[60.71px] sm:!text-[100px] lg:!text-[94.98px] font-bold right-[-8px] md:right-[-14px] top-[-18px] md:top-[-40px] absolute">
           {number}
         </span>
-        <p className="description_text !text-[12.86px] text-secondary-lightmt-4">{description}</p>
+        <p className="description_text !text-[12.86px] text-secondary-light mt-4">{description}</p>
       </div>
     </div>
   );
