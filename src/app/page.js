@@ -7,7 +7,6 @@ import {
   GreatIdea,
   MeetFounders,
   ModernTech,
-  NumbersSpeaks,
   OurProcess,
   OurProven,
   ReasonToChoose,
@@ -19,6 +18,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { OurCoreValue } from "@/components/OurCore";
 import { OurStrength } from "@/components/OurStrength";
+import { NumbersSpeak } from "@/components/numbersSpeak";
 
 
 export default function Home() {
@@ -35,8 +35,7 @@ export default function Home() {
         <ModernTech />
         <OurProven />
         <ServingIndustries />
-        <NumbersSpeaks />
-        <ReasonToChoose />
+        <NumbersSpeak />
         <OurProcess />
         <YouCanGet />
         <Consultation />

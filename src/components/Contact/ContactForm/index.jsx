@@ -4,10 +4,10 @@ import { contact } from "@/services";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { Button, TextArea } from "@/components/comman";
-import { Input } from "@/components/comman/Input/Input";
 import { contact as contactMock } from "@/utils/mockData";
 import { Loader } from "@/components/comman/loader/Loader";
 import { Toast } from "@/components/comman/Toast";
+import { Input } from "@/components/comman/Input/Input";
 
 // input
 const inputClass = "!bg-eerieBlack mt-[8px] sm:h-[66px] h-[50px] lg:w-[568px] md:w-full"

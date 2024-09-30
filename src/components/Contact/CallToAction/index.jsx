@@ -4,7 +4,7 @@ import { contact } from "@/utils/mockData";
 
 const ContactInfo = ({ className, title, description }) => (
   <div className={className}>
-    <h1 className="info_title text-[#525252]">{title}</h1>
+    <h1 className="info_title text-primary-textArealabel">{title}</h1>
     <h2 className="info_description mt-[8px]">{description}</h2>
   </div>
 );

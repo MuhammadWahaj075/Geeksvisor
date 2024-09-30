@@ -126,6 +126,11 @@ export const workBannerMockData = {
     filterBottomImg: WorkBannerImg,
   },
 };
+export const consultationMockData = {
+  title: "Get free consultation with GeeksVisor",
+  description:
+    `Unlock custom software solutions tailored to your business needs`
+} 
 
 export const healthData = [
   {

@@ -24,7 +24,7 @@ export const ProjectDetailBanner = () => {
           </div>
           <div className="hidden sm:flex md:mt-14  lg:mt-0  order-2 lg:order-1 items-center w-full lg:items-end lg:justify-end lg:w-auto justify-between lg:flex-col gap-6">
             <div className="status  flex justify-end items-center gap-5 text-center">
-              <span className="text-[#CCCCCC] capitalize font-inter">
+              <span className="text-secondary-statusColor capitalize font-inter">
                 status
               </span>
               <span className="text-primary capitalize font-inter !rounded-3xl py-2 px-5 bg-primary-pill">
@@ -33,7 +33,7 @@ export const ProjectDetailBanner = () => {
             </div>
             <div className="date">
               <p className="flex gap-4 text-neutral lg:!text-[18px]  md:!text-[16px] font-inter font-medium">
-                <span className="text-[#CCCCCC]  !font-normal leading-7">
+                <span className="text-secondary-statusColor  !font-normal leading-7">
                   Completion Date
                 </span>
                 {projectDetailBannerData.completionDate}

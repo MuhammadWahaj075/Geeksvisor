@@ -14,7 +14,7 @@ export const TechnologiesUsed = () => {
               key={tech}
               text={tech}
               className={
-                "!text-center normal-case !p-0 font-semibold !text-[12px] sm:!text-[16px] !text-[#7A7A7A] !bg-transparent"
+                "!text-center normal-case !p-0 font-semibold !text-[12px] sm:!text-[16px] !text-primary-pilltext !bg-transparent"
               }
             />
           ))}

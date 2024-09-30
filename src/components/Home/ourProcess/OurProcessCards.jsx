@@ -26,7 +26,7 @@ const Card = ({ title, description, src, i, number }) => {
       >
         <OptimizedImage src={src} />
         <h2 className="text-neutral font-semibold !text-[14.57px] md:!text-[24px]  lg:!text-[32px] mt-6">{title}</h2>
-        <span className="text-[#FFFFFF0D] !font-inter !text-[60.71px] sm:!text-[100px] lg:!text-[94.98px] font-bold right-[-8px] md:right-[-14px] top-[-18px] md:top-[-40px] absolute">
+        <span className="text-primary-ourProcessNumber !font-inter !text-[60.71px] sm:!text-[100px] lg:!text-[94.98px] font-bold right-[-8px] md:right-[-14px] top-[-18px] md:top-[-40px] absolute">
           {number}
         </span>
         <p className="description_text !text-[12.86px] text-secondary-light mt-4">{description}</p>

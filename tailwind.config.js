@@ -37,8 +37,11 @@ module.exports = {
           dark: "#4c1d95",
           hover: "#ed9866",
           pill: "#FFFFFF1A",
+          pilltext: "#FFFFFFB2",
           borderColor: "#B1B1B1",
           imageTestColor: "#2F2B43",
+          textArealabel: "#525252",
+          ourProcessNumber: "#FFFFFF0D",
         },
 
         gradient: {
@@ -53,6 +56,7 @@ module.exports = {
           inputColor: "#0E0F13",
           bannerPill: "#1b1b1d",
           borderDark: "#1F1F1F",
+          statusColor: "#CCCCCC",
         },
         accent: {
           light: "#fbbf24",
