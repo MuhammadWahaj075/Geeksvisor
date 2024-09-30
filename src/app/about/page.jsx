@@ -1,10 +1,11 @@
 import { BannerSection } from "@/components/AboutUs/BannerSection";
-import {  GreatIdea, MeetFounders, NumbersSpeaks, OurProven } from "@/components/Home";
-import { OurMission } from "@/components/AboutUs/OurMission";
 import { OurVision } from "@/components/AboutUs/OurVision";
-import { WhatWeVission } from "@/components/AboutUs/whatWeVission/WhatWeVission";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { NumbersSpeak } from "@/components/numbersSpeak";
+import { MeetFounders } from "@/components/meetFounders";
+import { GreatIdea } from "@/components/greatIdea/GreatIdea";
+import { OurProven } from "@/components/ourProven";
 
 
 const About = () => (
@@ -16,7 +17,7 @@ const About = () => (
     <OurProven />
     {/* <OurMission /> */}
     {/* <WhatWeVission /> */}
-    <NumbersSpeaks />
+    <NumbersSpeak />
     <GreatIdea />
     <Footer />
   </>

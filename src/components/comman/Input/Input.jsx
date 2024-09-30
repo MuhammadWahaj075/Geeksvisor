@@ -20,7 +20,7 @@ export const Input = ({
   return (
     <div className={label ? "pt-[18px]" : ""}>
       {label && (
-        <label className="text-[#525252] label-text mb-[8px]">{label}</label>
+        <label className="text-primary-textArealabel label-text mb-[8px]">{label}</label>
       )}
       <input
         {...register(name, {

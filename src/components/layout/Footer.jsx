@@ -19,7 +19,6 @@ import {
 } from "@/utils/mockData";
 import useInView from "@/hooks/useInView";
 import "./style.css";
-import { Input } from "../comman/Input/Input";
 import Link from "next/link";
 
 export const Footer = () => {

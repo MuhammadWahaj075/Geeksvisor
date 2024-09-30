@@ -1,31 +1,31 @@
 import { TestimonialsLogos } from "../testimonialsLogos/TestimonialsLogos";
-import { BannerSection } from "../bannerSection/BannerSection";
-import { ServingIndustries } from "../servingIndustries/ServingIndustries";
-import { ReasonToChoose } from "../reasonToChoose/ReasonToChoose";
-import { WhatWeVission } from "./whatWeVission/WhatWeVission";
-import { MeetFounders } from "./meetFounders/MeetFounders";
+import { BannerSection } from "../bannerSection";
+import { ServingIndustries } from "../servingIndustries";
+import { ReasonToChoose } from "../reasonToChoose";
+import { WhatWeVission } from "./whatWeVission";
+import { MeetFounders } from "../meetFounders";
 import { GreatIdea } from "../greatIdea/GreatIdea";
-import { OurProven } from "../ourProven/OurProven";
-import { YouCanGet } from "./youCanGet/YouCanGet";
-import { WhoWeAre } from "./whoWeAre/WhoWeAre";
+import { OurProven } from "../ourProven";
+import { YouCanGet } from "./youCanGet";
+import { WhoWeAre } from "./whoWeAre";
 import { Consultation } from "./Consultation";
-import { NumbersSpeaks } from "../numbersSpeak/NumbersSpeak";
-import { OurProcess } from "./ourProcess/OurProcess";
-import { ModernTech } from "./modernTechStack/ModernTechStack";
+import { OurProcess } from "./ourProcess";
+import { ModernTech } from "./modernTechStack";
+import { NumbersSpeak } from "../numbersSpeak";
 
 export {
   BannerSection,
   TestimonialsLogos,
+  OurProcess,
+  OurProven,
+  ReasonToChoose,
+  MeetFounders,
+  GreatIdea,
+  NumbersSpeak,
   Consultation,
   WhoWeAre,
   ServingIndustries,
   ModernTech,
-  OurProven,
   YouCanGet,
-  NumbersSpeaks,
-  ReasonToChoose,
   WhatWeVission,
-  MeetFounders,
-  GreatIdea,
-  OurProcess,
 };

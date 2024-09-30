@@ -1,11 +1,11 @@
 import { GreatIdea } from "@/components/greatIdea/GreatIdea"
-import { BannerSection, ReasonToChoose } from "@/components/Home"
+import { BannerSection, ReasonToChoose } from "@/components"
 import { Footer } from "@/components/layout/Footer"
 import { Header } from "@/components/layout/Header"
 import { Development } from "@/components/Services/development"
 import { TechnologiesWeAre } from "@/components/Services/technologiesWeAre"
 import { WhoWeAre } from "@/components/Services/whoWeAre"
-import { ServingIndustries } from "@/components/servingIndustries/ServingIndustries"
+import { ServingIndustries } from "@/components/servingIndustries"
 
 const Services = () => {
   return (
