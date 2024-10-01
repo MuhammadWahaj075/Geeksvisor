@@ -1,4 +1,4 @@
-import { BannerSection } from "@/components/bannerSection/BannerSection";
+import { BannerSection } from "@/components/bannerSection";
 import { ReasonToChoose } from "@/components/reasonToChoose";
 import { Pills } from "@/components/Work/workPills";
 import { WorkProjects } from "@/components/Work/workProjects/workProjects";
