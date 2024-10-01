@@ -2,9 +2,7 @@
 
 import { Faq } from "@/components";
 import {
-  BannerSection,
   Consultation,
-  GreatIdea,
   MeetFounders,
   ModernTech,
   OurProcess,
@@ -19,6 +17,8 @@ import { Footer } from "@/components/layout/Footer";
 import { OurCoreValue } from "@/components/OurCore";
 import { OurStrength } from "@/components/OurStrength";
 import { NumbersSpeak } from "@/components/numbersSpeak";
+import { GreatIdea } from "@/components/greatIdea/GreatIdea";
+import { BannerSection } from "@/components/bannerSection";
 
 
 export default function Home() {

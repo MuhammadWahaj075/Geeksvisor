@@ -1,4 +1,4 @@
-import { GreatIdea } from "@/components/ProjectDetail/greatIdea";
+import { GreatIdea } from "@/components/greatIdea/GreatIdea";
 import { DetailSection } from "@/components/ProjectDetail/detailSection";
 import { ProjectDetailBanner } from "@/components/ProjectDetail/projectDetailBanner";
 import { ProjectTimeline } from "@/components/ProjectDetail/projectTimeline";
