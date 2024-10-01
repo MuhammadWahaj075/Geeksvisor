@@ -61,9 +61,9 @@ export const ModernTech = () => {
                     <motion.div
                       key={tab.title}
                       layoutId="tabContent"
-                      initial={{ y: 10, opacity: 0 }}
-                      animate={{ y: 0, opacity: 1 }}
-                      exit={{ y: -10, opacity: 0 }}
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: 20 }}
                       transition={{ duration: 0.2 }}
                     >
                       <h2 className="text-2xl text-neutral font-bold">{tab.title}</h2>
