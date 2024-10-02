@@ -3,11 +3,8 @@
 import { Faq } from "@/components";
 import {
   Consultation,
-  MeetFounders,
   ModernTech,
-  OurProcess,
   OurProven,
-  ReasonToChoose,
   ServingIndustries,
   YouCanGet,
 } from "@/components/Home";
@@ -19,6 +16,9 @@ import { OurStrength } from "@/components/OurStrength";
 import { NumbersSpeak } from "@/components/numbersSpeak";
 import { GreatIdea } from "@/components/greatIdea/GreatIdea";
 import { BannerSection } from "@/components/bannerSection";
+import { OurProcess } from "@/components/Home/ourProcess";
+import { MeetFounders } from "@/components/meetFounders";
+import { ReasonToChoose } from "@/components/reasonToChoose";
 
 
 export default function Home() {
@@ -36,6 +36,7 @@ export default function Home() {
         <OurProven />
         <ServingIndustries />
         <NumbersSpeak />
+        <ReasonToChoose />
         <OurProcess />
         <YouCanGet />
         <Consultation />
