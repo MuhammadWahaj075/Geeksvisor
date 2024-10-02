@@ -51,10 +51,10 @@ export const BannerSection = () => {
               {bannerMockData?.title?.split(" ")?.map((word, index) => (
                 <motion.span
                   key={index}
-                  // custom={index}
-                  // initial="hidden"
-                  // animate="visible"
-                  // variants={blurInAnimation}
+                  custom={index}
+                  initial="hidden"
+                  animate="visible"
+                  variants={blurInAnimation}
                   className={`${word === "Future" || word === "Proof,"
                     ? "bg-clip-text bg-[linear-gradient(90deg,#ef8648_0%,#FF2E00_100%)] pr-2"
                     : "text-neutral"
