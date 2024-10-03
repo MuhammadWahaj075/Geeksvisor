@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"; 
 import { bannerMockData } from "@/utils/mockData";
 import { IoIosArrowRoundForward } from "react-icons/io";
-// import GridBoxAnimation from "@/components/ui/GridBoxAnimation";
+import GridBoxAnimation from "@/components/ui/GridBoxAnimation";
 import { useCustomRouter } from "@/hooks/useRouter";
 import { OptimizedImage, Button, Pill } from "../comman";
 import Link from "next/link";
@@ -37,7 +37,7 @@ export const BannerSection = () => {
             } absolute right-0  md:right-[20px] top-[-30px] md:top-[-130px] z-20`}
         />
         <div className="absolute z-[-1] pointer-events-none inset-0 flex items-center justify-center">
-          {/* <GridBoxAnimation /> */}
+          <GridBoxAnimation />
         </div>
         <div className="flex justify-center">
           <div className="flex  flex-col justify-center items-center">
