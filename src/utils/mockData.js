@@ -35,11 +35,11 @@ import {
   agentcopilot,
   kyogreen,
   mifu,
-  AIMachineImg,
-  CloudArchictectureImg,
-  DevOpsSolutionImg,
-  SupportImg,
-  ServerlessIcon,
+  // AIMachineImg,
+  // CloudArchictectureImg,
+  // DevOpsSolutionImg,
+  // SupportImg,
+  // ServerlessIcon,
 } from "../../public/assets";
 
 export const OurQualityData = [
@@ -602,7 +602,7 @@ export const OurStrengthCardData = [
   {
     id: 1,
     title: "Cloud Architecture",
-    image: CloudArchictectureImg,
+    // image: CloudArchictectureImg,
     description: "We design and build cloud solutions tailored to your business needs, ensuring they are scalable, secure, and efficient. Our AWS Certified team will help you navigate the cloud with ease"
     ,
     buttonLabel: "Connect with Cloud Architects"
@@ -613,7 +613,7 @@ export const OurStrengthData = [
   {
     id: 1,
     title: "Serverless Development",
-    image: ServerlessIcon,
+    // image: ServerlessIcon,
     description: "We create serverless applications that reduce costs and improve performance. By using serverless architecture, we help you focus on your core business while we handle the infrastructure"
     ,
     buttonLabel: "Connect with Serverless Development"
@@ -621,7 +621,7 @@ export const OurStrengthData = [
   {
     id: 2,
     title: "DevOps Solutions",
-    image: DevOpsSolutionImg,
+    // image: DevOpsSolutionImg,
     description: "We implement DevOps practices to streamline your development and operations. This means faster delivery of software updates and improved collaboration between your teams"
     ,
     buttonLabel: "Connect with DevOps"
@@ -629,14 +629,14 @@ export const OurStrengthData = [
   {
     id: 3,
     title: "AI & Machine Learning",
-    image: AIMachineImg,
+    // image: AIMachineImg,
     description: "We leverage the latest in AI and machine learning to provide smart solutions that can automate tasks, analyze data, and enhance decision-making for your business",
     buttonLabel: "Connect with AI & Machine Learning"
   },
   {
     id: 4,
     title: "Support & Maintenance",
-    image: SupportImg,
+    // image: SupportImg,
     description: "We offer ongoing support and maintenance for all our solutions. Our team is always here to help you troubleshoot issues and keep your systems running smoothly",
     buttonLabel: "Connect with Support & Maintenance"
   }
