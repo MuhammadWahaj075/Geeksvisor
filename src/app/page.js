@@ -6,8 +6,6 @@ import {
   MeetFounders,
   ModernTech,
   OurProcess,
-  OurProven,
-  ReasonToChoose,
   ServingIndustries,
   YouCanGet,
 } from "@/components/Home";
@@ -19,6 +17,7 @@ import { OurStrength } from "@/components/OurStrength";
 import { NumbersSpeak } from "@/components/numbersSpeak";
 import { GreatIdea } from "@/components/greatIdea/GreatIdea";
 import { BannerSection } from "@/components/bannerSection";
+import { OurProven } from "@/components/ourProven";
 
 
 export default function Home() {

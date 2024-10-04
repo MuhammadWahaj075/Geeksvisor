@@ -6,12 +6,12 @@ import {
   sport,
   tech,
   Project,
-  TestimonialsLogo1,
-  TestimonialsLogo2,
-  TestimonialsLogo3,
-  TestimonialsLogo4,
-  TestimonialsLogo5,
-  TestimonialsLogo6,
+  // TestimonialsLogo1,
+  // TestimonialsLogo2,
+  // TestimonialsLogo3,
+  // TestimonialsLogo4,
+  // TestimonialsLogo5,
+  // TestimonialsLogo6,
   CheckIcon,
   MugheesProf,
   RafaeProf,
@@ -530,14 +530,14 @@ export const pillData = [
   { text: "AWS" },
 ];
 
-export const testimonialLogos = [
-  { src: TestimonialsLogo1, alt: "Testimonial from Client 1" },
-  { src: TestimonialsLogo2, alt: "Testimonial from Client 2" },
-  { src: TestimonialsLogo3, alt: "Testimonial from Client 3" },
-  { src: TestimonialsLogo4, alt: "Testimonial from Client 4" },
-  { src: TestimonialsLogo5, alt: "Testimonial from Client 5" },
-  { src: TestimonialsLogo6, alt: "Testimonial from Client 6" },
-];
+// export const testimonialLogos = [
+//   { src: TestimonialsLogo1, alt: "Testimonial from Client 1" },
+//   { src: TestimonialsLogo2, alt: "Testimonial from Client 2" },
+//   { src: TestimonialsLogo3, alt: "Testimonial from Client 3" },
+//   { src: TestimonialsLogo4, alt: "Testimonial from Client 4" },
+//   { src: TestimonialsLogo5, alt: "Testimonial from Client 5" },
+//   { src: TestimonialsLogo6, alt: "Testimonial from Client 6" },
+// ];
 
 export const mainPages = [
   { name: "Work", link: "#" },
