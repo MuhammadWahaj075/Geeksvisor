@@ -30,7 +30,7 @@ export default function Home() {
         </div>
         <OurCoreValue />
         {/* <WhoWeAre /> */}
-        <OurStrength />
+        {/* <OurStrength /> */}
         <ModernTech />
         <OurProven />
         <ServingIndustries />
