@@ -20,7 +20,7 @@ import { BannerSection } from "@/components/bannerSection";
 import { OurProven } from "@/components/ourProven";
 
 
-export default function Home() {
+export default function Home() { 
   return (
       <main>
         <Header />
