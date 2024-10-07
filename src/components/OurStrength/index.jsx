@@ -22,9 +22,9 @@ export const OurStrength = () => {
                                 <div>
                                     {index === 0 && <OptimizedImage src={CloudImg} className={'object-cover rounded-3xl  w-full h-[196.66px]'} />}
                                     <div key={item?.id} className="p-4 flex flex-col gap-5 ">
-                                        <div>
+                                        {/* <div>
                                             <OptimizedImage src={item?.image} className='!h-[70px] w-auto object-contain' />
-                                        </div>
+                                        </div> */}
                                         <h3 className="text-xl font-inter text-neutral font-semibold">{item?.title}</h3>
                                         <p className="mt-2 description_text sm:w-[381.656px] md:w-auto ">{item?.description}</p>
                                         {/* <Button className="mt-4 absolute bottom-4 !rounded-3xl">
