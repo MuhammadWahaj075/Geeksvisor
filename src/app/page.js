@@ -35,7 +35,7 @@ export default function Home() {
         <OurProven />
         <ServingIndustries />
         {/* <NumbersSpeak /> */}
-        {/* <OurProcess /> */}
+        <OurProcess />
         <YouCanGet />
         <Consultation />
         <MeetFounders />
