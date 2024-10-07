@@ -17,7 +17,7 @@ export function OurProcess() {
             <div className="flex justify-center flex-col items-center">
                 <div className="bg-union absolute !top-0 pb-[300px] flex flex-col gap-4">
                     <h1 className="title_text pt-[180px]">Our process</h1>
-                    <p className="description_text text-center w-[320px] lg:w-[470px]">
+                    <p className="description_text text-center w-[250px] lg:w-[470px]">
                         Leave the details to us—we bring your vision to life from start to finish.
                     </p>
                 </div>
