@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import { HowItWorksData } from "@/utils/mockData";
+import { HowItWorksData, OurProcessData } from "@/utils/mockData";
 import { useScroll } from "framer-motion";
 import Card from "./OurProcessCards";
 
@@ -16,9 +16,9 @@ export function OurProcess() {
         <div className="relative main_container_gapper">
             <div className="flex justify-center flex-col items-center">
                 <div className="bg-union absolute !top-0 pb-[300px] flex flex-col gap-4">
-                    <h1 className="title_text pt-[180px]">Our process</h1>
+                    <h1 className="title_text pt-[180px]">{OurProcessData.title}</h1>
                     <p className="description_text text-center w-[250px] lg:w-[470px]">
-                        Leave the details to us—we bring your vision to life from start to finish.
+                      {OurProcessData.description}
                     </p>
                 </div>
                 <div className="!mb-16 mt-8">

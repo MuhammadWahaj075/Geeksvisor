@@ -562,6 +562,11 @@ export const inquiries = [
   { name: "+92 340 8636954", link: "tel:+923408636954" },
 ];
 
+export const OurProcessData = {
+title: "Our process",
+description: "Leave the details to us—we bring your vision to life from start to finish."
+}
+
 
 export const HowItWorksData = [
   {
