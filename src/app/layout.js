@@ -1,7 +1,6 @@
 import "./globals.css";
 import { Inter, Unbounded } from "next/font/google";
 import { BottomToTopBtn } from "@/components/BottomToTop";
-import { GoogleTagManager } from '@next/third-parties/google'
 import Script from "next/script";
 
 const inter = Inter({
@@ -23,7 +22,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="!scroll-smooth">
-
       <Script
         id="google-tag-manager"
         strategy="afterInteractive"
@@ -37,17 +35,22 @@ export default function RootLayout({ children }) {
           `,
         }}
       />
-      <GoogleTagManager gtmId="K4ZT7B3B" />
+
       <body className={`${inter.variable} ${unbound.variable}`}>
         {children}
+
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-K4ZT7B3B"
-            height="0" width="0"
+            height="0"
+            width="0"
             style={{
-              display: "none", visibility: "hidden"
+              display: "none",
+              visibility: "hidden",
             }}
-          ></iframe></noscript>
+          ></iframe>
+        </noscript>
+
         <BottomToTopBtn />
       </body>
     </html>
