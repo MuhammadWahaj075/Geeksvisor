@@ -16,8 +16,8 @@ export function OurProcess() {
         <div className="relative main_container_gapper">
             <div className="flex justify-center flex-col items-center">
                 <div className="bg-union absolute !top-0 pb-[300px] flex flex-col gap-4">
-                    <h1 className="title_text pt-[180px]">{OurProcessData.title}</h1>
-                    <p className="description_text text-center w-[250px] lg:w-[470px]">
+                    <h1 className="relative z-10 title_text pt-[180px]">{OurProcessData.title}</h1>
+                    <p className="relative z-10 description_text text-center w-[250px] lg:w-[470px]">
                       {OurProcessData.description}
                     </p>
                 </div>
