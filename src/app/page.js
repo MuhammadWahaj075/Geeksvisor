@@ -34,7 +34,7 @@ export default function Home() {
         <ModernTech />
         <OurProven />
         <ServingIndustries />
-        <NumbersSpeak />
+        {/* <NumbersSpeak /> */}
         <OurProcess />
         <YouCanGet />
         <Consultation />
